@@ -22,15 +22,15 @@
 **1. [对《互联网域名管理办法（征求意见稿）》的疑问 （4月25日截至征求意见）](https://github.com/mdrights/mirror-CN/blob/master/%E6%84%8F%E8%A7%81-%E4%BA%92%E8%81%94%E7%BD%91%E5%9F%9F%E5%90%8D%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95.md)[（附信息公开申请）](https://github.com/mdrights/mirror-CN/blob/master/%E6%94%BF%E5%BA%9C%E4%BF%A1%E6%81%AF%E5%85%AC%E5%BC%80%E7%94%B3%E8%AF%B7-%E4%BA%92%E8%81%94%E7%BD%91%E5%9F%9F%E5%90%8D%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95.md)**
 
 <br>
-[Tips]:  Windows用户可以下载上面链接的文件，需要将后缀名（.md）改为(.txt)。
+[Tips]  Windows用户下载上面链接的文件时，需要将后缀名（.md）改为(.txt)。
 
 <hr>
 #### This page is powered by GitHub Pages. The content of this repo is released under the GNU GPL 2.0 or later. 
 
-**采用GPL 2.0协议发布，只要您遵守以下做法即可自由使用、传播、复制和修改：
+采用GPL 2.0协议发布，只要您遵守以下做法即可自由使用、传播、复制和修改：
 - 保留作者署名和文章出处链接
 - 如做修改，请注明
-- 后续版本保持GPL协议发布**
+- 后续版本保持GPL协议发布
 
 
 This repository also contains a gh-pages which is under construction...
