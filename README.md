@@ -36,14 +36,13 @@
 	+ [政府信息公开复议和诉讼指导手册（第一辑）](https://github.com/mdrights/mirror-CN/blob/master/%E6%89%8B%E5%86%8C%E5%92%8C%E6%8C%87%E5%8D%97/%E6%94%BF%E5%BA%9C%E4%BF%A1%E6%81%AF%E5%85%AC%E5%BC%80%E5%A4%8D%E8%AE%AE%E4%B8%8E%E8%AF%89%E8%AE%BC%E6%8C%87%E5%AF%BC%E6%89%8B%E5%86%8C%EF%BC%88%E7%AC%AC%E4%B8%80%E8%BE%91%EF%BC%89.pdf)  
 	+ [公众参与立法技术手册](https://github.com/mdrights/mirror-CN/blob/master/%E6%89%8B%E5%86%8C%E5%92%8C%E6%8C%87%E5%8D%97/%E5%85%AC%E4%BC%97%E5%8F%82%E4%B8%8E%E7%AB%8B%E6%B3%95%E6%8A%80%E6%9C%AF%E6%89%8B%E5%86%8C%20pdf.pdf)
 
-<br>
-### 总有一种方法适合你
-<br>
 
-	+ 申请政府信息公开  [[案例]()]
-	+ 规范性文件审查    [[案例]()]
-	+ 建议信           [[案例]()]
-	+ 行政复议和诉讼    [[案例]()]
+### 总有一种方法适合你
+
++ 申请政府信息公开  [[案例](https://github.com/mdrights/mirror-CN/tree/master/%E7%94%B3%E8%AF%B7%E6%94%BF%E5%BA%9C%E4%BF%A1%E6%81%AF%E5%85%AC%E5%BC%80%E6%A1%88%E4%BE%8B)]
++ 规范性文件审查    [[案例](https://github.com/mdrights/mirror-CN/tree/master/LRL%E8%A7%84%E8%8C%83%E6%80%A7%E6%96%87%E4%BB%B6%E5%AE%A1%E6%9F%A5)]
++ 建议信           [[案例](https://github.com/mdrights/mirror-CN/tree/master/%E5%BB%BA%E8%AE%AE%E4%BF%A1)]
++ 行政复议和诉讼    [[案例](https://github.com/mdrights/mirror-CN/tree/master/%E8%A1%8C%E6%94%BF%E8%AF%89%E8%AE%BC)]
 
 
 
