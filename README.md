@@ -51,13 +51,15 @@
 
 ### 专题
 
-整个平台现在reframe了！新的文件结构以“专题”呈现（并附带一个研究项目），以期收集一些对生产生活影响严重但不易被发现和找到的规范性文件（俗称“红头文件”）。  
-+ [28个特大或热点城市的影响/控制人口流动的公共政策](https://github.com/mdrights/mirror-CN/tree/master/28%E7%9C%81%E5%B8%82%E4%BA%BA%E5%8F%A3%E6%94%BF%E7%AD%96%E6%95%B0%E6%8D%AE)，分析其如何给每一个拆那人带来基本公共服务权利的剥夺。
-+ 一些全国性（国务院或其部委）发布的法规、规范性文件，放在专题里（这些领域的规定/限制很大程度有一些零散的政策文件决定），如：  
+整个平台现在reframe了！，以期收集一些对生产生活影响严重但不易被发现和找到的规范性文件（俗称“红头文件”）。  
++ [影响/控制人口流动的公共政策](https://github.com/mdrights/mirror-CN/tree/master/28%E7%9C%81%E5%B8%82%E4%BA%BA%E5%8F%A3%E6%94%BF%E7%AD%96%E6%95%B0%E6%8D%AE)，分析其如何给每一个拆那人带来基本公共服务权利的剥夺。  
+
+### 规范性文件专栏
++ 这里放一些全国性（国务院或其部委）发布的法规规章、规范性文件（只是冰山一角），它们往往不易记住不易被查找。在这里你可以了解居民在墙国生活的方方面面是如何受这些政策文件影响，以及如何缺少公众参与的：  
 	+ [义务教育和升学](https://github.com/mdrights/mirror-CN/tree/master/%E4%B8%93%E9%A2%98-%E4%B9%89%E5%8A%A1%E6%95%99%E8%82%B2%E4%B8%8E%E5%8D%87%E5%AD%A6)  
 	+ [社会保险](https://github.com/mdrights/mirror-CN/tree/master/%E4%B8%93%E9%A2%98-%E7%A4%BE%E4%BC%9A%E4%BF%9D%E9%99%A9)
 	+ [人口户籍](https://github.com/mdrights/mirror-CN/tree/master/%E4%B8%93%E9%A2%98-%E4%BA%BA%E5%8F%A3%E6%88%B7%E7%B1%8D)
-	+ [城市规划](https://github.com/mdrights/mirror-CN/tree/master/%E4%B8%93%E9%A2%98-%E5%9F%8E%E5%B8%82%E8%A7%84%E5%88%92-%E5%9C%9F%E5%9C%B0%E6%88%BF%E4%BA%A7)
+	+ [城市规划（需要点index.html查看文件名](https://github.com/mdrights/mirror-CN/tree/master/%E4%B8%93%E9%A2%98-%E5%9F%8E%E5%B8%82%E8%A7%84%E5%88%92-%E5%9C%9F%E5%9C%B0%E6%88%BF%E4%BA%A7)
 	+ [环境和环评](https://github.com/mdrights/mirror-CN/tree/master/%E4%B8%93%E9%A2%98-%E7%8E%AF%E5%A2%83%E4%B8%8E%E7%8E%AF%E8%AF%84)
 
 
