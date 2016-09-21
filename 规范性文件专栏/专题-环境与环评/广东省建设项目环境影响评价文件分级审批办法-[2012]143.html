@@ -1,0 +1,564 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="channel" content="广东省人民政府办公厅"/>
+<meta name="keywords" content="" />
+<meta name="author" content="广东省政府网" />
+<meta name="pubdate" content="2012年12月07日"/>
+<title>广东省人民政府关于印发广东省建设项目环境影响评价文件分级审批办法的通知</title>
+<style>
+.topLine{
+	height:6px;
+	overflow:hidden;
+	border-top:4px solid #F32F30;
+	border-bottom:1px solid #F32F30;
+}
+.docTitle{
+	font-weight:bold;
+	font-size:18px;
+	color:#F32F30;
+	white-space:nowrap;
+	text-align:center;
+	margin:20px 0px 30px;
+}
+</style>
+<style id="MyStyle">
+.content P,.content Table , .content TD,.content SPAN{
+	TEXT-DECORATION: none;
+	word-break:break-all !important;
+	word-wrap:break-word !important;
+	font-family:楷体
+}
+.content Table{
+	/*table-layout:fixed;*/
+        table-layout:auto;
+}
+.separator{
+	color:#F32F30;
+	BORDER-BOTTOM-STYLE: dotted; BORDER-LEFT-STYLE: dotted; BORDER-RIGHT-STYLE: dotted; BORDER-TOP-STYLE: dotted;
+	font-weight:none;
+	display:none;
+}
+.appendix{
+	display:none;
+}
+</style>
+<SCRIPT language=JavaScript>
+	<!--
+
+		//运行高亮显示检索词的逻辑
+		function runDaubLogic() {
+
+			//以下一块为从refer中获取searchWord的逻辑
+			//***********************************************
+			//检索结果页面的url
+			//var refer = document.referrer.toLowerCase();
+	
+			//if (isNull(refer)) {
+			//	return;
+			//}
+			//var searchWord = getSearchWord(refer);
+			//***********************************************
+			var finalUrl=window.location.href;
+			var re=/keywords=/;
+				re.exec(finalUrl);
+			var sTitle=RegExp.rightContext;
+
+			var searchWord = sTitle;
+			if (isNull(searchWord)) {
+				return;
+			}
+			var array = transStr2Array(searchWord);
+			if (array.length == 0) {
+				return;
+			}
+			var element = getElementToDaub();
+			if (element == null || typeof (element) == "undefined") {
+				return;
+			}
+			daubElementAll(element, array);
+		}
+		
+		
+		//array为检索词的数组，ele为存储正文内容的元素
+		function daubElementAll(ele, array) {
+			if (array == null || array.length == 0) {
+				return;
+			}
+			var colors = getColorArray();
+			for (var i = 0; i < array.length; i++) {
+				daubElement(ele, array[i], colors[i % 5]);
+			}
+			ele.innerHTML = replaceAll(replaceAll(ele.innerHTML, "<tianjige>", ""), "</tianjige>", "");
+		}
+
+
+		//获取存放文章正文的元素
+		function getElementToDaub() {
+			var elements = document.getElementsByTagName("*");
+			if (elements == null || elements.length == 0) {
+				return null;
+			}
+			for (var i = 0; i < elements.length; i++) {
+				if (elements[i] == null || typeof (elements[i]) != "object") {
+					continue;
+				}
+				if (isNull(elements[i].className)) {
+					continue;
+				}
+				if (elements[i].className.indexOf("content") != -1) {
+					return elements[i];
+				}
+			}
+			return null;
+		}
+
+
+		//获取高亮显示的颜色数组。检索词可能有多个，用不同颜色进行高亮显示。如：第一个词语全部用red颜色，第二个词语显示为orange……
+		function getColorArray() {
+			return ["red", "orange", "pink", "grey", "blue"];
+		}
+
+
+		//将文章正文中包含的某词语进行高亮显示。ele为存储正文内容的元素，word为要高亮显示的词语，color为高亮显示的颜色
+		function daubElement(ele, word, color) {
+			if (word == null || word == "") {
+				return;
+			}
+			var colorWord = "<font color=\"" + color + "\">" + word + "</font>";
+			var eles = ele.childNodes;
+			for (var i = 0; i < eles.length; i++) {
+				e = eles[i];
+				if (e.nodeType == 3) {
+					if (e.data.indexOf(word) == -1) {
+						continue;
+					}
+					var reg = new RegExp("(" + word + ")", "gi");
+					var objResult = document.createElement("tianjige");
+					objResult.innerHTML = e.data.replace(reg, "<font color='" + color + "'>$1</font>");
+					if (e.data == objResult.childNodes[0].innerHTML) {
+						continue;
+					}
+					ele.replaceChild(objResult, e);
+				} else {
+					if (e.nodeType == 1) {
+						daubElement(e, word, color);
+					}
+				}
+			}
+		}
+
+
+		//获取检索词
+		function getSearchWord(refer) {
+			domain = getDomainName(refer);
+			var searchWord = "";
+			if (domain.indexOf("google") > 0) {
+				refer = decodeURI(refer);
+				return getParameter(refer, "g");
+			} else {
+				if (domain.indexOf("baidu") > 0) {
+					searchWord = getParameter(refer, "word");
+					if (isNull(searchWord)) {
+						searchWord = getParameter(refer, "wd");
+					}
+					if (isNull(searchWord)) {
+						searchWord = getParameter(refer, "kw");
+					}
+					return searchWord;
+				} else {
+					if (domain.indexOf("home.news.cn") > 0 || domain.indexOf("xinhuanet.com")) {
+						if (domain.indexOf("forum") != -1 || domain.indexOf("view") != -1) {
+						} else {
+							refer = decodeURI(refer);
+							searchWord = getParameter(refer, "sw");
+							select = getParameter(refer, "select");
+							if (select == null || (select != "2" && select != "1" && select != "3")) {
+								searchWord = "";
+							}
+							if (isNull(searchWord)) {
+								searchWord = getParameter(refer, "content");
+							}
+						}
+						return searchWord;
+					}
+				}
+			}
+		}
+
+		//判断字符串是否为空
+		function isNull(str) {
+			if (str == null) {
+				return true;
+			}
+			if (str == "") {
+				return true;
+			}
+			return false;
+		}		
+
+		//定义获取元素的简易方法
+		if(!$) {
+			function $(id){
+				return document.getElementById(id);
+			}
+		}
+
+		
+		//将字符串变为数组
+		function transStr2Array(str) {
+			if (str == null || str == "") {
+				return [];
+			}
+			str = replaceAll(str, "++", "+");
+			while (str.indexOf(0) == "+") {
+				str = str.substring(1);
+			}
+			while (str.indexOf(str.length) == "+") {
+				str = str.substr(0, str.length - 1);
+			}
+			return str.split("+");
+		}
+
+		//获取URL上的参数,get方法
+		function getParameter(requestURL, parameterName) {
+			var index = requestURL.indexOf(parameterName + "=");
+			if (index <= 0) {
+				return "";
+			}
+			var begin = index + parameterName.length + 1;
+			var end = requestURL.indexOf("&", begin);
+			if (end < begin) {
+				return requestURL.substring(begin);
+			}
+			return requestURL.substr(begin, end - begin);
+		}
+
+		//获取引用此js的域名
+		function getDomainName(requestURL) {
+			if (requestURL.indexOf("http://") == 0) {
+				var end = requestURL.indexOf("/", 7);
+				return requestURL.substr(7, end - 7);
+			}
+			return "";
+		}
+
+		//获取引用该js的页面名
+		function getUriName(requestURL) {
+			var index = requestURL.lastIndexOf("/");
+			if (index > 0) {
+				var end = requestURL.indexOf("?", index);
+				if (end > index) {
+					return requestURL.substr(index + 1, end - index - 1);
+				}
+				return requestURL.substring(index + 1);
+			}
+			return "";
+		}
+
+		//将字符串中的s1字串全部换成s2
+		function replaceAll(str, s1, s2) {
+			if (s1.length > 0 && str.indexOf(s1) != -1) {
+				if (s1.length == 1) {
+					return str.replace(new RegExp(s1, "g"), s2);
+				}
+				return str.replace(new RegExp(s1, "gm"), s2);
+			}
+			return str;
+		}
+
+		//去掉字符串量边的空格
+		function trim(str) {
+			while (str.charAt(0) == " ") {
+				str = str.substring(1);
+			}
+			while (str.charAt(str.length - 1) == " ") {
+				str = str.substring(0, str.length - 1);
+			}
+			return str;
+		}
+
+
+	//-->
+	</SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function createPageHTML(_nPageCount, _nCurrIndex, _sPageName, _sPageExt){
+	if(_nPageCount == null || _nPageCount<=1){
+		return;
+	}
+
+	var nCurrIndex = _nCurrIndex || 0;
+	if(nCurrIndex == 0)
+		document.write("1&nbsp;");
+	else
+		document.write("<a href=\""+_sPageName+"."+_sPageExt+"\">1</a>&nbsp;");
+
+	for(var i=1; i<_nPageCount; i++){
+		if(nCurrIndex == i)
+			document.write((i+1) + "&nbsp;");
+		else
+			document.write("<a href=\""+_sPageName+"_" + i + "."+_sPageExt+"\">"+(i+1)+"</a>&nbsp;");
+	}
+}
+-->
+</SCRIPT>
+
+
+
+<!-- 标题上是否显示页码的函数 -->
+<SCRIPT LANGUAGE="JavaScript">
+
+
+<!--
+function createIndexHTML(_nPageCount, _nCurrIndex){
+	if(_nPageCount == null || _nPageCount<=1){
+		return;
+	}
+
+	var nCurrIndex = _nCurrIndex || 0;
+	document.write("("+(nCurrIndex+1)+")");	
+}
+-->
+</SCRIPT>
+<!-- 细览分页的js代码....结束 -->
+<link href="../../css/detail.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="../../css/print.css" rel="stylesheet" media="print" type="text/css" />
+<script language="javascript">
+<!--
+    //设置页面可以编辑
+    document.onkeydown = function(event){
+        event = window.event || event;
+        if(event.keyCode == 69){//69->e
+            var sURL = '/wcm/WCMV6/metadata/application/39/govinfo_edit.jsp?ObjectId=357933&channelId=334'
+            window.open(sURL);
+        }
+    };
+//-->
+</script>
+</head>
+
+<body>
+<div class="container" id="gkml">
+    <div class="header"><iframe src=" http://www.gd.gov.cn/govinc/gkmlhead/default.htm" width="980" height="245" scrolling="no" frameborder="0"></iframe></div>
+    <div class="main">
+        <!--div class="rowOfCurrentPosition">
+            当前位置：文体综合类 &gt; 通知公告公示123
+        </div-->
+		<div class="headInfo" style="position:relative;">
+		<table border=0 cellspacing=0 cellpadding=0 style="width:90%;" id="headContainer">
+		<tbody>
+			<tr>
+				<td colspan="2">
+					<table border=0 cellspacing=0 cellpadding=0>
+						<tr>
+							<td width="50%"><B>索 引 号:</B>006939748/2012-01127</td>
+							<td>
+								<B>分类:</B>
+								<span id="lSubcat">城乡建设、环境保护&nbsp;<!--;&nbsp;通知--></span>
+							</td>
+						</tr>
+					</table>				
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<table border=0 cellspacing=0 cellpadding=0>
+						<tr>
+							<td width="50%">
+								<B>发布机构:</B> 
+								<span>广东省人民政府</span>							
+							</td>
+							<td>
+								<B>发文日期:</B>
+								<span>2012年12月07日</span>								
+							</td>
+						</tr>
+					</table>				
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<B>名　　称:</B> 
+					<span id="lTitle">广东省人民政府关于印发广东省建设项目环境影响评价文件分级审批办法的通知</span>
+		            
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<table border=0 cellspacing=0 cellpadding=0>
+						<tr>
+							<td width="50%">
+								<B>文　　号:</B> 
+								<span>粤府〔2012〕143号</span>					           
+							</td>
+							<td>
+								<B>公报期号:</B> 
+								<span></span>							
+							</td>
+						</tr>
+					</table>				
+				</td>
+			</tr>	
+			<!--<tr>
+				<td colspan="2">
+				<b>内容提要:</b>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<span></span>					
+				</td>
+			</tr>-->
+		</tbody>
+		</table>
+		</div>        
+	<OBJECT   id="WebBrowser"   classid="CLSID:8856F961-340A-11D0-A96B-00C04FD705A2"   height="0"   width="0"></OBJECT> 	
+        <div class="mainContainer">
+			
+			<div class="content"  id="ContentRegion"  style="overflow-x:auto;width:960;padding-bottom:30px">				
+				<CENTER><BR>
+<TABLE class=" FCK__ShowTableBorders"><BR>
+<TBODY>
+<TR align=middle>
+<TD><IMG src="./W020121212376559840540.gif" _fcksavedurl="http://www.gd.gov.cn/image/yf.gif" OLDSRC="W020121212376559840540.gif" /><BR><BR></TD></TR><BR>
+<TR align=middle>
+<TD><FONT size=4>粤府〔2012〕143号</FONT></TD></TR><BR>
+<TR align=middle>
+<TD><FONT color=#ff0000>
+<H3>━━━━━━━━━━━━━━━━━━━━━━━━━━━</H3></FONT></TD></TR><BR></TBODY></TABLE><BR>
+<CENTER>
+<TABLE class=" FCK__ShowTableBorders" width="80%">
+<TBODY>
+<TR>
+<TD>
+<P>&nbsp;</P>
+<P align=center><STRONG>广东省人民政府关于印发广东省建设项目</STRONG></P>
+<P align=center><STRONG>环境影响评价文件分级审批办法的通知</STRONG></P>
+<P>&nbsp;</P>
+<P>各地级以上市人民政府，各县（市、区）人民政府，省政府各部门、各直属机构：</P>
+<P>　　现将《广东省建设项目环境影响评价文件分级审批办法》印发给你们，请认真贯彻执行。执行中遇到的问题，请径向省环境保护厅反映。</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　广东省人民政府</P>
+<P>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　2012年12月7日</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P align=center><STRONG>广东省建设项目环境影响评价文件</STRONG></P>
+<P align=center><STRONG>分级审批办法</STRONG></P>
+<P>&nbsp;</P>
+<P>　　<STRONG>第一条</STRONG>　为进一步规范我省建设项目环境影响评价文件分级审批管理工作，提高建设项目环境保护管理效能，根据《中华人民共和国环境保护法》、《中华人民共和国环境影响评价法》、《建设项目环境保护管理条例》（国务院令第253号）、《建设项目环境影响评价文件分级审批规定》（环境保护部令第5号）、《广东省建设项目环境保护管理条例》等规定，结合我省实际，制定本办法。</P>
+<P>　　<STRONG>第二条</STRONG>　本办法所称环境影响评价文件包括环境影响报告书、环境影响报告表和环境影响登记表。</P>
+<P>　　<STRONG>第三条</STRONG>　建设项目环境影响评价文件的分级审批权限，原则上按照建设项目所处区域环境敏感程度及其对环境的影响性质和程度确定。</P>
+<P>　　县级以上环境保护行政主管部门（以下简称环保部门）按照规定的权限审批建设项目环境影响评价文件。建设项目所在地环保部门应积极配合上级环保部门的审批工作，并配合开展对该项目的环保监管工作。</P>
+<P>　　<STRONG>第四条</STRONG>　建设项目的环境影响评价文件未经有审批权的环保部门审查或者审查后未予批准的，建设单位不得开工建设。</P>
+<P>　　<STRONG>第五条</STRONG>　省环保部门负责审批跨地级以上市行政区域的建设项目、重污染行业项目和可能在重点区域、重点流域造成重大环境影响的建设项目（按规定由国家环保部门审批的除外）。具体名录由省环保部门依法制订、调整和发布。</P>
+<P>　　<STRONG>第六条</STRONG>　地级以上市环保部门负责审批下列建设项目环境影响评价文件（按规定由国家和省环保部门审批的除外）：</P>
+<P>　　（一）按规定应当编制环境影响报告书的电力、水利、石油、天然气、化工、轻工、纺织化纤、汽车、船舶、电子、制药（化学药品制造除外）、选矿、非金属矿开采、水泥粉磨站、高速公路、轨道交通、水运、生活垃圾处理处置、医疗废物处理处置、污泥处理处置、日处理规模5万吨以上污水处理等项目；</P>
+<P>　　（二）在经审批的重污染行业统一定点基地内建设的印染（设漂染工序）和电镀（含配套电镀工序）项目；</P>
+<P>　　（三）销售、使用Ⅳ类、Ⅴ类放射源及生产、销售、使用Ⅲ类射线装置的核技术应用项目，不跨市行政区域的110千伏以上、220千伏以下送（输）变电项目，广播电视发射台、无线电台、雷达系统等按规定应编制环境影响报告表的电磁辐射项目；</P>
+<P>　　（四）跨县级行政区域的项目；</P>
+<P>　　（五）可能造成跨县级行政区域环境不良影响，有关环保部门对环境影响评价结论有争议的项目；</P>
+<P>　　（六）其他在地级以上市范围内可能造成较大环境影响的项目。</P>
+<P>　　具体名录由各地级以上市环保部门依法制订，并报省环保部门审查同意后发布实施。</P>
+<P>　　<STRONG>第七条</STRONG>　县级环保部门负责审批本办法第五、六条以外的建设项目的环境影响评价文件。</P>
+<P>　　<STRONG>第八条</STRONG>　各级建设项目环境影响评价文件审批名录实行动态评估、管理和调整。</P>
+<P>　　<STRONG>第九条</STRONG>　地级以上市和县级环保部门不得审批重污染行业统一定点基地外的化学制浆、电镀（含配套电镀工序）、印染（设漂染工序）、鞣革、危险废物处置等重污染行业项目。</P>
+<P>　　<STRONG>第十条</STRONG>　有审批权的环保部门在审批建设项目环境影响评价文件时，可要求下一级环保部门提出初审意见。下一级环保部门应在收到环境影响评价文件之日起10个工作日内提出初审意见，逾期视为同意。</P>
+<P>　　由国家和省环保部门审批的建设项目环境影响评价文件，项目所在地地级以上市环保部门应在前款规定的期限内提出初审意见，逾期视为同意。</P>
+<P>　　<STRONG>第十一条</STRONG>　纳入专项规划或区域性开发规划的建设项目，在专项规划或区域性开发规划环境影响报告书经有审查权的环保部门审查通过后，其环境影响评价文件的审批权限可适当下放，具体由有审批权的环保部门确定。</P>
+<P>　　<STRONG>第十二条</STRONG>　上级环保部门对下级环保部门超越法定职权、违反法定程序作出的环境影响评价文件审批决定，可以依法予以撤销。对相关责任人员，由任免机关或者纪检监察机关依法依规追究责任。</P>
+<P>　　<STRONG>第十三条</STRONG>　各地级以上市和县级环保部门应定期将其负责审批的建设项目环境影响评价文件的审批情况报送上一级环保部门备案。具体备案管理办法由省环保部门制订。</P>
+<P>　　<STRONG>第十四条</STRONG>　建设项目环境影响评价文件审批的分级管理，法律、法规、规章另有规定的，从其规定。</P>
+<P>　　<STRONG>第十五条</STRONG>　本办法自2013年1月1日起施行。省人民政府《印发广东省建设项目环境影响评价文件分级审批管理规定的通知》（粤府〔2009〕104号）同时废止。</P></TD></TR></TBODY></TABLE></CENTER></CENTER></br>
+<SCRIPT LANGUAGE="JavaScript">
+createPageHTML(1, 0, "t20121212_357933", "html");	
+</SCRIPT><br />
+			<ul>				
+						
+			</ul>
+			<ul>				
+						
+			</ul>
+			<ul>				
+						
+			</ul>
+			<ul>				
+						
+			</ul>		
+			<ul>				
+						
+			</ul>		
+			<ul>				
+						
+			</ul>
+			<ul>				
+						
+			</ul>
+			<ul>				
+						
+			</ul>
+			<ul>				
+						
+			</ul>
+			<ul>				
+						
+			</ul>
+			<ul>				
+						
+			</ul>
+			<ul>				
+						
+			</ul>
+			<ul>				
+						
+			</ul>
+			<ul>				
+						
+			</ul>
+			<ul>				
+						
+			</ul>
+			<ul>				
+						
+			</ul>
+			<ul>				
+						
+			</ul>
+			<ul>				
+						
+			</ul>
+			<ul>				
+						
+			</ul>
+			<ul>				
+						
+			</ul>			
+			</div>
+			
+			<div class="noprint" style="width:100%;overflow:hidden;border-bottom:1px solid gray;margin:8px 40px"></div>
+
+			<div class="noprint" style="text-align:center;margin:8px 0px">
+				<table style="font-size:12px">
+				 <!--<td>
+				  【字体：<a href="#" onclick="setSize('24px');" class="navy">大</a> <a href="#" onclick="setSize('16px');" class="navy">中</a> <a href="#" onclick="setSize('12px');" class="navy">小</a>】</td>
+				<td align="right" width="10"></td>-->
+				<td width="60"><iframe name="vv" id="vv" src="../../images/sendMail.htm?title=广东省人民政府关于印发广东省建设项目环境影响评价文件分级审批办法的通知&url=http://zwgk.gd.gov.cn/006939748/201212/t20121212_357933.html" frameborder=0 height=50 width=60  scrolling="no"></iframe></td>
+				<td width="80"><a href="#" onclick="document.all.WebBrowser.ExecWB(4,1)"><img src="../../images/save.gif" border=0 /></a></td>
+				<td width="80"><a href="#" onclick="javascript:window.print()"><img src="../../images/openpage.gif" border=0 /></a></td>
+				<td width="80"><a href="#" onclick="window.close()"><img src="../../images/close.gif" border=0 /></a></td>
+				</tr>
+				</table>
+			</div>
+		</div>
+
+    </div>
+    <iframe src="http://www.gd.gov.cn/govinc/gkmlfoot/default.htm" width="980" height="155" scrolling="no" frameborder="0"></iframe></div>
+<SCRIPT>runDaubLogic();</SCRIPT>
+</body>
+</html>

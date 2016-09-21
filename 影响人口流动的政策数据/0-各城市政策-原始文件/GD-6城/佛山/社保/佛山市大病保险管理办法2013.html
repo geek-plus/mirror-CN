@@ -1,0 +1,412 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../../../images/font.css">
+    <link rel="stylesheet" type="text/css" href="../../../../images/style.css">
+    <script type="text/javascript" src="../../../../images/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="../../../../images/jq.cookie.js"></script>
+    <script type="text/javascript" src="../../../../images/animate.js"></script>
+    <script type="text/javascript" src="../../../../images/dataCheck.js"></script>
+    <title>政策法规-佛山社保信息网</title>
+</head>
+
+
+
+<body>
+   
+
+        <!-- top -->
+        <!-- 头部-->
+<style>
+    .toplink{width: 326px;}
+    .imglink{margin-left:2px ; width: 25px;height: 25px;float: left;}
+</style>
+<div>
+        <div class="topBG">
+            <div class="commonWidth makecenter">
+            <div class="toplink floatRight">
+                <div class="oldPage floatLeft">
+                    <a href="../../../../">返回首页</a>
+                    <span>|</span>
+
+                    <a href="javascript:;" onClick="setHomePege(this);" >设为主页</a>
+                    <span>|</span>
+                    <a href="javascript:;" onClick="addfavorite();" >加入收藏</a>
+                </div>               
+                <div class="imglink"><a href="http://weibo.com/u/2931846972" title="微博" target="blank"><img src="../../../../images/weibo.jpg" alt="微博" width="25" height="25" /></a></div> 
+                <div class="imglink"><a href="http://www.fssi.gov.cn/sbzx/sbdt/201602/t20160216_5522739.html" title="微信" target="blank"><img src="../../../../images/weixin.png" alt="微信" width="25" height="25" /></a></div>              
+            </div>
+
+                <div class="clear"></div>
+
+                <form  action="http://219.130.221.60:8084/was5/web/search" method="post" name="searchform" target="_blank" >
+                 <input style="display:none" id="channelid" name="channelid" value="299205" /> 
+                <div class="searchFrame floatRight">
+                    <div class="floatLeft"><input name="searchword" style="border:none" id="schText" class="inputFrame" type="text" placeholder="输入关键字搜索" onkeypress="enterCheck(event);" onkeydown="if(event.keyCode==13){document.getElementById('bt').click();return false;}" /></div>
+                    <input id="hiddenText1" type="text" style="display:none" />
+                    <div class="floatLeft"><span id="bt" class="schIcon" onclick="document.searchform.submit();document.charset='utf-8';"></span></div>
+                    <div class="clear"></div>
+                </div>
+                </form>
+
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <div class="navBG">
+            <div class="topWidth makecenter" style="position:relative;">
+                <span class="topLnk fuzhu">
+                <a class="title" href="../../../../">首&nbsp;&nbsp;页</a>
+                </span>
+                <span class="topGap">|</span>
+                <span class="topLnk">
+                    <a class="title" href="../../../../zwgk/">政务公开</a>
+
+                    <span class="menu01">
+                        
+                        <a href="../../../../zwgk/xxgkml/" target="_blank">信息公开目录</a>
+                        
+                        <a href="../../../../zwgk/jgzn/" target="_blank">机构职能</a>
+                        
+                        <a href="../../../../zwgk/xzxg/" target="_blank">新政新规</a>
+                        
+                        <a href="../../../../zwgk/ghjh/" target="_blank">规划计划</a>
+                        
+                        <a href="../../../../zwgk/cgxx/" target="_blank">采购信息</a>
+                        
+                        <a href="../../../../zwgk/rsrm/" target="_blank">人事任免</a>
+                        
+                        <a href="../../../../zwgk/ryzl/" target="_blank">人员招录</a>
+                        
+                        <a href="../../../../zwgk/yjgl/" target="_blank">应急管理</a>
+                        
+                        <a href="../../../../zwgk/lxfs/" target="_blank">联系方式</a>
+                        
+                    </span>
+                </span>
+                
+
+                <span class="topGap">|</span>
+                <span class="topLnk">
+                    <a class="title" href="../../../../sbzx/">社保资讯</a>
+
+                    <span class="menu02">                
+                     
+                     <a href="../../../../sbzx/sbdt/" target="_blank">社保动态</a>
+                     
+                     <a href="../../../../sbzx/rdzt/" target="_blank">热点专题</a>
+                     
+                     <a href="../../../../sbzx/tzgg/" target="_blank">通知公告</a>
+                     
+                 </span>
+             </span>
+
+
+             <span class="topGap">|</span>
+             <span class="topLnk">
+                <a class="title" href="../../../">业务办理</a>
+
+                <span class="menu03">                
+                    
+                    <a href="../../../ylbx/" target="_blank">养老保险</a>
+                    
+                    <a href="../../" target="_blank">医疗保险</a>
+                    
+                    <a href="../../../gsbx/" target="_blank">工伤保险</a>
+                    
+                    <a href="../../../sybx_1090265/" target="_blank">生育保险</a>
+                    
+                    <a href="../../../sybx/" target="_blank">失业保险</a>
+                    
+                    <a href="../../../zhbx/" target="_blank">综合保险</a>
+                    
+                </span>
+            </span>
+
+
+            <span class="topGap">|</span>
+            <span class="topLnk">
+                <a class="title" href="../../../../hdjl/">互动交流</a>
+
+                <span class="menu04">                
+                    
+                    <a href="../../../../hdjl/wsdc/" target="_blank">网上调查</a>
+                    
+                    <a href="../../../../hdjl/yjzj/" target="_blank">意见征集</a>
+                    
+                    <a href="../../../../hdjl/zxft/" target="_blank">在线访谈</a>
+                    
+                    <a href="http://wz.foshan.gov.cn/wlfyr/sdzjg/srlzyhshbzj/" target="_blank">网络发言人平台</a>
+                    
+                </span>
+            </span>
+
+
+            <span class="topGap">|</span>
+            <span class="topLnk">
+                <a class="title" href="../../../../bmfw/">便民服务</a>
+
+                <span class="menu05">                
+                    
+                    <a href="../../../../bmfw/jfbz/" target="_blank">缴费标准</a>
+                    
+                    <a href="../../../../bmfw/cjwt/" target="_blank">常见问题</a>
+                    
+                    <a href="http://61.142.213.86:8089/fswb/" target="_blank">社保卡查询</a>
+                    
+                    <a href="http://61.142.213.86/grwssb/" target="_blank">个人社保信息查询</a>
+                    
+                    <a href="http://www.gdhrss.gov.cn/sofpro/otherproject/yaopin/yaopin.jsp" target="_blank">医疗保险药品查询</a>
+                    
+                    <a href="../../../../bmfw/ddyljgcx/" target="_blank">定点医疗机构查询</a>
+                    
+                    <a href="http://61.142.213.86/checkprint/default.jsp" target="_blank">参保证明</a>
+                    
+                    <a href="../../../../bmfw/mnjs/" target="_blank">模拟计算</a>
+                    
+                </span>
+            </span>
+            <div id="floatbar" style="position:absolute; width:30px; height:244px; top:62px; left:-50px;"><img src="../../../../images/floatbar.png" /></div>
+            <div id="floatbar1" style="position:absolute; width:60px; height:220px; top:62px; right:-80px;"><a href="http://my.fs.cn" target="_blank"><img src="../../../../images/floatbar1.png" width="60" height="220" /></a></div>
+        </div>
+    </div>
+</div>
+<script>
+    $(".fuzhu").hover(function(){
+       $(".fuzhu").css("background-color","#fff")},
+        function(){$(".fuzhu").css("background-color","#004ba8")})
+</script>
+  <script type="text/javascript"> 
+                    $(function () {
+                        liShowHide("liNav");
+                //var tabTop = new tabOver("bannerTab", "bannerImg", "bannerPage", "banner");
+//              var tab1 = new tabOver("inTab", "inCtx1", "inCtx2");
+                //var tab2 = new tabOver("plyTab", "plyCtx1", "plyCtx2");
+
+
+
+                if ($("#lnkTitle").children().length == 0) {
+                    $("#lnkTitle").hide();
+                }
+
+                //bottomCheck
+                var bc = new dataCheck();
+                
+                //bc.bottomCheck();
+
+
+                //floatbar\floatbar1
+                var fb = $("#floatbar");
+                var fb1 = $("#floatbar1");
+                var win = $(window);
+                win.scroll(function () {
+                    var t = win.scrollTop();
+                    if (t > 200) t -= 200;
+                    else t = 0;
+
+                    var newT = 62 + t;
+                    fb.css("top", newT+"px");
+                    fb1.css("top", newT+"px");
+                });            
+                
+
+                    
+
+            function search() {
+                var tVal = $("#schText").val();
+                if (tVal != "") {
+                    location.href = "search.aspx?key=" + escape(tVal);
+                    
+                } else {
+                    alert("请输入搜索关键字");
+                }
+            }
+
+            function enterCheck(e) {
+                var keynum;
+                if (window.event) {
+                    keynum = e.keyCode;
+                }
+                else if (e.which) {
+                    keynum = e.which;
+                }
+                if (keynum == 13) {                 
+                    search();
+                    
+                }
+            }
+   });
+        </script>
+
+        <!-- end of top -->
+
+
+
+
+        
+    <!-- main -->
+    <div class="main">
+
+        <div class="commonWidth ctxFrame">
+            <div class="position">
+                <span class="posIcon"></span>
+                <span>你当前所在的位置：</span>
+                        <a href="../../../../" target="_blank" title="首页" class="CurrChnlCls">首页</a>&gt;<a href="../../../" target="_blank" title="业务办理" class="CurrChnlCls">业务办理</a>&gt;<a href="../../" target="_blank" title="医疗保险" class="CurrChnlCls">医疗保险</a>&gt;<a href="../" target="_blank" title="政策法规" class="CurrChnlCls">政策法规</a>
+            </div>
+
+            <div class="articleFrame makecenter">
+                <div class="artTitle">关于印发佛山市大病保险管理办法的通知</div>
+
+                <div class="artInfo">发布单位： 市社保基金管理局&nbsp;&nbsp; 发布时间：2013-07-01</div>
+
+                <div class="artCtx">
+                <div style="layout-grid:  15.6pt none" class="Section0">
+<p style="line-height: 28pt; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">各区人民政府，市政府各部门、直属各机构：</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">《佛山市大病保险管理办法》业经市人民政府同意，现印发给你们，请认真贯彻执行。执行过程中遇到的问题，请径向市人力资源社会保障局反映。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; letter-spacing: -0.3pt; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; letter-spacing: -0.3pt; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 248pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; letter-spacing: -0.3pt; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 佛山市人民政府办公室</span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 248pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; letter-spacing: -0.3pt; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; </span><span style="font-family: '仿宋_GB2312'; letter-spacing: -0.3pt; font-size: 16pt; mso-spacerun: 'yes'">2013年5月17日</span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 248pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; letter-spacing: -0.3pt; font-size: 16pt; mso-spacerun: 'yes'" /><span style="font-family: '仿宋_GB2312'; letter-spacing: -0.3pt; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; line-height: 28pt; margin-top: 0pt; margin-bottom: 0pt; margin-right: 1.2pt" class="p0"><span style="font-family: '仿宋_GB2312'; letter-spacing: -0.3pt; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: center; line-height: 28pt; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '方正小标宋简体'; font-size: 22pt; mso-spacerun: 'yes'">佛山市大病保险管理办法</span><span style="font-family: '方正小标宋简体'; font-size: 22pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: center; line-height: 28pt; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'">第一章&nbsp;&nbsp;总&nbsp;&nbsp;则</span><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第一条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;为进一步完善本市医疗保障制度，健全多层次医疗保障体系，有效提高医疗保障水平，根据</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">省府办公厅</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">《印发广东省深化城乡医疗保障体制改革方案的通知》（粤府办〔2012〕19号）、《广东省人民政府关于印发“十二五”期间深化医药卫生体制改革实施方案的通知》（粤府〔2012〕154号）和《广东省人民政府</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">办公厅</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">关于印发开展城乡居民大病保险工作实施方案（试行）的通知》（粤府办〔2013〕134号）等文件要求，结合本市实际，制</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">订</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">本办法。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二条&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;本办法适用于已参加了本市城镇职工基本医疗保险和居民住院基本医疗保险的参保人。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第三条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;大病保险是基本医疗保障制度的拓展和延伸，是对基本医疗保障的有益补充。坚持“以人为本、统筹安排、政府主导、专业运作、责任共担、持续发展、因地制宜、机制创新”，与基本医疗保险政策和管理体制、医疗救助制度相衔接的原则。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第四条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;大病保险实行市级统筹，通过公开招标的方式，选择符合条件的商业保险公司按照非营利性的方式承办。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第五条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;大病保险资金实行专户管理、独立核算、专款专用。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第六条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;市人力资源社会保障局负责大病保险的政策制定、组织协调、指导监督等工作。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">市社保基金管理局负责大病保险资金的划拨及相关财务核算、业务衔接等工作，并对大病保险承办机构的经办业务给予指导，按照协议进行管理。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">市财政局负责大病保险资金的监督管理和财政专户的资金拨付工作。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">市卫生局要加强对医疗机构、医疗服务行为和质量的监管。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">市审计局要严格按规定进行审计，确保资金规范、合理使用。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">保险业监管部门要做好从业资格审查、服务质量与日常业务监管，加强偿付能力和市场行为监管，对商业保险机构的违规行为和不正当竞争行为加大查处力度。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: center; line-height: 28pt; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'">第二章&nbsp;&nbsp;基金筹集和管理</span><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第七条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;大病保险资金从基本医疗保险基金历年结余或收入中筹集。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第八条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;对大病保险筹资标准、医疗待遇支付比例、支付限额、支付范围等的调整，由市人力资源社会保障局联合市财政局提出意见，报市人民政府批准执行。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第九条&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;大病保险筹资标准按公开招标结果执行。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第十条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;大病保险资金采取按季划拨、年度结算的方式。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第十一条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;大病保险资金结余超过合同约定盈利率以上部分，按照当年筹资比例分别返还城镇职工基本医疗保险基金和居民住院基本医疗保险基金。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: center; line-height: 28pt; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'">第三章&nbsp;&nbsp;保险待遇</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第十二条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;大病保险的赔付范围按本市基本医疗保险所规定的支付范围执行。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第十三条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;参保人从享受基本医疗保险待遇之日起同时享受大病保险待遇。参保人停止享受基本医疗保险待遇，同时停止享受大病保险待遇。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第十四条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;一个社保年度内（按出院日期核定），参保人发生的政策范围内的个人自付医疗费用（基本医疗保险起付标准除外），按下列规定纳入大病保险保障范围：</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（一）参保人在市内定点医疗机构就医发生的政策范围内自付医疗费用，按100%纳入大病保险保障范围</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（二）参保人经市内二级及以上定点医疗机构转诊并经参保所在区社保经办机构核准，到市外定点医疗机构就医发生的政策范围内自付医疗费用，按100%纳入大病保险保障范围</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（三）参保人经参保所在区社保经办机构核准后到市外定点医疗机构就医发生的政策范围内自付医疗费用，按70%纳入大病保险保障范围</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（四）参保人经参保所在区社保经办机构核准到市外非定点医疗机构就医发生的政策范围内自付医疗费用，按50%纳入大病保险保障范围。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（五）未经参保所在区社保经办机构核准自行到市外医疗机构住院的医疗费用，大病保险资金不予支付。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第十五条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;参保人一个社保年度内，纳入大病保险保障范围的个人自付的医疗费用，累计不足2万元的部分，由个人承担；累计超过2万元（含）至5万元的部分，由大病保险资金支付60%；累计超过5万元（含）至10万元的部分，由大病保险资金支付70%；累计超过10万元（含）以上的部分，由大病保险资金支付80%。大病保险最高支付限额为20万元。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第十六条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;大病保险就医管理及费用结算按本市基本医疗保险相关规定执行。属于大病保险资金支付的医疗费用，由大病保险承办机构与参保人和定点医疗机构结算。属于个人自付的医疗费用由参保人与定点医疗机构结算。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: center; line-height: 28pt; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'">第四章&nbsp;&nbsp;保险承办</span><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第十七条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;承办大病保险的商业保险机构须同时符合以下条件：</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（一）国内具有独立法人资格或独立承担民事责任和服务能力并经中国保监会批准设立，取得《经营保险业务许可证》。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（二）在中国境内经营健康保险专项业务5年以上，具有良好市场信誉；最近连续3年未受到当地监管部门或其他行政部门重大处罚，具有良好的市场信誉，在本省设有分支机构，具有在本省开展健康险经验。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（三）商业保险机构总部同意分支机构参与当地大病保险业务，并提供业务、财务、信息技术等支持，能够实现大病保险业务单独核算。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（四）具有建设与社会保险信息系统对接的大病保险信息系统的能力，具备完善的服务网络，具有医学等专业背景的专职工作人员，具有较强的医疗保险专业服务能力。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第十八条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;市人力资源社会保障局遵循《</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">中华人民共和国</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">政府采购法》的招标方式和程序，利用政府统一的招标平台，选定大病保险的承办机构，每一承办期3年。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第十九条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;发生流标的，应当重新组织招标。重新招标仍未能成立或上一个保险合同到期时仍未完成招标的，经政府采购监管部门审核同意后，可采用竞争性谈判、询价或单一来源方式确定承办大病保险的商业保险机构，确保大病保险政策的延续。期间的大病保险业务由市社保基金管理局承担，确保参保人享受大病保险待遇。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二十条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;市人力资源社会保障局制</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">订</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">大病医疗保险合同协议文本，并与承办机构签订合同，明确保障范围、保险责任、承保要求、费用标准、资金的拨付与清算、信息资料共享及保密、违约责任、责任免除等内容。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二十一条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;每个社保年度，以市社保基金管理局确定的参保人数，计算大病保险筹集资金总额，并由市社保基金管理局按合同协议约定分期划拨至大病保险承办机构。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二十二条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;商业保险机构承办的大病保险资金要单独建账，单独核算。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二十三条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;大病保险承办机构应依照合同协议按时足额支付相关医疗费用，并承担开展大病保险业务相关费用。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二十四条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;大病保险承办协议期结束时，市人力资源社会保障局会市社保基金管理局对合同协议期内划拨资金进行清算。清算按照“自负盈亏，保本微利，收支平衡”的原则进行。因基本医疗保险政策调整而产生的政策性亏损按照合同规定处理，非政策性亏损由商业保险机构承担。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二十五条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;大病保险承办机构未履行协议的，应当承担违约责任；情节严重的，可终止协议，大病保险资金剩余部分全额收回基本医疗保险基金。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">协议终止后，在确定新的承办机构之前，大病医疗保险待遇支付工作由市社保基金管理局负责。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二十六条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;合同协议终止前3个月，按本办法第十八条、第十九条规定确定下一协议期的承办机构。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二十七条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;市人力资源社会保障局制</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">订</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">对承办机构的考核办法。考核分日常考核和年度考核。其中日常考核由社保经办机构负责，年度考核由市社会保险基金监督委员会</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">负责</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">。按日常考核和年度考核各占50%形成综合考核结果。综合考核结果与大病保险划拨资金的清算挂钩。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: center; line-height: 28pt; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'">第五章&nbsp;&nbsp;附</span><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;</span><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'">则</span><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二十八条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;大病保险医疗费用结算年度与社保年度一致（即当年7月1日至次年6月30日）。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二十九条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;本办法由市人力资源社会保障局负责解释。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第三十条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;本办法自2013年7月1日起</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">实施</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'" /></p>
+</div>
+<!--EndFragment-->
+                </div>
+
+                <div class="clear"></div>
+            </div>
+
+
+            
+        </div>
+
+    </div>
+    <!-- end of main -->
+           
+
+
+      
+        <!-- bottom -->
+        <!-- 脚部-->
+       <div class="bottom">
+    <div class="bottomWidth makecenter">
+        <div class="bottomLeft floatLeft">
+            <div class="lh03">
+                <a href="../../../../wzbz/wzjs/" target="_blank">网站介绍</a>
+                <span>|</span>
+                <a href="../../../../wzbz/wzdt/" target="_blank">网站地图</a>
+                <span>|</span>
+                <a href="../../../../wzbz/sybz/" target="_blank">使用帮助</a>
+                <span>|</span>
+                <a href="../../../../wzbz/ystl/" target="_blank">隐私条例</a>
+                <span>|</span>
+                <a href="../../../../wzbz/xgwzlj/" target="_blank">相关网站链接</a>
+            </div>
+
+            <div class="lh03">
+               佛山市社会保险基金管理局&nbsp;版权所有&copy; 2015&nbsp; 备案号:<a href="http://www.miibeian.gov.cn" target="_blank">粤ICP备&nbsp;05029485号</a>
+           </div>
+            <div class="lh03">
+               审批服务监督电话：12345
+           </div>
+       </div>
+
+       <div class="bottomRight floatRight">
+        <div class="lh03">
+            <script type="text/javascript">
+            var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); 
+            document.write(unescape("%3Cspan id='cnzz_stat_icon_1255788136'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1255788136%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+            </script>
+
+            <span>你是第 <span id="h01" class="bottomColor">1225552</span> 位来访者</span>
+        </div>
+
+        <div class="lh03">
+            <span>建议使用分辨率 1024*768、IE7以上版本浏览器</span>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+</div>
+</div>
+<script language="javascript" type="text/javascript">
+function LoadJsCssFile(filename, filetype){ 
+if (filetype=="js"){ //如果是.js文件 
+var fileref=document.createElement("script"); 
+fileref.setAttribute("type","text/javascript"); 
+fileref.setAttribute("src",filename); 
+if (typeof fileref != "undefined") 
+document.getElementsByTagName("head")[0].appendChild(fileref) 
+} 
+
+}   
+ //动态载入.js 文件 
+</script>
+<script>
+LoadJsCssFile("http://219.130.221.166:8080/govservice/fwtj/fssbxx/count.jsp", "js");
+</script>
+        <!-- end of bottom -->
+
+
+
+
+
+        
+
+  
+</body>
+</html>

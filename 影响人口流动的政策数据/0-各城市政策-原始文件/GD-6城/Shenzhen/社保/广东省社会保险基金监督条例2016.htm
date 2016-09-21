@@ -1,0 +1,686 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>深圳市人力资源和社会保障局</title>
+	<meta name="Keywords" content="人力资源和社会保障局,人才引进,入户深圳,就业帮扶,创业,公务员考试,劳动纠纷,社保,技能鉴定,培训补贴,金融社保卡,失业,专业人才" />
+	<meta name="Description" content="人力资源和社会保障局,人才引进,入户深圳,就业帮扶,创业,公务员考试,劳动纠纷,社保,技能鉴定,培训补贴,金融社保卡,失业,专业人才" />
+    <link rel="stylesheet" type="text/css" href="../../../../images/public.css">
+    <link rel="stylesheet" type="text/css" href="../../../../images/xxgk_ptlb.css">
+    <script language="javascript" type="text/javascript" src="../../../../images/jquery-1.8.3.min.js"></script>
+    <script language="javascript" type="text/javascript" src="../../../../images/xxgk.js"></script>
+
+
+    <style>
+
+.ztdiv_bts{
+   width: 100px;
+  height: 30px;
+}
+.row{
+  padding-left: 40px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+  <!--头部开始-->
+  <div class="header">
+	<a href="http://www.sz.gov.cn/cn/" target="_blank" class="indexA"></a>
+    	快速通道 >
+        <a target="_blank" href="../../../../wsbs/kstd/bys/">毕业生</a> >
+        <a target="_blank" href="../../../../wsbs/kstd/gccrc/">高层次人才</a> >
+       <!-- <a target="_blank" href="../../../../wsbs/kstd/jzgb/">军转干部</a> >-->
+        <a target="_blank" href="../../../../wsbs/kstd/lxry/">留学人员</a> >
+        <a target="_blank" href="../../../../wsbs/kstd/wgzj/">外籍专家</a> >
+        <a target="_blank" href="../../../../wsbs/kstd/gatrs/">港澳台人士</a> >
+        <a target="_blank" href="../../../../wsbs/kstd/ydwg/">从业人员</a>
+    </div>
+    <div class="menu">
+<form id="searchform" name="searchform" onSubmit="return false;"  method="post" target="_blank">
+    	<div class="menuText">
+    		<a href="http://www.szhrss.gov.cn/" class="mA1">首页</a>
+            <a href="../../../" class="mA1">信息公开</a>
+            <a href="../../../../ztfw/" class="mA1">主题服务</a>
+            <a href="../../../../wsbs/" class="mA1">网上办事</a>
+            <a href="../../../../zmhd/" class="mA1">政民互动</a>
+            <a href="../../../../wzbz/" class="mA1">网站帮助</a>
+            <a href="http://weibo.com/u/2859077894" class="mA2 marginleft12px"><img src="../../../../images/ico_xina01.png" alt="" /><br />新浪微博</a>
+            <a href="http://e.t.qq.com/szsrlzyhshbzj" class="mA2"><img src="../../../../images/ico_tengxun01.png" alt="" /><br />腾讯微博</a>
+            <input type="text" name="searchword" id="textfield" value="请输入关键词" class="mInput" onfocus="if (value =='请输入关键词'){value =''}" onblur="if (value ==''){value='请输入关键词'}" />
+            <input type="submit" class="mButton" id="submitbuttom" value="" />
+        </div>
+</form>
+    </div>
+<script type="text/javascript">
+	(function($){
+		$.fn.extend({
+			Scroll:function(opt,callback){
+				if(!opt) var opt={};
+				var _this=this.eq(0).find("ul:first");
+				var lineH=_this.find("li:first").height(),
+				line=opt.line?parseInt(opt.line,5):parseInt(this.height()/lineH,5),
+				speed=opt.speed?parseInt(opt.speed,10):2000,
+				timer=opt.timer?parseInt(opt.timer,10):3000;
+				if(line==0) line=1;
+				var upHeight=0-line*lineH;
+				scrollUp=function(){
+					_this.animate({
+						marginTop:upHeight
+					},speed,function(){
+						for(i=1;i<=line;i++){
+							_this.find("li:first").appendTo(_this);
+						}
+						_this.css({marginTop:0});
+					});
+				}
+				_this.hover(function(){
+					clearInterval(timerID);
+				},function(){
+					timerID=setInterval("scrollUp()",timer);
+				}).mouseout();
+			}       
+		})
+	})(jQuery);
+
+	$(function(){
+		$(".hotnews").Scroll({line:1,speed:1000,timer:4000});
+	});
+</script>
+<script>
+$("#submitbuttom").click(function(){
+   if($("#textfield").val()==""||$("#textfield").val()==null)
+   {alert("请输入关键词查询！");return;}
+   else{
+     var searchform = document.getElementById("searchform");
+     searchform.action='http://61.144.227.212/was5/web/search?channelid=298108&searchword='+encodeURI($("#textfield").val());
+     searchform.method='POST';
+     searchform.submit();
+   }
+});
+function searchfun()
+{
+   if($("#textfield").val()==""||$("#textfield").val()==null)
+   {alert("请输入关键词查询！");return;}
+   else{
+     var searchform = document.getElementById("searchform");
+     searchform.action='http://61.144.227.212/was5/web/search?channelid=298108&searchword='+encodeURI($("#textfield").val());
+     searchform.method='POST';
+     searchform.submit();
+   }
+}
+</script>
+    <div class="menu_RDGZ">
+    	<div class="menu_RDGZ_left">
+        	<a href="../../../../fzlm/fzrd/" target="_blank">热点关注：</a>
+        </div>
+        <img src="../../../../images/bg03.jpg" />
+        <div class="menu_RDGZ_center hotnews" style="height:35px;overflow:hidden;">
+        	<ul>
+			
+				<li style="line-height:35px;color:#595757;"><a href="../../../../fzlm/fzrd/201604/t20160428_3610204.htm" style="color:#595757;margin-left:5px;">关于2015年度新引进人才申领租房补贴的温馨提示</a></li>
+			
+				<li style="line-height:35px;color:#595757;"><a href="../../../../fzlm/fzrd/201603/t20160320_3541058.htm" style="color:#595757;margin-left:5px;">深圳市2016年度公开招考紧缺专业公务员公告</a></li>
+			
+				<li style="line-height:35px;color:#595757;"><a href="../../../../fzlm/fzrd/201603/t20160317_3537744.htm" style="color:#595757;margin-left:5px;">关于开展“12333 全国统一咨询日”的通知</a></li>
+			
+				<li style="line-height:35px;color:#595757;"><a href="../../../../fzlm/fzrd/201507/t20150730_3129538.htm" style="color:#595757;margin-left:5px;">关于来深毕业生办理接收和报到手续的温馨提示</a></li>
+			
+				<li style="line-height:35px;color:#595757;"><a href="../../../../fzlm/fzrd/201505/t20150511_2873399.htm" style="color:#595757;margin-left:5px;">深圳市人力资源和社会保障局关于开展深圳市2015年职业技能竞赛的通知</a></li>
+			
+				<li style="line-height:35px;color:#595757;"><a href="../../../../fzlm/fzrd/201501/t20150116_2798529.htm" style="color:#595757;margin-left:5px;">2015年度深圳市人才引进政策及业务指南汇编</a></li>
+			
+				<li style="line-height:35px;color:#595757;"><a href="../../../../fzlm/fzrd/201412/t20141229_2769949.htm" style="color:#595757;margin-left:5px;"><font color="#ff0000">深圳市人力资源和社会保障局关于做好我市2015年人才引进工作有关事项的通知</font></a></li>
+			
+				<li style="line-height:35px;color:#595757;"><a href="../../../../fzlm/fzrd/201305/t20130514_2136770.htm" style="color:#595757;margin-left:5px;"><font color="#FF0000">深圳市人力资源和社会保障局关于印发《深圳市人才引进综合评价指标及分值表》的通知</font></a></li>
+			
+				<li style="line-height:35px;color:#595757;"><a href="../../../../fzlm/fzrd/201305/t20130514_2136754.htm" style="color:#595757;margin-left:5px;"><font color="#FF0000">深圳市人民政府办公厅关于印发深圳市人才引进实施办法的通知</font></a></li>
+			
+			</ul>
+        </div>
+        <img src="../../../../images/bg04.jpg" />
+        <div class="menu_RDGZ_right"> 
+        <div style=" height:35px; width:28px; margin:0 5px 0 10px; float:left; overflow:hidden;">
+        	<iframe name="sinaWeatherTool" style=" margin:7px 0 0 -67px;" src="http://weather.news.sina.com.cn/chajian/iframe/weatherStyle0.html?city=%E6%B7%B1%E5%9C%B3" width="200" height="20" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" allowTransparency="true" scrolling="no"></iframe>
+        </div>
+            <div style="width:200px;height:35px;color:#FFF;text-align:left; line-height:35px; float:left;">
+            今天是：
+            <script language="JavaScript" type="text/javascript">
+    
+                var enabled = 0; today = new Date();
+                var day; var date;
+                if(today.getDay()==0) day = "星期日"
+                if(today.getDay()==1) day = "星期一"
+                if(today.getDay()==2) day = "星期二"
+                if(today.getDay()==3) day = "星期三"
+                if(today.getDay()==4) day = "星期四"
+                if(today.getDay()==5) day = "星期五"
+                if(today.getDay()==6) day = "星期六"
+                date = "" +(today.getFullYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日 " + day +"";
+                document.write(date);
+                
+                </script>
+            </div>
+    	</div>
+    </div>
+  <!--头部结束--> 
+  
+  <div class="con">
+		<p class="conTitle1">您的位置：<a href="../../../../" title="首页" class="CurrChnlCls">首页</a>&nbsp;&gt;&nbsp;<a href="../../../" title="信息公开" class="CurrChnlCls">信息公开</a>&nbsp;&gt;&nbsp;<a href="../../" title="其他信息" class="CurrChnlCls">其他信息</a>&nbsp;&gt;&nbsp;<a href="../" title="最新政策法规" class="CurrChnlCls">最新政策法规</a></p>
+        <!----------------中间主内容开始-------------------------->
+        <div class="conRightText">
+            <div class="clear"></div>
+            <div class="conRight_text2">
+            	<div style="width:96%; overflow:hidden; margin:0 auto;">
+                    <div style="width:100%;margin:20px 0;">
+                        <h4>广东省社会保险基金监督条例</h4>
+                        <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare" style="float:right; margin-top:-35px;">
+                            <a class="bds_tsina"></a>
+                            <a class="bds_tqq"></a>
+                            <span class="bds_more"></span>
+                        </div>
+                        <script type="text/javascript" id="bdshare_js"></script>
+                        <!--<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=0"></script>-->
+                        <script type="text/javascript" id="bdshell_js"></script>
+                        <script type="text/javascript">
+                            document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+                        </script>
+                    </div>
+                    <p style="text-align:center; line-height:22px; color:#333;background-color: #efefef;">来源：深圳市人力资源和社会保障局&nbsp;&nbsp;发布日期：2016-05-24&nbsp;&nbsp;<a href="http://61.144.227.17:8080/ErrorCorrection.aspx" target="_blank" style="font-size:12px; color:#333; text-decoration:none;">[内容纠错]</a></p>
+                	<div style=" line-height:22px; margin:10px auto;">
+                            <div class="nr">
+								<div class=TRS_Editor><p align="center">　　广东省第十二届人民代表大会常务委员会公告</p>
+<p align="center">　　（第55号）</p>
+<p align="justify">　　《广东省社会保险基金监督条例》已由广东省第十二届人民代表大会常务委员会第二十五次会议于2016年3月31日修订通过，现将修订后的《广东省社会保险基金监督条例》公布，自2016年7月1日起施行。</p>
+<p align="right">　　广东省人民代表大会常务委员会</p>
+<p align="right">　　2016年3月31日</p>
+<p>　　　　</p>
+<p align="center">　　广东省社会保险基金监督条例</p>
+<p align="justify">　　（2004年3月30日广东省第十届人民代表大会常务委员会第十次会议通过 2016年3月31日广东省第十二届人民代表大会常务委员会第二十五次会议修订）</p>
+<p align="justify">　　第一章 总 则</p>
+<p align="justify">　　第一条 为了加强对社会保险基金的监督，保障社会保险基金的安全，维护参保人的合法权益，根据《中华人民共和国社会保险法》和有关法律、法规，结合本省实际，制定本条例。</p>
+<p align="justify">　　第二条 本条例适用于本省行政区域内社会保险基金监督活动。</p>
+<p align="justify">　　第三条 本条例所称社会保险基金是指基本养老保险基金、基本医疗保险基金、工伤保险基金、失业保险基金、生育保险基金等依法筹集并应当纳入社会保障基金财政专户管理的社会保险基金。</p>
+<p align="justify">　　本条例所称社会保险基金监督是指对社会保险基金收支、管理、服务、投资运营等全过程的监督。</p>
+<p align="justify">　　第四条 社会保险基金监督应当遵循客观、公正、合法、效率的原则，坚持预防与查处相结合。</p>
+<p align="justify">　　第五条 各项社会保险基金按照社会保险险种分别建账，分账核算。社会保险基金应当存入社会保障基金财政专户，专款专用。</p>
+<p align="justify">　　禁止隐匿、转移、侵占或者挪用社会保险基金。</p>
+<p align="justify">　　第六条 县级以上人民代表大会及其常务委员会依法对本级人民政府社会保险基金预算、收支、管理、服务、投资运营等以及监督检查情况实施监督。</p>
+<p align="justify">　　第七条 省人民政府应当加强对全省社会保险基金监督工作的领导，建立健全社会保险基金监督管理制度。</p>
+<p align="justify">　　地级以上市人民政府应当根据国家和省的规定以及本市实际情况，建立健全社会保险基金监督管理制度。</p>
+<p align="justify">　　县级人民政府应当建立健全社会保险基金安全责任制，做好社会保险基金监督管理工作。</p>
+<p align="justify">　　第八条 县级以上人民政府社会保险行政部门主管本行政区域内社会保险基金监督工作。</p>
+<p align="justify">　　县级以上人民政府财政部门、审计机关和社会保险费征收机构在各自的职责范围内负责有关的社会保险基金监督工作。</p>
+<p align="justify">　　县级以上人民政府发展改革、公安、民政、卫生计生、工商、食品药品监管等部门以及人民银行分支机构、银行业监管机构、保险监管机构等按照各自职责，协同做好社会保险基金监督工作。</p>
+<p align="justify">　　第九条 县级以上人民政府及其负责社会保险基金监督的行政部门应当加强社会保险基金监督队伍建设，提高社会保险基金监督能力。</p>
+<p align="justify">　　第十条 社会保险基金监督工作所需经费由同级财政予以保障，不得在社会保险基金中列支。</p>
+<p align="justify">　　第十一条 工会依法维护职工的合法权益，对涉及职工社会保险权益的事项进行监督。</p>
+<p align="justify">　　第十二条 县级以上人民政府及其有关部门应当畅通社会保险基金社会监督渠道，建立健全社会保险基金社会监督机制，采取多种措施鼓励和支持社会各方面参与社会保险基金的监督。</p>
+<p align="justify">　　第二章 监督内容</p>
+<p align="justify">　　第十三条 社会保险基金监督主要包括下列内容：</p>
+<p align="justify">　　（一）贯彻落实社会保险基金相关法律、法规以及国家和省的规定的情况；</p>
+<p align="justify">　　（二）社会保险费核定、征收和划入社会保障基金财政专户情况；</p>
+<p align="justify">　　（三）社会保险基金支出的审核、结算和社会保险待遇发放情况；</p>
+<p align="justify">　　（四）社会保险基金收入户、支出户和社会保障基金财政专户等各类社会保险基金银行账户开设、管理及其基金的存储、划拨、结存情况；</p>
+<p align="justify">　　（五）社会保险各类调剂金、储备金等的管理和使用情况；</p>
+<p align="justify">　　（六）社会保险基金投资运营等保值增值情况；</p>
+<p align="justify">　　（七）社会保险服务机构、承办社会保险业务的商业保险机构从事社会保险服务工作情况；</p>
+<p align="justify">　　（八）社会保险基金预算编制、执行、调整和决算情况以及财务收支计划编制和执行情况；</p>
+<p align="justify">　　（九）社会保险基金管理相关部门和机构内部控制制度的建立和执行情况；</p>
+<p align="justify">　　（十）依法需要监督的其他事项。</p>
+<p align="justify">　　第十四条 对社会保险行政部门的监督主要包括其履行下列职责的情况：</p>
+<p align="justify">　　（一）统筹建立覆盖城乡的社会保障体系；</p>
+<p align="justify">　　（二）拟订社会保险及其补充保险政策方案；</p>
+<p align="justify">　　（三）审核汇总社会保险基金预算、决算草案；</p>
+<p align="justify">　　（四）参与制定社会保险基金投资运营等保值增值计划；</p>
+<p align="justify">　　（五）组织实施社会保险及其补充保险基金管理和监督制度；</p>
+<p align="justify">　　（六）社会保险基金管理的其他事项。</p>
+<p align="justify">　　第十五条 对社会保险费征收机构的监督主要包括其履行下列职责的情况：</p>
+<p align="justify">　　（一）按时足额征收社会保险费；</p>
+<p align="justify">　　（二）对申报的缴费基数、人数与实际不符的用人单位开展实地核查；</p>
+<p align="justify">　　（三）对用人单位未按时足额缴纳社会保险费的行为进行查处；</p>
+<p align="justify">　　（四）按照规定将已征收的社会保险费及时存入社会保障基金财政专户；</p>
+<p align="justify">　　（五）向社会保险经办机构提供缴费单位和个人的缴费情况；</p>
+<p align="justify">　　（六）参与编制社会保险基金征收预算草案；</p>
+<p align="justify">　　（七）按照规定程序执行预算，并定期向同级社会保险行政部门和财政部门报告执行情况；</p>
+<p align="justify">　　（八）社会保险基金征收管理的其他事项。</p>
+<p align="justify">　　第十六条 对财政部门的监督主要包括其履行下列职责的情况：</p>
+<p align="justify">　　（一）建立健全社会保险基金财务管理制度；</p>
+<p align="justify">　　（二）按照规定开设、管理社会保障基金财政专户，对社会保险基金按险种分别建账，分账核算，执行国家统一的会计制度；</p>
+<p align="justify">　　（三）组织编制社会保险基金预算，审核社会保险基金预算、决算草案；</p>
+<p align="justify">　　（四）依法审核社会保险经办机构的用款申请并按时拨付社会保险基金待遇用款；</p>
+<p align="justify">　　（五）按时足额将补助资金划转社会保障基金财政专户；</p>
+<p align="justify">　　（六）会同社会保险行政部门制定社会保险基金保值增值计划，并报本级人民政府批准；</p>
+<p align="justify">　　（七）按照国家要求做好社会保险基金投资运营工作；</p>
+<p align="justify">　　（八）按照规定存储社会保险基金、安排社会保险基金存款组合；</p>
+<p align="justify">　　（九）社会保险基金管理的其他事项。</p>
+<p align="justify">　　第十七条 对社会保险经办机构的监督主要包括其履行下列职责的情况：</p>
+<p align="justify">　　（一）建立健全业务、财务、安全和风险管理机制以及内部控制制度；</p>
+<p align="justify">　　（二）按照规定编制社会保险基金预算、决算草案，提出预算调整建议，并按照规定程序执行预算，定期向同级社会保险行政部门和财政部门报告执行情况；</p>
+<p align="justify">　　（三）及时、完整、准确地记录参加社会保险的个人缴费和用人单位为其缴费，以及享受社会保险待遇等个人权益记录；</p>
+<p align="justify">　　（四）建立健全社会保险待遇申领、审核制度，审核享受社会保险待遇人员的领取资格和标准，核定并按时足额支付社会保险待遇，按照规定及时调整社会保险待遇；</p>
+<p align="justify">　　（五）执行社会保险稽核制度，对社会保险待遇领取情况进行核查；</p>
+<p align="justify">　　（六）按照规定及时与社会保险服务机构结算费用，加强对社会保险服务机构从事社会保险服务工作的核查；</p>
+<p align="justify">　　（七）按照合同约定对承办社会保险业务的商业保险机构从事社会保险服务工作进行核查；</p>
+<p align="justify">　　（八）按照规定及时公开社会保险信息，提供社会保险咨询、查询等服务，根据参保人要求提供其本人个人权益记录单；</p>
+<p align="justify">　　（九）社会保险基金管理的其他事项。</p>
+<p align="justify">　　第十八条 乡镇、街道社会保障公共服务机构应当完整、准确登记参保人缴费信息，并在规定的社会保险费缴费时限内将代收的社会保险费足额存入社会保障基金财政专户。</p>
+<p align="justify">　　第十九条 医疗机构、康复机构、药品经营单位、辅助器具配置机构、社会保险待遇代发机构等社会保险服务机构应当加强内部管理，根据国家和省基本医疗保险、工伤保险和生育保险药品目录、诊疗项目、医疗服务设施标准等规定以及服务协议，为参保人提供必要合理的服务，接受并配合监督。</p>
+<p align="justify">　　社会保险服务机构不得有下列行为：</p>
+<p align="justify">　　（一）虚列社会保险基金支付项目，虚报社会保险基金支付金额；</p>
+<p align="justify">　　（二）不按规定审核参保人身份，导致冒名享受社会保险待遇；</p>
+<p align="justify">　　（三）违反规定将参保人在非协议医疗机构发生的医疗费用纳入医疗保险基金结算；</p>
+<p align="justify">　　（四）出具虚假诊断证明、病历资料、鉴定意见、结算单据、发票、证明等骗取社会保险基金支出或者帮助他人骗取社会保险待遇；</p>
+<p align="justify">　　（五）不按时足额发放社会保险待遇；</p>
+<p align="justify">　　（六）违背诊疗规范进行过度检查、治疗、护理、康复等，造成社会保险基金不必要的支出；</p>
+<p align="justify">　　（七）其他侵害社会保险基金安全的行为。</p>
+<p align="justify">　　第二十条 承办社会保险业务的商业保险机构应当通过公开招投标方式选定。</p>
+<p align="justify">　　承办社会保险业务的商业保险机构应当建立完整的资金使用账册，接受社会保险行政部门、审计机关、保险监管机构等的监督检查和社会保险经办机构的核查，并将承办的社会保险项目缴费标准、资金收支和结余情况、享受社会保险待遇的人次等信息向社会公开。</p>
+<p align="justify">　　承办社会保险业务的商业保险机构需要增加社会保险基金支出的，应当向社会保险行政部门提供有关开支明细和资金使用效益等情况，由社会保险行政部门报统筹地区人民政府，统筹地区人民政府应当按照重大行政决策程序办理。</p>
+<p align="justify">　　第二十一条 用人单位应当按照规定办理社会保险登记，如实申报应当缴纳的社会保险费，按时全员足额缴纳社会保险费。</p>
+<p align="justify">　　任何单位和个人不得有下列行为：</p>
+<p align="justify">　　（一）瞒报、漏报社会保险费缴费基数、人数，或者以发放补贴、签订协议等形式拒不履行社会保险登记、缴费义务；</p>
+<p align="justify">　　（二）通过虚构劳动关系、伪造证明材料等方式获取社会保险参保和缴费资格；</p>
+<p align="justify">　　（三）伪造、变造个人档案材料、身份证明、病历资料、鉴定意见、支付凭证、信息数据等，骗取社会保险待遇；</p>
+<p align="justify">　　（四）违反规定重复领取社会保险待遇；</p>
+<p align="justify">　　（五）冒用他人身份和社会保险证明骗取社会保险待遇；</p>
+<p align="justify">　　（六）出借本人社会保险证件协助他人或者单位骗取社会保险待遇；</p>
+<p align="justify">　　（七）隐瞒丧失领取条件的事实，领取社会保险待遇；</p>
+<p align="justify">　　（八）其他侵害社会保险基金安全的行为。</p>
+<p align="justify">　　第三章 人大监督</p>
+<p align="justify">　　第二十二条 县级以上各级人民代表大会审查本级社会保险基金总预算草案及本级社会保险基金总预算执行情况；批准本级社会保险基金预算和本级社会保险基金预算执行情况的报告；改变或者撤销本级人民代表大会常务委员会关于社会保险基金预算、决算的不适当的决议；撤销本级政府关于社会保险基金预算、决算的不适当的决定和命令。</p>
+<p align="justify">　　县级以上各级人民代表大会常务委员会监督本级社会保险基金预算的执行；审查和批准本级社会保险基金预算的调整方案；审查和批准本级社会保险基金决算；撤销本级政府和下一级人民代表大会及其常务委员会关于社会保险基金预算、决算的不适当的决定、命令和决议。</p>
+<p align="justify">　　第二十三条 省人民代表大会常务委员会建立省级预算支出联网监督系统，完善系统的分析功能和预警功能，通过与省级国库集中支付系统、社会保险基金统计分析查询系统、社会保险基金财务信息系统等的联网，实现对社会保险基金运行状况的实时监督。</p>
+<p align="justify">　　统筹地区人民政府应当加强组织协调，将社会保险业务相关系统与本级人民代表大会常务委员会建立的监督系统联网，并根据监督要求提供必要的信息数据支持，为本级人民代表大会常务委员会开展实时监督创造条件。</p>
+<p align="justify">　　第二十四条 县级以上各级人民代表大会常务委员会听取和审议本级人民政府对社会保险基金收支、管理、服务、投资运营等以及监督检查情况的专项工作报告。</p>
+<p align="justify">　　常务委员会组成人员对专项工作报告的审议意见交由本级人民政府研究处理，人民政府应当将研究处理情况由其办事机构送交本级人民代表大会有关专门委员会或者常务委员会有关工作机构征求意见后，向常务委员会提出书面报告。常务委员会认为必要时，可以对专项工作报告作出决议；本级人民政府应当在决议规定的期限内，将执行决议的情况向常务委员会报告。</p>
+<p align="justify">　　本条第一款、第二款规定的专项工作报告及审议意见、决议，人民政府对审议意见研究处理情况或者执行决议情况的报告，由县级以上各级人民代表大会常务委员会向本级人民代表大会代表通报并向社会公布。</p>
+<p align="justify">　　第二十五条 县级以上各级人民代表大会常务委员会通过开展执法检查等方式，对本级人民政府贯彻实施社会保险法律、法规，保障社会保险基金安全、有效运行，以及开展监督的情况进行监督。</p>
+<p align="justify">　　开展执法检查等监督工作，可以根据需要邀请同级工会参与。</p>
+<p align="justify">　　执法检查结束后，执法检查组应当及时提出执法检查报告。常务委员会组成人员对执法检查报告的审议意见连同执法检查报告，一并交由本级人民政府研究处理。人民政府应当将研究处理情况向常务委员会书面报告。</p>
+<p align="justify">　　前款规定的执法检查报告及审议意见，人民政府对其研究处理情况的报告，由县级以上各级人民代表大会常务委员会向本级人民代表大会代表通报并向社会公布。</p>
+<p align="justify">　　第二十六条 县级以上各级人民代表大会常务委员会依法对社会保险相关规范性文件进行备案审查。</p>
+<p align="justify">　　第二十七条 各级人民代表大会常务委员会开展社会保险基金监督，对专业性较强的问题，可以通过召开论证会、评估会听取有关专家、专业机构、社会组织的意见，或者委托有关专家、专业机构、社会组织开展论证、评估，为监督工作提供专业支持。</p>
+<p align="justify">　　第四章 行政监督</p>
+<p align="justify">　　第二十八条 社会保险行政部门应当对下列内容进行监督检查：</p>
+<p align="justify">　　（一）社会保险基金预算的编制、执行、调整情况；</p>
+<p align="justify">　　（二）社会保险基金的收支、管理、服务和投资运营情况；</p>
+<p align="justify">　　（三）有关单位和个人执行社会保险基金相关法律、法规以及国家和省的规定的情况；</p>
+<p align="justify">　　（四）社会保险基金管理相关部门和机构内部控制制度的建立和执行情况。</p>
+<p align="justify">　　第二十九条 社会保险费征收机构应当对用人单位办理社会保险登记及如实申报、按时足额缴纳社会保险费的情况进行监督检查。</p>
+<p align="justify">　　第三十条 财政部门应当对社会保险基金财务、会计制度和社会保障基金财政专户管理规定等的执行情况，社会保险基金预算的编制、执行、调整情况，社会保险基金银行账户开设和管理情况，下级财政补助资金及时足额拨付情况，社会保险基金收支、管理、服务和投资运营情况进行监督检查。</p>
+<p align="justify">　　第三十一条 审计机关应当对社会保险基金收支、管理、服务和投资运营情况进行审计监督，对社会保险基金收入户、支出户及社会保障基金财政专户基金管理情况进行审计。</p>
+<p align="justify">　　第三十二条 负责社会保险基金监督的行政部门开展监督工作，应当实行日常监督和专项监督相结合，采取现场监督检查和非现场监督等方式，增强监督实效。</p>
+<p align="justify">　　第三十三条 负责社会保险基金监督的行政部门依法实施现场监督检查，可以采取下列方式：</p>
+<p align="justify">　　（一）依法进入被监督检查单位的有关场所进行实地调查、检查；</p>
+<p align="justify">　　（二）询问与调查事项有关的单位和个人，要求其对与调查事项有关的问题作出说明、提供有关证明材料；</p>
+<p align="justify">　　（三）依法收集有关情况和资料，对可能被转移、隐匿或者灭失的资料予以封存；</p>
+<p align="justify">　　（四）依法可以采取的其他调查、检查措施。</p>
+<p align="justify">　　实施现场监督检查，应当由两名以上监督人员共同进行并出示执法证件。实施社会保险基金现场监督检查的，一般在三个工作日前将监督检查通知书送达被监督检查单位。提前通知可能影响监督检查效果的，可以持监督检查通知书直接实施现场监督检查。</p>
+<p align="justify">　　实施现场监督检查，可以根据需要组织工会、社会保险基金监督专家库专家、社会监督员参与。</p>
+<p align="justify">　　第三十四条 负责社会保险基金监督的行政部门依法实施现场监督检查时，被监督检查单位和人员应当予以配合，如实提供与社会保险有关的资料，不得谎报、瞒报，不得拒绝、阻挠监督人员进入现场。</p>
+<p align="justify">　　因监督检查工作需要，负责社会保险基金监督的行政部门可以要求公安、民政、税务、工商等部门以及社会保险服务机构、用人单位和个人提供相关材料、信息和数据，有关单位和个人应当及时提供。负责社会保险基金监督的行政部门应当做好信息保密工作。</p>
+<p align="justify">　　社会保险行政部门在办理骗取社会保险待遇或者社会保险基金支出案件时，发现涉案人员有拒绝调查、逃匿或者转移、隐藏、销毁证据等行为的，依法可以要求公安机关派员提前介入协助调查，公安机关应当予以配合。</p>
+<p align="justify">　　第三十五条 负责社会保险基金监督的行政部门应当建立健全非现场监督制度，对社会保险基金相关数据资料进行收集、整理、检查、分析，运用信息系统，预警监测社会保险基金运行情况，及时发现问题，采取防范措施，实现远程监督。在非现场监督过程中发现被监督单位有违反社会保险基金相关法律、法规以及国家和省的规定的行为，应当组织开展现场监督检查。</p>
+<p align="justify">　　第三十六条 负责社会保险基金监督的行政部门发现涉嫌违反社会保险基金相关法律、法规的行为，属于本部门管辖范围，需要调查处理的，应当在发现之日起五个工作日内立案；不属于本部门管辖范围的，应当在发现之日起三个工作日内移交有权处理的部门。</p>
+<p align="justify">　　第三十七条 负责社会保险基金监督的行政部门在监督过程中发现存在违反社会保险基金相关法律、法规以及国家和省的规定等问题的，应当在立案之日起六十个工作日内提出整改建议，依法作出处理决定或者向有关行政部门提出处理建议；情况复杂确需延长处理时限的，经本部门负责人批准，可以延长三十个工作日。有关单位应当按照要求整改或者作出处理，并将整改、处理情况报送提出建议的行政部门。</p>
+<p align="justify">　　对违法行为的处理决定应当以书面形式或者法律允许的其他方式送达。</p>
+<p align="justify">　　第三十八条 社会保险行政部门在办理案件时发现单位和个人涉嫌社会保险欺诈犯罪的，应当依法向同级公安机关移送案件。公安机关接到移送案件后，应当及时审查决定是否立案。</p>
+<p align="justify">　　向公安机关移送涉嫌犯罪案件，应当移交案件的全部材料，移送案件时已经作出行政处罚决定的，应当将行政处罚决定书一并抄送公安机关。</p>
+<p align="justify">　　公安机关在查处社会保险欺诈犯罪案件过程中，需要社会保险行政部门协助查证，提供有关社会保险信息数据和证据材料，或者就政策和专业问题进行咨询的，社会保险行政部门应当协助配合。</p>
+<p align="justify">　　第三十九条 根据监督检查需要，负责社会保险基金监督的行政部门可以通过购买服务的方式委托会计师事务所、鉴定机构等社会专业机构开展论证、鉴定等。</p>
+<p align="justify">　　负责社会保险基金监督的行政部门应当与受委托的专业机构签订委托协议，明确委托事项、工作要求、保密义务等。</p>
+<p align="justify">　　第四十条 社会保险行政部门、社会保险费征收机构、卫生行政部门、社会保险经办机构和财政部门、审计机关对社会保险基金相关举报、投诉，应当依法处理，不得推诿。</p>
+<p align="justify">　　第五章 社会监督</p>
+<p align="justify">　　第四十一条 统筹地区人民政府应当成立社会保险监督委员会，对社会保险工作提出意见和建议，实施社会监督。</p>
+<p align="justify">　　社会保险监督委员会的职责，成员构成、产生、任期，议事规则等有关事项由其章程规定。</p>
+<p align="justify">　　社会保险监督委员会应当定期听取社会保险行政部门、社会保险费征收机构、社会保险经办机构、财政部门等关于社会保险基金收支、管理、服务和投资运营情况的汇报；根据需要，可以聘请会计师事务所对社会保险基金的收支、管理、服务和投资运营情况进行年度审计和专项审计，审计结果应当向社会公开。</p>
+<p align="justify">　　社会保险监督委员会发现社会保险基金收支、管理、服务和投资运营中存在问题的，有权提出改正建议；对社会保险行政部门、社会保险费征收机构、社会保险经办机构、财政部门及其工作人员的违法行为，有权向有关部门提出依法处理建议。有关部门应当在三个月内将处理情况报告社会保险监督委员会。</p>
+<p align="justify">　　第四十二条 社会保险监督委员会可以成立由社会保险、医疗、法律、会计、审计等方面的专家和工会代表组成的社会保险基金监督专家库，组织专家参与社会保险基金监督工作。</p>
+<p align="justify">　　第四十三条 开展社会保险基金监督，可以邀请社会人士担任社会保险基金社会监督员。社会监督员可以对社会保险基金监督工作提出意见和建议，发现违反社会保险基金相关法律、法规以及国家和省的规定的行为，应当及时报告。</p>
+<p align="justify">　　第四十四条 医疗机构、药品经营单位等社会保险服务机构行业协会应当加强行业自律，参与社会保险基金监督。</p>
+<p align="justify">　　第四十五条 新闻媒体应当开展社会保险法律、法规、政策以及社会保险知识的公益宣传，并对违反社会保险基金相关法律、法规的行为进行舆论监督。有关社会保险的宣传报道应当真实、公正。</p>
+<p align="justify">　　第四十六条 县级以上人民政府及其有关部门应当建立健全信息公开制度，加强社会保险信息披露，完善社会保险政策制定和决策程序，通过网络征询、媒体宣传、社会调查、论证、听证等方式公开听取社会意见。</p>
+<p align="justify">　　县级以上人民政府及其有关部门制定涉及职工切身利益的社会保险政策、措施时，应当吸收同级工会参加研究。</p>
+<p align="justify">　　第四十七条 社会保险行政部门应当及时公开社会保险政策文件、规划、办事规则以及违反社会保险基金相关法律、法规典型案件等。</p>
+<p align="justify">　　社会保险费征收机构应当将缴纳社会保险费的办事指引等向社会公开，将缴费情况定期告知用人单位和参保人，通过本单位门户网站、媒体等每年定期向社会公布欠缴社会保险费数额较大的用人单位信息。</p>
+<p align="justify">　　社会保险经办机构应当通过本单位门户网站、媒体每年定期向社会公布参加社会保险情况以及社会保险基金的收入、支出、结余和收益情况；通过本单位门户网站、服务窗口、乡镇（街道）和村（居）的公开专栏等载体，及时向社会公开各险种缴费基数上下限和缴费比例、各项待遇计发基数和标准、待遇调整情况、相关账户记账利率、各项社会保险服务的办事指引、签订服务协议的社会保险服务机构基本信息等，方便社会公众查询。</p>
+<p align="justify">　　第四十八条 社会保险经办机构应当通过服务网点、自助终端、电话或者网站等途径，为用人单位、参保人免费提供社会保险信息查询服务，并根据参保人要求提供包含实际缴费情况、个人账户信息等内容的其本人个人权益记录单。</p>
+<p align="justify">　　社会保险经办机构应当根据用人单位、参保人的要求，免费出具其参加社会保险、享受社会保险待遇情况的证明。</p>
+<p align="justify">　　第四十九条 用人单位应当每年定期向本单位职工公开全年参加社会保险的职工名单、社会保险险种及费率、缴费时段等情况，接受工会和职工监督。</p>
+<p align="justify">　　参保人有权向用人单位了解其个人参加社会保险情况，用人单位应当如实提供其在本单位的参保缴费时间、缴费基数等信息。</p>
+<p align="justify">　　第五十条 任何组织和个人有权对违反社会保险基金相关法律、法规的行为进行举报、投诉。举报人、投诉人的合法权益依法受到保护，任何组织和个人不得阻挠、压制或者打击报复举报人、投诉人。有关部门应当对举报人的信息予以保密。</p>
+<p align="justify">　　对举报骗取社会保险待遇或者社会保险基金支出情况属实，为查处重大违反社会保险法律、法规的行为提供主要线索和证据的举报人，给予奖励。</p>
+<p align="justify">　　第六章 预防机制</p>
+<p align="justify">　　第五十一条 统筹地区社会保险基金预算草案由社会保险经办机构会同社会保险费征收机构编制，经社会保险行政部门、财政部门审核后联合向本级人民政府报告，由本级人民政府报本级人民代表大会审查和批准。</p>
+<p align="justify">　　社会保险基金预算应当按照收支平衡、适当留有结余的原则编制。社会保险基金不得用于平衡其他政府预算，一般公共预算可以补助社会保险基金。县级以上人民政府在社会保险基金出现支付不足时给予补贴。</p>
+<p align="justify">　　社会保险基金预算不得随意调整。确因特殊情况需要调整的，应当按照国家有关预算管理规定执行。</p>
+<p align="justify">　　第五十二条 社会保险经办机构、社会保险费征收机构和财政部门应当建立健全社会保险基金账务核对制度，定期相互核对社会保险基金收支情况，保证社会保险基金收支情况账证、账表、账账、账实相符，并对账目核对情况盖章确认。</p>
+<p align="justify">　　实行地方税务机关征收社会保险费的地区，地方税务机关应当按照规定形成单位和个人缴费明细信息，及时提供给社会保险经办机构。社会保险经办机构应当根据地方税务机关提供的信息准确记录单位缴费情况及个人社会保险权益记录。财政部门应当将社会保障基金财政专户实收数与地方税务机关提供的上解数进行核对，并将社会保障基金财政专户存款明细情况盖章确认后，连同社会保障基金财政专户收支凭证提供给社会保险经办机构核对。</p>
+<p align="justify">　　第五十三条 社会保险行政部门应当建立用人单位、参保人、社会保险服务机构和承办社会保险业务的商业保险机构的信用档案，加强与公安、民政、卫生计生、税务、工商、食品药品监管等部门以及人民银行分支机构、银行业监管机构、保险监管机构的协调合作，将欠缴社会保险费，以欺诈、伪造证明材料等手段办理社会保险业务，骗取社会保险待遇和社会保险基金支出等失信行为记入信用档案。失信行为情节严重的，社会保险行政部门应当将失信记录依法向社会公布。</p>
+<p align="justify">　　第五十四条 地级以上市人民政府应当根据国家和省的统一规划，加强社会保险信息化建设。县级以上人民政府及其负责社会保险基金监督的行政部门、社会保险经办机构应当充分运用社会保险基金信息管理系统，提高运用信息化技术开展监督、核查的能力。</p>
+<p align="justify">　　省人民政府应当组织社会保险行政、财政、公安、民政、卫生计生、税务、工商、食品药品监管等部门，社会保险经办机构以及银行、邮政、医疗机构、药品经营单位等社会保险服务机构，建立全省统一的社会保险信息共享平台，实现信息共享与互通，有关部门、机构应当将本单位管理或者产生的社会保险相关信息数据实时接入社会保险信息共享平台。开展社会保险基金监督，可以通过社会保险信息共享平台获取社会保险基金相关信息数据。</p>
+<p align="justify">　　第五十五条 社会保险行政部门应当建立健全社会保险基金安全评估制度，定期对社会保险基金运行状况和风险管控状况开展安全评估。</p>
+<p align="justify">　　安全评估的主要内容包括：</p>
+<p align="justify">　　（一）社会保险基金支撑能力；</p>
+<p align="justify">　　（二）社会保险基金资产管理质量；</p>
+<p align="justify">　　（三）社会保险经办机构内部控制情况；</p>
+<p align="justify">　　（四）存在的违反社会保险基金相关法律、法规以及国家和省的规定的情况及其对社会保险基金安全的影响；</p>
+<p align="justify">　　（五）其他与社会保险基金安全相关的指标。</p>
+<p align="justify">　　第五十六条 统筹地区人民政府应当建立健全社会保险基金预警应对机制。社会保险基金运行及风险管控等存在重大风险的，社会保险行政部门应当及时向本级人民政府和上一级行政主管部门报告，并提出相应的建议。本级人民政府和上一级行政主管部门应当及时采取措施化解风险。</p>
+<p align="justify">　　第五十七条 社会保险行政部门发现本行政区域内发生隐匿、转移、侵占或者挪用社会保险基金等重大违反社会保险基金相关法律、法规问题时，应当按照规定及时向本级人民政府和上一级行政主管部门书面报告。</p>
+<p align="justify">　　对涉及社会保险基金安全重大问题和紧急事项的举报，受理举报的部门应当及时向本级人民政府和上一级行政主管部门书面报告，并按照法定职责采取必要措施。</p>
+<p align="justify">　　第五十八条 省人民政府及其有关部门、统筹地区人民政府应当定期对其出台的社会保险基金政策执行情况和实施效果进行评估，根据评估结果对相关政策作出修改、废止等处理。对与法律、法规相抵触，以及损害公民、法人或者其他组织合法权益的政策，应当停止执行。</p>
+<p align="justify">　　第七章 法律责任</p>
+<p align="justify">　　第五十九条 用人单位不办理社会保险登记，由社会保险费征收机构或者其行政主管部门责令改正；逾期不改正的，对用人单位处应缴社会保险费数额一倍以上三倍以下的罚款，对其直接负责的主管人员和其他直接责任人员处五百元以上三千元以下的罚款。</p>
+<p align="justify">　　用人单位未按时足额缴纳社会保险费的，由社会保险费征收机构责令限期缴纳或者补足，并自欠缴之日起，按日加收万分之五的滞纳金；逾期仍不缴纳的，由社会保险费征收机构或者其行政主管部门处欠缴数额一倍以上三倍以下的罚款。</p>
+<p align="justify">　　第六十条 社会保险经办机构以及医疗机构、药品经营单位等社会保险服务机构和承办社会保险业务的商业保险机构以欺诈、伪造证明材料或者其他手段骗取社会保险基金支出的，由社会保险行政部门责令退回骗取的社会保险金，处骗取金额二倍以上五倍以下的罚款。</p>
+<p align="justify">　　社会保险服务机构有前款或者本条例第十九条第二款规定违法行为的，按照服务协议追究责任，根据情节严重程度，暂停履行或者解除服务协议；直接负责的主管人员和其他直接责任人员有执业资格的，依法吊销其执业资格。</p>
+<p align="justify">　　承办社会保险业务的商业保险机构有本条第一款规定违法行为的，由社会保险经办机构解除合同，三年内不得承办社会保险业务。</p>
+<p align="justify">　　第六十一条 以欺诈、伪造证明材料、冒用他人证件、虚构劳动关系等手段办理社会保险业务的，社会保险行政部门、社会保险费征收机构、社会保险经办机构不予办理，将有关情况记入其信用档案；情节严重的，处涉案金额一倍以上三倍以下的罚款。</p>
+<p align="justify">　　以欺诈、伪造证明材料、虚构劳动关系或者其他手段骗取社会保险待遇的，由社会保险行政部门责令退还已骗取的社会保险待遇，并处骗取金额二倍以上五倍以下的罚款。</p>
+<p align="justify">　　第六十二条 社会保险费征收机构有下列行为之一的，由本级人民政府或者有关行政部门依法责令改正；对直接负责的主管人员和其他直接责任人员依法给予处分：</p>
+<p align="justify">　　（一）违反规定核准参保人资格的；</p>
+<p align="justify">　　（二）不按规定将社会保险基金存入社会保障基金财政专户，或者违反规定开设社会保险基金收入户的；</p>
+<p align="justify">　　（三）违反规定迟征、少征、多征、免征社会保险费和滞纳金的；</p>
+<p align="justify">　　（四）违反规定擅自更改社会保险费基、费率，或者核销欠缴的社会保险费的；</p>
+<p align="justify">　　（五）不按规定对未按时足额缴纳社会保险费的用人单位进行追缴的；</p>
+<p align="justify">　　（六）违反规定设置或者擅自更改社会保险信息系统业务参数的；</p>
+<p align="justify">　　（七）违反社会保险法律、法规的其他行为。</p>
+<p align="justify">　　社会保险费征收机构有前款第三项、第四项行为的，由上一级社会保险费征收机构或者其行政主管部门责令追缴应当缴纳的社会保险费或者退还不应当缴纳的社会保险费。</p>
+<p align="justify">　　第六十三条 财政部门有下列行为之一的，由本级人民政府或者有关行政部门依法责令改正；对直接负责的主管人员和其他直接责任人员依法给予处分；有违法所得的，没收违法所得：</p>
+<p align="justify">　　（一）不按规定对社会保险险种分别建账、分账核算的；</p>
+<p align="justify">　　（二）不按规定将社会保险基金存入社会保障基金财政专户，或者不落实社会保险基金优惠利率相关规定的；</p>
+<p align="justify">　　（三）违反规定开设社会保险基金收入户、支出户和社会保障基金财政专户等银行账户的；</p>
+<p align="justify">　　（四）不按规定审核社会保险经办机构的用款申请、按时拨付社会保险基金待遇用款、将补助资金足额划转社会保障基金财政专户的；</p>
+<p align="justify">　　（五）从社会保险基金中列支或者代垫代付非社会保险待遇或者支出的；</p>
+<p align="justify">　　（六）不按规定安排定期存款和购买国债等方式实现社会保险基金保值增值，或者违反规定投资运营的；</p>
+<p align="justify">　　（七）违反社会保险法律、法规的其他行为。</p>
+<p align="justify">　　第六十四条 社会保险经办机构有下列行为之一的，由社会保险行政部门责令改正；对直接负责的主管人员和其他直接责任人员依法给予处分；给社会保险基金、单位和个人造成损失的，依法承担赔偿责任：</p>
+<p align="justify">　　（一）未将社会保险基金存入社会保障基金财政专户的；</p>
+<p align="justify">　　（二）违反规定开设社会保险基金收入户、支出户的；</p>
+<p align="justify">　　（三）违反规定审核社会保险待遇和社会保险基金支出的；</p>
+<p align="justify">　　（四）不按规定支付社会保险待遇的；</p>
+<p align="justify">　　（五）丢失或者篡改缴费记录、享受社会保险待遇记录等社会保险数据、个人权益记录的；</p>
+<p align="justify">　　（六）违反规定结算社会保险基金支出，或者出具虚假社会保险基金财务会计报告的；</p>
+<p align="justify">　　（七）违反规定设置或者擅自更改社会保险信息系统业务参数的；</p>
+<p align="justify">　　（八）不按规定开展社会保险稽核的；</p>
+<p align="justify">　　（九）违反社会保险法律、法规的其他行为。</p>
+<p align="justify">　　第六十五条 社会保险行政部门、社会保险经办机构错误认定、审核社会保险待遇和社会保险基金支出的，应当依法重新认定和审核；给单位和个人造成损失的，依法承担赔偿责任。</p>
+<p align="justify">　　导致少发社会保险待遇或者社会保险基金支出的，由社会保险经办机构补发；导致多发社会保险待遇或者社会保险基金支出的，社会保险经办机构应当负责追回。造成社会保险基金重大损失的，对直接负责的主管人员和其他直接责任人员依法给予处分。</p>
+<p align="justify">　　第六十六条 任何单位和个人隐匿、转移、侵占、挪用社会保险基金或者违反规定投资运营的，由社会保险行政部门、财政部门或者审计机关责令追回。</p>
+<p align="justify">　　乡镇、街道社会保障公共服务机构及其工作人员隐匿、滞压、转移、侵占、挪用社会保险费的，由乡镇人民政府、街道办事处或者上一级社会保险行政部门、财政部门、审计机关责令追回。</p>
+<p align="justify">　　有本条第一款、第二款规定违法行为的，对直接负责的主管人员和其他直接责任人员依法给予处分；有违法所得的，没收违法所得。</p>
+<p align="justify">　　第六十七条 负责社会保险基金监督的行政部门及其工作人员有下列行为之一的，对直接负责的主管人员和其他直接责任人员依法给予处分；给单位和个人造成损失的，应当承担赔偿责任：</p>
+<p align="justify">　　（一）不履行社会保险基金监督法定职责的；</p>
+<p align="justify">　　（二）隐瞒或者伪造证据的；</p>
+<p align="justify">　　（三）泄露案件信息影响案件办理，或者泄露举报人信息、被监督单位商业秘密的；</p>
+<p align="justify">　　（四）其他违反社会保险基金监督相关法律、法规的行为。</p>
+<p align="justify">　　第六十八条 被监督单位和个人有下列行为之一的，由负责社会保险基金监督的行政部门予以制止，责令其限期改正；县级以上人民政府有关部门、机构及其工作人员有下列行为的，对直接负责的主管人员和其他直接责任人员依法给予处分；用人单位、社会保险服务机构、承办社会保险业务的商业保险机构等单位和个人有第一项、第二项、第三项行为之一的，由社会保险行政部门处二千元以上二万元以下的罚款：</p>
+<p align="justify">　　（一）拒绝、阻挠监督人员进行监督检查的；</p>
+<p align="justify">　　（二）拒绝或者无正当理由拖延提供与监督事项有关的资料，或者转移、隐匿、损毁被封存资料的；</p>
+<p align="justify">　　（三）不按要求报送书面材料或者作出说明，隐瞒事实真相，出具伪证或者隐匿、毁灭证据的；</p>
+<p align="justify">　　（四）转移、隐匿社会保险基金资产的；</p>
+<p align="justify">　　（五）不按要求整改或者在整改过程中弄虚作假的；</p>
+<p align="justify">　　（六）报复、陷害监督人员，阻挠、压制或者打击报复举报人、投诉人的；</p>
+<p align="justify">　　（七）其他妨碍社会保险基金监督的行为。</p>
+<p align="justify">　　第六十九条 国家工作人员在社会保险基金监督工作中滥用职权、玩忽职守、徇私舞弊的，依法给予处分。</p>
+<p align="justify">　　第七十条 违反社会保险相关法律，构成犯罪的，依法追究刑事责任。</p>
+<p align="justify">　　第八章 附 则</p>
+<p align="justify">　　第七十一条 本条例自2016年7月1日起施行。</p>
+<p>　　</p></div>
+								<br/>
+								<script type="text/javascript"> 
+									var a= '';
+									if(a!==""){
+										document.write('<p class="list_fujian">附件：</p>');
+									}else{
+										document.write("");
+									}
+								</script>
+								<li></li>
+								<li></li>
+								
+							</div>
+                    </div>
+
+                        
+
+                     
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <!----------------中间主内容结束-------------------------->
+    </div>
+  
+<!--底部开始-->
+<div class="footerA2">
+    	<!-- <a href="http://www.sz.gov.cn/cn/" target="_blank"><img src="../../../../images/W020120717426142781488.gif" alt="" /></a>
+        <a href="http://www.szzw.gov.cn/" target="_blank"><img src="../../../../images/W020120717425579330860.gif" alt="" /></a>
+        <a href="http://www.testcenter.gov.cn/ksyweb/#&panel1-1" target="_blank"><img src="../../../../images/W020120717378085685286.gif" alt="" /></a>
+        <a href="http://www.sz-jc.gov.cn/xnjc/" target="_blank"><img src="../../../../images/W020120717427745159379.gif" alt="" /></a>
+        <a href="http://wsbs.sz.gov.cn/shenzhen/home" target="_blank"><img src="../../../../images/W020150122598401618510.jpg" alt="" /></a>
+        <a href="http://www.sz-jc.gov.cn/" target="_blank"><img src="../../../../images/W020120717378914625685.gif" alt="" /></a> -->
+        <select name="lia1" id="lia1" class="tag_select" onChange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0">
+            <option value="lia2">人力资源保障部网站</option>
+            
+			<option value="http://www.mohrss.gov.cn/">国家人力资源和社会保障部</option>
+			
+			<option value="http://www.jshrss.gov.cn/sy2011/index.html">江苏省人力资源和社会保障厅</option>
+			
+			<option value="http://www.ah.hrss.gov.cn/DEF,1">安徽省人力资源和社会保障厅</option>
+			
+			<option value="http://www.he.lss.gov.cn/">河北省人力资源和社会保障厅</option>
+			
+			<option value="http://www.zjhrss.gov.cn/">浙江省人力资源和社会保障厅</option>
+			
+			<option value="http://www.qhhrss.gov.cn/">青海省人力资源和社会保障厅</option>
+			
+			<option value="http://www.nxhrss.gov.cn/">宁夏人力资源和社会保障网</option>
+			
+			<option value="http://www.gs.lss.gov.cn/">甘肃省人力资源和社会保障厅</option>
+			
+			<option value="http://www.shaanxihrss.gov.cn/">陕西省人力资源和社会保障厅</option>
+			
+			<option value="http://www.ynhrss.gov.cn/">云南省人力资源和社会保障厅</option>
+			
+			<option value="http://www.cqhrss.gov.cn/u/cqhrss/">重庆市人力资源和社会保障局</option>
+			
+			<option value="http://rst.hunan.gov.cn/web/rltzww/index.html">湖南省人力资源和社会保障厅</option>
+			
+			<option value="http://www.gxhrss.gov.cn/">广西壮族自治区人力资源和社会保障厅</option>
+			
+			<option value="http://www.jxhrss.gov.cn/">江西省人力资源和社会保障厅</option>
+			
+			<option value="http://www.hb12333.com/hbwzweb/html/home/index.shtml">湖北省人力资源和社会保障厅</option>
+			
+			<option value="http://www.fjlss.gov.cn/">福建省人力资源和社会保障厅</option>
+			
+			<option value="http://www.gdhrss.gov.cn/">广东省人力资源和社会保障厅</option>
+			
+			<option value="http://www.bjrbj.gov.cn/">北京市人力资源和社会保障局</option>
+			
+			<option value="http://www.12333sh.gov.cn/index.shtml">上海市人力资源和社会保障局</option>
+			  
+		</select>
+        <select name="lib1" id="lib1" class="tag_select" onChange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0">
+            <option value="lib2">市政府各部门</option>
+            
+			<option value="http://www.szpb.gov.cn/">发展和改革委员会</option>
+			
+			<option value="http://www.szhpfpc.gov.cn/">卫生和计划生育委员会</option>
+			
+			<option value="http://www.szfb.gov.cn/">财政委员会</option>
+			
+			<option value="http://fzj.sz.gov.cn/">法制办公室</option>
+			
+			<option value="http://www.cgzx.sz.gov.cn">政府采购中心</option>
+			
+			<option value="http://www.szzfgjj.com/">住房公积金管理中心</option>
+			
+			<option value="http://www.szinvest.gov.cn/">投资推广署</option>
+			
+			<option value="http://www.szradio.gov.cn/">无线电管理局</option>
+			
+			<option value="http://www.szdaj.gov.cn/">档案局</option>
+			
+			<option value="http://www.szwb.gov.cn/">建筑工务署</option>
+			
+			<option value="http://www.szzw.gov.cn/">政务服务管理办公室</option>
+			
+			<option value="http://www.szqh.gov.cn/">前海深港现代服务业合作区管理局</option>
+			
+			<option value="http://www.szsi.gov.cn/">社会保险基金管理局</option>
+			
+			<option value="http://www.szpl.gov.cn/">规划和国土资源委员会</option>
+			
+			<option value="http://www.stc.gov.cn/">公安局交通警察局</option>
+			
+			<option value="http://www.jr.sz.gov.cn/">金融发展服务办公室</option>
+			
+			<option value="http://www.szemo.gov.cn/">应急管理办公室</option>
+			
+			<option value="http://www.tb.sz.gov.cn/">台湾事务办公室</option>
+			
+			<option value="http://www.szfao.gov.cn/">外事办公室</option>
+			
+			<option value="http://www.sztj.gov.cn">统计局</option>
+			
+			<option value="http://www.szka.gov.cn/">口岸办公室</option>
+			
+			<option value="http://www.szum.gov.cn/">城市管理局</option>
+			
+			<option value="http://www.szjs.gov.cn/">住房和建设局</option>
+			
+			<option value="http://www.szds.gov.cn/">地方税务局</option>
+			
+			<option value="http://www.szgzw.gov.cn">国有资产监督管理委员会</option>
+			
+			<option value="http://www.szwrb.gov.cn/">水务局</option>
+			
+			<option value="http://www.szaudit.gov.cn/">审计局</option>
+			
+			<option value="http://www.szwtl.gov.cn/">文体旅游局</option>
+			
+			<option value="http://www.szscjg.gov.cn">市场和质量监督管理委员会</option>
+			
+			<option value="http://www.szhrss.gov.cn/">人力资源和社会保障局</option>
+			
+			<option value="http://www.szsf.gov.cn/">司法局</option>
+			
+			<option value="http://www.szmz.sz.gov.cn/">民政局</option>
+			
+			<option value="http://www.szga.gov.cn/">公安局</option>
+			
+			<option value="http://www.sz-jc.gov.cn/">监察局</option>
+			
+			<option value="http://szeb.sz.gov.cn/">教育局</option>
+			
+			<option value="http://www.sztb.gov.cn">交通运输委员会</option>
+			
+			<option value="http://www.szhec.gov.cn/">人居环境委员会</option>
+			
+			<option value="http://www.sz.gov.cn">深圳市人民政府</option>
+			
+			<option value="http://www.szsti.gov.cn/">科技创新委员会</option>
+			
+			<option value="http://www.szjmxxw.gov.cn/">经济贸易和信息化委员会</option>
+			      
+		</select>
+        <select name="lic1" id="lic1" class="tag_select" onChange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0">
+            <option value="lic2">直属机构网站</option>
+            
+			<option value="http://www.szts.org.cn/main/">深圳第二高级技工学校</option>
+			
+			<option value="http://www.szgxzx.com/">深圳市高技能人才公共实训管理服务中心</option>
+			
+			<option value="http://www.ssti.net.cn/">深圳技师学院</option>
+			
+			<option value="http://www.szsi.gov.cn/">深圳市社会保险基金管理局</option>
+			
+			<option value="http://183.62.205.77/ksyweb/">深圳市考试院</option>
+			          
+		</select>
+        <select name="lid1" id="lid1" class="tag_select" onChange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0">
+            <option value="lid2">友情链接</option>
+            
+			<option value="http://cn.itcsz.cn/">深圳海外创新人才大赛</option>
+			
+			<option value="http://www.ciep.gov.cn/index.php">中国国际人才交流大会</option>
+			
+			<option value="http://wsbs.sz.gov.cn/shenzhen/home">广东省网上办事大厅深圳分厅</option>
+			
+			<option value="http://www.szhr.com.cn/index.shtml">深圳人才网</option>
+			
+			<option value="http://www.sz-fesco.com/ver2/index.asp">深圳市对外劳动服务有限公司</option>
+			
+			<option value="http://www.sztalent.org/">深圳人才工作网</option>
+			
+			<option value="http://www.sohu.com/">搜狐网</option>
+			
+			<option value="http://www.sina.com.cn/">新浪网</option>
+			
+			<option value="http://www.svtc.org.cn/">深圳市职业训练学院</option>
+			
+			<option value="http://www.ssti.net.cn/main/">深圳技师学院</option>
+			
+			<option value="http://www.szhrss.gov.cn/ztfw/bsh/">深圳博士后</option>
+			
+			<option value="http://www.chinapostdoctor.org.cn/">中国博士后</option>
+			
+			<option value="http://www.szqh.gov.cn">深圳市前海管理局</option>
+			
+		</select>
+    </div>
+	<div class="footerB">
+    	<div class="footerText">
+        	<div class="footerTextLeft">
+            	<p>
+                	<a href="http://www.szhrss.gov.cn/wzbz/index.htm?name=4">版权保护</a>|<a href="http://www.szhrss.gov.cn/wzbz/index.htm?name=5">隐私声明</a>|<a href="http://www.szhrss.gov.cn/wzbz/">网站帮助</a>|<a href="http://www.szhrss.gov.cn/wzbz/">网站地图</a>|<a href="http://www.szhrss.gov.cn/wzbz/index.htm?name=3">联系我们</a>
+                </p>
+                <p>
+                	<a target="_blank" href="http://www.sznet110.gov.cn/index.jsp"><img src="../../../../images/rl2012_footer_01.jpg" /></a>
+                    <a target="_blank" href="http://www.sznet110.gov.cn/webrecord/innernet/Welcome.jsp?bano=4403101901276"><img src="../../../../images/rl2012_footer_02.jpg" /></a>
+                    <a target="_blank" href="http://bszs.conac.cn/sitename?method=show&id=0AE08CD6A62028A5E053012819AC7029"><img src="../../../../images/red.png" /></a>
+                </p>
+            </div>
+            <div class="footerTextCenter">
+            	<p><img src="../../../../images/rbj_ewm.png" /></p>
+            </div>
+            <div class="footerTextRight">
+				<p>版权所有：深圳市人力资源和社会保障局</p>
+				<p>办公地址：深圳市福田区深南大道8005号深圳人才园  邮编：518040</p>
+				<p>（具体业务办理地址请参阅机构职能介绍）</p>
+				<p>办公时间：上午 9：00-12：00，下午 14：00-18：00</p>
+				<p>备案序号：<a href='http://www.miitbeian.gov.cn' target='_blank'>粤ICP备05017767号</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                 <a href="javascript:void(0);" onclick="window.open('http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action')">工业和信息化部备案管理系统</a></p>
+				<p>网站管理员邮箱：xxzxwz@szhrss.gov.cn</p>
+            </div>
+        </div>
+    </div>
+    <div style="display:none"><script src="http://s4.cnzz.com/z_stat.php?id=1257408068&web_id=1257408068" language="JavaScript"></script></div>
+<!--底部结束-->
+<script type="text/javascript">
+	$(function(){
+		$("a").each(function(){
+			var chref=$(this).attr("href");
+			chref = chref.replace("/szsrlzyshbzj/","/");
+			$(this).attr("href",chref);
+		});
+	});
+</script>
+
+</body>
+</html>

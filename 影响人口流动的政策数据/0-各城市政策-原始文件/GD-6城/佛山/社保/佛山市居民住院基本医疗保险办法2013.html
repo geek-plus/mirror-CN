@@ -1,0 +1,443 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../../../images/font.css">
+    <link rel="stylesheet" type="text/css" href="../../../../images/style.css">
+    <script type="text/javascript" src="../../../../images/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="../../../../images/jq.cookie.js"></script>
+    <script type="text/javascript" src="../../../../images/animate.js"></script>
+    <script type="text/javascript" src="../../../../images/dataCheck.js"></script>
+    <title>政策法规-佛山社保信息网</title>
+</head>
+
+
+
+<body>
+   
+
+        <!-- top -->
+        <!-- 头部-->
+<style>
+    .toplink{width: 326px;}
+    .imglink{margin-left:2px ; width: 25px;height: 25px;float: left;}
+</style>
+<div>
+        <div class="topBG">
+            <div class="commonWidth makecenter">
+            <div class="toplink floatRight">
+                <div class="oldPage floatLeft">
+                    <a href="../../../../">返回首页</a>
+                    <span>|</span>
+
+                    <a href="javascript:;" onClick="setHomePege(this);" >设为主页</a>
+                    <span>|</span>
+                    <a href="javascript:;" onClick="addfavorite();" >加入收藏</a>
+                </div>               
+                <div class="imglink"><a href="http://weibo.com/u/2931846972" title="微博" target="blank"><img src="../../../../images/weibo.jpg" alt="微博" width="25" height="25" /></a></div> 
+                <div class="imglink"><a href="http://www.fssi.gov.cn/sbzx/sbdt/201602/t20160216_5522739.html" title="微信" target="blank"><img src="../../../../images/weixin.png" alt="微信" width="25" height="25" /></a></div>              
+            </div>
+
+                <div class="clear"></div>
+
+                <form  action="http://219.130.221.60:8084/was5/web/search" method="post" name="searchform" target="_blank" >
+                 <input style="display:none" id="channelid" name="channelid" value="299205" /> 
+                <div class="searchFrame floatRight">
+                    <div class="floatLeft"><input name="searchword" style="border:none" id="schText" class="inputFrame" type="text" placeholder="输入关键字搜索" onkeypress="enterCheck(event);" onkeydown="if(event.keyCode==13){document.getElementById('bt').click();return false;}" /></div>
+                    <input id="hiddenText1" type="text" style="display:none" />
+                    <div class="floatLeft"><span id="bt" class="schIcon" onclick="document.searchform.submit();document.charset='utf-8';"></span></div>
+                    <div class="clear"></div>
+                </div>
+                </form>
+
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <div class="navBG">
+            <div class="topWidth makecenter" style="position:relative;">
+                <span class="topLnk fuzhu">
+                <a class="title" href="../../../../">首&nbsp;&nbsp;页</a>
+                </span>
+                <span class="topGap">|</span>
+                <span class="topLnk">
+                    <a class="title" href="../../../../zwgk/">政务公开</a>
+
+                    <span class="menu01">
+                        
+                        <a href="../../../../zwgk/xxgkml/" target="_blank">信息公开目录</a>
+                        
+                        <a href="../../../../zwgk/jgzn/" target="_blank">机构职能</a>
+                        
+                        <a href="../../../../zwgk/xzxg/" target="_blank">新政新规</a>
+                        
+                        <a href="../../../../zwgk/ghjh/" target="_blank">规划计划</a>
+                        
+                        <a href="../../../../zwgk/cgxx/" target="_blank">采购信息</a>
+                        
+                        <a href="../../../../zwgk/rsrm/" target="_blank">人事任免</a>
+                        
+                        <a href="../../../../zwgk/ryzl/" target="_blank">人员招录</a>
+                        
+                        <a href="../../../../zwgk/yjgl/" target="_blank">应急管理</a>
+                        
+                        <a href="../../../../zwgk/lxfs/" target="_blank">联系方式</a>
+                        
+                    </span>
+                </span>
+                
+
+                <span class="topGap">|</span>
+                <span class="topLnk">
+                    <a class="title" href="../../../../sbzx/">社保资讯</a>
+
+                    <span class="menu02">                
+                     
+                     <a href="../../../../sbzx/sbdt/" target="_blank">社保动态</a>
+                     
+                     <a href="../../../../sbzx/rdzt/" target="_blank">热点专题</a>
+                     
+                     <a href="../../../../sbzx/tzgg/" target="_blank">通知公告</a>
+                     
+                 </span>
+             </span>
+
+
+             <span class="topGap">|</span>
+             <span class="topLnk">
+                <a class="title" href="../../../">业务办理</a>
+
+                <span class="menu03">                
+                    
+                    <a href="../../../ylbx/" target="_blank">养老保险</a>
+                    
+                    <a href="../../" target="_blank">医疗保险</a>
+                    
+                    <a href="../../../gsbx/" target="_blank">工伤保险</a>
+                    
+                    <a href="../../../sybx_1090265/" target="_blank">生育保险</a>
+                    
+                    <a href="../../../sybx/" target="_blank">失业保险</a>
+                    
+                    <a href="../../../zhbx/" target="_blank">综合保险</a>
+                    
+                </span>
+            </span>
+
+
+            <span class="topGap">|</span>
+            <span class="topLnk">
+                <a class="title" href="../../../../hdjl/">互动交流</a>
+
+                <span class="menu04">                
+                    
+                    <a href="../../../../hdjl/wsdc/" target="_blank">网上调查</a>
+                    
+                    <a href="../../../../hdjl/yjzj/" target="_blank">意见征集</a>
+                    
+                    <a href="../../../../hdjl/zxft/" target="_blank">在线访谈</a>
+                    
+                    <a href="http://wz.foshan.gov.cn/wlfyr/sdzjg/srlzyhshbzj/" target="_blank">网络发言人平台</a>
+                    
+                </span>
+            </span>
+
+
+            <span class="topGap">|</span>
+            <span class="topLnk">
+                <a class="title" href="../../../../bmfw/">便民服务</a>
+
+                <span class="menu05">                
+                    
+                    <a href="../../../../bmfw/jfbz/" target="_blank">缴费标准</a>
+                    
+                    <a href="../../../../bmfw/cjwt/" target="_blank">常见问题</a>
+                    
+                    <a href="http://61.142.213.86:8089/fswb/" target="_blank">社保卡查询</a>
+                    
+                    <a href="http://61.142.213.86/grwssb/" target="_blank">个人社保信息查询</a>
+                    
+                    <a href="http://www.gdhrss.gov.cn/sofpro/otherproject/yaopin/yaopin.jsp" target="_blank">医疗保险药品查询</a>
+                    
+                    <a href="../../../../bmfw/ddyljgcx/" target="_blank">定点医疗机构查询</a>
+                    
+                    <a href="http://61.142.213.86/checkprint/default.jsp" target="_blank">参保证明</a>
+                    
+                    <a href="../../../../bmfw/mnjs/" target="_blank">模拟计算</a>
+                    
+                </span>
+            </span>
+            <div id="floatbar" style="position:absolute; width:30px; height:244px; top:62px; left:-50px;"><img src="../../../../images/floatbar.png" /></div>
+            <div id="floatbar1" style="position:absolute; width:60px; height:220px; top:62px; right:-80px;"><a href="http://my.fs.cn" target="_blank"><img src="../../../../images/floatbar1.png" width="60" height="220" /></a></div>
+        </div>
+    </div>
+</div>
+<script>
+    $(".fuzhu").hover(function(){
+       $(".fuzhu").css("background-color","#fff")},
+        function(){$(".fuzhu").css("background-color","#004ba8")})
+</script>
+  <script type="text/javascript"> 
+                    $(function () {
+                        liShowHide("liNav");
+                //var tabTop = new tabOver("bannerTab", "bannerImg", "bannerPage", "banner");
+//              var tab1 = new tabOver("inTab", "inCtx1", "inCtx2");
+                //var tab2 = new tabOver("plyTab", "plyCtx1", "plyCtx2");
+
+
+
+                if ($("#lnkTitle").children().length == 0) {
+                    $("#lnkTitle").hide();
+                }
+
+                //bottomCheck
+                var bc = new dataCheck();
+                
+                //bc.bottomCheck();
+
+
+                //floatbar\floatbar1
+                var fb = $("#floatbar");
+                var fb1 = $("#floatbar1");
+                var win = $(window);
+                win.scroll(function () {
+                    var t = win.scrollTop();
+                    if (t > 200) t -= 200;
+                    else t = 0;
+
+                    var newT = 62 + t;
+                    fb.css("top", newT+"px");
+                    fb1.css("top", newT+"px");
+                });            
+                
+
+                    
+
+            function search() {
+                var tVal = $("#schText").val();
+                if (tVal != "") {
+                    location.href = "search.aspx?key=" + escape(tVal);
+                    
+                } else {
+                    alert("请输入搜索关键字");
+                }
+            }
+
+            function enterCheck(e) {
+                var keynum;
+                if (window.event) {
+                    keynum = e.keyCode;
+                }
+                else if (e.which) {
+                    keynum = e.which;
+                }
+                if (keynum == 13) {                 
+                    search();
+                    
+                }
+            }
+   });
+        </script>
+
+        <!-- end of top -->
+
+
+
+
+        
+    <!-- main -->
+    <div class="main">
+
+        <div class="commonWidth ctxFrame">
+            <div class="position">
+                <span class="posIcon"></span>
+                <span>你当前所在的位置：</span>
+                        <a href="../../../../" target="_blank" title="首页" class="CurrChnlCls">首页</a>&gt;<a href="../../../" target="_blank" title="业务办理" class="CurrChnlCls">业务办理</a>&gt;<a href="../../" target="_blank" title="医疗保险" class="CurrChnlCls">医疗保险</a>&gt;<a href="../" target="_blank" title="政策法规" class="CurrChnlCls">政策法规</a>
+            </div>
+
+            <div class="articleFrame makecenter">
+                <div class="artTitle">佛山市人民政府办公室关于印发佛山市居民住院基本医疗保险办法的通知</div>
+
+                <div class="artInfo">发布单位： 市社保基金管理局&nbsp;&nbsp; 发布时间：2013-07-01</div>
+
+                <div class="artCtx">
+                <p style="line-height: 28pt; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">各区人民政府，市政府各部门、直属各机构：</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">《佛山市居民住院基本医疗保险办法》业经市人民政府同意，现印发给你们，请认真贯彻执行。执行过程中遇到的问题，请径向市人力资源社会保障局反映。</span><span style="font-family: '仿宋_GB2312'; letter-spacing: -0.3pt; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; letter-spacing: -0.3pt; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; letter-spacing: -0.3pt; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 248pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; letter-spacing: -0.3pt; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;&nbsp; 佛山市人民政府办公室</span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 248pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; letter-spacing: -0.3pt; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; </span><span style="font-family: '仿宋_GB2312'; letter-spacing: -0.3pt; font-size: 16pt; mso-spacerun: 'yes'">2013年5月17日</span><span style="font-family: '仿宋_GB2312'; letter-spacing: -0.3pt; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: center; line-height: 28pt; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '方正小标宋简体'; font-size: 22pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: center; line-height: 28pt; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '方正小标宋简体'; font-size: 22pt; mso-spacerun: 'yes'">佛山市居民住院基本医疗保险办法</span><span style="font-family: '方正小标宋简体'; font-size: 22pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: center; line-height: 28pt; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'">第一章&nbsp;&nbsp;总&nbsp;&nbsp;则</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第一条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;为完善居民住院基本医疗保险市级统筹制度，保障人民群众的基本医疗保险待遇，提高居民住院医疗保险基金的抗风险能力，根据《中华人民共和国社会保险法》、国务院《关于开展城镇居民基本医疗保险试点的指导意见》（国发〔2007〕20号）、</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">省府办公厅</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">《关于加快推进我省基本医疗保险和生育保险市级统筹工作的通知》（粤办函〔2010〕487号）等国家和省的有关规定，结合本市实际，制</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">订</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">本办法。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;按照“以收定支、收支平衡、略有结余”的基本原则，坚持基本医疗保障水平与本市经济社会发展水平和各方面承受能力相适应的原则；坚持公平与效率相结合、权利与义务相对等的原则。采取政府主导，财政补助和个人缴费的筹资方式，以住院医疗统筹为主，同时建立大病保险的医疗保险制度。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第三条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;居民住院基本医疗保险（以下简称居民医保）的参保主体为（</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">以下称</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">参保人）：</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（一）未参加城镇职工基本医疗保险的本市户籍居民。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（二）本市</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">行政</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">区</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">域</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">内高等院校或科研院（所）全日制在读研究生；各类普通高等学校、成人高等学校和高等职业技术学校（包括民办高校）全日制学历教育在读本专科生；各类中等职业技术学校（包括普通中专、成人中专、职业高中、技工学校和民办职校）全日制学历教育在校生（以下称学生）。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（三）本市就业的异地务工人员（含港、澳、台）的符合条件的子女：指异地务工人员在本市参加城镇职工基本医疗保险累计缴费满1年且处于参保缴费状态，或者夫妻一方为本市户籍并参加本市基本医疗保险（指城镇职工基本医疗保险或居民住院基本医疗保险），其学龄前（含新出生婴儿）或在本市中小学就读的，并已在外地（含港、澳、台）入户的子女。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第四条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;居民医保实行收支两条线管理，统一政策、统一待遇、统一管理、独立核算、基金缺口统一调剂，市区分级责任的市级统筹管理模式。居民医保基金纳入市居民住院基本医疗保险基金财政专户，专款专用。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第五条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;本办法所述的待遇是指住院医疗保障、门诊特定病种医疗保障、家庭病床医疗保障、生育医疗补贴、大病医疗保障。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: center; line-height: 28pt; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'">第二章&nbsp;&nbsp;基金的筹集和支出管理</span><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第六条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;居民医保基金的来源：</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（一）参保人缴纳的医疗保险费</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（二）各级财政补助收入</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（三）居民医保基金的利息收入</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（四）慈善基金</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（五）其他合法收入。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第七条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;居民医保实行按年度（每年的7月1日至次年的6月30日，为一个社保年度）一次性缴费</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">新生（含中途转入我市就读学生）的首个缴费年度为办理入学手续当月的1日至次年的6月30日。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第八条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;居民医保保险费（以下简称保险费）由财政补助和个人缴费两部分组成，按年度缴纳。2013社保年度保险费标准平均690元/人，其中个人缴费标准为258元/人。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">有条件的村（居）、组集体经济组织，可以集体经济组织（股份社）为单位，为符合参保条件的集体经济组织成员部分或全部个人缴费，并代扣代缴。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">经核定的本市户籍农村五保户、城镇“三无”（无劳动能力</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">，</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">无生活来源</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">，</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">无法定赡养</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">人</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">、扶养人或者抚养人）人员、城乡最低生活保障和享受国家抚恤补助的烈士遗属、因公牺牲军人遗属、病故军人遗属、在乡老复员军人、残疾军人、带病回乡退伍军人、“五老”（老堡垒户、老游击队员、老交通员、老党员、老苏区干部）人员、参战涉核退役人员、丧失劳动能力的重度残疾人、低收入重病患者、低收入家庭60周岁以上的老年人和未成年人等特殊群体人员参加居民医保，个人应缴纳的保险费，由所在区、镇（街道）财政或慈善基金承担。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">异地务工人员的子女参加本市居民医保，由个人全额承担保险费。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第九条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;居民医保基金实行预算管理。市社保基金管理局每年按规定做好次年居民医保基金收支预算，经市人力资源社会保障局和市财政局审核并报市人民政府批准后执行。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第十条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;本市户籍居民以家庭为单位（户口簿为准）参加居民医保，不能选择性参加，凡同一户家庭中有一个应参保对象未参保的，则全户家庭成员不能参保。以下情况视同已参保：</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（一）已参加本市城镇职工基本医疗保险的</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（二）已参加异地城镇职工基本医疗保险的</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（三）已参加就读学校所在地的城镇居民医疗保险的。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">本市户籍的大、中专学生以家庭为单位参加其户籍所在地的居民医保，非本市户籍的大、中专学生以学校为单位在其学校所在区参加居民医保。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第十一条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;本市</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">行政</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">区</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">域</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">内各科研院（所）、高等院校、中职技校在新学期开学缴费时，把非本市户籍学生在校期间参保个人应缴纳的保险费，纳入学校代收费项目，与学费一并收取。学生参保所需财政补助资金和低保学生个人缴费部分，按照学校行政隶属关系由同级财政负责。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第十二条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;本市城镇职工基本医疗保险的参保人，不能同时参加本市居民医保（社保年度内已先参加居民医保的除外）。在社保年度内参保人死亡、失踪、升学、参军、中途参加城镇职工基本医疗保险（含享受失业保险待遇及退休人员基本医疗保险待遇）、领取1—4级伤残津贴、户籍迁出本市等原因提出停保的，在次月的20日前持相关材料到参保地办理停保。已缴纳的保险费不予退还，申报期除外。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第十三条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;参保人可在社保年度中途参加居民医保。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（一）中途参保的，保险费按本年度剩余可参保月数一次性缴纳。参保人缴纳由个人负担的保险费，财政补助部分由区、镇（街道）财政负担。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（二）参保人中途参保并按规定缴费达账后，从参保申报之日起计满90天后（自第91天零时起）方可享受本办法所规定的待遇。新生儿、职工医疗保险停保人员（含停领失业保险待遇人员）、新迁入本市户籍人员、新增特殊群体人员、刑满释放人员、退役士兵在符合条件之日起90天内办理参保缴费的不受此限制。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（三）新生儿出生90天内参加居民医保的，保险费从出生之月起按本年度剩余可参保月数一次性缴纳</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">缴费达账后，从其出生之日起所发生的符合政策范围内的医疗费用，按本办法规定由居民医保基金予以报销。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">新生儿从出生之日起90天后参保的，保险费按本年度剩余可参保月数一次性缴纳</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">，</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">从参保申报之日起第91天零时起享受本办法规定的待遇。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: center; line-height: 28pt; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'">第三章&nbsp;&nbsp;待&nbsp;&nbsp;遇</span><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第十四条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;住院医疗保险待遇。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（一）住院起付标准。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">居民医保基金支付的起付标准为：三级医院1,200元／次</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">，</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">二级医院600元／次</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">，</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">一级医院（含社区定点医疗卫生服务机构，下同）400元／次。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（二）居民医保基金支付比例。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">1.参保人在定点医疗机构发生的起付标准以上、最高支付限额以下纳入居民医保基金支付范围的住院医疗费用，由居民医保基金根据医院级别支付：三级医院52%，二级医院75%，一级医院90%</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">2.参保人因病情需要转往市外医疗机构就医的，实行层级转诊制度（专科医院除外），分别按以下比例支付：</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（1）经市内二级及以上定点医疗机构转诊并经参保所在区社保经办机构核准，到市外定点医疗机构住院的，居民医保基金支付比例为三级医院45%，二级医院65%，一级医院80%</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（2）经参保所在区社保经办机构核准后到市外定点医疗机构住院的，居民医保基金支付比例为三级医院35%，二级医院55%，一级医院70%</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（3）经参保所在区社保经办机构核准到市外非定点医疗机构住院的，居民医保基金支付比例为三级医院30%，二级医院45%，一级医院55%</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（4）未经参保所在区社保经办机构核准自行到市外医疗机构住院的医疗费，居民医保基金不予支付。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">3.长期异地居住的参保人，填写《佛山市基本医疗保险异地就医申请表》，可选择2—3间经当地社保经办机构确定的定点医院作为就医定点医疗机构，报参保所在区社保经办机构批准备案。参保人在其定点医疗机构发生纳入居民医保基金支付范围的医疗费用按市内同等级定点医疗机构的支付比例支付。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">4.恶性肿瘤、心脑疾病手术治疗以及肝、肾和骨髓移植住院的，居民医保基金支付在上述比例标准上增加10个百分点（一级医院除外）。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（三）最高支付限额。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">居民医保基金年度累计最高支付限额20万元。年度累计最高支付限额按出院日期的社保年度核定。居民医保基金支付住院、门诊特定病种、家庭病床和生育医疗补贴的医疗费用，一并计算在居民医保基金年度累计最高支付限额内。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第十五条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;参加居民医保的女性参保人，符合国家计划生育政策的妊娠分娩，享受居民医保基金一次性生育医疗补贴：阴式分娩1,000元，剖宫产及双胎以上妊娠分娩1,500元。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">参保人符合国家计划生育政策妊娠的，妊娠期间流产、病理引产以及妊娠合并症、分娩并发症的住院医疗费用按居民医保有关规定支付。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第十六条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;门诊特定病种医疗费用报销不设起付标准。参保人在定点医疗机构诊断、治疗门诊特定病种的基本医疗费用纳入基金支付范围，由居民医保基金按70%比例支付至限额标准。参保人患两种以上门诊特定病种时，以限额标准高的一种疾病确定其限额标准。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第十七条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;参保人患有下列病种之一的，可申请开设家庭病床：慢性阻塞性肺气肿急性发作</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">，</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">恶性肿瘤晚期（放疗、化疗、热疗除外）</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">，</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">脑血管意外瘫痪康复期</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">，</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">慢性心功能不全三级以上疾病</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">，</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">慢性多器官功能衰竭</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">，</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">肝硬化失代偿期</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">，</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">长期卧床并发肺部感染或褥疮。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">开设家庭病床的医疗机构原则上只限于一级医院和慢性病专科医院。居民医保基金按住院支付比例支付待遇。开设家庭病床每一期不超过90天，在一个社保年度内不得超过两期。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第十八条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;建立大病保险制度，具体办法另文规定。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第十九条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;纳入居民医保基金核报范围的医疗费用，参照《广东省基本医疗保险和工伤保险药品目录》、《广东省城镇职工基本医疗保险诊疗项目管理暂行办法》、《广东省城镇职工基本医疗保险医疗服务设施范围和支付标准管理暂行办法》和《佛山市非营利性医疗机构医疗服务价格》范围核定。纳入基本医疗保险核报范围的标准另行制定。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二十条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;残疾参保人在定点康复医疗机构发生的国家规定的以治疗性康复为目的的医疗康复项目纳入基本医疗保障范围。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二十一条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;居民医保基金不予支付的范围：</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（一）自购药品的</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（二）应当从工伤保险基金中支付的</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（三）应当由第三人负担的</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（四）应当由公共卫生负担的</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（五）到境外就医的</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（六）其他法律法规规定的基金不予支付的情形。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二十二条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;医疗费用依法应当由第三人负担，第三人无力承担或者第三人逃逸的，参保人应当提交所有医疗费用的原始票据等材料并凭以下证明资料向社保经办机构申请支付，居民医保基金按本法有关规定支付医疗费用：</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（一）属于刑事伤害的，应提供公安部门证明</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（二）属于交通事故伤害的，应提供公安交警部门的证明</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（三）属于其它应当由第三人负担医疗费情形的，应提供有关行政部门出具的证明或者人民法院的裁判文书。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: center; line-height: 28pt; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'">第四章&nbsp;&nbsp;管&nbsp;&nbsp;理</span><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二十三条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;实行定点医疗机构制度。居民医保定点医疗机构统一为已确定的全市城镇职工基本医疗保险定点医疗机构。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二十四条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;社保经办机构与定点医疗机构实行协议管理，在总额控制的原则下，采取按服务单元、病种等付费方式与定点医疗机构结算。协议文本、结算办法由市人力资源社会保障局会有关部门另文规定。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二十五条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;市人民政府对居民医保工作负总责，各区人民政府对本</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">行政</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">区</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">域</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">实施居民医保工作负责，将居民医保工作列入当地经济社会发展规划和年度工作计划，并落实居民医保经办服务所需的机构设置及人员编制，人员和工作经费由当地财政预算安排。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">人力资源社会保障</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">部门是居民医保的主管部门，负责居民医保的组织实施和对定点医疗机构管理情况的监督检查工作。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">各级社保经办机构负责居民医保的各项具体业务，主要包括参保人员登记、居民医保基金征收、居民医保基金的支出管理、报送资金的使用计划、编报基金的预决算等。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">财政部门负责将财政补助资金纳入年度预算安排，对基金使用情况进行监督管理，区</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">、</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">镇（街道）财政部门确保在规定时间内把财政补助资金及参保人缴纳参保费全额上划市统筹专户。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">卫生部门负责对医疗机构进行监督和管理，规范医疗机构医疗行为，加快社区卫生服务机构建设，为参保人员提供基本医疗服务。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">教育部门按属地管理原则做好在校学生的参保组织工作，指导学校做好参保资金的筹措（包括申请政府财政补贴），统计家庭经济困难的低保学生参保人数，负责组织学生办理参保手续等。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">民政部门负责对享受国家抚恤补助待遇和最低生活保障待遇、五保待遇、“三无”救济待遇、低收入人员等特殊群体的资格进行核定并组织参保。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">残联负责对重度残疾人的残疾类别和等级进行审核并组织参保。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">审计部门负责对居民医保基金收支情况进行审计。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">监察部门对有关部门履行职责情况进行监督。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二十六条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;违反本规定，隐匿、转移、侵占、挪用居民医保基金或者违规投资运营的，由市人力资源社会保障局、财政局、审计局责令追回</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">有违法所得的，没收违法所得</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">对直接负责的主管人员和其他直接责任人员依法给予处分。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: center; line-height: 28pt; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'">第五章&nbsp;&nbsp;附&nbsp;&nbsp;则</span><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二十七条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;居民医保缴费标准和医疗待遇标准随着社会经济发展和居民医保基金运作状况适时调整。调整标准和操作方案由市人力资源社会保障局会同</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">市</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">有关部门提出，报市人民政府批准后作相应调整。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二十八条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;本办法由市人力资源社会保障局负责解释，并制</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">订</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">实施细则。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二十九条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;本办法从2013年7月1日起</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">实施</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">。市、区在本办法实施前的规定与本办法不一致的，按本办法执行。此后国家和省有新规定的，从其规定。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<!--EndFragment-->
+                </div>
+
+                <div class="clear"></div>
+            </div>
+
+
+            
+        </div>
+
+    </div>
+    <!-- end of main -->
+           
+
+
+      
+        <!-- bottom -->
+        <!-- 脚部-->
+       <div class="bottom">
+    <div class="bottomWidth makecenter">
+        <div class="bottomLeft floatLeft">
+            <div class="lh03">
+                <a href="../../../../wzbz/wzjs/" target="_blank">网站介绍</a>
+                <span>|</span>
+                <a href="../../../../wzbz/wzdt/" target="_blank">网站地图</a>
+                <span>|</span>
+                <a href="../../../../wzbz/sybz/" target="_blank">使用帮助</a>
+                <span>|</span>
+                <a href="../../../../wzbz/ystl/" target="_blank">隐私条例</a>
+                <span>|</span>
+                <a href="../../../../wzbz/xgwzlj/" target="_blank">相关网站链接</a>
+            </div>
+
+            <div class="lh03">
+               佛山市社会保险基金管理局&nbsp;版权所有&copy; 2015&nbsp; 备案号:<a href="http://www.miibeian.gov.cn" target="_blank">粤ICP备&nbsp;05029485号</a>
+           </div>
+            <div class="lh03">
+               审批服务监督电话：12345
+           </div>
+       </div>
+
+       <div class="bottomRight floatRight">
+        <div class="lh03">
+            <script type="text/javascript">
+            var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); 
+            document.write(unescape("%3Cspan id='cnzz_stat_icon_1255788136'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1255788136%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+            </script>
+
+            <span>你是第 <span id="h01" class="bottomColor">1225552</span> 位来访者</span>
+        </div>
+
+        <div class="lh03">
+            <span>建议使用分辨率 1024*768、IE7以上版本浏览器</span>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+</div>
+</div>
+<script language="javascript" type="text/javascript">
+function LoadJsCssFile(filename, filetype){ 
+if (filetype=="js"){ //如果是.js文件 
+var fileref=document.createElement("script"); 
+fileref.setAttribute("type","text/javascript"); 
+fileref.setAttribute("src",filename); 
+if (typeof fileref != "undefined") 
+document.getElementsByTagName("head")[0].appendChild(fileref) 
+} 
+
+}   
+ //动态载入.js 文件 
+</script>
+<script>
+LoadJsCssFile("http://219.130.221.166:8080/govservice/fwtj/fssbxx/count.jsp", "js");
+</script>
+        <!-- end of bottom -->
+
+
+
+
+
+        
+
+  
+</body>
+</html>
