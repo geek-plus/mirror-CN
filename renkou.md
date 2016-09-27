@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 permalink: /renkou/
 ---
 ## 户籍改革+居住证：
