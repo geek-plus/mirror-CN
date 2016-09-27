@@ -1,0 +1,411 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../../../images/font.css">
+    <link rel="stylesheet" type="text/css" href="../../../../images/style.css">
+    <script type="text/javascript" src="../../../../images/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="../../../../images/jq.cookie.js"></script>
+    <script type="text/javascript" src="../../../../images/animate.js"></script>
+    <script type="text/javascript" src="../../../../images/dataCheck.js"></script>
+    <title>办事指南-佛山社保信息网</title>
+</head>
+
+
+
+<body>
+   
+
+        <!-- top -->
+        <!-- 头部-->
+<style>
+    .toplink{width: 326px;}
+    .imglink{margin-left:2px ; width: 25px;height: 25px;float: left;}
+</style>
+<div>
+        <div class="topBG">
+            <div class="commonWidth makecenter">
+            <div class="toplink floatRight">
+                <div class="oldPage floatLeft">
+                    <a href="../../../../">返回首页</a>
+                    <span>|</span>
+
+                    <a href="javascript:;" onClick="setHomePege(this);" >设为主页</a>
+                    <span>|</span>
+                    <a href="javascript:;" onClick="addfavorite();" >加入收藏</a>
+                </div>               
+                <div class="imglink"><a href="http://weibo.com/u/2931846972" title="微博" target="blank"><img src="../../../../images/weibo.jpg" alt="微博" width="25" height="25" /></a></div> 
+                <div class="imglink"><a href="http://www.fssi.gov.cn/sbzx/sbdt/201602/t20160216_5522739.html" title="微信" target="blank"><img src="../../../../images/weixin.png" alt="微信" width="25" height="25" /></a></div>              
+            </div>
+
+                <div class="clear"></div>
+
+                <form  action="http://219.130.221.60:8084/was5/web/search" method="post" name="searchform" target="_blank" >
+                 <input style="display:none" id="channelid" name="channelid" value="299205" /> 
+                <div class="searchFrame floatRight">
+                    <div class="floatLeft"><input name="searchword" style="border:none" id="schText" class="inputFrame" type="text" placeholder="输入关键字搜索" onkeypress="enterCheck(event);" onkeydown="if(event.keyCode==13){document.getElementById('bt').click();return false;}" /></div>
+                    <input id="hiddenText1" type="text" style="display:none" />
+                    <div class="floatLeft"><span id="bt" class="schIcon" onclick="document.searchform.submit();document.charset='utf-8';"></span></div>
+                    <div class="clear"></div>
+                </div>
+                </form>
+
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <div class="navBG">
+            <div class="topWidth makecenter" style="position:relative;">
+                <span class="topLnk fuzhu">
+                <a class="title" href="../../../../">首&nbsp;&nbsp;页</a>
+                </span>
+                <span class="topGap">|</span>
+                <span class="topLnk">
+                    <a class="title" href="../../../../zwgk/">政务公开</a>
+
+                    <span class="menu01">
+                        
+                        <a href="../../../../zwgk/xxgkml/" target="_blank">信息公开目录</a>
+                        
+                        <a href="../../../../zwgk/jgzn/" target="_blank">机构职能</a>
+                        
+                        <a href="../../../../zwgk/xzxg/" target="_blank">新政新规</a>
+                        
+                        <a href="../../../../zwgk/ghjh/" target="_blank">规划计划</a>
+                        
+                        <a href="../../../../zwgk/cgxx/" target="_blank">采购信息</a>
+                        
+                        <a href="../../../../zwgk/rsrm/" target="_blank">人事任免</a>
+                        
+                        <a href="../../../../zwgk/ryzl/" target="_blank">人员招录</a>
+                        
+                        <a href="../../../../zwgk/yjgl/" target="_blank">应急管理</a>
+                        
+                        <a href="../../../../zwgk/lxfs/" target="_blank">联系方式</a>
+                        
+                    </span>
+                </span>
+                
+
+                <span class="topGap">|</span>
+                <span class="topLnk">
+                    <a class="title" href="../../../../sbzx/">社保资讯</a>
+
+                    <span class="menu02">                
+                     
+                     <a href="../../../../sbzx/sbdt/" target="_blank">社保动态</a>
+                     
+                     <a href="../../../../sbzx/rdzt/" target="_blank">热点专题</a>
+                     
+                     <a href="../../../../sbzx/tzgg/" target="_blank">通知公告</a>
+                     
+                 </span>
+             </span>
+
+
+             <span class="topGap">|</span>
+             <span class="topLnk">
+                <a class="title" href="../../../">业务办理</a>
+
+                <span class="menu03">                
+                    
+                    <a href="../../../ylbx/" target="_blank">养老保险</a>
+                    
+                    <a href="../../../ylbx_1090262/" target="_blank">医疗保险</a>
+                    
+                    <a href="../../../gsbx/" target="_blank">工伤保险</a>
+                    
+                    <a href="../../../sybx_1090265/" target="_blank">生育保险</a>
+                    
+                    <a href="../../../sybx/" target="_blank">失业保险</a>
+                    
+                    <a href="../../" target="_blank">综合保险</a>
+                    
+                </span>
+            </span>
+
+
+            <span class="topGap">|</span>
+            <span class="topLnk">
+                <a class="title" href="../../../../hdjl/">互动交流</a>
+
+                <span class="menu04">                
+                    
+                    <a href="../../../../hdjl/wsdc/" target="_blank">网上调查</a>
+                    
+                    <a href="../../../../hdjl/yjzj/" target="_blank">意见征集</a>
+                    
+                    <a href="../../../../hdjl/zxft/" target="_blank">在线访谈</a>
+                    
+                    <a href="http://wz.foshan.gov.cn/wlfyr/sdzjg/srlzyhshbzj/" target="_blank">网络发言人平台</a>
+                    
+                </span>
+            </span>
+
+
+            <span class="topGap">|</span>
+            <span class="topLnk">
+                <a class="title" href="../../../../bmfw/">便民服务</a>
+
+                <span class="menu05">                
+                    
+                    <a href="../../../../bmfw/jfbz/" target="_blank">缴费标准</a>
+                    
+                    <a href="../../../../bmfw/cjwt/" target="_blank">常见问题</a>
+                    
+                    <a href="http://61.142.213.86:8089/fswb/" target="_blank">社保卡查询</a>
+                    
+                    <a href="http://61.142.213.86/grwssb/" target="_blank">个人社保信息查询</a>
+                    
+                    <a href="http://www.gdhrss.gov.cn/sofpro/otherproject/yaopin/yaopin.jsp" target="_blank">医疗保险药品查询</a>
+                    
+                    <a href="../../../../bmfw/ddyljgcx/" target="_blank">定点医疗机构查询</a>
+                    
+                    <a href="http://61.142.213.86/checkprint/default.jsp" target="_blank">参保证明</a>
+                    
+                    <a href="../../../../bmfw/mnjs/" target="_blank">模拟计算</a>
+                    
+                </span>
+            </span>
+            <div id="floatbar" style="position:absolute; width:30px; height:244px; top:62px; left:-50px;"><img src="../../../../images/floatbar.png" /></div>
+            <div id="floatbar1" style="position:absolute; width:60px; height:220px; top:62px; right:-80px;"><a href="http://my.fs.cn" target="_blank"><img src="../../../../images/floatbar1.png" width="60" height="220" /></a></div>
+        </div>
+    </div>
+</div>
+<script>
+    $(".fuzhu").hover(function(){
+       $(".fuzhu").css("background-color","#fff")},
+        function(){$(".fuzhu").css("background-color","#004ba8")})
+</script>
+  <script type="text/javascript"> 
+                    $(function () {
+                        liShowHide("liNav");
+                //var tabTop = new tabOver("bannerTab", "bannerImg", "bannerPage", "banner");
+//              var tab1 = new tabOver("inTab", "inCtx1", "inCtx2");
+                //var tab2 = new tabOver("plyTab", "plyCtx1", "plyCtx2");
+
+
+
+                if ($("#lnkTitle").children().length == 0) {
+                    $("#lnkTitle").hide();
+                }
+
+                //bottomCheck
+                var bc = new dataCheck();
+                
+                //bc.bottomCheck();
+
+
+                //floatbar\floatbar1
+                var fb = $("#floatbar");
+                var fb1 = $("#floatbar1");
+                var win = $(window);
+                win.scroll(function () {
+                    var t = win.scrollTop();
+                    if (t > 200) t -= 200;
+                    else t = 0;
+
+                    var newT = 62 + t;
+                    fb.css("top", newT+"px");
+                    fb1.css("top", newT+"px");
+                });            
+                
+
+                    
+
+            function search() {
+                var tVal = $("#schText").val();
+                if (tVal != "") {
+                    location.href = "search.aspx?key=" + escape(tVal);
+                    
+                } else {
+                    alert("请输入搜索关键字");
+                }
+            }
+
+            function enterCheck(e) {
+                var keynum;
+                if (window.event) {
+                    keynum = e.keyCode;
+                }
+                else if (e.which) {
+                    keynum = e.which;
+                }
+                if (keynum == 13) {                 
+                    search();
+                    
+                }
+            }
+   });
+        </script>
+
+        <!-- end of top -->
+
+
+
+
+        
+    <!-- main -->
+    <div class="main">
+
+        <div class="commonWidth ctxFrame">
+            <div class="position">
+                <span class="posIcon"></span>
+                <span>你当前所在的位置：</span>
+                        <a href="../../../../" target="_blank" title="首页" class="CurrChnlCls">首页</a>&gt;<a href="../../../" target="_blank" title="业务办理" class="CurrChnlCls">业务办理</a>&gt;<a href="../../" target="_blank" title="综合保险" class="CurrChnlCls">综合保险</a>&gt;<a href="../" target="_blank" title="办事指南" class="CurrChnlCls">办事指南</a>
+            </div>
+
+            <div class="articleFrame makecenter">
+                <div class="artTitle">关于灵活就业人员参加职工养老保险的办理指南</div>
+
+                <div class="artInfo">发布单位： 市社保基金管理局&nbsp;&nbsp; 发布时间：2016-08-09</div>
+
+                <div class="artCtx">
+                <div class=TRS_Editor><div class="TRS_PreAppend" style="overflow-x: hidden; word-break: break-all">
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 28pt; margin-bottom: 0pt"><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">根据《关于完善灵活就业人员参加企业职工基本养老保险有关规定的通知》（粤人社规〔2016〕4号，以下简称《通知》）、</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">《佛山市人力资源和社会保障局　佛山市地方税务局关于完善灵活就业人员参加基本养老保险相关问题的通知》</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">（佛人社〔2016〕</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">155</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">号的文件精神，符合一定条件的灵活就业人员，可在我市申请参加企业职工基本</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">养老保险（以下简称</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">职工养老保险），</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">现就</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">政策有关内容</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">告知如下</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">：</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt"><span style="font-family: '方正小标宋简体'; color: rgb(0,0,0); font-size: 16pt; font-weight: bold">一、按月参保政策</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 28pt; margin-bottom: 0pt"><span style="font-family: '楷体_GB2312'; color: rgb(0,0,0); font-size: 14pt; font-weight: bold">（一）参保条件</span><span style="font-family: '楷体_GB2312'; color: rgb(0,0,0); font-size: 14pt; font-weight: bold">:</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">申请人</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">符合以下条件的，可在我市申请按月参加职工养老保险：</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 28pt; margin-bottom: 0pt"><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">1、</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">本市户籍人员。</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">须同时满足以下两个条件：一是未达到退休年龄</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">；二</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">是尚未领取企业职工基本养老金、城乡居民基本养老金和被征地农民养老保险待遇。</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 28pt; margin-bottom: 0pt"><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">2、</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">本省外市人员。须同时满足以下三个条件：一是未达到退休年龄</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">；二</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">是尚未领取企业职工基本养老金、城乡居民基本养老金和被征地农民养老保险待遇；三是最后参保地在我市的实际缴纳职工养老保险累计满5年。</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 28pt; margin-bottom: 0pt"><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">3、</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">外省户籍人员。须同时满足以下三个条件：一是男年满55周岁、女满45周岁，且未达到退休年龄；</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">二</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">是尚未领取企业职工基本养老金、城乡居民基本养老金和被征地农民养老保险待遇；三是在广东省内实际缴纳职工养老保险费累计满10年，最后参保地在我市，并且实际缴纳职工养老保险累计满5年。</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; margin-bottom: 0pt"><span style="font-family: '楷体_GB2312'; color: rgb(0,0,0); font-size: 14pt; font-weight: bold">　　（二）缴费标准</span><span style="font-family: '楷体_GB2312'; color: rgb(0,0,0); font-size: 14pt; font-weight: bold">:</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">按申请时我市职工养老保险的缴费工资基数上下限范围内（目前为2408元至</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">16575</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">元，下同），由本人根据实际收入状况和经济承受能力自行申报，缴费比例为</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">20%。如按2408元申报计算，每月须缴481.6元。</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 28pt; margin-bottom: 0pt"><span style="font-family: '楷体_GB2312'; color: rgb(0,0,0); font-size: 14pt; font-weight: bold">（三）参保手续:</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">参保人本人持有效身份证原件和正反两面复印件两份、户口簿原件和本人页复印件两份、参保人银行存折原件和复印件等资料到所属地税分局申请办理。</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt"><span style="font-family: '方正小标宋简体'; color: rgb(0,0,0); font-size: 16pt; font-weight: bold">二、一次性缴费政策</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; margin-bottom: 0pt"><span style="font-family: '楷体_GB2312'; color: rgb(0,0,0); font-size: 14pt; font-weight: bold">&nbsp;&nbsp;&nbsp;（一）缴费时段：</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">最长为</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">2006年7月至2016年4月（9年10个月），具体可一次性</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">缴费的</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">时段根据申请人的年龄及之前缴纳职工养老保险费等情况确定。　　</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; margin-bottom: 0pt"><span style="font-family: '楷体_GB2312'; color: rgb(0,0,0); font-size: 14pt; font-weight: bold">&nbsp;&nbsp;&nbsp;（二）办理条件</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">（</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">须同时符合以下两个条件</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">）</span><span style="font-family: '楷体_GB2312'; color: rgb(0,0,0); font-size: 14pt; font-weight: bold">：</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 28.5pt; margin-bottom: 0pt"><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,255); font-size: 14pt">1、申办时为本市户籍，《通知》实施时（即2016年5月1日）未达到退休年龄，且</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,255); font-size: 14pt">尚未领取企业职工基本养老金、城乡居民基本养老金和被征地农民养老保险待遇的人员；</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 28pt; margin-bottom: 0pt"><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,255); font-size: 14pt">2、1956年5月至</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,255); font-size: 14pt">1971年4月期间出生的男性；</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,255); font-size: 14pt">1966年5月至</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,255); font-size: 14pt">1976年4月期间出生，且有职工基本养老保险有效缴费记录的女性；或者</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,255); font-size: 14pt">1961年5月至</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,255); font-size: 14pt">1976年4月期间出生，且</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,255); font-size: 14pt">2016年5月1月前未参保过职工养老保险</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,255); font-size: 14pt">的女性；在男年满45周岁、女年满</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,255); font-size: 14pt">40周岁</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,255); font-size: 14pt">之月至2016年4月存在未参保职工养老保险缴费时段。</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 28pt; margin-bottom: 0pt"><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">注：</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">本省外市户籍人员符合一次性缴费政策的，请到户口所在地的社保部门咨询</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">和办理。</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; margin-bottom: 0pt"><span style="font-family: '楷体_GB2312'; color: rgb(0,0,0); font-size: 14pt; font-weight: bold">　&nbsp;&nbsp;（三）缴费标准：</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">按申请时我市职工养老保险的缴费工资基数上下限范围内，由本人根据实际收入状况和经济承受能力自行申报，缴费比例为</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">20%。如按2408元申报计算，每月须缴481.6元。</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 28pt; margin-bottom: 0pt"><span style="font-family: '楷体_GB2312'; color: rgb(0,0,0); font-size: 14pt; font-weight: bold">（四）办理时间及地点：</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">集中</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">办理时间</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">及地点以各经社保经办机构通知为准。　　</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 28pt; margin-bottom: 0pt"><span style="font-family: '楷体_GB2312'; color: rgb(0,0,0); font-size: 14pt; font-weight: bold">（五）办理手续：</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">参保人本人持二代有效身份证的原件和复印件（正反两面）、户口簿的原件与本人页复印件办理，不得代办；复印件统一用A4纸复印。</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt"><span style="font-family: '方正小标宋简体'; color: rgb(0,0,0); font-size: 16pt; font-weight: bold">三、其他须知</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: -0.5pt; margin-bottom: 0pt"><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp;（一）一次性缴费的年限（2006年7月至2016年4月）中，申请人存在已在异地或本市缴纳职工养老保险的，不得重复申请缴费。</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; margin-bottom: 0pt"><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">　　（二）一次性缴费金额经社保部门核定后，参保人须于60个工作日内到地税部门办理缴费。超过缴费时效未缴费的，原核定结果自动失效。如仍需办理一次性缴费，应到社保部门重新申请和核定。</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; margin-bottom: 0pt"><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">　　（三）申办一次性缴费时，参保人符合规定的未参保缴费时段，只能申办一次，不得拆分多次办理。</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; margin-bottom: 0pt"><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">　　（四）参保人缴费成功后，将按规定分别计入职工养老保险统筹基金和个人账户，个人账户不得提前支取。参保人死亡的，其个人账户中的余额可以全部依法继承。</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 21pt; margin-bottom: 0pt"><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">&nbsp;（五）参保人按月或一次性缴交职工养老保险费的，按本人月缴费工资基数的12%计入统筹基金，8%计入个人账户。</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; margin-bottom: 0pt">&nbsp;</p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 19.46pt; margin-bottom: 0pt">&nbsp;</p>
+<p class="p0" style="text-align: center; line-height: 22pt; margin-top: 0pt; margin-bottom: 0pt"><span style="font-family: '方正小标宋简体'; color: rgb(0,0,0); font-size: 22pt; font-weight: bold">政&nbsp;策&nbsp;答&nbsp;疑</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; margin-bottom: 0pt">&nbsp;</p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 28pt; margin-bottom: 0pt">&nbsp;</p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 28pt; margin-bottom: 0pt"><span style="font-family: '楷体_GB2312'; color: rgb(0,0,0); font-size: 14pt; font-weight: bold">一、一次性缴费的时段如何核定？</span></p>
+<p class="p0" style="line-height: 22pt; margin: 0pt 2pt 0pt 4pt"><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">&nbsp;&nbsp;&nbsp;答：核定</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">申请人一次性缴费时段的规则如下：</span></p>
+<p class="p0" style="line-height: 22pt; text-indent: 28pt; margin: 0pt 2pt 0pt 4pt"><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">1、2006年7月1日（不含本日）之前男满45周岁、女满40周岁，且2016年5月1日（不含本日）之前未达到退休年龄的人员，其一次性缴费的时段为2006年7月至2016年4月期间的未参保缴费时段。例：张先生，本市户籍，</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">1961年5月出生（即2006年5月年满45周岁），现年55岁，一直未参加过职工养老保险和居民养老保险，那么，其可申请一次性缴费的时段为2006年7月至2016年4月。</span></p>
+<p class="p0" style="line-height: 22pt; text-indent: 28pt; margin: 0pt 2pt 0pt 4pt"><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">2、2006年7月1日（含本日）至2016年4月30日（含本日）之间男满45周岁、女满40周岁的人员，其一次性缴费时段为男满45周岁、女满40周岁之月至2016年4月期间的未参保缴费时段。例：李女士，本市户籍，</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">1967年5月出生（即2007年5月年满40周岁），现年49岁，2008年1-12月曾在中山工作并参保一年的职工养老保险，2010年1月至今在本市参加居民养老保险，那么，其可申请一次性缴费的时段为2007年5月至2007年12月及2009年1月至2016年4月。</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 28pt; margin-bottom: 0pt">&nbsp;</p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 27.44pt; margin-bottom: 0pt"><span style="font-family: '楷体_GB2312'; color: rgb(0,0,0); font-size: 14pt; font-weight: bold">二、一次性缴费金额如何计算？</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; margin-bottom: 0pt; margin-left: 21pt"><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">&nbsp;答：一次性缴费金额＝申请人申报的缴费工资基数×费率×缴费月数。</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; margin-bottom: 0pt"><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp;例：黄先生，本市户籍，1960年8月出生(即2005年8月满45周岁），现年56岁，2015年1月至今已参加职工养老保险。核定黄先生可一次性缴费的时段为2006年7月至2014年12月（即102个月），若其选择按2408元申报计算，那么，其一次性缴费金额的计算为：2408×20%×102个月＝49123.2元。</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 28pt; margin-bottom: 0pt">&nbsp;</p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 28pt; margin-bottom: 0pt"><span style="font-family: '楷体_GB2312'; color: rgb(0,0,0); font-size: 14pt; font-weight: bold">三、核定申请人可一次性缴费的时段后，申请人可分次缴纳职工养老保险费吗？</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 28pt; margin-bottom: 0pt"><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">答：不能。申请人在社保部门核定的缴费时段范围内选择全部或部分时段进行缴纳时，只能按政策办理一次性缴纳手续，不得拆分多次缴纳。例：社保部门核定李先生可一次性缴费时段为</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">2008年1月至2012年12月，那么，李先生只能选择全部或部门时段进行一次性缴费，而不能拆分两次（如今年交2008年1月至2009年12月的保险费和明年交2010年1月至2012年12月的保费）或两次以上进行申办、缴费。</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 28pt; margin-bottom: 0pt">&nbsp;</p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; margin-bottom: 0pt"><span style="font-family: '楷体_GB2312'; color: rgb(0,0,0); font-size: 14pt; font-weight: bold">　　四、办理一次性缴费后仍不足15年的，参保人如何处理？</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; margin-bottom: 0pt"><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">　　答：参保人可根据自己的年龄情况，按以下规定办理按月参保等相关手续：　</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; margin-bottom: 0pt"><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">　　1、未达到退休年龄的，由参保人根据按月参保的相关规定，持相关资料到地税分局申请办理按月参保缴费手续。</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; margin-bottom: 0pt"><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">　　2、已达到退休年龄的，由参保人本人持身份证及户口簿的原件和复印件，到社保部门办理延后缴费登记手续后，再持相关资料到地税部门办理参保缴费手续。</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 28pt; margin-bottom: 0pt">&nbsp;</p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; margin-bottom: 0pt"><span style="font-family: '楷体_GB2312'; color: rgb(0,0,0); font-size: 14pt; font-weight: bold">　　五、办理一次性缴费有截止时间吗？</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 28pt; margin-bottom: 0pt"><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">答：没有。但上级有政策调整时，将从其规定。另外，为避免日后缴费工资基数及费率调高而增加缴费金额，建议符合条件的申请人尽快申请办理并缴费。</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 28pt; margin-bottom: 0pt">&nbsp;</p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; margin-bottom: 0pt"><span style="font-family: '楷体_GB2312'; color: rgb(0,0,0); font-size: 14pt; font-weight: bold">　　六、一次性缴费可委托办理吗？</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 28pt; margin-bottom: 0pt"><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">答：一次性缴费业务必须由本人持相关资料到所属村（社区）或社保办事处（零星办理时）申请办理，社保部门核定申请人一次性缴费金额后，申请人还须持身份证、银联卡到地税部门窗口刷卡缴费。在此，提醒申请人不要轻信可由他人代办，以免上当受骗。　</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 28pt; margin-bottom: 0pt"><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">　</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 28pt; margin-bottom: 0pt"><span style="font-family: '楷体_GB2312'; color: rgb(0,0,0); font-size: 14pt; font-weight: bold">七、哪些人员不符合在佛山市申请一次性缴费？</span></p>
+<p class="p0" style="line-height: 22pt; margin: 0pt 2pt 0pt 4pt"><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp;答：</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">根据省相关文件规定，存在以下情形的人员不能在佛山市申请一次性缴费：</span></p>
+<p class="p0" style="line-height: 22pt; margin: 0pt 2pt 0pt 4pt"><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">&nbsp;&nbsp;1、</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">申请时为佛山市外户籍的人员。</span></p>
+<p class="p0" style="line-height: 22pt; margin: 0pt 2pt 0pt 4pt">&nbsp;<span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">&nbsp;2、</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,255); font-size: 14pt">《通知》实施时（即2016年5月1日）</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">已达到退休年龄的本市户籍人员。</span></p>
+<p class="p0" style="line-height: 22pt; margin: 0pt 2pt 0pt 4pt"><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">&nbsp;&nbsp;3、</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">2016年4月男未达到45周岁（即1971年5月1日及以后出生）、女未达到40周岁（即1976年5月1日及以后出生）的本市户籍人员。</span></p>
+<p class="p0" style="line-height: 22pt; text-indent: 28pt; margin: 0pt 2pt 0pt 4pt"><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">4、</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">正在领取、停止领取或退回已领取企业职工基本养老金、城乡居民基本养老金和被征地农民养老保险待遇的本市户籍人员。</span></p>
+<p class="p0" style="line-height: 22pt; text-indent: 28pt; margin: 0pt 2pt 0pt 4pt"><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 14pt">5、不符合省、市相关文件规定的其他人员。</span></p>
+<p class="p0" style="text-align: left; line-height: 22pt; margin-top: 0pt; text-indent: 28pt; margin-bottom: 0pt">&nbsp;</p>
+<p class="p0" style="text-align: left; line-height: 15pt; margin-top: 0pt; margin-bottom: 0pt"><span style="font-family: '楷体_GB2312'; color: rgb(0,0,0); font-size: 14pt; font-weight: bold">&nbsp;&nbsp;&nbsp;&nbsp;八</span><span style="font-family: '楷体_GB2312'; color: rgb(0,0,0); font-size: 14pt; font-weight: bold">、灵活就业人员一次性缴纳职工养老保险费一览表</span></p>
+<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img width="952" height="463" style="border-right-width: 0px; width: 724px; border-top-width: 0px; border-bottom-width: 0px; height: 403px; border-left-width: 0px" alt="" oldsrc="W020160809610701680552.png" complete="complete" src="./W020160809610701680552.png" /></p>
+</div></div>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+
+
+            
+        </div>
+
+    </div>
+    <!-- end of main -->
+           
+
+
+      
+        <!-- bottom -->
+        <!-- 脚部-->
+       <div class="bottom">
+    <div class="bottomWidth makecenter">
+        <div class="bottomLeft floatLeft">
+            <div class="lh03">
+                <a href="../../../../wzbz/wzjs/" target="_blank">网站介绍</a>
+                <span>|</span>
+                <a href="../../../../wzbz/wzdt/" target="_blank">网站地图</a>
+                <span>|</span>
+                <a href="../../../../wzbz/sybz/" target="_blank">使用帮助</a>
+                <span>|</span>
+                <a href="../../../../wzbz/ystl/" target="_blank">隐私条例</a>
+                <span>|</span>
+                <a href="../../../../wzbz/xgwzlj/" target="_blank">相关网站链接</a>
+            </div>
+
+            <div class="lh03">
+               佛山市社会保险基金管理局&nbsp;版权所有&copy; 2015&nbsp; 备案号:<a href="http://www.miibeian.gov.cn" target="_blank">粤ICP备&nbsp;05029485号</a>
+           </div>
+            <div class="lh03">
+               审批服务监督电话：12345
+           </div>
+       </div>
+
+       <div class="bottomRight floatRight">
+        <div class="lh03">
+            <script type="text/javascript">
+            var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); 
+            document.write(unescape("%3Cspan id='cnzz_stat_icon_1255788136'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1255788136%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+            </script>
+
+            <span>你是第 <span id="h01" class="bottomColor">1225552</span> 位来访者</span>
+        </div>
+
+        <div class="lh03">
+            <span>建议使用分辨率 1024*768、IE7以上版本浏览器</span>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+</div>
+</div>
+<script language="javascript" type="text/javascript">
+function LoadJsCssFile(filename, filetype){ 
+if (filetype=="js"){ //如果是.js文件 
+var fileref=document.createElement("script"); 
+fileref.setAttribute("type","text/javascript"); 
+fileref.setAttribute("src",filename); 
+if (typeof fileref != "undefined") 
+document.getElementsByTagName("head")[0].appendChild(fileref) 
+} 
+
+}   
+ //动态载入.js 文件 
+</script>
+<script>
+LoadJsCssFile("http://219.130.221.166:8080/govservice/fwtj/fssbxx/count.jsp", "js");
+</script>
+        <!-- end of bottom -->
+
+
+
+
+
+        
+
+  
+</body>
+</html>
