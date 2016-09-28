@@ -4,7 +4,7 @@ permalink: /test/
 date: 2016-09-27
 ---
 
-{{ site.pages }}
+{{ site.posts }}  
 <br>
 
 <br>
