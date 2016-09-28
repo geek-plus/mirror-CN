@@ -4,11 +4,9 @@ permalink: /test/
 date: 2016-09-27
 ---
 
-	{{ site.pages }}
+{{ site.pages }}
 <br>
 
 <br>
 <br>
-
-:w
 
