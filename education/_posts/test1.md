@@ -1,6 +1,7 @@
 ---
 layout: default
+category: education
 ---
 
-This is in Edu category.
+This is the third in Edu category.
 
