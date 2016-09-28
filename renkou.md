@@ -15,11 +15,12 @@ date: 2016-09-28
 
 ### 户籍改革+居住证：
 
-+ [入户问题及居住证导读]()
++ [入户问题及居住证导读]({{ site.baseurl }}/pages/ruhu-jzz-intro.md)
 
 {% for post in site.categories.hukou %}
-[{{ post.title }}]({{ site.baseurl }}{{ post.url }})
-Posted on {{ post.date }}
+[{{ post.title }}]({{ site.baseurl }}{{ post.url }})  
+
+Posted on {{ post.date | date: "%B %e, %Y" }}
 {% endfor %}
 
 
@@ -27,21 +28,23 @@ Posted on {{ post.date }}
 
 - [外地（随迁）子女义务教育问题导读]()
 
-- [就地中考和高考招生/招录问题导读]()
+- [就地中考和高考招生/招录问题导读]({{ site.baseurl }}/pages/shengxue-intro.md)
 
-{% for post in site.categories.hukou %}
+{% for post in site.categories.education %}
 [{{ post.title }}]({{ site.baseurl }}{{ post.url }})
-Posted on {{ post.date }}
+
+Posted on {{ post.date | date: "%B %e, %Y" }}
 {% endfor %}
 
 
 ### 社会保险  
 
-- [医保、养老保险的异地问题导读]()
+- [医保、养老保险的异地问题导读]({{ site.baseurl }}/pages/shebao-intro.md)
 
-{% for post in site.categories.hukou %}
+{% for post in site.categories.social-insu %}
 [{{ post.title }}]({{ site.baseurl }}{{ post.url }})
-Posted on {{ post.date }}
+
+Posted on {{ post.date | date: "%B %e, %Y" }}
 {% endfor %}
 
 
