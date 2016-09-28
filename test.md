@@ -4,9 +4,9 @@ permalink: /test/
 date: 2016-09-27
 ---
 
-{{ site.html_pages }}  
+{{ site.static_files }}  
 <br>
-
+{{ page.date }}
 <br>
 <br>
 
