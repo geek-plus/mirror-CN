@@ -7,6 +7,8 @@ date: 2016-09-27
 <div class="post">
 {{ site.pages }}
 <br>
+
+<!--
 {{site.posts }}
 <br>
 {{ site.static_files }}
@@ -18,3 +20,6 @@ date: 2016-09-27
 {{ page.categories }}
 <br>
 {{ page.date }}
+-->
+
+</div>
