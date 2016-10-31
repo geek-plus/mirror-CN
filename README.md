@@ -9,7 +9,7 @@
 	+ Github是个优秀的软件协作平台（当然也可以用于其他协作）。它还没有被墙！有一定的抗审查抗下线之功效。  
 
 2. 我（们）是做什么的？
-	+ 政策倡导（policy advocacy），没听说过？骇客你应该听说过，Hacker（骇客）凭着自己对计算机/网络的精通，玩遍自己和其他人的计算机，挖出系统/软件漏洞，凭着超能的自学和问题解决能力，对事物的本质和真相探求个究竟，对属于自己的事物追求知情、同意和自主。一个政策倡导者也就是一个在政策上的骇客，对某个领域的社会公共政策（尽力）了如指掌，找出政策漏洞，对政策受害者以协助/维权，并推动政策的积极改革。
+	+ 是公共政策骇客。Hacker（骇客）凭着自己对计算机/网络的精通，玩遍自己和其他人的计算机，挖出系统/软件漏洞，凭着超能的自学和问题解决能力，对事物的本质和真相探求个究竟，对属于自己的事物追求知情、同意和自主。一个公共政策的骇客，对某个领域的社会公共政策（尽力）了如指掌，找出政策漏洞，对政策受害者以协助/维权，并推动政策的积极改革。
 
 3. 这里会有什么内容？能达到什么效果？
 	+ 公开天朝的一些法规规章、规范性文件——后者也就是俗称的“红头文件”——这些文件不大容易知晓和找到，却很大程度影响着每个市民的生活。
@@ -51,11 +51,11 @@
 
 ### 专题
 
-整个平台现在reframe了！，以期收集一些对生产生活影响严重但不易被发现和找到的规范性文件（俗称“红头文件”）。  
-+ [影响/控制人口流动的公共政策](https://github.com/mdrights/mirror-CN/tree/master/28%E7%9C%81%E5%B8%82%E4%BA%BA%E5%8F%A3%E6%94%BF%E7%AD%96%E6%95%B0%E6%8D%AE)，分析其如何给每一个拆那人带来基本公共服务权利的剥夺。  
+参与人口政策与流动人口权益保障的小伙伴请进这里：
++ [人口户籍政策与流动人口](https://mdrights.github.io/mirror-CN/renkou/)，分析其如何给每一个拆那人带来基本公共服务权利的剥夺。  
 
 ### 规范性文件专栏
-+ 这里放一些全国性（国务院或其部委）发布的法规规章、规范性文件（只是冰山一角），它们往往不易记住不易被查找。在这里你可以了解居民在墙国生活的方方面面是如何受这些政策文件影响，以及如何缺少公众参与的：  
++ 收集一些对生产生活影响严重但不易被发现和找到的规范性文件（俗称“红头文件”）。这里面有我们实施行动的“牙齿”：  
 	+ [义务教育和升学](https://github.com/mdrights/mirror-CN/tree/master/%E4%B8%93%E9%A2%98-%E4%B9%89%E5%8A%A1%E6%95%99%E8%82%B2%E4%B8%8E%E5%8D%87%E5%AD%A6)  
 	+ [社会保险](https://github.com/mdrights/mirror-CN/tree/master/%E4%B8%93%E9%A2%98-%E7%A4%BE%E4%BC%9A%E4%BF%9D%E9%99%A9)
 	+ [人口户籍](https://github.com/mdrights/mirror-CN/tree/master/%E4%B8%93%E9%A2%98-%E4%BA%BA%E5%8F%A3%E6%88%B7%E7%B1%8D)
@@ -63,14 +63,14 @@
 	+ [环境和环评](https://github.com/mdrights/mirror-CN/tree/master/%E4%B8%93%E9%A2%98-%E7%8E%AF%E5%A2%83%E4%B8%8E%E7%8E%AF%E8%AF%84)
 
 
-
+*Updated at 10.31.2016*
 <br>
 **[Tips]**  Windows用户下载上面链接的文件时，有的文件名是（.md）后缀名或无后缀名，需要改为(.txt)。
 
 <br>
 **[CONTACT]**   
 Telegram: @MDrights
-[PGP公钥](https://mdrights.github.io/linusyang-pub.asc) 7B08 20A0 0AE6 8065 B8B3  1950 7715 B2FA 46B5 8B22
+公共政策监察频道：https://telegram.me/monitor_gov , Bot: @CSObot
 
 <hr>
 #### This page is powered by GitHub Pages. The content of this repo is released under the GNU GPL 2.0 or later. 
