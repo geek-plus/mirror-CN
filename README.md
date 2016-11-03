@@ -62,8 +62,12 @@
 	+ [城市规划（需要点index.html查看文件名](https://github.com/mdrights/mirror-CN/tree/master/%E4%B8%93%E9%A2%98-%E5%9F%8E%E5%B8%82%E8%A7%84%E5%88%92-%E5%9C%9F%E5%9C%B0%E6%88%BF%E4%BA%A7)
 	+ [环境和环评](https://github.com/mdrights/mirror-CN/tree/master/%E4%B8%93%E9%A2%98-%E7%8E%AF%E5%A2%83%E4%B8%8E%E7%8E%AF%E8%AF%84)
 
+### 新增/更新  
 
-*Updated at 10.31.2016*
+--> 见[平台首页](https://mdrights.github.io/mirror-CN/)。  
+
+
+*Updated at 11.03.2016*
 
 <br>
 **[Tips]**  Windows用户下载上面链接的文件时，有的文件名是（.md）后缀名或无后缀名，需要改为(.txt)。
