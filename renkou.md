@@ -22,6 +22,12 @@ date: 2016-09-28
 
 ### 23个城市的人口相关政策文件
 
+{% for page in site.categories.local-policy %}
++ [{{ post.title }}]({{ site.baseurl }}{{ post.url }})
+
+Posted on {{ page.date | date: "%B %e, %Y" }}
+{% endfor %}
+
 ### 23个城市人口政策的汇总和初步分析
 
 ### 国务院及其部委，和一线城市的政策
@@ -30,11 +36,6 @@ date: 2016-09-28
 
 + [入户问题及居住证导读]({{ site.baseurl }}/pages/ruhu-jzz-intro)
 
-{% for post in site.categories.hukou %}
-+ [{{ post.title }}]({{ site.baseurl }}{{ post.url }})  
-
-Posted on {{ post.date | date: "%B %e, %Y" }}
-{% endfor %}
 
 
 2. 义务教育招生 + 中考 + 高考：
@@ -43,22 +44,11 @@ Posted on {{ post.date | date: "%B %e, %Y" }}
 
 - [就地中考和高考招生/招录问题导读]({{ site.baseurl }}/pages/shengxue-intro)
 
-{% for post in site.categories.education %}
-+ [{{ post.title }}]({{ site.baseurl }}{{ post.url }})
-
-Posted on {{ post.date | date: "%B %e, %Y" }}
-{% endfor %}
-
 
 3. 社会保险  
 
 - [医保、养老保险的异地问题导读]({{ site.baseurl }}/pages/shebao-intro)
 
-{% for post in site.categories.social-insu %}
-+ [{{ post.title }}]({{ site.baseurl }}{{ post.url }})
-
-Posted on {{ post.date | date: "%B %e, %Y" }}
-{% endfor %}
 
 
 4. 生育  
