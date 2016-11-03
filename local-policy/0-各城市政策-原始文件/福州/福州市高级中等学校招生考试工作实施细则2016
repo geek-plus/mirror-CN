@@ -1,0 +1,414 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<base href="http://211.149.217.28:80/">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>福州中招网</title>
+<link href="css/mystyle.css" rel="stylesheet" type="text/css" />
+
+
+ <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+ <script type="text/javascript" src="js/util/util.js"></script>
+ 	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			$('#closeAd1').click(function (){
+				//隐藏广告层
+				$('#ad1').hide(1000);
+				//清空广告层
+				$('#ad1').empty();
+			});
+		
+			$('#closeAd2').click(function (){
+				//隐藏广告层
+				$('#ad2').hide(1000);
+				//清空广告层
+				$('#ad2').empty();
+			});
+		
+			 moveTips('ad1','100','10','left',"1");
+			 moveTips('ad2','100','10','right',"1");
+		});
+	</script>	
+
+
+<script type="text/javascript">
+ var D=new Function('obj','return document.getElementById(obj);')
+ function htmlbody(){
+  return (
+   document.documentElement.clientHeight<=document.body.clientHeight
+   &&document.documentElement.clientHeight!=0
+  )
+  ?document.documentElement:document.body;
+ }
+ //浏览器滚动条位置
+function scrollLeft(){return (!window.pageYOffset)?htmlbody().scrollLeft:window.pageXOffset;}
+ function scrollTop(){return (!window.innerHeight)?htmlbody().scrollTop:window.pageYOffset;}
+ 
+//实际应距左距离
+function getleft(strobjs,strLeftType,strleft){
+  var temp_getleft = 0;
+  if (strLeftType=="left"){
+   temp_getleft = scrollLeft()*1 + strleft*1;
+  }else if (strLeftType=="mid"){
+   (strleft*1<0)
+   ?temp_getleft = scrollLeft()*1 + strleft*1
+   + htmlbody().clientWidth*1/2 - strobjs.offsetWidth*1
+   :temp_getleft = (scrollLeft()*1+strleft*1 + htmlbody().clientWidth*1/2);
+  }else if (strLeftType=="right"){
+    temp_getleft 
+    = scrollLeft()*1 + htmlbody().clientWidth*1 
+    - strleft*1 - strobjs.offsetWidth*1;
+  }
+  return temp_getleft;
+ }
+ 
+function moveTips(strobj,theTop,theLeft,theLeftType) {
+  var old,nowobj = D(strobj);
+  var nowleft = nowobj.style.left.replace("px","")*1;//返回在改变窗口大小或移动横滚动条前的距左部距离（数值）
+ var temp_left = getleft(nowobj,theLeftType,theLeft);//实际应距左距离
+ var re_theTop = theTop;
+  if (temp_left!=nowleft){//横向递增
+  (Math.abs(temp_left-nowleft)>3&&Math.abs(temp_left-nowleft)<600)
+   ?((temp_left>nowleft)?nowleft += Math.abs(temp_left-nowleft)/5
+   :nowleft -= Math.abs(temp_left-nowleft)/5)
+   :nowleft = temp_left;
+   nowobj.style.left = nowleft + "px";
+  }
+  if (!openweb){old = re_theTop;var openweb;}/*这是默认高度*/;
+   var pos,tt=50;
+   pos = scrollTop()*1-nowobj.offsetTop*1+re_theTop*1;
+   pos = nowobj.offsetTop+pos/10;//纵向开始递增
+  if (pos < re_theTop) pos = re_theTop;
+   if (pos != old) {nowobj.style.top = pos+"px";tt=5;}
+   old = pos;
+   setTimeout("moveTips('"+strobj+"','"+theTop+"','"+theLeft+"','"+theLeftType+"')",tt);
+ }
+ </script>
+</head>
+
+<body> 
+<div class="ad1"  id="ad1"></div>
+<div class="ad2" id="ad2"></div> 
+	<div class="wk">
+    	<div class="nk_top">
+        	<div class="top"><a href="1"><img src="images/index_01.jpg" width="1000" height="180" /></a></div>
+        </div>
+    </div>
+    <div class="wk">
+<!--导航-->
+    <div class="nk_navi">
+        	<div class="nk">
+            	<ul>
+                	<li><a href="index"><img src="images/navi_01.jpg" width="61" height="48" /></a></li>
+                    <li class="navi_jg"></li>
+                    <li><a href="article?columnId=zbwj"><img src="images/navi_02.jpg" width="96" height="48" /></a></li>
+					<li class="navi_jg"></li>
+                    <li><a href="article?columnId=zzjb"><img src="images/navi_04.jpg" width="99" height="48" /></a></li>
+					<li class="navi_jg"></li>
+                    <li><a href="article?columnId=gsxx"><img src="images/navi_05.jpg" width="102" height="48" /></a></li>
+          
+                    <li class="navi_jg"></li>
+                    <li><a href="article?columnId=tbzn"><img src="images/navi_06.png" width="102" height="48" /></a></li>
+                    <li class="navi_jg"></li>
+                    <li><a href="schoollist!school"><img src="images/navi_07.jpg" width="101" height="48" /></a></li>
+                    
+                </ul>
+        </div>
+      </div>
+<!--导航end-->
+    </div>
+<meta name="renderer" content="webkit"/>
+<!--内容-->
+     <div class="nk" style="border: 1px #bdc8cb solid; margin:10px auto;">
+		<div style="text-align:center;"><h1>2016年福州市高级中等学校招生考试工作实施细则</h1></div>
+		<div style="text-align:center;">发布时间:2016-04-19 12:27:45.0 &nbsp; &nbsp; &nbsp;浏览次数:15707</div>
+		
+		<div class="article"><p align="center" style="text-align: center; line-height: 150%">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">榕中招〔2016〕2号</span></span></span></p>
+<p style="line-height: 26pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">各县（市）区教育局、市直属中学：</span></span></span></p>
+<p style="line-height: 26pt; text-indent: 28pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">为贯彻落实《国家中长期教育改革和发展规划纲要》及国务院深化考试招生制度改革实施意见的精神，做好2016年全市初中毕业、升学考试与高中招生（以下简称中考与中招）工作，制定本实施细则。</span></span></span></p>
+<p style="line-height: 26pt; text-indent: 30.1pt">
+	<span style="font-family: 宋体"><strong><span style="font-weight: bold"><span style="font-size: 15pt"><span style="font-family: 仿宋">一、报考对象</span></span></span></strong></span></p>
+<p style="line-height: 26pt; text-indent: 28.5pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">1.具有本市中学学籍的应届初中生。</span></span></span></p>
+<p style="line-height: 26pt; text-indent: 28.5pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">2.持有本市常住户口回户籍地报考的应届初中生或社会青年（含同等学力考生和往届生，下同）。</span></span></span></p>
+<p style="line-height: 26pt; text-indent: 28pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">各类高中阶段学校的在校生或毕业生、上一年度因各种舞弊行为被取消报考、录取或入学资格受罚年限未满者不得报考。</span></span></span></p>
+<p style="line-height: 26pt">
+	<span style="font-family: 宋体">&nbsp;&nbsp;&nbsp;&nbsp;<strong><span style="font-weight: bold"><span style="font-size: 15pt"><span style="font-family: 仿宋">二、报名时间和费用</span></span></span></strong></span></p>
+<p style="line-height: 26pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">&nbsp;&nbsp;&nbsp;&nbsp;1.报名时间：4月19日&mdash;22日；因特殊原因错过报名的，可于 5月5日-6日补报名。</span></span></span></p>
+<p style="line-height: 26pt; text-indent: 28.5pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">2.报名费：每生每科13元，于中考报名时由报考点代收。</span></span></span></p>
+<p style="line-height: 26pt">
+	<span style="font-family: 宋体">&nbsp;&nbsp;&nbsp;&nbsp;<strong><span style="font-weight: bold"><span style="font-size: 15pt"><span style="font-family: 仿宋">三、报名地点及资格审查</span></span></span></strong></span></p>
+<p style="line-height: 26pt; text-indent: 28.5pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">1.学生持本人户口簿或居民身份证以及复印件在学籍所在学校报名。凡应届初中毕业班学生读四年以上(含四年)，应附当地教育行政部门有效休学审批证明材料并在考生类别栏中注明。</span></span></span></p>
+<p style="line-height: 26pt; text-indent: 28pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">2.回户口所在地报考的应届学生，应随带本人户口簿或户籍证明或居民身份证、就读学校的在学证明以及由就读学校提供的报考材料(小学报考初中登记表、综合素质评定报告单、体检表等)，到县（市）区中招办报名，报考资格审查工作由县(市)区中招办负责。</span></span></span></p>
+<p style="line-height: 26pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">&nbsp;&nbsp;&nbsp;&nbsp;3.社会青年持本人户口簿或居民身份证的原件和复印件、本人初中毕业证书或学力证明，到户口所在地的县(市)区中招办报名，报考资格审查工作由县(市)区中招办负责。</span></span></span></p>
+<p style="line-height: 26pt; text-indent: 28pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">4.定向生的资格为户籍（截至2016年5月6日）在本地，七年级至九年级（具体时间为：2014年1月1日&mdash;&mdash;2016年6月12日）三个学年学习和学籍均在本地同一所学校的初中应届毕业班学生。</span></span></span></p>
+<p style="line-height: 26pt; text-indent: 28pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">&ldquo;本地&rdquo;对福州市区的学生指五城区，对七县（市）的学生分别指福清、长乐、闽侯（含高新区）、闽清、连江、罗源、永泰七个不同区域，下同。</span></span></span></p>
+<p style="line-height: 26pt; text-indent: 28pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">5.普高提前自主招生：报名时间、地点、资格审查及考试形式根据普高学校各自的自主招生方案实施（另文公布）。</span></span></span></p>
+<p style="line-height: 26pt; text-indent: 28pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">6.各中学应由校长负责主持考生报名及资格审查工作，并组织专人负责对考生的年龄、户籍等情况进行审查核实，谁审查、谁签字、谁负责。凡在招生、考试、考核评价中弄虚作假、营私舞弊者，按照教育部关于印发《中小学教师违反职业道德行为处理办法》的通知（教师〔2014〕1号）文件，视情节轻重给予相应处分。经审查无误后，省属和市属学校向福州市中招办、县（市）区属学校向本县（市）区中招办集体报名。</span></span></span></p>
+<p style="line-height: 26pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><strong><span style="font-weight: bold"><span style="font-size: 15pt"><span style="font-family: 仿宋">四、报考学校</span></span></span></strong></span></p>
+<p style="line-height: 26pt; text-indent: 28pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">户籍或学籍在本地的学生可报考面向本地招生的各级各类学校，但：</span></span></span></p>
+<p style="line-height: 26pt; text-indent: 28pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">1.社会青年报考普通高中年龄不超十八周岁（1998年9月1日后出生）且不能报考五年制高职院校。</span></span></span></p>
+<p style="line-height: 26pt; text-indent: 28pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">2. 学籍在五城区但户籍不在五城区的国内考生，报考福州一中、福州二中、福州三中、福州四中、格致中学、福州八中、师大附中、福州高级中学时要求学籍在五城区满三年（2013年9月1日至初中毕业）。</span></span></span></p>
+<p style="line-height: 26pt; text-indent: 30.1pt">
+	<span style="font-family: 宋体"><strong><span style="font-weight: bold"><span style="font-size: 15pt"><span style="font-family: 仿宋">五、考试科目设置和时间安排</span></span></span></strong> </span></p>
+<p style="line-height: 26pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">考试科目分为学校考查和全市统一考试两类。</span></span></span></p>
+<p style="line-height: 26pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">（一）学校考查科目包括音乐、美术、理化生实验操作、英语口语、综合实践活动（含劳技、信息技术、社区服务、研究性学习等）以及地方和学校课程，考查成绩分为合格、不合格两个等级，考查时间为5月5日-27日，具体办法根据榕教中〔2016〕7号文件执行。</span></span></span></p>
+<p style="line-height: 26pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">（二）全市统一考试科目</span></span></span></p>
+<p style="line-height: 26pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">1.考试科目：思想品德、语文、数学、英语、物理、化学、生物、历史、地理、体育共10科。其中地理、生物两科考试时间安排在八年级结束时进行，地理、生物考试成绩三年内（即考试当年、第二年、第三年）有效，其它学科考试在九年级学科结束时进行。</span></span></span></p>
+<p style="line-height: 26pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">体育考试安排详见</span></span></span><span style="font-size: 14pt"><span style="font-family: 仿宋">《关于印发福州市201</span></span><span style="font-size: 14pt"><span style="font-family: 仿宋">6</span></span><span style="font-size: 14pt"><span style="font-family: 仿宋">年初中毕业生升学体育考试实施细则的通知》</span></span><span style="font-size: 14pt"><span style="font-family: 仿宋">（</span></span><span style="font-size: 14pt"><span style="font-family: 仿宋">榕教体〔201</span></span><span style="font-size: 14pt"><span style="font-family: 仿宋">6</span></span><span style="font-size: 14pt"><span style="font-family: 仿宋">〕1号</span></span><span style="font-size: 14pt"><span style="font-family: 仿宋">）。</span></span></p>
+<p style="line-height: 26pt; text-indent: 28pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">2.考试形式：文化课考试除思想品德、历史科实行开卷考试形式外，其他学科均为闭卷考试。</span></span></span></p>
+<p style="line-height: 26pt; text-indent: 28pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">3.成绩记载方式：语文、数学、英语三科试卷卷面分数均为150分，其他学科卷面分数均为100分。语文、数学、英语3科的成绩按原始分记载，其它学科（物理、化学、思想品德、历史、地理、生物）按A（85-100）、B（70-84.5分）、C（60-69.5分）、D（0.5-59.5分）记载，缺考和成绩0分的不记等级。若当年等级学科所划等级人数不能满足普通高中达标校计划招生数录取要求时，可降低等级档次成绩，每下降一个档次为5分。八年级地理、生物两科考试成绩达不到C级的考生，允许在九年级参加重考。九年级转学到我市的，以及在外地就学（含往届）回我市参加中考的，持原就学所在地县级以上（含县级）教育行政部门或招生考试机构出具的地理、生物成绩证明，按隶属关系到中招办认定等级。</span></span></span></p>
+<p style="line-height: 26pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">考试成绩只通知考生本人（成绩单在报名的学校或中招办领取），考生若对个人某学科成绩有疑问，可在规定的时间内到报名所在学校或县（市）区中招办查询模块得分情况，但不查卷,逾期不再受理。</span></span></span></p>
+<p style="line-height: 26pt; text-indent: 28pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">4.投档分值：物理、化学除了以等级方式记载外，分别按卷面成绩的60%、40%作为奖励分计入总分进行投档录取。中考投档学科总分为550分，其中语数英各150分，物理60分，化学40分。</span></span></span></p>
+<p style="line-height: 26pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">5.考试时间</span></span></span></p>
+<p style="line-height: 26pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">语文、数学、英语考试时间各120分钟；物理科考试时间90分钟；思品、历史、化学、生物、地理五科考试时间各60分钟，具体为：</span></span></span></p>
+<p style="line-height: 26pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋"><img alt="" src="http://211.149.217.28:8000/zzw/res/Article/2016/04/19/160419122728637519.png" style="width: 625px; height: 260px" /></span></span></span></p>
+<p style="line-height: 26pt; text-indent: 28pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">其中6月11日上午8：30&mdash;&mdash;8：50进行英语听力考试，时间为20分钟，分值占英语考试总分的20%。考生8:05入场，8:30-8:50禁止入场。</span></span></span></p>
+<p style="line-height: 26pt; text-indent: 30.1pt">
+	<span style="font-family: 宋体"><strong><span style="font-weight: bold"><span style="font-size: 15pt"><span style="font-family: 仿宋">六、初中毕业资格的认定与管理</span></span></span></strong></span></p>
+<p style="line-height: 26pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">1.凡完成初中阶段学习任务，综合素质评定合格，中考语文、数学、英语三科总分不低于180分，思想品德、物理、化学、历史、生物、地理、体育七科中有四科（含四科）以上达到C级，学校考查科目三科以上合格的学生为合格初中毕业生；被中等职业学校录取，且在中等职业学校就读一个学期以上的考生也视为合格的初中毕业生（不含中考0分考生）。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">2.初中未毕业学生的补考：补考时间为2016年9月17、18日两天；命题、考试、评卷等组织工作由学校负责。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 32.25pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">3.考生学籍所在学校应为考生填写&ldquo;初中学生综合素质评定报告单&rdquo;。&ldquo;初中学生综合素质评定报告单&rdquo;实行计算机管理和网上报送，由学校负责审核认定后报送市教育局，已报送确认的综合素质评定结果原则上不更改。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 30.1pt">
+	<span style="font-family: 宋体"><strong><span style="font-weight: bold"><span style="font-size: 15pt"><span style="font-family: 仿宋">七、照顾规定</span></span></span></strong></span></p>
+<p style="line-height: 25pt">
+	<span style="font-family: times new roman">&nbsp;&nbsp;&nbsp;&nbsp;<strong><span style="font-weight: bold"><span style="font-size: 14pt"><span style="font-family: 仿宋">（一）享受同等条件下优先录取照顾</span></span></span></strong></span></p>
+<p style="line-height: 25pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">1.港、澳、台同胞、当地驻军子女，市级（指设区市，下同）以上的劳模、道德模范及&ldquo;身边好人&rdquo;的子女，见义勇为者本人或子女和具备独立生活和学习能力的残疾考生。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">2.2014年9月3日前，获得省级电脑机器人竞赛三等奖以上的考生。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><strong><span style="font-weight: bold"><span style="font-size: 14pt"><span style="font-family: 仿宋">（二）享受加2分照顾</span></span></span></strong></span></p>
+<p style="line-height: 25pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">初中三年（2014年1月1日&mdash;&mdash;2016年6月12日），学习和学籍均在农村初中的&ldquo;农村独生子女和二女绝育家庭女儿&rdquo;。农村初中在福州市区指享受免费提供教科书和作业本的学校，在七县（市）指除城区中学以外的乡镇学校。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><strong><span style="font-weight: bold"><span style="font-size: 14pt"><span style="font-family: 仿宋">（三）享受加3分照顾</span></span></span></strong></span></p>
+<p style="line-height: 25pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">1. 2014年9月3日前，获得省级青少年科技创新大赛优秀科技创新项目一、二、三等奖的考生。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">2. 2014年9月3日前，获得全国教育行政部门主办或联办的文艺比赛（仅限声乐、器乐、舞蹈等三项）集体一等奖和个人项目前三名的考生。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">3. 2014年9月3日前，获得市级以上主办的运动会（含中学生运动会）以及省级主办单项竞赛个人第二至第五名或集体第二、三名的主力队员的考生[仅限短、中长跑（含跨栏）、铁饼、铅球、标枪、跳高、跳远、三级跳远、撑杆跳、举重、武术、游泳、体操、篮球、排球、足球、羽毛球、乒乓球等18项，下同]。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">4.户口在本市的归侨考生、华侨（归侨）子女和户口在本市的台湾籍考生。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 28pt">
+	<span style="font-family: times new roman"><strong><span style="font-weight: bold"><span style="font-size: 14pt"><span style="font-family: 仿宋">（四）享受加5分照顾</span></span></span></strong></span></p>
+<p style="line-height: 25pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">1. 2014年9月3日前，获得青少年科技创新大赛优秀科技创新项目全国三等奖及以上的考生。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 28pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">2. 2014年9月3日前，获得市级主办的运动会（含中学生运动会）以及省级主办的单项竞赛个人第一名的队员或集体第一名的主力队员。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><strong><span style="font-weight: bold"><span style="font-size: 14pt"><span style="font-family: 仿宋">（五）军人子女中招优待办法</span></span></span></strong></span></p>
+<p style="line-height: 25pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">根据教育部、省教育厅相关文件精神，享受中招政策性加分照顾的对象包括下列现役军人的子女、因公牺牲和病故军人的子女。其中： &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 28pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">1.因公牺牲军人和一至四级残疾军人的子女，作战部队军人的子女，驻国家确定的一类、二类艰苦边远地区和解放军总部划定的三类岛屿部队军人的子女，平时荣获二等功或者战时荣获三等功以上奖励的军人的子女，享受10分照顾。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">2.驻国家确定的三类（含三类）以上艰苦边远地区，解放军总部划定的二类（含二类）以上岛屿部队军人的子女，以及在飞行、潜艇、航天、涉核等高风险、高危害岗位工作的军人的子女，享受15分照顾。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><strong><span style="font-weight: bold"><span style="font-size: 14pt"><span style="font-family: 仿宋">（六）其它照顾</span></span></span></strong></span></p>
+<p style="line-height: 25pt; text-indent: 35pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">1.因公牺牲的人民警察子女、一级至四级残疾人民警察子女，享受10分照顾。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 36.95pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">2.烈士子女，享受20分照顾。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 35pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">3.台商子女享受10分照顾。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 35pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">4.台湾户籍考生第一志愿报考福州二中台生班，享受10分照顾。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 35pt">
+	<span style="font-size: large"><span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋"><span style="font-family: 仿宋_gb2312"><span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">5.少数民族考生学籍或学习在城区学校的，享受3分照顾；学籍和学习均在农村学校的，享受5分照顾；普高批第一志愿报民族中学或普通中学民族班的，享受15分照顾。</span></span></span></span></span></span></span></span></p>
+<p style="line-height: 25pt; text-indent: 28.1pt">
+	<span style="font-family: times new roman"><strong><span style="font-weight: bold"><span style="font-size: 14pt"><span style="font-family: 仿宋">（七）照顾加分说明</span></span></span></strong></span></p>
+<p style="line-height: 25pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">1.比赛或竞赛项目均应是政府或教育行政主管部门主办及联办的，并在七年级至2014年9月3日前取得的。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">2. 加分照顾政策仅适用于应届毕业生。社会青年不享受政策照顾。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">3.凡按政策享受多项照顾加分的考生，其照顾加分不能累加，只能享受其中最高的一项。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">4.根据《福州市初中毕业、升学考试管理处罚规定》，通过伪造证件、证明、档案等手段取得中招照顾加分的，取消当年考试资格。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">5. 2016年&ldquo;福州市中招加分照顾考生审核办法的通知&rdquo;另文公布。 </span></span></span></p>
+<p style="line-height: 25pt; text-indent: 30.1pt">
+	<span style="font-family: 宋体"><strong><span style="font-weight: bold"><span style="font-size: 15pt"><span style="font-family: 仿宋">八、志愿</span></span></span></strong></span></p>
+<p style="line-height: 25pt; text-indent: 27.75pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">（一）志愿设提前批、第一批、第二批、第三批。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 27.75pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">1.提前批：五年制师范类高职；宏（鸿）志班；普通高中的体育、艺术特色班。设2个志愿。五年制师范类高职与普通高中不能兼报。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 27.75pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">2.第一批：普通高中（含民办普高），设5个志愿。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 27.75pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">3.第二批：五年制高职(含体育、艺术专业)，设3个志愿。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 27.75pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">4.第三批：中等职业学校(含体育、艺术中职和技工学校)，设3个志愿。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 28pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">（二）填报志愿应注意</span></span></span></p>
+<p style="line-height: 25pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">&nbsp;&nbsp;&nbsp;&nbsp;1.每个志愿栏只填写一个学校或专业的代码，以代码为准进行投档录取，代码使用七位阿拉伯数字号码。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 21pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">&nbsp;2.社会青年按中考学科投档总分扣10分后再参加普通高中录取。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 28pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">3.报考普通高中体育、艺术类特色班和特长生的考生，必须于5月14日-22日到报考的学校参加专业面试，专业面试合格后方可填报该校志愿。特长生志愿与统招生志愿同一个代码，特色班志愿代码单设。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 28pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">4.凡报考五年制高职（含中职）学校需面试专业的考生，须参加所报考学校举行的专业面试，专业面试成绩合格后方可填报该校相关专业志愿。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 28.5pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">5.凡报考需面试的各类学校（专业）原则上应报该批次第一志愿；各县（市）考生第一批报福州一中、福建师大附中必须报第一志愿。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 28pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">6.按志愿投档录取的考生不退档。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 30.1pt">
+	<span style="font-family: 宋体"><strong><span style="font-weight: bold"><span style="font-size: 15pt"><span style="font-family: 仿宋">九、建档</span></span></span></strong></span></p>
+<p style="line-height: 25pt; text-indent: 27.75pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">考生建立电子档案供招生学校录取时审阅。所有被高中学校录取的考生凭录取通知书到原初中毕业学校提取纸质档案（初中学校负责密封盖章移交）后自带到录取学校报到。凡私自涂改年龄、户籍或提供假证明、假材料，骗取报考、加分或录取资格的考生和有关单位，一经查实，立即取消该生当年报考、加分和录取资格，并追究有关责任人的责任。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 28pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">1.应届考生档案：考生报名表；考生志愿表；考生体检表；小学报考初中登记表；综合素质评定报告单；居民身份证或户口簿复印件；注意录取考生登记表（享受政策照顾的考生填写）；休学审批证明（有休学经历的考生才有）。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 28pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">2.社会青年考生档案：考生报名表；考生志愿表；考生体检表；初中毕业证书复印件或学力证明；居民身份证或户口簿复印件。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 30.1pt">
+	<span style="font-family: 宋体"><strong><span style="font-weight: bold"><span style="font-size: 15pt"><span style="font-family: 仿宋">十、录取</span></span></span></strong></span></p>
+<ul>
+	<li>
+		<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">提前批：</span></span></span></li>
+</ul>
+<p style="line-height: 25pt; margin: 0pt 0pt 0pt 28pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">1.师范类五年制高职投档要求及录取办法</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 28pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">（1）艺术类：</span></span></span><strong><span style="font-weight: bold"><span style="font-size: 14pt"><span style="font-family: 仿宋">综合素质等级评定良</span></span></span></strong><strong><span style="font-weight: bold"><span style="font-size: 14pt"><span style="font-family: 仿宋">（含良）</span></span></span></strong><strong><span style="font-weight: bold"><span style="font-size: 14pt"><span style="font-family: 仿宋">以上</span></span></span></strong><span style="font-size: 14pt"><span style="font-family: 仿宋">且专业考试合格，根据高职院校提前公布的录取方法和考生志愿，在最低投档控制线168分以上(含168分)择优录取；对生源未招满额的学校，如招生院校未事先设定最低录取线，投档线最低可降到138分。</span></span></p>
+<p style="line-height: 25pt; text-indent: 28pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">（2）非艺术类：</span></span></span><strong><span style="font-weight: bold"><span style="font-size: 14pt"><span style="font-family: 仿宋">综合素质等级评定良（含良）以上</span></span></span></strong><span style="font-size: 14pt"><span style="font-family: 仿宋">，其他条件按五年制高职条件录取。</span></span></p>
+<p style="line-height: 25pt; text-indent: 28pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">2.公办普通高中的体育、艺术特色班录取办法：在专业合格的条件下，按中考成绩从高到低择优录取，最低投档控制线为330分，等级科目要求与一般普通高中招生条件一致；在初中阶段获得县（市）区以上政府或教育行政主管部门举办或联办的各类体育、艺术比赛获奖（含集体和个人项目）的考生，在招生学校名额未收满的情况下最低可降至297分录取，无等级科目要求。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 27.8pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">民办普高体育、艺术特色班录取办法：采取专业测试合格后参加中考，按中考成绩从高分到低分择优录取，最低分不低于297分，无等级科目要求。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 28pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">体育、艺术特色班面试成绩在正常批录取是否互认，由相关学校协商确定报福州市中招办审核后提前向社会公布。报考市区和七县(市)各类普通高中学校体育、艺术特色班的学生如未被正常批录取，在供需见面批学校招收时考生专业合格成绩在同级学校可互认，或高一级达标校专业测试合格成绩可用于低级普通高中供需见面批录取使用。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 28pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">（二）第一批：普通高中投档要求及录取办法</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 21pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">1.招生程序： (1)先招统招生；(2)再招报考第一志愿的定向生；（3）未招满的定向生剩余指标调整为统招生指标，进行统招生二次录取。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 28pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">2.第一条投档线切线办法：根据中考投档总分，福州市区按福州一中、福州二中、福州三中、福州四中、福州格致中学、福州八中、福州高级中学和师大附中等八所一级达标学校普通班（不含特色班和自主招生，下同）面向市区招生计划总数的</span></span></span><strong><span style="font-weight: bold"><span style="font-size: 14pt"><span style="font-family: 仿宋">75%</span></span></span></strong><span style="font-size: 14pt"><span style="font-family: 仿宋">划定普通高中第一条投档线。福清市按福清一中和福清侨中、长乐市和连江县按一级达标校普通班向本地招生计划总数的75%划定第一条投档线</span></span><span style="font-size: 16pt"><span style="font-family: 方正仿宋简体">。</span></span><span style="font-size: 14pt"><span style="font-family: 仿宋">闽侯（含高新区）、闽清、永泰、罗源分别按闽侯一中、闽清一中、永泰一中、罗源一中普通班的招生计划总数1∶1.05划第一条投档线。</span></span></p>
+<p style="line-height: 25pt; text-indent: 28pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">3.达标普高学校投档等级要求及录取办法：</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">（1）省一级达标校和七县（市）一中：综合素质等级要求为良(含良)以上，学校考查科目合格，思想品德、物理、化学、历史、生物、地理成绩达到C级（含C）以上。福州市区省一级达标校和七县（市）一中体育成绩为B级（含B）以上，其他七县（市）省一级达标学校体育成绩为C级（含C）以上。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">（2）省二级达标学校（不含县一中）：综合素质等级评定合格以上，学校考查科目合格，体育、思想品德、物理、化学、历史、地理、生物七科中只能有1科D等级。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">（3）省三级达标学校：综合素质等级评定合格以上，学校考查科目合格，体育、思想品德、物理、化学、历史、地理、生物七科中只能有2科D等级。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 28pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">（4）&ldquo;定向生&rdquo;录取办法：在统招生第一次第一志愿所划投档线下20分以内，招&ldquo;定向生&rdquo;的优质普高以向本地招收普通班学生数的50%，根据2016年中考报名人数按比例分配到各初中学校，以初中学校为单位按中考投档总分从高到低择优录取，未招满的剩余指标调整为统招生指标，进行第二次录取。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 27.75pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">（5）普高各类达标校定向生录取对各学科的等级要求不变，只降低中考投档的总分。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 27.75pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">（6）福州一中、福建师大附中向各县（市）招生录取办法</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 27.75pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">两所学校分别根据在福州市区招收统招生第一次所划投档线上择优录取，等级要求同市区一级达标学校。学校未招满的计划不再调到福州市区录取。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 27.75pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">（7）普高特长生录取：</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 28pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">A. 普高体育传统校特长生报名条件：中考体育成绩达B级（含B）以上，在初中阶段参加县（市）区级以上县（市）区级政府、教育主管部门主办或联办的运动会（含中学生运动会）以及单项竞赛个人项目、集体项目前六名队员或获国家二级运动员称号的考生。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 27.75pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">B.录取办法：考生专业测试合格并参加中考，由各招生学校设定体育、艺术特长生投档线并经市教育局公布，按志愿在线上投档择优录取，投档录取的等级要求与一般普高投档录取条件一样。特长生最低投档控制线为330分。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 27.75pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">4.一般普通高中（含民办普高）投档录取办法：综合素质等级评定合格；学校考查成绩4科以上合格；思想品德、物理、化学、历史、地理、生物、体育七科不超过3个D等级。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 27.75pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">5.普高投档轮转方式：福州市区、七县(市) 在各自第一条线上按志愿轮转投档，未满额的学校，逐10分降，按志愿一次性投档，但不低于普高最低投档控制线330分。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">（三）第二批：五年制高职</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">1.一般五年制高职：综合素质评定合格，根据考生志愿在最低投档控制线230分以上（含230分）从高到低择优录取；对生源未招满额的学校，投档线最低可降到200分；但如招生院校已事先公布最低录取线（不得低于230分），则在学校公布的录取线上择优录取。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 28pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">2. 五年制高职体育、艺术专业录取：综合素质评定和专业考试合格，根据高职院校提前公布的录取方法和考生志愿，在最低投档控制线168分以上(含168分) 择优录取；对生源未招满额的学校，如招生院校未事先设定最低录取线，投档线最低可降到138分。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 28pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">（四）第三批：中等职业学校(含体育、艺术专业)投档录取办法：</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 30pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">综合素质评定合格，（体育、艺术专业需专业考试合格）根据考生志愿和投档成绩从高到低依次投档。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 28pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">（五）同分投档录取办法</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 28pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">1.普通高中和中职学校同分考生全部投档录取。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 28pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">2.五年制高职（含师范类）同分考生投档办法：优先投政策规定的同等条件下优先录取的考生；在招生计划未完成情况下，依次按投档总分、学科总分、数英总分、数学单科成绩的高低顺序投档。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 28pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">十一、凡已参加2016年&ldquo;福州市非物质文化遗产保护专业&rdquo;推免保送并符合录取要求的考生，经中考报名后由市中招办直接投档录取，不能再参加2016年中考。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 28pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">十二、省委、省政府引进人才子女照顾政策按照相关文件规定执行。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 28pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">十三、中招录取通知书加盖福州市中招办录取专用章后生效。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 27.75pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">十四、《2016年福州市高级中等学校招生考试工作实施细则》的解释由福州市中招办负责。</span></span></span></p>
+<p style="line-height: 25pt; text-indent: 27.75pt">
+	<span style="font-family: times new roman"><span style="font-size: 14pt"><span style="font-family: 仿宋">十五、受平潭综合实验区委托，平潭综合实验区2016年中考中招工作相关事宜由福州市中招办根据《2016年福州市高级中等学校招生考试工作实施细则》代办。</span></span></span></p>
+<p align="right" style="text-align: right; line-height: 25pt; text-indent: 182pt; margin: 0pt 7pt 0pt 0pt">
+	<span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 仿宋">福州市中等学校招生委员会办公室</span></span></span></p>
+<p style="text-align: right; line-height: 25pt">
+	<span style="font-size: 14pt"><span style="font-family: 仿宋"><span style="font-family: 宋体">2016年4月14日</span></span></span></p></div>
+
+ 
+    <div>
+		
+    </div>
+
+		<div class="bottom"> 
+		闽ICP备06000505号-1<br/>
+	福州市中招办版权所有，未经授权不得转载<br/>
+	福州睿丰信息技术有限公司 提供技术支持
+		</div>
+    </div>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?4687ed40935dc3793b2ca1a462886d88";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>
+

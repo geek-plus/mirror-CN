@@ -1,0 +1,936 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../../../images/font.css">
+    <link rel="stylesheet" type="text/css" href="../../../../images/style.css">
+    <script type="text/javascript" src="../../../../images/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="../../../../images/jq.cookie.js"></script>
+    <script type="text/javascript" src="../../../../images/animate.js"></script>
+    <script type="text/javascript" src="../../../../images/dataCheck.js"></script>
+    <title>政策法规-佛山社保信息网</title>
+</head>
+
+
+
+<body>
+   
+
+        <!-- top -->
+        <!-- 头部-->
+<style>
+    .toplink{width: 326px;}
+    .imglink{margin-left:2px ; width: 25px;height: 25px;float: left;}
+</style>
+<div>
+        <div class="topBG">
+            <div class="commonWidth makecenter">
+            <div class="toplink floatRight">
+                <div class="oldPage floatLeft">
+                    <a href="../../../../">返回首页</a>
+                    <span>|</span>
+
+                    <a href="javascript:;" onClick="setHomePege(this);" >设为主页</a>
+                    <span>|</span>
+                    <a href="javascript:;" onClick="addfavorite();" >加入收藏</a>
+                </div>               
+                <div class="imglink"><a href="http://weibo.com/u/2931846972" title="微博" target="blank"><img src="../../../../images/weibo.jpg" alt="微博" width="25" height="25" /></a></div> 
+                <div class="imglink"><a href="http://www.fssi.gov.cn/sbzx/sbdt/201602/t20160216_5522739.html" title="微信" target="blank"><img src="../../../../images/weixin.png" alt="微信" width="25" height="25" /></a></div>              
+            </div>
+
+                <div class="clear"></div>
+
+                <form  action="http://219.130.221.60:8084/was5/web/search" method="post" name="searchform" target="_blank" >
+                 <input style="display:none" id="channelid" name="channelid" value="299205" /> 
+                <div class="searchFrame floatRight">
+                    <div class="floatLeft"><input name="searchword" style="border:none" id="schText" class="inputFrame" type="text" placeholder="输入关键字搜索" onkeypress="enterCheck(event);" onkeydown="if(event.keyCode==13){document.getElementById('bt').click();return false;}" /></div>
+                    <input id="hiddenText1" type="text" style="display:none" />
+                    <div class="floatLeft"><span id="bt" class="schIcon" onclick="document.searchform.submit();document.charset='utf-8';"></span></div>
+                    <div class="clear"></div>
+                </div>
+                </form>
+
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <div class="navBG">
+            <div class="topWidth makecenter" style="position:relative;">
+                <span class="topLnk fuzhu">
+                <a class="title" href="../../../../">首&nbsp;&nbsp;页</a>
+                </span>
+                <span class="topGap">|</span>
+                <span class="topLnk">
+                    <a class="title" href="../../../../zwgk/">政务公开</a>
+
+                    <span class="menu01">
+                        
+                        <a href="../../../../zwgk/xxgkml/" target="_blank">信息公开目录</a>
+                        
+                        <a href="../../../../zwgk/jgzn/" target="_blank">机构职能</a>
+                        
+                        <a href="../../../../zwgk/xzxg/" target="_blank">新政新规</a>
+                        
+                        <a href="../../../../zwgk/ghjh/" target="_blank">规划计划</a>
+                        
+                        <a href="../../../../zwgk/cgxx/" target="_blank">采购信息</a>
+                        
+                        <a href="../../../../zwgk/rsrm/" target="_blank">人事任免</a>
+                        
+                        <a href="../../../../zwgk/ryzl/" target="_blank">人员招录</a>
+                        
+                        <a href="../../../../zwgk/yjgl/" target="_blank">应急管理</a>
+                        
+                        <a href="../../../../zwgk/lxfs/" target="_blank">联系方式</a>
+                        
+                    </span>
+                </span>
+                
+
+                <span class="topGap">|</span>
+                <span class="topLnk">
+                    <a class="title" href="../../../../sbzx/">社保资讯</a>
+
+                    <span class="menu02">                
+                     
+                     <a href="../../../../sbzx/sbdt/" target="_blank">社保动态</a>
+                     
+                     <a href="../../../../sbzx/rdzt/" target="_blank">热点专题</a>
+                     
+                     <a href="../../../../sbzx/tzgg/" target="_blank">通知公告</a>
+                     
+                 </span>
+             </span>
+
+
+             <span class="topGap">|</span>
+             <span class="topLnk">
+                <a class="title" href="../../../">业务办理</a>
+
+                <span class="menu03">                
+                    
+                    <a href="../../../ylbx/" target="_blank">养老保险</a>
+                    
+                    <a href="../../" target="_blank">医疗保险</a>
+                    
+                    <a href="../../../gsbx/" target="_blank">工伤保险</a>
+                    
+                    <a href="../../../sybx_1090265/" target="_blank">生育保险</a>
+                    
+                    <a href="../../../sybx/" target="_blank">失业保险</a>
+                    
+                    <a href="../../../zhbx/" target="_blank">综合保险</a>
+                    
+                </span>
+            </span>
+
+
+            <span class="topGap">|</span>
+            <span class="topLnk">
+                <a class="title" href="../../../../hdjl/">互动交流</a>
+
+                <span class="menu04">                
+                    
+                    <a href="../../../../hdjl/wsdc/" target="_blank">网上调查</a>
+                    
+                    <a href="../../../../hdjl/yjzj/" target="_blank">意见征集</a>
+                    
+                    <a href="../../../../hdjl/zxft/" target="_blank">在线访谈</a>
+                    
+                    <a href="http://wz.foshan.gov.cn/wlfyr/sdzjg/srlzyhshbzj/" target="_blank">网络发言人平台</a>
+                    
+                </span>
+            </span>
+
+
+            <span class="topGap">|</span>
+            <span class="topLnk">
+                <a class="title" href="../../../../bmfw/">便民服务</a>
+
+                <span class="menu05">                
+                    
+                    <a href="../../../../bmfw/jfbz/" target="_blank">缴费标准</a>
+                    
+                    <a href="../../../../bmfw/cjwt/" target="_blank">常见问题</a>
+                    
+                    <a href="http://61.142.213.86:8089/fswb/" target="_blank">社保卡查询</a>
+                    
+                    <a href="http://61.142.213.86/grwssb/" target="_blank">个人社保信息查询</a>
+                    
+                    <a href="http://www.gdhrss.gov.cn/sofpro/otherproject/yaopin/yaopin.jsp" target="_blank">医疗保险药品查询</a>
+                    
+                    <a href="../../../../bmfw/ddyljgcx/" target="_blank">定点医疗机构查询</a>
+                    
+                    <a href="http://61.142.213.86/checkprint/default.jsp" target="_blank">参保证明</a>
+                    
+                    <a href="../../../../bmfw/mnjs/" target="_blank">模拟计算</a>
+                    
+                </span>
+            </span>
+            <div id="floatbar" style="position:absolute; width:30px; height:244px; top:62px; left:-50px;"><img src="../../../../images/floatbar.png" /></div>
+            <div id="floatbar1" style="position:absolute; width:60px; height:220px; top:62px; right:-80px;"><a href="http://my.fs.cn" target="_blank"><img src="../../../../images/floatbar1.png" width="60" height="220" /></a></div>
+        </div>
+    </div>
+</div>
+<script>
+    $(".fuzhu").hover(function(){
+       $(".fuzhu").css("background-color","#fff")},
+        function(){$(".fuzhu").css("background-color","#004ba8")})
+</script>
+  <script type="text/javascript"> 
+                    $(function () {
+                        liShowHide("liNav");
+                //var tabTop = new tabOver("bannerTab", "bannerImg", "bannerPage", "banner");
+//              var tab1 = new tabOver("inTab", "inCtx1", "inCtx2");
+                //var tab2 = new tabOver("plyTab", "plyCtx1", "plyCtx2");
+
+
+
+                if ($("#lnkTitle").children().length == 0) {
+                    $("#lnkTitle").hide();
+                }
+
+                //bottomCheck
+                var bc = new dataCheck();
+                
+                //bc.bottomCheck();
+
+
+                //floatbar\floatbar1
+                var fb = $("#floatbar");
+                var fb1 = $("#floatbar1");
+                var win = $(window);
+                win.scroll(function () {
+                    var t = win.scrollTop();
+                    if (t > 200) t -= 200;
+                    else t = 0;
+
+                    var newT = 62 + t;
+                    fb.css("top", newT+"px");
+                    fb1.css("top", newT+"px");
+                });            
+                
+
+                    
+
+            function search() {
+                var tVal = $("#schText").val();
+                if (tVal != "") {
+                    location.href = "search.aspx?key=" + escape(tVal);
+                    
+                } else {
+                    alert("请输入搜索关键字");
+                }
+            }
+
+            function enterCheck(e) {
+                var keynum;
+                if (window.event) {
+                    keynum = e.keyCode;
+                }
+                else if (e.which) {
+                    keynum = e.which;
+                }
+                if (keynum == 13) {                 
+                    search();
+                    
+                }
+            }
+   });
+        </script>
+
+        <!-- end of top -->
+
+
+
+
+        
+    <!-- main -->
+    <div class="main">
+
+        <div class="commonWidth ctxFrame">
+            <div class="position">
+                <span class="posIcon"></span>
+                <span>你当前所在的位置：</span>
+                        <a href="../../../../" target="_blank" title="首页" class="CurrChnlCls">首页</a>&gt;<a href="../../../" target="_blank" title="业务办理" class="CurrChnlCls">业务办理</a>&gt;<a href="../../" target="_blank" title="医疗保险" class="CurrChnlCls">医疗保险</a>&gt;<a href="../" target="_blank" title="政策法规" class="CurrChnlCls">政策法规</a>
+            </div>
+
+            <div class="articleFrame makecenter">
+                <div class="artTitle">佛山市职工基本医疗保险办法实施细则</div>
+
+                <div class="artInfo">发布单位： 市社保基金管理局&nbsp;&nbsp; 发布时间：2013-07-01</div>
+
+                <div class="artCtx">
+                <p style="margin-top: 0pt; text-indent: 36.8pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 36.8pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">根据《佛山市职工基本医疗保险办法》（佛府办〔2013〕50号，以下简称《办法》）的精神，制定本实施细则。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; font-weight: bold; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 120pt; margin-bottom: 0pt" class="p0" align="center"><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'">第一章&nbsp;参保登记及管理</span><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 36.8pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第一条&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">在职职工所属的用人单位应当自用工之日起30天内统一到单位所在地的地税部门办理参保、申报和缴费手续；灵活就业人员由本人到户籍所在地的地税部门办理参保、申报和缴费手续。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 31.36pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;医疗保险费由地税部门统一征收。在职职工个人缴费部分由用人单位代扣代缴，用人单位应按月将缴纳的保险费明细情况告知本人。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 31.36pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第三条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; font-weight: bold; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">职工在本市按月领取基本养老保险待遇后，职工基本医疗保险（以下简称职工医保）累计缴费年限（含视同缴费年限）不足规定年限的，应一次性补足差额年限，补缴标准为补缴时的缴费基数的单位缴费部分。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 31.36pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">工伤保险中一级至四级伤残职工达到法定退休年龄时，其医疗保险缴费年限不足享受退休人员医疗保险待遇规定年限的，需一次性趸缴差额年限的医疗保险费。工伤职工与原单位保留劳动关系的，由原单位按办理趸缴手续时的缴费标准缴纳；工伤职工要求终止劳动关系（一次性享受一级至四级伤残待遇并终止劳动关系的除外），办理伤残退休手续的,由工伤保险基金按办理趸缴手续时的缴费标准缴纳。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第四条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">各区基本医疗保险制度实施前已参加本市基本养老保险的缴费年限（含视同缴费年限）视为职工医保的缴费年限，正式开始实施基本医疗保险政策后参加基本医疗保险的，缴费年限按实际缴费年限累计计算。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 31.36pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">经组织、人力资源社会保障</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">行政</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">部门办理调动和单位整体转入的参保人，其符合国家政策规定的连续工龄视同</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">职工医保</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">的缴费年限。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 31.36pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">流动到本市就业参保的人员，按部和省的转移政策执行。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第五条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">参保人到外市就业参保的，按</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">国家</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">和</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">广东</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">省的转移政策执行。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 120pt; margin-bottom: 0pt" class="p0" align="center"><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'">第二章&nbsp;&nbsp;医保待遇核发</span><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; font-weight: bold; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第六条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">职工在办理本市按月领取基本养老保险待遇时累计职工医保缴费符合规定年限的，从享受退休养老待遇的当月1日起享受退休医疗保险待遇；职工在办理本市按月领取基本养老保险待遇时累计职工医保缴费不符合规定年限的，办理一次性补缴医疗保险差额年限后，自办完确认手续并成功缴费的当月1日起可享受退休基本医疗保险待遇。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第七条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">失业人员每月按规定签收失业保险金，签收月份发生的住院医疗费用，按《办法》有关规定核报，其费用由职工医保基金支付；未按规定签收失业保险金的月份，不能享受职工医保待遇；因疾病住院等特殊情况未能按时签收失业保险金的月份，经所属社保经办机构批准补发该月失业保险金的，可以享受该月职工医保待遇。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; font-weight: bold; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第八条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; font-weight: bold; mso-spacerun: 'yes'">&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">工伤伤残退休职工达到法定退休年龄以前（含当月），享受在职职工医保待遇；达到法定退休年龄次月起，享受退休人员医保待遇。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第九条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; font-weight: bold; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">一个社保年度内，参保人在职工医保和居民医保</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">之间转换的，按以下规定执行：</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 31.36pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（一）居民医保参保人转参职工医保的，且职工医保处于缴费达账状态的，按职工医保待遇核报，若当次基金支付金额超过职工医保年度累计最高支付限额的，超出部分职工医保基金不予支付。若再次发生的医疗费用按居民医保待遇核报。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;&nbsp;&nbsp;（二）职工医保参保未过90天等待期，转而参加居民医保的，与居民医保合并连续计算等待期。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;&nbsp;（三）居民医保参保人中途参保未过90天等待期，转而参加职工医保的，合并连续计算等待期。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;&nbsp;（四）居民医保中从社保年度首月1日起享受待遇或免等待期的参保人，转而参加职工医保的，在其享受职工医保待遇时，免等待期。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 39.36pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第十条</span><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">属省内跨统筹地区转入且转移前后缴费年限连续不中断的参保人，免等待期。&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; color: rgb(255,0,0); font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; font-weight: bold; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第十一条</span><span style="font-family: '仿宋_GB2312'; color: rgb(255,0,0); font-size: 16pt; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">一个社保年度内，参保人在职工医保和居民医保之间转换参保的，享受大病保险的最高支付限额按《佛山市大病保险管理办法》(佛府办〔2013〕41号)规定的最高支付限额核定，不重复享受待遇。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 120pt; margin-bottom: 0pt" class="p0" align="center"><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'">第三章&nbsp;&nbsp;&nbsp;就医待遇及管理</span><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32.25pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第十二条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">《办法》中所称的职工医保基金年度累计最高支付限额是指参保人一个社保年度内（每年的7月1日至次年的6月30日为一个社保年度）一次或多次住院、家庭病床、门诊特定病种及部分人员的生育医疗费用由职工医保基金支付部分的累计最高支付总额。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32.25pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第十三条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">既在本市又在异地同时参加基本医疗保险（指职工医保或居民医保）或生育保险（商业保险除外）的人员，在异地已办理过报销手续，经核准后，按本市的标准计算其医疗或生育待遇，扣除其在异地已享受的医疗或生育待遇后，支付其差额部分的医疗或生育待遇。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第十四条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">职工医保实行定点医疗机构就医管理。参保人患病时，凭本人社会保障卡或身份证到定点医疗机构就医。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第十五条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">参保人符合以下情况的，可以按规定享受职工医保待遇：</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（一）被批准在异地就医的驻市外工作或退休的参保人，回到参保地住院或需转院的，按照市内定点医疗机构住院或转院的相关规定享受职工医保待遇。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 40pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（二）在外地期间因急、危、重症疾病在市外医疗机构住院的，可委托他人在5个工作日内报参保所属社保经办机构备案，其医疗费用经所属社保经办机构核准后，纳入职工医保核报范围的费用按市内同级定点医疗机构支付比例支付。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 40pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（三）急、危、重病患者，经门诊抢救治疗后即转入住院部治疗或住院前留观的门诊费用与住院费用合并结算，计一次起付标准。除此以外的住院前普通门诊费用不能与住院费用合并结算。经门、急诊抢救无效死亡的，所发生的医疗费用可按住院的待遇核报。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 40pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（四）因病情需要转市内上级医疗机构治疗的，经治疗医疗机构开出转院证明并且是年内第一次办理转院手续的，转入医疗机构不计算起付标准；第二次及以上转院的按重新住院计算起付标准。病人在高等级医疗机构治疗病情稳定，脱离急、危、重期，从三级或二级医院转往一级医院继续治疗的，转入医院不再计算起付标准。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 39.36pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（五）长期住院超过90天（含）的参保人，每90天与定点医疗机构结算一次，每结算一次，需计算一次起付标准。&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 40pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第十六条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">参保人因意外等原因就医，如有第三人负担部分费用的，经核准后，按本市的标准计算职工医保待遇，再扣除第三人负担的费用后，由职工医保基金支付其差额部分。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; color: rgb(255,0,0); font-size: 16pt; font-weight: bold; mso-spacerun: 'yes'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第十七条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; font-weight: bold; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">参保人服刑期间保外就医或监外执行的，在定点医疗机构发生的医疗费用，由职工医保基金按职工医保制度相关标准核报。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; color: rgb(255,0,0); font-size: 16pt; font-weight: bold; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 39.36pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第十八条&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">参保人因犯罪、酒后驾驶、无牌无证驾驶引起的意外伤害住院产生的医疗费用，按照《广东省城镇职工基本医疗保险诊疗项目管理暂行办法》的有关规定处理。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 39.36pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第十九条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; font-weight: bold; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">非功能性组织或器官整容、矫形手术等治疗及由此引起的并发症、后遗症所发生的医疗费用，职工医保基金均不予支付。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二十条&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">符合以下条件之一的院外定点医疗机构检查、检验所产生的费用，可以纳入当次职工医保基金支付范围，与当次住院的医疗费用合并计算，由定点医疗机构予以即时结算：</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="line-height: 28pt; margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（一）有主管医生医嘱和病历记录，确因病情需要到院外做的检查、检验。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（二）本院无该检测设备。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（三）有按主管医生医嘱到院外检查及检验的相关结果。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二十一条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">普通疾病出院带药不得超过7天量，慢性病</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（如高血压、肝炎、肺结核、精神病等）不得超过1个月量。出院超量带药、出院时</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">或住院期间开出但未执行的治</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">疗、检查、检验项目费用，职工医保基金均不予支付。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二十二条&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">入住定点医疗机构特需病房发生的医疗费用（如华侨、港、澳、台胞的高级病房，特需的医疗服务），按职工医保制度相关标准核报，超出部分的费用职工医保基金不予支付。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 31.36pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二十三条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; font-weight: bold; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">参保人员住院治疗已符合出院标准的，因各种原因拒绝办理出院手续的，定点医疗机构应及时通知社保经办机构，同时递交参保人病情记录和符合出院标准的书面报告（需由主治医师、科主任、医务科长及主管医疗业务的院长签名）。经社保经办机构核实确定符合出院条件的，自通知其出院之日起发生的医疗费用，职工医保基金均不予支付。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32.25pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二十四条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">职工医保用药范围管理按以下规定执行：</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32.25pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（一）按照《广东省基本医疗保险、工伤保险和生育保险药品目录》（以下简称《药品目录》）的规定执行，参保人使用目录内属于甲类药品的费用，100%纳入职工医保核报范围；属于乙类药品的费用，90%纳入职工医保核报范围。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32.25pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（二）参保人使用《药品目录》范围外的药品费用，职工医保基金不予支付。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32.25pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（三）在本院范围内使用经省药监部门批准并由市人力资源社会保障局公布的医院制剂的费用，按90%纳入职工医保核报范围。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 40pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二十五条&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">持有《中华人民共和国残疾人证》的参保人，在定点医疗康复机构进行的国家基本医疗保障医疗康复项目的费用，100%纳入由职工医保基金核报范围，按照属地管理原则，各区社保基金管理局负责监督考核定点医疗康复机构。见《国家基本医疗保障医疗康复项目》。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 96pt; margin-bottom: 0pt" class="p0" align="center"><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'">第四章&nbsp;&nbsp;门诊特定病种管理</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二十六条&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">门诊特定病种指治疗和治愈周期漫长，医疗费</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">用较高，经市人力资源社会保障局会同相关部门核准后，其门诊医疗费用可以纳入职工医保基金支付的一类特殊疾病。病种目录的设立及基金支付限额标准由市人力资源社会保障局根据实际情况作相应调整。详见《佛山市职工基本医疗保险门诊特定病种目录及基金支付限额标准》（以下简称《病种目录》）。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二十七条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">参保人申请门诊特定病种待遇资格的手续：</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（一）参保人如患有《病种目录》所列的疾病，需持本人身份证、疾病诊断证明书、近半年诊治的病历及相关检查、检验报告单到参保所在社保经办机构指定地点办理申请手续，经社保经办机构初步核定，由社保经办机构确定检查日期并发给检查通知单。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(二)参保人必须在指定的日期、地点进行病种的检查（因特殊原因逾期未检查，需重新预约检查日期），检查医疗机构由市社保基金管理局统一指定；检查费由职工医保基金承担。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（三）&nbsp;检查结果符合所申请门诊特定病种的，按标准确定当年门诊特定病种的最高支付限额标准，从检查日期的次月1日起享受门诊特定病种待遇。&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（四）当年度不足12个月的，按剩余月份计算本年度门诊特定病种实际限额。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 40pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二十八条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">下列四类情况之一的参保人，提供二级及以上定点医疗机构的符合申请病种条件的疾病诊断证明、病历等相关资料（精神类疾病需提供专科医疗机构的疾病诊断证明书），办理申请手续时可作免病种检查处理，经社保经办机构审批同意后门诊特定病种的待遇从办理申请手续的次月1日起生效。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（一）行动困难和生活不能自理。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（二）80周岁以上。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（三）出院30天内办理与当次住院出院诊断相符的门诊特定病种申请。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（四）癫痫（需长期服药的）、精神分裂症、双相情感障碍（躁狂抑郁性精神病）、泌尿系结石（体外碎石）、白内障（手术治疗）、耐多药肺结核、恶性肿瘤（非放、化疗）、恶性肿瘤（放疗、化疗、热疗）、器官移植术后抗排斥治疗、再生障碍性贫血治疗、血友病-凝血因子治疗、重型β地中海贫血、造血干细胞移植后（移植物抗宿主病及感染的治疗）、丙肝-聚乙二醇干扰素α治疗、慢性肾功能不全透析治疗（血液透析、腹膜透析）等15个门诊特定病种申请。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第二十九条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">建立门诊特定病种年检制度。由市及区社保基金管理局通知参保人办理年检手续。检查结果不符合的或不按通知参加年检的，年度期满后停止享受门诊特定病种的待遇。属于以下情况的按规定执行：</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（一）年检时，在旧社保年度已批准享受恶性肿瘤（放疗、化疗、热疗）病种待遇的参保人，系统自动从新社保年度开始调整为恶性肿瘤（非放、化疗）病种待遇。参保人需继续享受恶性肿瘤（放疗、化疗、热疗）病种待遇的，应提供二级及以上定点医疗机构开具需继续放、化、热疗的证明材料，办理重新申请手续，经社保经办机构审批同意后，继续享受恶性肿瘤（放疗、化疗、热疗）病种待遇。原则上从申请次月开始享受恶性肿瘤（放疗、化疗、热疗）待遇，特殊情况的，各区可根据参保人的治疗情况，确定本病种新社保年度待遇的有效开始日期。如在旧社保年度，参保人享受恶性肿瘤（放疗、化疗、热疗）病种待遇未超过半年的，年检时可选择系统中单一续审功能模块，生成新社保年度门诊特定病种的有效记录，继续享受恶性肿瘤（放疗、化疗、热疗）病种待遇。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（二）根据省药品目录规定，聚乙二醇干扰素α药物限定连续使用6个月无效时停药，连续使用不超过12个月，年检时，已批准享受丙肝-聚乙二醇干扰素α治疗门诊特定病种待遇超过半年以上的，必须进行抽检，参保人需继续享受丙肝-聚乙二醇干扰素α治疗病种待遇的，应提供二级及以上定点医疗机构开具需继续使用聚乙二醇干扰素α进行丙肝治疗的证明材料，病历及相关检查、检验报告单，办理重新申请手续，经社保经办机构审批同意后，可享受新社保年度该病种的门诊特定病种待遇。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（三）已批准享受泌尿系结石（体外碎石）和白内障（手术治疗）的门诊特定病种参保人，不参加年检，有效期为一年（从受理之日计起），有效期结束时其原来的协议失效，参保人如需继续治疗，需提供二级及以上定点医疗机构开具需继续治疗的证明材料，办理重新申请手续，社保经办机构审批通过后，方可继续享受相应待遇。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; text-indent: 39.36pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第三十条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">职工医保门诊特定病种的有关事项按以下规定执行：</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（一）参保人门诊特定病种的医疗费用报销不设起付标准。&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（二）参保人在享受门诊特定病种待遇有效期内住院的，住院期间不能享受门诊特定病种待遇。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（三）参保人患两种以上门诊特定病种时，以限额标准高的一种疾病确定其限额标准,参保人经批准享受某一个门诊特定病种待遇的，发生其他门诊特定病种医疗费用时，可在已确定的门诊特定病种限额标准内，由职工医保基金按规定支付；泌尿系结石（体外碎石）和白内障（手术治疗）的年度限额额外单独计算，与其他病种的限额不关联。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（四）门诊特定病种定额按社保年度结算，当年度不足12个月的，按剩余月份计算本年度门诊特定病种实际限额（公式见附表）。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（五）在市外定点医疗机构发生门诊特定病种的治疗费用，职工医疗保险基金不予支付；但因病情需要，经所属社保经办机构核准的，职工医保基金予以支付。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（六）享受泌尿系结石（体外碎石）和白内障（手术治疗）病种待遇的参保人发生的医疗费用，需到参保所在地社保经办机构申请办理零星报销，从开始体外碎石或白内障手术治疗发生的医疗费用及后续治疗的医疗费用才可纳入门诊特定病种限额标准，在进行体外碎石或白内障手术治疗前发生的医疗费用不能纳入门诊特定病种限额标准。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（七）从享受待遇之日起，参保人可在定点医疗机构就诊。在有联网定点医疗机构诊治门诊特定病种的医疗费用，由各区社保基金管理局按规定与定点医疗机构直接结算；在未联网的定点医疗机构诊治的费用，由个人先垫付，出院后到各区社保经办机构申请零星报销。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 120pt; margin-bottom: 0pt" class="p0" align="center"><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'">第五章&nbsp;&nbsp;家庭病床管理</span><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第三十一条</span><span style="font-family: '黑体'; font-size: 16pt; font-weight: bold; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;参保人申请开设家庭病床的，由患者家属或开设家庭病床医院医护人员携带以下资料，到各区社保经办机构办理：</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（一）提供医疗机构的诊断证明书（需医疗机构医务科盖章）和近半年诊治病历及必要的辅助检查报告书。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（二）拟开设家庭病床医疗机构主诊医师按病情填写《佛山市基本医疗保险开设家庭病床申请表》。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第三十二条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">家庭病床的医疗机构实行定点管理，开设家庭病床的定点医疗机构需同时具备下列条件：</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 24pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（一）已获得卫生行政部门执业许可的</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">一级医院（</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">含社区定点医疗卫生服务机构）和慢性病专科医院。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; font-weight: bold; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 24pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（二）定点医疗机构有一名主管业务的领导分管家庭病床工作，并有相关的科室负责该项业务。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 24pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（三）具有健全的家庭病床管理制度，实行规范管理，包括建床结床、病历书写、查房巡诊、转诊、会诊、医嘱、护理、药品管理、病例讨论、抢救、消毒隔离、疫情报告、死亡报告、差错事故登记等；已制定和完善家庭病床疾病诊治、护理常规和各项技术操作规程，并严格执行。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 24pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（四）负责家庭病床管理科室人员配备精干，有医疗护理技术骨干。配有适应工作需要的小型、便于携带的诊断、检查、治疗和抢救的设备，并为工作人员配备必要的交通工具。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;&nbsp;（五）在家庭病床医疗服务过程中，不得违反规定额外收取参保患者医疗费用。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 120pt; margin-bottom: 0pt" class="p0" align="center"><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'">第六章&nbsp;&nbsp;&nbsp;个人账户管理</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; font-weight: bold; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 40pt; margin-bottom: 0pt" class="p18"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第三十三条</span><span style="font-family: '黑体'; font-size: 16pt; font-weight: bold; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 16pt; mso-spacerun: 'yes'">职工医保个人账户</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（以下简称医保个账）</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 16pt; mso-spacerun: 'yes'">资金用于支付参保人及其亲属健康体检、中医“治未病”及预防接种的疫苗费用；可用于参保人及其亲属缴纳居民住院、居民门诊基本医疗保险费；可用于支付参保人及其亲属在定点医疗机构住院、门诊就医以及定点零售药店购药所发生的费用。</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p18"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第三十四条</span><span style="font-family: '黑体'; font-size: 16pt; font-weight: bold; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;医保个账</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">资金按月划拨，按《</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">关于佛山市城镇职工基本医疗保险个人账户资金集中支付的通知》（佛社保〔2012〕31号）有关规定办理。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">医保个人账户资金错划、多划的，由参保人所属社保经办机构负责纠正。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p18"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第三十五条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;参保人由于某些原因放弃未能及时划拨到账的</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">医保个账</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">资金选择销户时，各社保经办机构经办人员应要求参保人签名确认，未能划拨的资金归职工医保基金所有。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 24pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;</span><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第三十六条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">在异地长期居住的市外户籍退休参保人和外市户籍的一级至四级工伤伤残职工，如本人书面提出申请，经市（区）社保基金管理局核准后，其职工医保个人账户可随养老金和伤残津贴一起发放。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 36.8pt; margin-bottom: 0pt" class="p21"><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第三十七条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">参保人因各种原因在本市已经终止医疗保险关系，可申请办理职工医保个账资金余额的转移或提现：</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p21"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（一）</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">参保人需要将保险关系转出本市，参保人或代办人到参保人所属社保经办机构办理关系转出手续，其医保个账资金余额可结转到转入地的医疗保险机构。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p21"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">无法办理医保个账余额转出手续的，个账资金余额可通过发卡银行转账或提现退还给本人。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p21"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;&nbsp;（二）参保人出国（境）定居、外籍参保人回国工作已经办理退还养老保险个人账户业务的，参保人可以申请办理医保个账余额转出手续。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 28.8pt; margin-bottom: 0pt" class="p21"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（三）参保人因死亡、失踪等原因被公安部门注销户籍的，须办理医保个账的销户手续，申请转出医保个账余额。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 28.96pt; margin-bottom: 0pt" class="p21"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">（四）参保人因其他原因未办或无法办理职工医保IC卡、社会保障卡的，可由参保人提出申请，将医保个账划拨至参保人指定的银行账户。提供证明继承关系的材料的，可将医保个账划拨至继承人的银行账户。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p18"><span style="font-family: '黑体'; color: rgb(0,0,0); font-size: 16pt; mso-spacerun: 'yes'">第三十八条</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">参保人发生符合本文第三十三条规定范围费用时，定点医疗机构、定点零售药店、卫生预防机构不得推诿拒绝参保人使用医保个账资金支付。任何个人或单位不能违规办理医保个账提取现金，超规定范围使用。</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 32pt; margin-bottom: 0pt" class="p18" align="left"><span style="font-family: '黑体'; color: rgb(0,0,0); font-size: 16pt; mso-spacerun: 'yes'">第三十九条</span><span style="font-family: '仿宋_GB2312'; color: rgb(0,0,0); font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">参保人的医保个账资金划拨、消费情况，可到发卡银行网点打印明细清单，发卡银行应提供相应服务，不能推诿拒绝参保人。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; text-indent: 144pt; margin-bottom: 0pt" class="p0" align="center"><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'">第七章&nbsp;&nbsp;附则</span><span style="font-family: '方正小标宋简体'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;&nbsp;</span><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;第四十条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; font-weight: bold; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">本实施细则由市人力资源社会保障局负责解释。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; font-weight: bold; mso-spacerun: 'yes'">&nbsp;</span><span style="font-family: '黑体'; font-size: 16pt; mso-spacerun: 'yes'">第四十一条</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">&nbsp;&nbsp;</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'">本实施细则自2013年7月1日起执行。过去与本细则不一致的有关规定，同时废止。</span><span style="font-family: '仿宋_GB2312'; font-size: 16pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋_GB2312'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'">附件一</span><span style="font-family: '仿宋'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 22pt; mso-spacerun: 'yes'">国家基本医疗保障医疗康复项目</span></p>
+<p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 22pt; mso-spacerun: 'yes'" /><span style="font-family: '黑体'; font-size: 22pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<table style="padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; border-collapse: collapse; margin-left: 6.75pt; margin-right: 6.75pt; padding-top: 0pt; mso-table-layout-alt: fixed" class="2">
+    <tbody>
+        <tr style="height: 45.35pt">
+            <td style="border-bottom: rgb(0,0,0) 0.5pt solid; border-left: rgb(0,0,0) 0.5pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 33.35pt; padding-right: 5.4pt; border-top: rgb(0,0,0) 0.5pt solid; border-right: rgb(0,0,0) 0.5pt solid; padding-top: 0pt; mso-border-bottom-alt: 0.5000pt solid rgb(0,0,0); mso-border-left-alt: 0.5000pt solid rgb(0,0,0); mso-border-right-alt: 0.5000pt solid rgb(0,0,0); mso-border-top-alt: 0.5000pt solid rgb(0,0,0)" valign="middle" width="44">
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'">序号</span><span style="font-family: '宋体'; font-size: 10.5pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 0.5pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 94.55pt; padding-right: 5.4pt; border-top: rgb(0,0,0) 0.5pt solid; border-right: rgb(0,0,0) 0.5pt solid; padding-top: 0pt; mso-border-bottom-alt: 0.5000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid rgb(0,0,0); mso-border-top-alt: 0.5000pt solid rgb(0,0,0)" valign="middle" width="126">
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'">项目名称</span><span style="font-family: '宋体'; font-size: 10.5pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 0.5pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 327.9pt; padding-right: 5.4pt; border-top: rgb(0,0,0) 0.5pt solid; border-right: rgb(0,0,0) 0.5pt solid; padding-top: 0pt; mso-border-bottom-alt: 0.5000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid rgb(0,0,0); mso-border-top-alt: 0.5000pt solid rgb(0,0,0)" valign="middle" width="437">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'">限定支付范围</span><span style="font-family: '宋体'; font-size: 10.5pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 45.35pt">
+            <td style="border-bottom: rgb(0,0,0) 0.5pt solid; border-left: rgb(0,0,0) 0.5pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 33.35pt; padding-right: 5.4pt; border-top: medium none; border-right: rgb(0,0,0) 0.5pt solid; padding-top: 0pt; mso-border-bottom-alt: 0.5000pt solid rgb(0,0,0); mso-border-left-alt: 0.5000pt solid rgb(0,0,0); mso-border-right-alt: 0.5000pt solid rgb(0,0,0); mso-border-top-alt: 0.5000pt solid rgb(0,0,0)" valign="middle" width="44">
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt">1</span><span style="font-family: '宋体'; font-size: 10.5pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 0.5pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 94.55pt; padding-right: 5.4pt; border-top: medium none; border-right: rgb(0,0,0) 0.5pt solid; padding-top: 0pt; mso-border-bottom-alt: 0.5000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid rgb(0,0,0); mso-border-top-alt: 0.5000pt solid rgb(0,0,0)" valign="middle" width="126">
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'">运动疗法</span><span style="font-family: '宋体'; font-size: 10.5pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 0.5pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 327.9pt; padding-right: 5.4pt; border-top: medium none; border-right: rgb(0,0,0) 0.5pt solid; padding-top: 0pt; mso-border-bottom-alt: 0.5000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid rgb(0,0,0); mso-border-top-alt: 0.5000pt solid rgb(0,0,0)" valign="middle" width="437">
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'">限器质性病变导致的肌力、关节活动度和平衡功能障碍的患者，1个疾病过程支付不超过3个月，每日支付不超过2次（包括项目合并计算）。与偏瘫、脑瘫或截瘫肢体综合训练同时使用时只支付其中一项。</span><span style="font-family: '宋体'; font-size: 10.5pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 45.35pt">
+            <td style="border-bottom: rgb(0,0,0) 0.5pt solid; border-left: rgb(0,0,0) 0.5pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 33.35pt; padding-right: 5.4pt; border-top: medium none; border-right: rgb(0,0,0) 0.5pt solid; padding-top: 0pt; mso-border-bottom-alt: 0.5000pt solid rgb(0,0,0); mso-border-left-alt: 0.5000pt solid rgb(0,0,0); mso-border-right-alt: 0.5000pt solid rgb(0,0,0); mso-border-top-alt: 0.5000pt solid rgb(0,0,0)" valign="middle" width="44">
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt">２</span><span style="font-family: '宋体'; font-size: 10.5pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 0.5pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 94.55pt; padding-right: 5.4pt; border-top: medium none; border-right: rgb(0,0,0) 0.5pt solid; padding-top: 0pt; mso-border-bottom-alt: 0.5000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid rgb(0,0,0); mso-border-top-alt: 0.5000pt solid rgb(0,0,0)" valign="middle" width="126">
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'">偏瘫肢体综合训练</span><span style="font-family: '宋体'; font-size: 10.5pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 0.5pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 327.9pt; padding-right: 5.4pt; border-top: medium none; border-right: rgb(0,0,0) 0.5pt solid; padding-top: 0pt; mso-border-bottom-alt: 0.5000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid rgb(0,0,0); mso-border-top-alt: 0.5000pt solid rgb(0,0,0)" valign="middle" width="437">
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'">1&nbsp;个疾病过程支付不超过3个月，与运动疗法同时使用时只支付其中之一项。</span><span style="font-family: '宋体'; font-size: 10.5pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 45.35pt">
+            <td style="border-bottom: rgb(0,0,0) 0.5pt solid; border-left: rgb(0,0,0) 0.5pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 33.35pt; padding-right: 5.4pt; border-top: medium none; border-right: rgb(0,0,0) 0.5pt solid; padding-top: 0pt; mso-border-bottom-alt: 0.5000pt solid rgb(0,0,0); mso-border-left-alt: 0.5000pt solid rgb(0,0,0); mso-border-right-alt: 0.5000pt solid rgb(0,0,0); mso-border-top-alt: 0.5000pt solid rgb(0,0,0)" valign="middle" width="44">
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt">３</span><span style="font-family: '宋体'; font-size: 10.5pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 0.5pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 94.55pt; padding-right: 5.4pt; border-top: medium none; border-right: rgb(0,0,0) 0.5pt solid; padding-top: 0pt; mso-border-bottom-alt: 0.5000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid rgb(0,0,0); mso-border-top-alt: 0.5000pt solid rgb(0,0,0)" valign="middle" width="126">
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'">脑瘫肢体综合训练</span><span style="font-family: '宋体'; font-size: 10.5pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 0.5pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 327.9pt; padding-right: 5.4pt; border-top: medium none; border-right: rgb(0,0,0) 0.5pt solid; padding-top: 0pt; mso-border-bottom-alt: 0.5000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid rgb(0,0,0); mso-border-top-alt: 0.5000pt solid rgb(0,0,0)" valign="middle" width="437">
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'">限儿童。3岁以前，每年支付不超过6个月，3岁以后，每年支付不超过3个月，支付总年限不超过5年，与运动疗法同时使用时只支付其中之一项。</span><span style="font-family: '宋体'; font-size: 10.5pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 45.35pt">
+            <td style="border-bottom: rgb(0,0,0) 0.5pt solid; border-left: rgb(0,0,0) 0.5pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 33.35pt; padding-right: 5.4pt; border-top: medium none; border-right: rgb(0,0,0) 0.5pt solid; padding-top: 0pt; mso-border-bottom-alt: 0.5000pt solid rgb(0,0,0); mso-border-left-alt: 0.5000pt solid rgb(0,0,0); mso-border-right-alt: 0.5000pt solid rgb(0,0,0); mso-border-top-alt: 0.5000pt solid rgb(0,0,0)" valign="middle" width="44">
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt">４</span><span style="font-family: '宋体'; font-size: 10.5pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 0.5pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 94.55pt; padding-right: 5.4pt; border-top: medium none; border-right: rgb(0,0,0) 0.5pt solid; padding-top: 0pt; mso-border-bottom-alt: 0.5000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid rgb(0,0,0); mso-border-top-alt: 0.5000pt solid rgb(0,0,0)" valign="middle" width="126">
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'">截瘫肢体综合训练</span><span style="font-family: '宋体'; font-size: 10.5pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 0.5pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 327.9pt; padding-right: 5.4pt; border-top: medium none; border-right: rgb(0,0,0) 0.5pt solid; padding-top: 0pt; mso-border-bottom-alt: 0.5000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid rgb(0,0,0); mso-border-top-alt: 0.5000pt solid rgb(0,0,0)" valign="middle" width="437">
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'">1&nbsp;个疾病过程支付不超过3个月，与运动疗法同时使用时，只支付其中之一项。</span><span style="font-family: '宋体'; font-size: 10.5pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 45.35pt">
+            <td style="border-bottom: rgb(0,0,0) 0.5pt solid; border-left: rgb(0,0,0) 0.5pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 33.35pt; padding-right: 5.4pt; border-top: medium none; border-right: rgb(0,0,0) 0.5pt solid; padding-top: 0pt; mso-border-bottom-alt: 0.5000pt solid rgb(0,0,0); mso-border-left-alt: 0.5000pt solid rgb(0,0,0); mso-border-right-alt: 0.5000pt solid rgb(0,0,0); mso-border-top-alt: 0.5000pt solid rgb(0,0,0)" valign="middle" width="44">
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt">５</span><span style="font-family: '宋体'; font-size: 10.5pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 0.5pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 94.55pt; padding-right: 5.4pt; border-top: medium none; border-right: rgb(0,0,0) 0.5pt solid; padding-top: 0pt; mso-border-bottom-alt: 0.5000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid rgb(0,0,0); mso-border-top-alt: 0.5000pt solid rgb(0,0,0)" valign="middle" width="126">
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'">作业疗法</span><span style="font-family: '宋体'; font-size: 10.5pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 0.5pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 327.9pt; padding-right: 5.4pt; border-top: medium none; border-right: rgb(0,0,0) 0.5pt solid; padding-top: 0pt; mso-border-bottom-alt: 0.5000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid rgb(0,0,0); mso-border-top-alt: 0.5000pt solid rgb(0,0,0)" valign="middle" width="437">
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'">限器质性病变导致的生活、工作能力障碍。1&nbsp;个疾病过程支付不超过3个月，每日支付不超过1次&nbsp;</span><span style="font-family: '宋体'; font-size: 10.5pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 45.35pt">
+            <td style="border-bottom: rgb(0,0,0) 0.5pt solid; border-left: rgb(0,0,0) 0.5pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 33.35pt; padding-right: 5.4pt; border-top: medium none; border-right: rgb(0,0,0) 0.5pt solid; padding-top: 0pt; mso-border-bottom-alt: 0.5000pt solid rgb(0,0,0); mso-border-left-alt: 0.5000pt solid rgb(0,0,0); mso-border-right-alt: 0.5000pt solid rgb(0,0,0); mso-border-top-alt: 0.5000pt solid rgb(0,0,0)" valign="middle" width="44">
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt">６</span><span style="font-family: '宋体'; font-size: 10.5pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 0.5pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 94.55pt; padding-right: 5.4pt; border-top: medium none; border-right: rgb(0,0,0) 0.5pt solid; padding-top: 0pt; mso-border-bottom-alt: 0.5000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid rgb(0,0,0); mso-border-top-alt: 0.5000pt solid rgb(0,0,0)" valign="middle" width="126">
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'">认知知觉功能障碍训练</span><span style="font-family: '宋体'; font-size: 10.5pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 0.5pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 327.9pt; padding-right: 5.4pt; border-top: medium none; border-right: rgb(0,0,0) 0.5pt solid; padding-top: 0pt; mso-border-bottom-alt: 0.5000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid rgb(0,0,0); mso-border-top-alt: 0.5000pt solid rgb(0,0,0)" valign="middle" width="437">
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'">限器质性病变导致的认知知觉功能障碍。1个疾病过程支付不超过3个月。</span><span style="font-family: '宋体'; font-size: 10.5pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 45.35pt">
+            <td style="border-bottom: rgb(0,0,0) 0.5pt solid; border-left: rgb(0,0,0) 0.5pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 33.35pt; padding-right: 5.4pt; border-top: medium none; border-right: rgb(0,0,0) 0.5pt solid; padding-top: 0pt; mso-border-bottom-alt: 0.5000pt solid rgb(0,0,0); mso-border-left-alt: 0.5000pt solid rgb(0,0,0); mso-border-right-alt: 0.5000pt solid rgb(0,0,0); mso-border-top-alt: 0.5000pt solid rgb(0,0,0)" valign="middle" width="44">
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt">７</span><span style="font-family: '宋体'; font-size: 10.5pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 0.5pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 94.55pt; padding-right: 5.4pt; border-top: medium none; border-right: rgb(0,0,0) 0.5pt solid; padding-top: 0pt; mso-border-bottom-alt: 0.5000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid rgb(0,0,0); mso-border-top-alt: 0.5000pt solid rgb(0,0,0)" valign="middle" width="126">
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'">言语训练</span><span style="font-family: '宋体'; font-size: 10.5pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 0.5pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 327.9pt; padding-right: 5.4pt; border-top: medium none; border-right: rgb(0,0,0) 0.5pt solid; padding-top: 0pt; mso-border-bottom-alt: 0.5000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid rgb(0,0,0); mso-border-top-alt: 0.5000pt solid rgb(0,0,0)" valign="middle" width="437">
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'">限器质性病变导致的中、重度语言障碍。1个疾病过程支付不超过3个月。每日支付不超过1次</span><span style="font-family: '宋体'; font-size: 10.5pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 45.35pt">
+            <td style="border-bottom: rgb(0,0,0) 0.5pt solid; border-left: rgb(0,0,0) 0.5pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 33.35pt; padding-right: 5.4pt; border-top: medium none; border-right: rgb(0,0,0) 0.5pt solid; padding-top: 0pt; mso-border-bottom-alt: 0.5000pt solid rgb(0,0,0); mso-border-left-alt: 0.5000pt solid rgb(0,0,0); mso-border-right-alt: 0.5000pt solid rgb(0,0,0); mso-border-top-alt: 0.5000pt solid rgb(0,0,0)" valign="middle" width="44">
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt">８</span><span style="font-family: '宋体'; font-size: 10.5pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 0.5pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 94.55pt; padding-right: 5.4pt; border-top: medium none; border-right: rgb(0,0,0) 0.5pt solid; padding-top: 0pt; mso-border-bottom-alt: 0.5000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid rgb(0,0,0); mso-border-top-alt: 0.5000pt solid rgb(0,0,0)" valign="middle" width="126">
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'">吞咽功能障碍训练</span><span style="font-family: '宋体'; font-size: 10.5pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 0.5pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 327.9pt; padding-right: 5.4pt; border-top: medium none; border-right: rgb(0,0,0) 0.5pt solid; padding-top: 0pt; mso-border-bottom-alt: 0.5000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid rgb(0,0,0); mso-border-top-alt: 0.5000pt solid rgb(0,0,0)" valign="middle" width="437">
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'">限中、重度功能障碍。限三级医院康复科或康复专科医院使用，1个疾病过程支付不超过3个月。</span><span style="font-family: '宋体'; font-size: 10.5pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 45.35pt">
+            <td style="border-bottom: rgb(0,0,0) 0.5pt solid; border-left: rgb(0,0,0) 0.5pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 33.35pt; padding-right: 5.4pt; border-top: medium none; border-right: rgb(0,0,0) 0.5pt solid; padding-top: 0pt; mso-border-bottom-alt: 0.5000pt solid rgb(0,0,0); mso-border-left-alt: 0.5000pt solid rgb(0,0,0); mso-border-right-alt: 0.5000pt solid rgb(0,0,0); mso-border-top-alt: 0.5000pt solid rgb(0,0,0)" valign="middle" width="44">
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt">９</span><span style="font-family: '宋体'; font-size: 10.5pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 0.5pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 94.55pt; padding-right: 5.4pt; border-top: medium none; border-right: rgb(0,0,0) 0.5pt solid; padding-top: 0pt; mso-border-bottom-alt: 0.5000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid rgb(0,0,0); mso-border-top-alt: 0.5000pt solid rgb(0,0,0)" valign="middle" width="126">
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; text-decoration: line-through"><o:p></o:p></span></p>
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'">日常生活能力评定</span><span style="font-family: '宋体'; font-size: 10.5pt; text-decoration: line-through"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 0.5pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 327.9pt; padding-right: 5.4pt; border-top: medium none; border-right: rgb(0,0,0) 0.5pt solid; padding-top: 0pt; mso-border-bottom-alt: 0.5000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 0.5000pt solid rgb(0,0,0); mso-border-top-alt: 0.5000pt solid rgb(0,0,0)" valign="middle" width="437">
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'">限本目录所列康复项目在具体实施中涉及的日常生活能力评定，1个疾病过程支付不超过4次。</span><span style="font-family: '宋体'; font-size: 10.5pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '黑体'; font-size: 22pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'">附件二</span><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'">：</span><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'">职工基本医疗保险门诊特定病种目录及基金支付限额标准</span><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<table style="padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; border-collapse: collapse; margin-left: 4.9pt; padding-top: 0pt; mso-table-layout-alt: fixed" class="2">
+    <tbody>
+        <tr style="height: 11pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(0,0,0) 1pt solid; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 1.0000pt solid rgb(0,0,0)" valign="middle" rowspan="2" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">序号</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(0,0,0) 1pt solid; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 1.0000pt solid rgb(0,0,0)" valign="middle" rowspan="2" width="282">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">病种名称</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(255,255,255) 31.875pt; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 128.5pt; padding-right: 5.4pt; border-top: rgb(0,0,0) 1pt solid; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 31.8750pt none rgb(255,255,255); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 1.0000pt solid rgb(0,0,0)" valign="middle" width="171">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">基本医疗基金支付限额</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 45.5pt; padding-right: 5.4pt; border-top: rgb(0,0,0) 1pt solid; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 1.0000pt solid rgb(0,0,0)" valign="middle" rowspan="2" width="60">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">备注</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 9.8pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 128.5pt; padding-right: 5.4pt; border-top: medium none; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="171">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">标准（一年计）</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 15pt">
+            <td style="border-bottom: rgb(255,255,255) 31.875pt; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 31.8750pt none rgb(255,255,255); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt">1</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(255,255,255) 31.875pt; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 31.8750pt none rgb(255,255,255); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">帕金森氏综合征</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 128.5pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" rowspan="10" width="171">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">4500元</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 45.5pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" rowspan="10" width="60">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt">　</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 15pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: medium none; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt"><span style="z-index: 1; position: absolute; margin-top: 0px; width: 13px; height: 1px; margin-left: 0px; left: 0px"><img src="file:///C:/Users/lyz/AppData/Local/Temp/ksohtml/wps_clip_image-30311.png" width="13" height="1" alt /></span></span><span style="font-family: '宋体'; font-size: 9pt">2</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: medium none; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">癫痫（需长期服药的）</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 15pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt">3</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">精神分裂症</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 15pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt">4</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">双相情感障碍（躁狂抑郁性精神病）</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 15pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt">5</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">类风湿关节炎（关节功能障碍）</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 15pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt">6</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">地中海贫血</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 15pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt">7</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">重症肌无力</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 15pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt">8</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">甲状腺功能减退症</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 15pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt">9</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">混合性结缔组织病</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 15pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">10</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">干燥综合症</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 15pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">11</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">泌尿系结石（体外碎石）</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 128.5pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" rowspan="8" width="171">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">5000元</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 45.5pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" rowspan="8" width="60">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt">　</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 15pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">12</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">耐多药肺结核</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 15pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">13</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">系统性红斑狼疮</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 15pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">14</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">糖尿病（有糖尿病症状且空腹血糖＞7.8MMOL/L或餐后2小时血糖＞11.1MMOL/L)</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 15pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">15</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">慢性肝炎</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 15pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">16</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">各种心脏病合并心功能不全2级以上（含2级）</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 15pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">17</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">高血压病Ⅱ期以上（含Ⅱ期）</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 27.75pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">18</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">脑血管疾病（脑出血、蛛网膜下腔出血、脑血栓形成、脑栓塞）后遗症及脑障碍性病变后遗症</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 15.75pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">19</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">白内障（手术治疗）</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 128.5pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" rowspan="8" width="171">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">5500元</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 45.5pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" rowspan="8" width="60">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt">　</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 15.75pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">20</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">再生障碍性贫血</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 15.75pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">21</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">血友病</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 15.75pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">22</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">慢性肾炎</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 15.75pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">23</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">肾病综合征</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 15.75pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">24</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">慢性阻塞性肺气肿并反复肺感染</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 15.75pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">25</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">恶性肿瘤（非放、化疗）</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 15.75pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">26</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">肝硬化（失代偿期）</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 15.75pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">27</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">恶性肿瘤（放疗、化疗、热疗）</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 128.5pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" rowspan="3" width="171">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">40000元</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 45.5pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" rowspan="3" width="60">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt">　</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 15.75pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">28</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">器官移植术后抗排斥治疗</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 15.75pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">29</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">造血干细胞移植后（移植物抗宿主病及感染的治疗）</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 15.75pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">30</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">丙肝-聚乙二醇干扰素α治疗</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 128.5pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" rowspan="2" width="171">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">45000元</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: medium none; padding-bottom: 0pt; padding-left: 5.4pt; width: 45.5pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: none; mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" rowspan="2" width="60">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt">　</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 15.75pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">31</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">血友病（凝血因子治疗）</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="height: 31.4pt">
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(0,0,0) 1pt solid; padding-bottom: 0pt; padding-left: 5.4pt; width: 47pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 1.0000pt solid rgb(0,0,0); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="62">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">32</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 212pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="282">
+            <p style="text-align: left; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">慢性肾功能不全血液透析、腹膜透析治疗</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 128.5pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="top" width="171">
+            <p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">10万元，超出部分经社保经办机构审批解决。</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+            <td style="border-bottom: rgb(0,0,0) 1pt solid; border-left: rgb(255,255,255) 31.875pt; padding-bottom: 0pt; padding-left: 5.4pt; width: 45.5pt; padding-right: 5.4pt; border-top: rgb(255,255,255) 31.875pt; border-right: rgb(0,0,0) 1pt solid; padding-top: 0pt; mso-border-bottom-alt: 1.0000pt solid rgb(0,0,0); mso-border-left-alt: 31.8750pt none rgb(255,255,255); mso-border-right-alt: 1.0000pt solid rgb(0,0,0); mso-border-top-alt: 31.8750pt none rgb(255,255,255)" valign="middle" width="60">
+            <p style="text-align: center; margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt">　</span><span style="font-family: '宋体'; font-size: 9pt"><o:p></o:p></span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p style="margin-top: 0pt; margin-bottom: 0pt" class="p0"><span style="font-family: '宋体'; font-size: 9pt; mso-spacerun: 'yes'">特定门诊当年实际限额＝限额标准÷12×当年剩余月份</span><span style="font-family: '宋体'; font-size: 10.5pt; mso-spacerun: 'yes'"><o:p></o:p></span></p>
+<!--EndFragment-->
+                </div>
+
+                <div class="clear"></div>
+            </div>
+
+
+            
+        </div>
+
+    </div>
+    <!-- end of main -->
+           
+
+
+      
+        <!-- bottom -->
+        <!-- 脚部-->
+       <div class="bottom">
+    <div class="bottomWidth makecenter">
+        <div class="bottomLeft floatLeft">
+            <div class="lh03">
+                <a href="../../../../wzbz/wzjs/" target="_blank">网站介绍</a>
+                <span>|</span>
+                <a href="../../../../wzbz/wzdt/" target="_blank">网站地图</a>
+                <span>|</span>
+                <a href="../../../../wzbz/sybz/" target="_blank">使用帮助</a>
+                <span>|</span>
+                <a href="../../../../wzbz/ystl/" target="_blank">隐私条例</a>
+                <span>|</span>
+                <a href="../../../../wzbz/xgwzlj/" target="_blank">相关网站链接</a>
+            </div>
+
+            <div class="lh03">
+               佛山市社会保险基金管理局&nbsp;版权所有&copy; 2015&nbsp; 备案号:<a href="http://www.miibeian.gov.cn" target="_blank">粤ICP备&nbsp;05029485号</a>
+           </div>
+            <div class="lh03">
+               审批服务监督电话：12345
+           </div>
+       </div>
+
+       <div class="bottomRight floatRight">
+        <div class="lh03">
+            <script type="text/javascript">
+            var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); 
+            document.write(unescape("%3Cspan id='cnzz_stat_icon_1255788136'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1255788136%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+            </script>
+
+            <span>你是第 <span id="h01" class="bottomColor">1225552</span> 位来访者</span>
+        </div>
+
+        <div class="lh03">
+            <span>建议使用分辨率 1024*768、IE7以上版本浏览器</span>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+</div>
+</div>
+<script language="javascript" type="text/javascript">
+function LoadJsCssFile(filename, filetype){ 
+if (filetype=="js"){ //如果是.js文件 
+var fileref=document.createElement("script"); 
+fileref.setAttribute("type","text/javascript"); 
+fileref.setAttribute("src",filename); 
+if (typeof fileref != "undefined") 
+document.getElementsByTagName("head")[0].appendChild(fileref) 
+} 
+
+}   
+ //动态载入.js 文件 
+</script>
+<script>
+LoadJsCssFile("http://219.130.221.166:8080/govservice/fwtj/fssbxx/count.jsp", "js");
+</script>
+        <!-- end of bottom -->
+
+
+
+
+
+        
+
+  
+</body>
+</html>
