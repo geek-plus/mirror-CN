@@ -20,12 +20,12 @@ date: 2016-09-28
 
 ## 目录：
 
-### 23个城市的人口相关政策文件
+### 23个城市的地方人口政策
 
-{% for page in site.categories.local-policy %}
+{% for post in site.categories.local-policy %}
 + [{{ post.title }}]({{ site.baseurl }}{{ post.url }})
 
-Posted on {{ page.date | date: "%B %e, %Y" }}
+Posted on {{ post.date | date: "%B %e, %Y" }}
 {% endfor %}
 
 ### 23个城市人口政策的汇总和初步分析
@@ -35,19 +35,20 @@ Posted on {{ page.date | date: "%B %e, %Y" }}
 1. 户籍改革+居住证：
 
 + [入户问题及居住证导读]({{ site.baseurl }}/pages/ruhu-jzz-intro)
-
++ [政策列表]({{ site.baseurl }}/hukou)
 
 
 2. 义务教育招生 + 中考 + 高考：
 
 - [外地（随迁）子女义务教育问题导读]()
-
-- [就地中考和高考招生/招录问题导读]({{ site.baseurl }}/pages/shengxue-intro)
+- [就地中考和高考招生/招录问题导读]({{ site.baseurl }}/pages/shengxue-intro)  
+- [政策列表]({{ site.baseurl }}/education)
 
 
 3. 社会保险  
 
 - [医保、养老保险的异地问题导读]({{ site.baseurl }}/pages/shebao-intro)
+- [政策列表]({{ site.baseurl }}/social-insu)
 
 
 
