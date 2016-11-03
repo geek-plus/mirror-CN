@@ -1,0 +1,228 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<base href="http://211.149.217.28:80/">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>福州中招网</title>
+<link href="css/mystyle.css" rel="stylesheet" type="text/css" />
+
+
+ <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+ <script type="text/javascript" src="js/util/util.js"></script>
+ 	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			$('#closeAd1').click(function (){
+				//隐藏广告层
+				$('#ad1').hide(1000);
+				//清空广告层
+				$('#ad1').empty();
+			});
+		
+			$('#closeAd2').click(function (){
+				//隐藏广告层
+				$('#ad2').hide(1000);
+				//清空广告层
+				$('#ad2').empty();
+			});
+		
+			 moveTips('ad1','100','10','left',"1");
+			 moveTips('ad2','100','10','right',"1");
+		});
+	</script>	
+
+
+<script type="text/javascript">
+ var D=new Function('obj','return document.getElementById(obj);')
+ function htmlbody(){
+  return (
+   document.documentElement.clientHeight<=document.body.clientHeight
+   &&document.documentElement.clientHeight!=0
+  )
+  ?document.documentElement:document.body;
+ }
+ //浏览器滚动条位置
+function scrollLeft(){return (!window.pageYOffset)?htmlbody().scrollLeft:window.pageXOffset;}
+ function scrollTop(){return (!window.innerHeight)?htmlbody().scrollTop:window.pageYOffset;}
+ 
+//实际应距左距离
+function getleft(strobjs,strLeftType,strleft){
+  var temp_getleft = 0;
+  if (strLeftType=="left"){
+   temp_getleft = scrollLeft()*1 + strleft*1;
+  }else if (strLeftType=="mid"){
+   (strleft*1<0)
+   ?temp_getleft = scrollLeft()*1 + strleft*1
+   + htmlbody().clientWidth*1/2 - strobjs.offsetWidth*1
+   :temp_getleft = (scrollLeft()*1+strleft*1 + htmlbody().clientWidth*1/2);
+  }else if (strLeftType=="right"){
+    temp_getleft 
+    = scrollLeft()*1 + htmlbody().clientWidth*1 
+    - strleft*1 - strobjs.offsetWidth*1;
+  }
+  return temp_getleft;
+ }
+ 
+function moveTips(strobj,theTop,theLeft,theLeftType) {
+  var old,nowobj = D(strobj);
+  var nowleft = nowobj.style.left.replace("px","")*1;//返回在改变窗口大小或移动横滚动条前的距左部距离（数值）
+ var temp_left = getleft(nowobj,theLeftType,theLeft);//实际应距左距离
+ var re_theTop = theTop;
+  if (temp_left!=nowleft){//横向递增
+  (Math.abs(temp_left-nowleft)>3&&Math.abs(temp_left-nowleft)<600)
+   ?((temp_left>nowleft)?nowleft += Math.abs(temp_left-nowleft)/5
+   :nowleft -= Math.abs(temp_left-nowleft)/5)
+   :nowleft = temp_left;
+   nowobj.style.left = nowleft + "px";
+  }
+  if (!openweb){old = re_theTop;var openweb;}/*这是默认高度*/;
+   var pos,tt=50;
+   pos = scrollTop()*1-nowobj.offsetTop*1+re_theTop*1;
+   pos = nowobj.offsetTop+pos/10;//纵向开始递增
+  if (pos < re_theTop) pos = re_theTop;
+   if (pos != old) {nowobj.style.top = pos+"px";tt=5;}
+   old = pos;
+   setTimeout("moveTips('"+strobj+"','"+theTop+"','"+theLeft+"','"+theLeftType+"')",tt);
+ }
+ </script>
+</head>
+
+<body> 
+<div class="ad1"  id="ad1"></div>
+<div class="ad2" id="ad2"></div> 
+	<div class="wk">
+    	<div class="nk_top">
+        	<div class="top"><a href="1"><img src="images/index_01.jpg" width="1000" height="180" /></a></div>
+        </div>
+    </div>
+    <div class="wk">
+<!--导航-->
+    <div class="nk_navi">
+        	<div class="nk">
+            	<ul>
+                	<li><a href="index"><img src="images/navi_01.jpg" width="61" height="48" /></a></li>
+                    <li class="navi_jg"></li>
+                    <li><a href="article?columnId=zbwj"><img src="images/navi_02.jpg" width="96" height="48" /></a></li>
+					<li class="navi_jg"></li>
+                    <li><a href="article?columnId=zzjb"><img src="images/navi_04.jpg" width="99" height="48" /></a></li>
+					<li class="navi_jg"></li>
+                    <li><a href="article?columnId=gsxx"><img src="images/navi_05.jpg" width="102" height="48" /></a></li>
+          
+                    <li class="navi_jg"></li>
+                    <li><a href="article?columnId=tbzn"><img src="images/navi_06.png" width="102" height="48" /></a></li>
+                    <li class="navi_jg"></li>
+                    <li><a href="schoollist!school"><img src="images/navi_07.jpg" width="101" height="48" /></a></li>
+                    
+                </ul>
+        </div>
+      </div>
+<!--导航end-->
+    </div>
+<meta name="renderer" content="webkit"/>
+<!--内容-->
+     <div class="nk" style="border: 1px #bdc8cb solid; margin:10px auto;">
+		<div style="text-align:center;"><h1>关于做好福州一中等普高学校自主招生工作的通知</h1></div>
+		<div style="text-align:center;">发布时间:2015-03-27 10:39:34.0 &nbsp; &nbsp; &nbsp;浏览次数:26430</div>
+		
+		<div class="article"><p style="line-height: 18pt; text-autospace: ideograph-numeric; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">各县（市）区教育局、相关市属中学：</span></span></span></p>
+<p style="line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">为贯彻落实《国家中长期教育改革和发展规划纲要》及国务院深化考试招生制度改革实施意见的精神，推进考试招生制度改革，</span></span></span><span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">探索建立对某些方面具有特殊天赋或潜能学生的录取办法，&nbsp;2015年，福州一中、福州三中、</span></span></span><span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">福州四中、</span></span></span><span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">福州八中、福州高级中学和师大附中实行部分名额向应届初中毕业生提前自主招生。考生根据初三市质检考试成绩及各招收学校的条件要求，参加招收学校考试，经招收学校测试确定，由市中招办审核后提前录取，不能再参加全市统一中考。为做好自主招生审核推荐工作，促进教育公平，现将有关情况通知如下：&nbsp;</span></span></span></p>
+<p style="line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">一、自主招生计划</span></span></span></p>
+<p style="line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">福州一中追梦计划30人，福州三中100人，福州四中50人，福州八中400人，福州高级中学50人，师大附中70人。</span></span></span></p>
+<p style="line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">二、自主招生对象</span></span></span></p>
+<p style="line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">（一）福州一中招生对象：</span></span></span></p>
+<p style="line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">福州七县、平潭综合实验区除县城所在地以外中学的初中应届毕业生。考生的学籍和初中三年（从七年级的1月1日起算）的学习均需在上述学校。考生应具备孝敬长辈、常怀感恩之情、志向远大、追求卓越、勤奋好学、自强不息.</span></span></span></p>
+<p style="line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">（二）福州三中、福州八中和师大附中招生对象：</span></span></span></p>
+<p style="line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">1.户籍在福州五城区的应届考生；</span></span></span></p>
+<p style="line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">2.学籍在五城区的港、澳、台、国外户籍的应届考生；</span></span></span></p>
+<p style="line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">3.三年学籍（2012年9月1日至初中毕业）在五城区的非福州市区户籍的国内应届考生。</span></span></span></p>
+<p style="line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">（三）福州高级中学、福州四中鸿志班招生对象：</span></span></span></p>
+<p style="line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">1.户籍在福州五城区的应届考生；</span></span></span></p>
+<p style="line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">2.学籍在福州的港、澳、台、国外户籍的应届考生；</span></span></span></p>
+<p style="line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">3.三年学籍在五城区的非福州市区户籍的国内应届考生；</span></span></span></p>
+<p style="line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">4.户籍或学籍在七县（市）且在七县（市）报考的应届考生。</span></span></span></p>
+<p style="line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">三、福州一中、福州高级中学、福州四中鸿志班自主招生指标分配</span></span></span></p>
+<p style="line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">1.福州一中：30名以内。每县、市不超过10名。如遇同分等特殊情况由福州市中招办审批录取。</span></span></span></p>
+<p style="text-align: left; line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; word-break: break-all">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">2.福州高级中学：依据考试成绩择优录取50名品学兼优的初三毕业生。其中市区和闽侯县招生数均不超过15人，其他六县（市）每地区不超过10人；同分情况按数学、物理、化学、英语、语文顺序单科成绩高者优先录取。</span></span></span></p>
+<p style="line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">3.&nbsp;福州四中鸿志班：录取人数50名。其中福州市区20名，闽侯12名，永泰10名，福清3名，连江2名，闽清1名，罗源1名，长乐1名。如果七县招生名额不满，可调剂到福州市区。</span></span></span></p>
+<p style="line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">四、自主招生时间安排</span></span></span></p>
+<p style="line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">（一）学校自主招生方案公布时间：福州一中3月底，其他学校4月23日。方案详见各校校园网站。</span></span></span></p>
+<p style="line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">（二）自主招生报名工作：福州一中在3月31日至4月9日；其余学校在4月底至5月初，具体以学校公布的方案为准。</span></span></span></p>
+<p style="line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">（三）自主招生测试时间</span></span></span></p>
+<p style="line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">5月8日：师大附中</span></span></span></p>
+<p style="line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">5月9日：福州三中</span></span></span></p>
+<p style="line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">5月10日：福州八中、福州高级中学、福州四中&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span></p>
+<p style="line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">测试地点及要求详见各校方案。</span></span></span></p>
+<p style="line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">五、各初中学校要认真做好推荐审核工作</span></span></span></p>
+<p style="line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">中招工作是教育的重要环节，涉及千家万户，社会敏感度高。稍有不慎和疏忽，就会直接影响考生和家长的切身利益，直接影响教育在社会中的形象，影响党和政府的形象，影响到社会的安定稳定。学校的主要领导，要为本学校的招生工作和廉政建设负责，要本着诚信、认真的态度做好推荐优秀学生参加一级达标学校自主招生的资格审核工作并及时提供质检成绩证明，被推荐的学生除了符合六所学校招生条件外，其户籍、学籍和综合素质评定、学校考查科目以及地理、生物成绩要符合《2015年福州市高中学校招生考试工作实施细则》规定的一级达标高中的录取要求。凡在招生、考试、考核评价中弄虚作假、营私舞弊者，按照教育部关于印发《中小学教师违反职业道德行为处理办法》的通知（教师〔2014〕1号）文件，视情节轻重给予相应处分。</span></span></span></p>
+<p style="line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">在计算&ldquo;2015年初中教学质量综合考评&rdquo;时，市教育局将在三年报考率、中考全科及格率、中考优秀率、中考平均分等方面确定适当参数，酌情将各初中学校被高级中等学校提前自主录取的学生情况计算在内，确保学校不因推荐学生参加自主招生而影响质量监测。</span></span></span></p>
+<p style="line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	&nbsp;</p>
+<p style="text-align: right; line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;福州市中等学校招生委员会办公室</span></span></span></p>
+<p style="text-align: right; line-height: 18pt; text-indent: 28pt; text-autospace: ideograph-numeric; margin-left: 0pt; vertical-align: baseline">
+	<span style="font-size: 14pt"><span style="color: rgb(0,0,0)"><span style="font-family: 仿宋_gb2312">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2015年3月24日</span></span></span></p></div>
+
+ 
+    <div>
+		
+    </div>
+
+		<div class="bottom"> 
+		闽ICP备06000505号-1<br/>
+	福州市中招办版权所有，未经授权不得转载<br/>
+	福州睿丰信息技术有限公司 提供技术支持
+		</div>
+    </div>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?4687ed40935dc3793b2ca1a462886d88";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>
+
