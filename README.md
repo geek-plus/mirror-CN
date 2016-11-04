@@ -53,6 +53,9 @@
 
 参与人口政策与流动人口权益保障的小伙伴请进这里：
 + [人口户籍政策与流动人口](https://mdrights.github.io/mirror-CN/renkou/)，分析其如何给每一个拆那人带来基本公共服务权利的剥夺。  
+> **[注]**: 本页的<23城市人口政策数据>更新至2016年10月；之后的更新在:
+[平台首页](https://mdrights.github.io/mirror-CN/)，且由于精力有限，只更新：北上广深、杭州、武汉、重庆等城市。
+
 
 ### 规范性文件专栏
 + 收集一些对生产生活影响严重但不易被发现和找到的规范性文件（俗称“红头文件”）。这里面有我们实施行动的“牙齿”：  
@@ -62,10 +65,9 @@
 	+ [城市规划（需要点index.html查看文件名](https://github.com/mdrights/mirror-CN/tree/master/%E4%B8%93%E9%A2%98-%E5%9F%8E%E5%B8%82%E8%A7%84%E5%88%92-%E5%9C%9F%E5%9C%B0%E6%88%BF%E4%BA%A7)
 	+ [环境和环评](https://github.com/mdrights/mirror-CN/tree/master/%E4%B8%93%E9%A2%98-%E7%8E%AF%E5%A2%83%E4%B8%8E%E7%8E%AF%E8%AF%84)
 
-### 新增/更新  
+## 新增/更新  
 
 --> 见[平台首页](https://mdrights.github.io/mirror-CN/)。  
-
 
 *Updated at 11.03.2016*
 
