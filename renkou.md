@@ -1,14 +1,15 @@
 ---
 layout: post
 permalink: /renkou/
-date: 2016-09-28
+date: 2016-11-4
 ---
 
 ## 前言  
 > 众所周知中国有限制人口流动的户籍制度，它不仅仅是一个《户口登记条例》（1958），它通过在各类公共政策和规定，对在非户籍地工作、生活的人带来（地域）身份上的歧视。本专题尝试梳理这些带有隔离味道的政策、规范性文件，“方便生产生活”。（笑
 
 ## 新增/更新
-	by 2016.11.2 （国务院级别和一线城市政策更新在本页；其他城市地方政策更新在[这里](https://github.com/mdrights/mirror-CN/tree/gh-pages/local-policy)）  
+
+**by 2016.11.2 （国务院级别和一线城市政策更新在本页；其他城市地方政策更新在[这里](https://github.com/mdrights/mirror-CN/tree/gh-pages/local-policy)）**  
 
 + 国务院推动1亿非户籍人口在城镇落户方案
 + 北京市实施《居住证暂行条例》办法，和积分落户管理办法
@@ -21,10 +22,10 @@ date: 2016-09-28
 ## 目录：
 
 ### 23个城市的地方人口政策
-	[点击](https://github.com/mdrights/mirror-CN/tree/gh-pages/local-policy)
+[点击](https://github.com/mdrights/mirror-CN/tree/gh-pages/local-policy)
 
 ### 23个城市人口政策的汇总和初步分析
-	[点击](https://github.com/mdrights/mirror-CN/tree/master/23%E5%9F%8E%E5%B8%82%E4%BA%BA%E5%8F%A3%E6%94%BF%E7%AD%96%E6%95%B0%E6%8D%AE)
+[点击](https://github.com/mdrights/mirror-CN/tree/master/23%E5%9F%8E%E5%B8%82%E4%BA%BA%E5%8F%A3%E6%94%BF%E7%AD%96%E6%95%B0%E6%8D%AE)
 
 ### 国务院及其部委，和一线城市的政策
 
