@@ -54,7 +54,7 @@
 参与人口政策与流动人口权益保障的小伙伴请进这里：
 + [人口户籍政策与流动人口](https://mdrights.github.io/mirror-CN/renkou/)，分析其如何给每一个拆那人带来基本公共服务权利的剥夺。  
 > **[注]**: 本页的<23城市人口政策数据>更新至2016年10月；之后的更新在:
-[平台首页](https://mdrights.github.io/mirror-CN/)，且由于精力有限，只更新：北上广深、杭州、武汉、重庆等城市。
+[branch:gh-pages](https://github.com/mdrights/mirror-CN/tree/gh-pages/local-policy)，且由于精力有限，只更新：北上广深、杭州、武汉、重庆等城市。
 
 
 ### 规范性文件专栏
