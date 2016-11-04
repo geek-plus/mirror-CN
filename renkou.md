@@ -22,11 +22,6 @@ date: 2016-09-28
 
 ### 23个城市的地方人口政策
 
-{% for post in site.categories.local-policy %}
-+ [{{ post.title }}]({{ site.baseurl }}{{ post.url }})
-
-Posted on {{ post.date | date: "%B %e, %Y" }}
-{% endfor %}
 
 ### 23个城市人口政策的汇总和初步分析
 
