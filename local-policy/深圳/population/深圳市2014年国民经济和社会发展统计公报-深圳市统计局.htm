@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>深圳市2014年国民经济和社会发展统计公报-深圳市统计局</title>
+<link href="../../../../../images/2012-base.css" rel="stylesheet" type="text/css" />
+<link href="../../../../../images/2012-main.css" rel="stylesheet" type="text/css" />
+<script src="../../../../../images/2012-jquery.js"></script>
+<script src="../../../../../images/2012-main.js"></script>
+<script src="../../../../../images/2012-swfobject.js"></script>
+<script src="../../../../../images/2012-jquery.HuaNSlide.js"></script>
+<style>
+.content div{font-size:14px;margin-top:25px;}
+.content p{font-size:14px;margin-top:25px;}
+.content span{font-size:14px;}
+</style>
+<script>
+$(function(){
+	$(".font a").eq(0).click(function(){
+		$(".content").css("font-size","18px");
+                $(".content div").css("font-size","18px");
+                $(".content p").css("font-size","18px");
+                $(".content span").css("font-size","18px");
+	});
+	$(".font a").eq(1).click(function(){
+		$(".content").css("font-size","15px");
+                $(".content div").css("font-size","15px");
+                $(".content p").css("font-size","15px");
+                $(".content span").css("font-size","15px");
+	});
+	$(".font a").eq(2).click(function(){
+		$(".content").css("font-size","12px");
+                $(".content div").css("font-size","12px");
+                $(".content p").css("font-size","12px");
+                $(".content span").css("font-size","12px");
+	});
+})
+
+</script>
+
+</head>
+<body>
+<div class="topdiv">
+	<div class="mainWidth">
+        <div class="topbar"><div class="right"><kanhanbypass><a href="http://www.sztj.gov.cn">简体版</a></kanhanbypass>|<a href="http://203.91.55.40:9000/b5/www.sztj.gov.cn">繁体版</a>|<a href="../../../../fzlm/rss/">个性化定制</a></div></div>
+        <div class="flash"><div id="flash"></div><script>
+			var so = new SWFObject("../../../../../images/2012-flash.swf", "topbanner", "980", "125", "8","#ffffff");so.addParam("wmode","transparent");so.addParam("menu","false");so.write("flash");
+		</script></div>
+        <div class="menu">
+            <div class="left">
+                <strong><a>信息公开</a></strong><!--<strong><a>网上办事</a></strong>--><strong><a>公众参与</a></strong>
+            </div>
+            <div class="right relative tl">
+                <span class="blog"><a href="http://weibo.com/u/3065825630" target="_blank">新浪</a><a href="http://t.qq.com/shenzhentj" target="_blank">腾讯</a></span>
+                <div><a href="../../../jgzn/">机构职能</a><a href="../../../zcfg/">政策法规及政策解读</a><a href="../../../ghjh/">规划计划</a><a href="../../../ywgz/">业务工作</a><a href="../../">统计数据与分析</a><a href="../../../zjxx/">资金信息</a><a href="../../../qt/gkzn/">公开指南</a><a href="../../../qt/ndxxgkbg/">年度信息公开报告</a><a href="../../../qt/gzdt/">工作动态</a><a href="../../../qt/tzgg/">通知公告</a><a href="../../../qt/rsxx/">人事信息</a></div>
+                <!--<div><a href="../../../../zxbs/bmdcxm/">市政府部门统计调查项目</a><a href="../../../../zxbs/tjcyrd/">统计从业资格认定</a><a href="../../../../zxbs/bgxz/">下载专区</a><a href="../../../../zxbs/zxfw/">专项服务</a></div>-->
+                <div><a href="../../../../hdjl/xd/">咨询投诉选登</a><a href="http://www.sz.gov.cn/szzxts/szzfzx/szzx/index.htm?deptid=29">咨询投诉</a><a href="../../../../hdjl/dfcx/">答复查询</a><a href="../../../../hdjl/wjdc/">问卷调查</a><a href="../../../../hdjl/yjzj/">意见征集</a><a href="http://www.sztj.gov.cn/hdjl/xd/">常见问题</a><a href="../../../../hdjl/zxft/">访谈预告</a><a href="../../../../hdjl/fthg/">访谈回顾</a><a href="../../../../hdjl/jzxx/">局长信箱</a><a href="../../../../ywzsk/">业务知识库</a></div>
+            </div>
+        </div>
+        <div class="weather">
+        	<div class="left">
+                    <!--<marquee direction="left" TrueSpeed scrollAmount=2 scrollDelay=80 onMouseOut=this.start(); onMouseOver=this.stop();  vspace="0" hspace="0" width="500px" id="todays"></marquee>-->
+                </div>
+<form id="myForm" onSubmit="return false;" method="post" target="_blank">
+
+            <div class="right">
+<input type="text" class="txt" id="textfield" name="searchword" onkeydown="if(event.keyCode==13){searchfun();}" /><input type="button" class="bt0" id="submitbuttom" style="cursor:pointer;" /><input type="button" class="bt1" style="cursor:pointer;width:50px;" />
+</div>
+</form>
+
+        </div>
+    </div>
+</div>
+<!--script language="javascript" src="http://www.szmb.gov.cn/data_cache/szWeather/sz10day_new.js" IGNOREAPD="1"></script-->
+<script> 
+	//document.getElementById("todays").innerHTML = "欢迎光临深圳市统计局网站！";
+</script>
+<script>
+$("#submitbuttom").live("click",function(){
+   if($("#textfield").val()==""||$("#textfield").val()==null)
+   {alert("请输入关键字！");return;}
+   else{
+     myForm.action='http://61.144.227.212/was5/web/search?channelid=209462&searchword='+encodeURI($("#textfield").val());
+     myForm.method='POST';
+     myForm.submit();
+   }
+});
+function searchfun()
+{
+   if($("#textfield").val()==""||$("#textfield").val()==null)
+   {alert("请输入关键字！");return;}
+   else{
+     myForm.action='http://61.144.227.212/was5/web/search?channelid=209462&searchword='+encodeURI($("#textfield").val());
+     myForm.method='POST';
+     myForm.submit();
+   }
+}
+$(".bt1").live("click",function(){
+	window.location.href="http://61.144.227.212/was5/web/advanced_tjj2012.jsp?channelid=209462";
+});
+</script>
+<div class="mainWidth inner cmt">
+	<div class="curPlace">所在的位置：<a href="../../../../../" target="_self" title="首页" class=cn3 id=curpage_chnurl class="CurrChnlCls">首页</a>&nbsp;>&nbsp;<a href="../../../" target="_self" title="信息公开" class=cn3 id=curpage_chnurl class="CurrChnlCls">信息公开</a>&nbsp;>&nbsp;<a href="../../" target="_self" title="统计数据与分析" class=cn3 id=curpage_chnurl class="CurrChnlCls">统计数据与分析</a>&nbsp;>&nbsp;<a href="../" target="_self" title="统计公报" class=cn3 id=curpage_chnurl class="CurrChnlCls">统计公报</a></div>
+	<div class="space"></div>
+	<div class="article">
+		<h3>深圳市2014年国民经济和社会发展统计公报</h3>
+		<div class="subtitle">文章来源: 　　发布时间：2015-04-24<span class="font">　　字号：【<a  href="javascript:void(0);">大</a> <a href="javascript:void(0);">中</a> <a href="javascript:void(0);">小</a>】</span><span class="color"><a href="javascript:setColor('FAFBE6')"><img src="../../../../../images/2012-color1.gif" alt="杏仁黄" width="10" height="10" border="0" /></a> 
+					<a href="javascript:setColor('FFF2E2')"><img src="../../../../../images/2012-color2.gif" alt="秋叶褐" width="10" height="10" border="0" /></a> 
+					<a href="javascript:setColor('FDE6E0')"><img src="../../../../../images/2012-color3.gif" alt="胭脂红" width="10" height="10" border="0" /></a> 
+					<a href="javascript:setColor('F3FFE1')"><img src="../../../../../images/2012-color4.gif" alt="芥末绿" width="10" height="10" border="0" /></a> 
+					<a href="javascript:setColor('DAFAFE')"><img src="../../../../../images/2012-color5.gif" alt="天蓝" width="10" height="10" border="0" /></a> 
+					<a href="javascript:setColor('E9EBFE')"><img src="../../../../../images/2012-color6.gif" alt="雪青" width="10" height="10" border="0" /></a> 
+					<a href="javascript:setColor('EAEAEF')"><img src="../../../../../images/2012-color7.gif" alt="灰" width="10" height="10" border="0" /></a> 
+					<a href="javascript:setColor('FFFFFF')"><img src="../../../../../images/2012-color8.gif" alt="银河白(默认色)" width="10" height="10" border="0" /></a>&nbsp;&nbsp;[<a href="../../../../fzlm/wsjc/" target="_blank">内容纠错</a>]</span></div>
+		<div class="space"></div>
+		<div class="content">
+		   <p align="center">深圳市统计局</p>
+<p align="center">2015年4月22日</p>
+<p align="justify">　　2014年，面对复杂多变的内外部环境，在市委市政府的坚强领导下，深圳牢牢把握“三化一平台”改革方向，坚持稳中求进工作总基调，突出质量引领、创新驱动，加快转型升级，主动适应和引领经济发展新常态，在攻坚克难中实现了全市经济有质量的稳定增长和可持续的全面发展。</p>
+<p align="justify">　　一、综合</p>
+<p align="justify">　　初步核算，全年本地生产总值16001.98亿元，比上年增长8.8%。其中，第一产业增加值5.29亿元，下降19.4%；第二产业增加值6823.05亿元，增长7.7%；第三产业增加值9173.64亿元，增长9.8%。第一产业增加值占全市生产总值的比重不到0.1%；第二和第三产业增加值占全市生产总值的比重分别为42.7%和57.3%。人均生产总值149497元/人，增长7.7%，按2014年平均汇率折算为24337美元。</p>
+<p align="center"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" oldsrc="W020150424574550206386.jpg" src="./W020150424574550206386.jpg" /></p>
+<p align="justify">　　在现代产业中，现代服务业增加值6201.06亿元，比上年增长10.5%；先进制造业增加值4823.98亿元，增长9.8%；高技术制造业增加值4056.85亿元，增长12.9%。在第三产业中，交通运输、仓储和邮政业增加值532.86亿元，增长9.7%；批发和零售业增加值1963.38亿元，增长9.3%；住宿和餐饮业增加值286.26亿元，增长3.3%；房地产业增加值1441.93亿元，增长6.7%。民营经济增加值6132.25亿元，增长8.1%。</p>
+<p align="justify">　　四大支柱产业中，金融业增加值2237.54亿元，比上年增长13.8%；物流业增加值1614.18亿元，增长9.7%;文化产业增加值1213.78亿元，增长15.4%；高新技术产业增加值5173.49亿元，增长11.2%。</p>
+<p align="center"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" oldsrc="W020150424574550334125.jpg" src="./W020150424574550334125.jpg" /></p>
+<p align="justify">　　六大战略性新兴产业中，生物产业增加值242.83亿元，比上年增长6.4%；互联网产业增加值576.44亿元，增长15.5%；新能源产业增加值368.55亿元，增长9.7%；新一代信息技术产业增加值2569.80亿元，增长14.0%；新材料产业增加值383.98亿元，增长7.1%；文化创意产业增加值1553.64亿元，增长15.6%。</p>
+<p align="justify">　　全年完成公共财政预算收入2082.44亿元，比上年增长20.3%。其中税收收入1754.55亿元，增长17.1%。公共财政预算支出2166.14亿元，增长28.1%。其中教育支出330.80亿元，增长15.0%；文化体育与传媒支出56.55亿元，增长71.7%；医疗卫生支出160.93亿元，增长50.5%；一般公共服务支出149.74亿元，增长1.4%。</p>
+<p align="center"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" oldsrc="W020150424574550775563.jpg" src="./W020150424574550775563.jpg" /></p>
+<p align="justify">　　全年居民消费价格比上年上涨2.0%。工业生产者购进价格下降0.4%；工业生产者出厂价格下降0.9%。</p>
+<p align="center"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" oldsrc="W020150424574550924635.jpg" src="./W020150424574550924635.jpg" /></p>
+<p align="center"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" oldsrc="W020150424574551068178.jpg" src="./W020150424574551068178.jpg" /></p>
+<p align="center"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" oldsrc="W020150424574551187927.jpg" src="./W020150424574551187927.jpg" /></p>
+<p align="justify">　　年末城镇登记失业率为2.26%。</p>
+<p align="justify">　　二、农业</p>
+<p align="justify">　　全年农作物播种面积73775亩，比上年减少9.4%，其中，蔬菜播种面积67975亩，下降16.1%。水果播种面积36825亩，下降3.2%。</p>
+<p align="justify">　　全年蔬菜产量6.72万吨，比上年下降33.7%；水果产量0.21万吨，增长23.5%。主要畜产品产量见表3。</p>
+<p align="center"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" oldsrc="W020150424574551376528.jpg" src="./W020150424574551376528.jpg" /></p>
+<p align="justify">　　全年水产品总产量2.72万吨，比上年增长42.4%。其中，海产品2.63万吨，增长45.5%；淡水产品0.09万吨，下降10%。</p>
+<p align="justify">　　三、工业和建筑业</p>
+<p align="justify">　　全年规模以上工业增加值6501.06亿元，比上年增长8.4%。其中，国有企业增加值199.63亿元，增长7.2%；股份制企业增加值3074.96亿元，增长13.4%；外商及港澳台投资企业增加值3145.45亿元，增长3.8%。分轻重工业看，轻工业增加值1249.85亿元，增长3.3%；重工业增加值5251.21亿元，增长9.7%。</p>
+<p align="center"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" oldsrc="W020150424574551508939.jpg" src="./W020150424574551508939.jpg" /></p>
+<p align="center"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" oldsrc="W020150424574551637242.jpg" src="./W020150424574551637242.jpg" /></p>
+<p align="center"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" oldsrc="W020150424574551789803.jpg" src="./W020150424574551789803.jpg" /></p>
+<p align="justify">　　全年规模以上工业增加值排名前五行业依次为：通信设备、计算机及其他电子设备制造业增加值3805.07亿元，比上年增长14.0%；石油和天然气开采业增加值357.02亿元，下降8.4%；电气机械和器材制造业增加值356.51亿元，增长5.8%；电力、热力生产和供应业增加值245.76亿元，增长2.8%；专用设备制造业增加值191.23亿元，增长12.0%。</p>
+<p align="justify">　　全年规模以上工业销售产值23858.37亿元，比上年增长5.5%。其中，出口交货值11713.71亿元，增长4.7%，占规模以上工业销售产值比重49.1%，比上年下降0.3个百分点。工业产品销售率97.7%，比上年下降0.5个百分点。主要工业产品产量见表5。</p>
+<p align="center"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" oldsrc="W020150424574552005029.jpg" src="./W020150424574552005029.jpg" /></p>
+<p align="justify">　　全年规模以上工业企业主营业务收入比上年增长5.1%；实现利税总额增长12.7%；实现利润总额增长16.2%。</p>
+<p align="justify">　　全年建筑业增加值466.12亿元，比上年增长1.6%。</p>
+<p align="center"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" oldsrc="W020150424574552320249.jpg" src="./W020150424574552320249.jpg" /></p>
+<p align="justify">　　四、固定资产投资</p>
+<p align="justify">　　全年完成固定资产投资额2717.42亿元，比上年增长13.6%。其中，房地产开发项目投资1069.49亿元，增长22.0%；非房地产开发项目投资1647.94亿元，增长8.8%。</p>
+<p align="center"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" oldsrc="W020150424574552475343.jpg" src="./W020150424574552475343.jpg" /></p>
+<p align="center"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" oldsrc="W020150424574552633301.jpg" src="./W020150424574552633301.jpg" /></p>
+<p align="justify">　　从三次产业看，第一产业投资0.39亿元；第二产业投资521.22亿元，比上年增长46.0%，其中，工业投资520.57亿元，增长47.0%；第三产业投资2195.81亿元，增长8.1%。</p>
+<p align="center"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" oldsrc="W020150424574553014447.jpg" src="./W020150424574553014447.jpg" /></p>
+<p align="center"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" oldsrc="W020150424574553422571.jpg" src="./W020150424574553422571.jpg" /></p>
+<p align="justify">　　五、国内贸易</p>
+<p align="justify">　　全年社会消费品零售总额4844.00亿元，比上年增长9.3%。其中，批发和零售业零售额4321.54亿元，增长9.3%；住宿和餐饮业零售额522.46亿元，增长9.1%。在社会消费品零售总额中，限额以上批发和零售业零售额3203.46亿元，增长9.0%，占社会消费品零售总额66.1%。</p>
+<p align="justify">&nbsp;</p>
+<p align="center"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" src="./W020150424580063274802.jpg" OLDSRC="W020150424580063274802.jpg" /></p>
+<p align="center"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" src="./W020150424580063455306.jpg" OLDSRC="W020150424580063455306.jpg" /></p>
+<p align="justify">　　全年商品销售总额21489.61亿元，比上年增长10.8%。其中批发销售总额17168.87亿元，增长10.7%。全年限额以上批发零售业商品销售中，十大类商品销售情况为：金银珠宝类增长24.5%；文化办公用品类增长20.9%；通讯器材类增长19.7%；体育娱乐用品类增长19.3%；日用品类增长15.9%；食品饮料烟酒类增长11.7%;汽车类增长11.5%；服装鞋帽针织类增长7.1%；家用电器和音响器材类增长0.9%；书报杂志类下降5.5%。</p>
+<p align="justify">　　六、对外经济</p>
+<p align="justify">　　全年外贸进出口总额4877.65亿美元，比上年下降9.2%。其中出口总额2844.03亿美元，下降7.0%，分别占全国和广东省出口总额的比重为12.1%和44.0%；进口总额2033.62亿美元，下降12.3%。进出口规模连续三年居内地城市首位；出口总额连续二十二年居内地城市首位。</p>
+<p align="center"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" src="./W020150424580063681759.jpg" OLDSRC="W020150424580063681759.jpg" /></p>
+<p align="center"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" src="./W020150424580063858842.jpg" OLDSRC="W020150424580063858842.jpg" /></p>
+<p align="center"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" src="./W020150424580064197730.jpg" OLDSRC="W020150424580064197730.jpg" /></p>
+<p align="justify">　　全年新签外商直接投资合同项目2490项，比上年增长21.1%；合同外资金额108.95亿美元，增长62.6%；实际使用外商直接投资金额58.05亿美元，增长6.2%。</p>
+<p align="center"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" src="./W020150424580064379479.jpg" OLDSRC="W020150424580064379479.jpg" /></p>
+<p align="justify">　　全年对外承包工程业务完成营业额102.74亿美元，比上年下降53.7%。</p>
+<p align="justify">　　七、交通、邮电与旅游</p>
+<p align="justify">　　全年货物运输总量29384.21万吨，比上年增长6.8%。货物运输周转量2386.37亿吨公里，增长19.4%。</p>
+<p align="center"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" src="./W020150424580064810906.jpg" OLDSRC="W020150424580064810906.jpg" /></p>
+<p align="justify">　　全年深圳港港口货物吞吐量22323.73万吨，比上年下降4.6%；集装箱吞吐量2403.74万标箱，增长3.3%，其中，出口集装箱吞吐量1246.99万标箱，增长3.2%。全市年末拥有港口泊位数153个，其中万吨级泊位67个。</p>
+<p align="justify">　　全年深圳机场旅客吞吐量3627.25万人次，比上年增长12.4%。年末开通运营国内航线181条；国际航线25条；港澳台航线4条。</p>
+<p align="justify">　　全年全市民用汽车拥有量311.15万辆，比上年增长20.4%，其中，私人小汽车拥有量249.24万辆，增长26.2%。</p>
+<p align="justify">　　全年邮电业务总量（2010年价格）761.99亿元，比上年增长22.3%。其中，邮政、快递业务量297.68亿元，增长31.4%；电信业务量464.31亿元，增长17.1%。全年订销报纸1.05亿份；订销杂志0.74万份；收寄函件1.47亿份；特快专递71.50万件（邮政口径）。年末全市有邮政、电信局（所）779所。全市固定电话交换机总容量570万门，与上年持平；年末固定电话用户529.51万户。年末移动电话用户3376.60万户。国际互联网宽带用户442.18万户。</p>
+<p align="center"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" src="./W020150424580065135924.jpg" OLDSRC="W020150424580065135924.jpg" /></p>
+<p align="center"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" src="./W020150424580065263501.jpg" OLDSRC="W020150424580065263501.jpg" /></p>
+<p align="justify">　　全年旅游住宿设施接待过夜游客4991.06万人次，比上年增长9.3%。其中海外游客1182.18万人次，下降2.7%；国内游客3808.88万人次，增长13.6%。在过夜海外游客中，外国游客161.12万人次，下降3.4%；港澳同胞979.37万人次，下降2.5 %；台湾同胞41.69万人次，下降3.5%。全年旅游外汇收入45.66亿美元，增长0.8%。宾馆、酒店、度假村开房率67.2%，比上年提高3.1个百分点。</p>
+<p align="justify">　　全年经过一线口岸入出境人数2.35亿人次；入出境交通工具1533.10万辆。</p>
+<p align="justify">　　八、金融、证券和保险</p>
+<p align="justify">　　年末全市国内金融机构人民币存款余额32497.75亿元，比年初增长8.9%；国内金融机构人民币贷款余额22671.10亿元，比年初增长13.7%。</p>
+<p align="center"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" src="./W020150424580065402789.jpg" OLDSRC="W020150424580065402789.jpg" /></p>
+<p align="justify">　　年末全部金融机构本外币各项存款余额37350.50亿元，比年初增长10.0%；金融机构本外币各项贷款余额27922.13亿元，比年初增长12.5%。</p>
+<p align="justify">　　年末深圳证券交易所上市公司1618家，比上年增加82家。上市股票1657只，增加80只，其中，A股1606只，增加82只；B股51只，减少2只。总发行股本9709.93亿股，增长20.3%；总流通股本7374.66亿股，增长17.7%。上市公司市价总值128572.94亿元，增长46.3%。上市公司流通市值95128.44亿元，增长50.9%。全年证券市场总成交金额444708.19亿元，增长49.9%。其中，A股总成交金额366228.13亿元，增长54.1%；B股总成交金额522.74亿元，下降30.2 %。总成交股数30815.73亿股，增长42.3%。</p>
+<p align="justify">　　全年保险机构原保险保费收入548.66亿元，比上年增长17.0%。其中，财产险215.73亿元，增长20.0 %；人身险332.93亿元，增长15.2%。各项赔付支出155.76亿元，增长24.4%。其中，财产险业务支出101.05亿元，增长17.1 %；人身险业务支出54.71亿元，增长40.7%。</p>
+<p align="justify">　　九、教育和科学技术</p>
+<p align="justify">　　年末全市各级各类学校总数达2094所，比上年增加97所；毕业生38.65万人，招生数52.99万人，在校学生数175.33万人，分别增长5.2%、10.1%和6.8%。年末全市有幼儿园1402所，增加89所；在园幼儿39.90万人，增长8.2%。有小学331所，减少4所；在校学生79.32万人，增长8.6%。有普通中学325所，增加11所；在校学生37.87万人，增长1.9 %。学龄儿童入学率和小学毕业生升学率均保持在100 %，初中毕业生升学率79.9%。全年普通高等学校10所，招生2.81万人，增长1.6%；毕业生2.12万人，增长13.8%；在校学生8.77万人，增长6.4%。</p>
+<p align="center"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" src="./W020150424580065618128.jpg" OLDSRC="W020150424580065618128.jpg" /></p>
+<p align="center"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" src="./W020150424580065878990.jpg" OLDSRC="W020150424580065878990.jpg" /></p>
+<p align="justify">　　年末全市各类专业技术人员128.10万人，比上年增长5.3%，其中具有中级技术职称及以上的专业技术人员39.70万人，增长1.3%。年末国内专利申请量82254件，增长2.0%。国内专利授权量53687件，增长7.9%。</p>
+<p align="justify">　　十、文化、卫生和体育</p>
+<p align="justify">　　全市有各类公共图书馆621座，公共图书馆总藏量3056.44万册（件），比上年增长7.1%。全市拥有博物馆、纪念馆37座，拥有广播电台1座，电视台2座，广播电视中心3座，有线广播电视站20座，广播、电视人口覆盖率达100%。全年报纸出版印数68036万份；杂志2103.20万册；图书1026.50万册。</p>
+<p align="justify">　　年末全市有卫生医疗机构2532个，比上年增加304个，其中医院122个，增加5个。卫生机构拥有床位31042张，增长6.1%，其中医院病床28853张，增长6.6 %。全市有卫生技术人员69936人，增长6.3%。全年各级各类医疗机构完成诊疗量8852.63万人次，增长2.9%，其中处理急诊709.22万人次，下降3.0%。入院人数119.40万人，增长9.1%。病床使用率85.5%。</p>
+<p align="justify">　　全市国民体质综合评定达到《国民体质测定标准》合格以上人数比例（简称“综合达标率”）为89.8%。其中，19-59岁成年人达标率为89.7%。成年人达到优秀、良好和合格的比例分别为9.6%、39.6%和40.4%。</p>
+<p align="justify">　　十一、城市建设、环境和安全生产</p>
+<p align="justify">　　全年基本建设投资中用于城市基础设施的投资597.73亿元，比上年下降11.8%。全年全市用电量788.68亿千瓦时，增长8.1%。其中城乡居民生活用电120.37亿千瓦时，增长15.8%。全市自来水日供应能力674.50万立方米，全年供水总量16.41亿立方米。其中居民家庭用水量5.66亿立方米。全市自来水普及率达100%。</p>
+<p align="justify">　　全市年末公共汽车营运线路886条，比上年末增加5条。公共交通营运线路总长度20269.80公里，增加1182.80公里。年末实有公共汽车营运车辆31349辆，增加2.5%。其中，公共汽车15074辆，增加3.1%；出租小汽车16275辆，增加1.9%。全年公共汽车客运总量26.96亿人次，增加2.3%。轨道交通线路长度177公里，轨道交通客运总量10.37亿人次，增长13.0%。</p>
+<p align="justify">　　全市建成区面积890.04平方公里。建成区绿化覆盖率45.1%。全市生活垃圾无害化处理率100%。</p>
+<p align="justify">　　全年亿元本地生产总值生产安全事故死亡人数为0.033人，比上年减少0.005人/亿元；道路交通万车死亡人数为1.598人，减少0.332人/万车。</p>
+<p align="justify">　　十二、人口、人民生活和社会保障</p>
+<p align="justify">　　全市年末常住人口1077.89万人，比上年末增加15.00万人，增长1.4%。其中户籍人口332.21万人，占常住人口比重30.8%；非户籍人口745.68万人，占比重69.2%。全市各区人口分布见表17。</p>
+<p align="center"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" src="./W020150424580066024021.jpg" OLDSRC="W020150424580066024021.jpg" /></p>
+<p align="justify">　　根据深圳居民家庭抽样调查资料显示，2014年深圳居民人均可支配收入40948元，名义增长9.0%，扣除价格因素影响，实际增长6.9%。居民人均消费支出28853元，名义增长10.1%，扣除价格因素影响，实际增长8.0%。恩格尔系数为33.1%。</p>
+<p align="justify">　　年末全市有870.69万人参加了基本养老保险，942.18万人参加了失业保险。</p>
+<p align="center"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" src="./W020150424580066369972.jpg" OLDSRC="W020150424580066369972.jpg" /></p>
+<p align="justify">　　年末社会福利院数31个，社会福利院床位数6775张，比上年增长14.9%。社区服务设施7952个。年末居民最低生活保障线以下人数6729人，减少5.2%；全年共发放最低生活保障金3688.45万元，增加0.3%。</p>
+<p align="justify">　　注：</p>
+<p align="justify">　　1.本公报所列2014年数据为初步统计数；统计图中2009-2013年数据为年报数。</p>
+<p align="justify">　　2.个别数据因四舍五入的原因，存在着与分项合计不等的情况。</p>
+<p align="justify">　　3.战略性新兴产业为深圳相关产业发展规划的口径，与国家、广东省及内地城市有所不同。</p>
+<p align="justify">　　4.地区生产总值及其产业增加值绝对数按现行价格计算，增长速度按可比价格计算。建筑业增加值及其增速为统计部门生产总值核算口径。</p>
+<p align="justify">　　5.公报中新宝安区不含光明、龙华新区，新龙岗区不含坪山、大鹏新区。</p>
+<p align="justify">　　6.公报中居民消费价格指数、工业生产者价格指数、居民收支数据来自国家统计局深圳调查队。根据国家统计局住户调查一体化改革部署，2014年起深圳全面实施一体化住户调查，调查样本数据汇总产生新口径深圳居民人均可支配收入、人均消费支出等收支数据。按一体化住户调查改革前的城镇住户调查老口径推算，2014年深圳城镇居民人均可支配收入为48672元。</p>
+ <table width="100%" border="0" align="center" cellPadding=3 cellSpacing=1 bgcolor="#1DB7F4" style="margin-bottom:10px;">
+         
+                </table>
+<table width="100%" border=0 align=center cellPadding=3 cellSpacing=1 bgcolor="#1DB7F4">
+                  <tr bgcolor="#FFFFFF">
+                    <td height="25" width="42%"><div align="left" class="STYLE2"><strong>信息索取号：</strong>
+                    010020010020010010020</div></td>
+					<td width="29%"><div align="left" class="STYLE2"><strong>公开类型：</strong>
+				    主动公开</div></td>
+					<td width="29%"><div align="left" class="STYLE2"><strong>生成日期：</strong>
+				    2015-04-24</div></td>
+                  </tr>
+                </table>
+<p></p>
+<br>
+<table width="100%" border=0 align=center cellPadding=3 cellSpacing=1 bgcolor="#1DB7F4">
+<tr bgcolor="#ffffff">
+<td><iframe name=InStore align=top frameSpacing=0 src="http://203.91.46.18/gk/site/application.jsp?type=gzmyd&organizieuid=007541563&&originaluid=2862885" frameBorder=0 width=750 scrolling=no height=260></iframe></td>
+</tr>
+</table>
+		</div>
+	</div>
+<!--
+	<div class="same">
+		<div class="samespace"></div>
+		<div class="space"></div>
+		<strong>相关连接</strong>
+		<div class="list">
+			<a>李必祥副局长出席会议并就社会发展与社会建设的内涵进行了深入浅出的讲解</a>
+			<a>李必祥副局长出席会议并就社会发展与社会建设的内涵进行了深入浅出的讲解</a>
+			<a>李必祥副局长出席会议并就社会发展与社会建设的内涵进行了深入浅出的讲解</a>
+			<a>李必祥副局长出席会议并就社会发展与社会建设的内涵进行了深入浅出的讲解</a>
+			<a>李必祥副局长出席会议并就社会发展与社会建设的内涵进行了深入浅出的讲解</a>
+			<a>李必祥副局长出席会议并就社会发展与社会建设的内涵进行了深入浅出的讲解</a>
+		</div>
+	</div>
+-->
+	<div class="space"></div>
+	<div class="space"></div>
+</div>
+
+<div class="bottom cmt20 mainWidth relative tl">
+    <div class="police">
+       <script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript   src='http://dcs.conac.cn/js/20/310/0000/40704184/CA203100000407041840002.js' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    <a class="police0" href="http://61.144.227.239:9003/webrecord/form_query.jsp" target="_blank">网安</a>
+    <a class="police1" href="http://61.144.227.239:9002/" target="_blank">深圳警察</a>
+    <div class="bmenu"><a href="../../../../fzlm/wzdh/">网站导航</a>|<a href="../../../../fzlm/lxwm/">联系我们</a>|<a href="../../../../fzlm/gywm/">版权保护</a>|<a href="../../../../fzlm/yssm/">隐私声明</a>|<a href="../../../../fzlm/wzbz/">网站帮助</a></div>
+    <div class="copy">办公地址：深圳市福田区上步中路1001号科技大厦12至14楼<br>
+咨询电话：(0755)82928319 如果您有任何意见或建议，请惠赐E-mail至：zxjy@sztj.sz.gov.cn<br>
+未经许可不得转载、复制 深圳市统计局 主办 备案号：<a href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备05017767号</a></div>
+</div>
+<script>
+$(".curPlace a").each(function(){
+    if($(this).html()=="首页")
+    {
+          $(this).attr("href","http://www.sztj.gov.cn");
+    }
+});
+</script>
+
+<style>
+.police{left:160px;position: absolute;z-index: 10;top: 50px;width: 50px;height: 60px;cursor: pointer;}
+#imgConac{width:60px;height:60px;}
+</style>
+
+</body>
+</html>
+<script>
+function setColor(color_val){
+	//alert("#"+color_val);
+	$(".content").css("background","#"+color_val);
+}
+
+</script>

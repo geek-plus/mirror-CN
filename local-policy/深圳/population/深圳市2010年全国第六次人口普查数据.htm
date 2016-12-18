@@ -1,0 +1,607 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+		<title>深圳市统计局</title>
+		<link rel="stylesheet" type="text/css" href="../../../../images/list_public.css" />
+		<script src="../../../../images/jquery-1.10.2.min.js" type="text/javascript"></script>
+		<script src="../../../../images/index.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			function MM_jumpMenu(targ,selObj,restore){
+				eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'"); 
+				if (restore) selObj.selectedIndex=0; 
+			}; 
+		</script>
+</head>
+
+<body>
+  <!--头部开始-->
+  <script src="../../../../images/wsjdsjft.js" type="text/javascript"></script>
+<script type="text/javascript">
+	(function($){
+		$.fn.extend({
+			Scroll:function(opt,callback){
+				if(!opt) var opt={};
+				var _this=this.eq(0).find("ul:first");
+				var lineH=_this.find("li:first").height(),
+				line=opt.line?parseInt(opt.line,5):parseInt(this.height()/lineH,5),
+				speed=opt.speed?parseInt(opt.speed,10):2000,
+				timer=opt.timer?parseInt(opt.timer,10):3000;
+				if(line==0) line=1;
+				var upHeight=0-line*lineH;
+				scrollUp=function(){
+					_this.animate({
+						marginTop:upHeight
+					},speed,function(){
+						for(i=1;i<=line;i++){
+							_this.find("li:first").appendTo(_this);
+						}
+						_this.css({marginTop:0});
+					});
+				}
+				_this.hover(function(){
+					clearInterval(timerID);
+				},function(){
+					timerID=setInterval("scrollUp()",timer);
+				}).mouseout();
+			}       
+		})
+	})(jQuery);
+
+	$(function(){
+		$(".hotnews").Scroll({line:1,speed:1000,timer:4000});
+	});
+</script>
+		<div class="header">
+			<div class="header_top">
+				<div class="header_top_con">
+					<div class="header_top_con_left"><img src="../../../../images/2016_tjj_002.png" /><font>最新发布：</font>
+						<div class="header_top_con_left_text hotnews">
+							<ul>
+							
+								<li><a href="../../../qt/tzgg/201610/t20161024_5009131.htm" style="color:#ae1710;font-weight:bold;" title="深圳市统计局办公室关于开展2016年新增参与碳排放权交易企业统计业务培训的通知">深圳市统计局办公室关于开展2016年新增参与碳排放权交易企业统计业务...</a></li>
+							
+								<li><a href="../../../qt/tzgg/201610/t20161009_4974704.htm" style="color:#ae1710;font-weight:bold;" title="深圳市统计普查中心2016年选聘职员公告">深圳市统计普查中心2016年选聘职员公告</a></li>
+							
+								<li><a href="../../../qt/tzgg/201609/t20160921_4956782.htm" style="color:#ae1710;font-weight:bold;" title="深圳市统计局办公室关于举办第六批参与碳排放权交易单位统计业务培训的通知">深圳市统计局办公室关于举办第六批参与碳排放权交易单位统计业务培训...</a></li>
+							
+								<li><a href="../../../qt/tzgg/201609/t20160921_4956780.htm" style="color:#ae1710;font-weight:bold;" title="深圳市统计局办公室关于举办第五批参与碳排放权交易单位统计业务培训的通知">深圳市统计局办公室关于举办第五批参与碳排放权交易单位统计业务培训...</a></li>
+							
+							</ul>
+						</div>
+					</div>
+					<div class="header_top_con_right" ><a class="a1" href="../../../../sj/default_22955.htm">手机网</a> <a class="a1" onclick="zh_tran('s')">简体版</a> <a class="a2" onclick="zh_tran('t')">繁体版</a> <a class="a3" href="../../../../fzlm/rss/">个性化定制</a></div>
+				</div>
+			</div>
+			<div class="header_logo">
+				<div class="header_logo_input">
+<a href="http://www.sztj.gov.cn/" style="width:299px;height:93px;position: absolute;top:55px;left:0px;"></a>
+<a href="http://www.sz.gov.cn/cn/" style="width:195px;height:85px;position: absolute;top:55px;right:20px;"></a>
+					<div class="header_logo_input_in">
+
+						<form id="myForm" onsubmit="return false;" method="post" target="_blank">
+							<input type="text" class="txt" id="textfield" placeholder="请输入关键检索内容" name="searchword" onkeydown="if(event.keyCode==13){searchfun();}" />
+							<input type="button" id="submitbuttom" style="cursor:pointer;" />
+						</form>
+						<script> 
+							$("#submitbuttom").click(function(){
+							   if($("#textfield").val()==""||$("#textfield").val()==null)
+							   {alert("请输入关键字！");return;}
+							   else{
+								 myForm.action='http://61.144.227.212/was5/web/search?channelid=271659&searchword='+encodeURI($("#textfield").val());
+								 myForm.method='POST';
+								 myForm.submit();
+							   }
+							});
+							function searchfun()
+							{
+							   if($("#textfield").val()==""||$("#textfield").val()==null)
+							   {alert("请输入关键字！");return;}
+							   else{
+								 myForm.action='http://61.144.227.212/was5/web/search?channelid=271659&searchword='+encodeURI($("#textfield").val());
+								 myForm.method='POST';
+								 myForm.submit();
+							   }
+							}
+							$(".bt1").click(function(){
+								window.location.href="http://61.144.227.212/was5/web/advanced_tjj2012.jsp?channelid=271659";
+							});
+
+						</script>
+
+					</div>
+				</div>
+			</div>
+			<div class="header_nav">
+				<div class="header_nav_1 header_nav_gy nav">信息公开
+					<div class="header_nav_1_2 nav">
+						<div class="nav_1_2_li  nav_1_2_li_left"><a href="../../../zcfg/"><img src="../../../../images/2016_tjj_005.png" />政策法规及政策解读</a></div>
+						<div class="nav_1_2_li"><a href="../../../jgzn/"><img src="../../../../images/2016_tjj_008.png" />机构职能</a></div>
+						<div class="nav_1_2_li"><a href="../../../qt/rsxx/"><img src="../../../../images/2016_tjj_015.png" />人事信息</a></div>
+						<div class="nav_1_2_li"><a href="../../../zjxx/"><img src="../../../../images/2016_tjj_011.png" />资金信息</a></div>
+						
+						<div class="nav_1_2_li nav_1_2_li_left"><a href="../../../qt/gkzn/"><img src="../../../../images/2016_tjj_012.png" />公开指南</a></div>
+						<div class="nav_1_2_li"><a href="../../../qt/ndxxgkbg/"><img src="../../../../images/2016_tjj_007.png" />年度信息公开报告</a></div>
+						<div class="nav_1_2_li"><a href="../../../ywgz/"><img src="../../../../images/2016_tjj_010.png" />业务工作</a></div>
+						<div class="nav_1_2_li"><a href="../../../ghjh/"><img src="../../../../images/2016_tjj_009.png" />规划计划</a></div>
+						
+						<div class="nav_1_2_li nav_1_2_li_left"><a href="../../../qt/gzdt/"><img src="../../../../images/2016_tjj_013.png" />工作动态</a></div>
+						<div class="nav_1_2_li"><a href="../../../qt/tzgg/"><img src="../../../../images/2016_tjj_014.png" />通知公告</a></div>
+						<div class="nav_1_2_li"><a href="../../"><img src="../../../../images/2016_tjj_006.png" />统计数据与分析</a></div>
+						<div class="nav_1_2_li"><a href="http://www.sztj.gov.cn/xxgk/qt/djjjgz/"><img src="../../../../images/2016_tjj_015_16.png" />党建纪检</a></div>
+					</div>
+				</div>
+				<div class="header_nav_2 header_nav_gy nav">公众参与
+					<div class="header_nav_2_2">
+						<div class="nav_2_2_li nav_2_2_li_left q3"><a href="http://www.sz.gov.cn/szzxts/szzfzx/szzx/index.htm?deptid=29"><img src="../../../../images/2016_tjj_016.png" />咨询投诉</a></div>
+						<div class="nav_2_2_li q3"><a href="../../../../hdjl/dfcx/"><img src="../../../../images/2016_tjj_017.png" />答复查询</a></div>
+						<div class="nav_2_2_li q3"><a href="../../../../hdjl/wjdc/"><img src="../../../../images/2016_tjj_018.png" />问卷调查</a></div>
+						<div class="nav_2_2_li nav_2_2_li_left"><a href="../../../../hdjl/yjzj/"><img src="../../../../images/2016_tjj_019.png" />民意征集</a></div>
+						<div class="nav_2_2_li"><a href="../../../../hdjl/xd/"><img src="../../../../images/2016_tjj_020.png" />咨询投诉选登</a></div>
+						<div class="nav_2_2_li"><a href="../../../../hdjl/zxft/"><img src="../../../../images/2016_tjj_021.png" />访谈预告</a></div>
+						<div class="nav_2_2_li nav_2_2_li_left"><a href="../../../../hdjl/fthg/"><img src="../../../../images/2016_tjj_022.png" />访谈回顾</a></div>
+						<div class="nav_2_2_li"><a href="../../../../hdjl/jzxx/"><img src="../../../../images/2016_tjj_023.png" />局长信箱</a></div>
+						<div class="nav_2_2_li"><a href="../../../../ywzsk/"><img src="../../../../images/2016_tjj_024.png" />业务知识库</a></div>
+					</div>
+				</div>
+				<div class="header_nav_3 header_nav_gy nav">统计数据
+					<div class="header_nav_3_2">
+						<div class="nav_3_2_li q3 nav_3_2_li_left"><a href="../../../qt/ndxxgkbg/"><img src="../../../../images/2016_tjj_025.png" />年度工作计划及总结</a></div>
+						<div class="nav_3_2_li q3"><a href="../../../../ywzsk/"><img src="../../../../images/2016_tjj_026.png" />统计知识</a></div>
+						<div class="nav_3_2_li q3"><a href="../../index_21519.htm"><img src="../../../../images/2016_tjj_027.png" />统计数据查询快速通道查询</a></div>
+						<div class="nav_3_2_li nav_3_2_li_left"><a href="../../tjkb/"><img src="../../../../images/2016_tjj_028.png" />统计快报</a></div>
+						<div class="nav_3_2_li"><a href="../../tjfx/"><img src="../../../../images/2016_tjj_029.png" />统计分析</a></div>
+						<div class="nav_3_2_li"><a href="../../tjnj/"><img src="../../../../images/2016_tjj_030.png" />统计年鉴</a></div>
+						<div class="nav_3_2_li"><a href="../../tjgb/"><img src="../../../../images/2016_tjj_031.png" />统计公报</a></div>
+						<div class="nav_3_2_li nav_3_2_li_left"><a href="../../../ywgz/tjbz/"><img src="../../../../images/2016_tjj_032.png" />统计标准</a></div>
+						<div class="nav_3_2_li"><a href="../../../qt/tjkw/"><img src="../../../../images/2016_tjj_033.png" />统计刊物</a></div>
+						<div class="nav_3_2_li"><a href="../"><img src="../../../../images/2016_tjj_034.png" />普查公报</a></div>
+						<div class="nav_3_2_li"><a href="../../../ywgz/tjzd/"><img src="../../../../images/2016_tjj_035.png" />统计制度</a></div>
+					</div>
+				</div>
+				
+				<div class="clear"></div>
+			</div>
+		</div>
+  <!--头部结束--> 
+  
+	<div class="con">
+		<div class="content">
+			<div class="con_wz"><img src="../../../../images/2016_tjj_home.png" /><a href="../../../../" title="首页" class="CurrChnlCls">首页</a>&nbsp;&gt;&nbsp;<a href="../../../" title="信息公开" class="CurrChnlCls">信息公开</a>&nbsp;&gt;&nbsp;<a href="../../" title="统计数据与分析" class="CurrChnlCls">统计数据与分析</a>&nbsp;&gt;&nbsp;<a href="../" title="普查公报" class="CurrChnlCls">普查公报</a></div>
+			<div class="in_box">
+				<div class="in_content">
+					<div class="content_nr11 content_nr" id="nr888">
+						<h1>深圳市2010年全国第六次人口普查数据</h1>
+						<h2>文章来源：深圳市统计局  发布时间：2016-06-14</h2>
+						<p>http://www.sztj.gov.cn/xxgk/tjsj/pcgb/201606/t20160614_3697014.htm</p>
+						
+						<div class="zt_size">
+							<!--<p class="pmr">默认</p>-->
+							<p>字号：</p>
+							<p>【</p>
+							<p class="pda">大</p>
+							<p class="pzhong">中</p>
+							<p class="pxiao">小</p>
+							<p>】</p>
+							
+						</div>
+						
+						<!--<div class="bhs bh1 zb">视力保护色：</div>-->
+						<div class="se1 bh"></div>
+						<div class="se2 bh"></div>
+						<div class="se3 bh"></div>
+						<div class="se4 bh"></div>
+						<div class="se5 bh"></div>
+						<div class="se6 bh"></div>
+						<div class="se7 bh"></div>
+						<div class="moren">(</div>
+						<div class="moren">默认色</div>
+						<div class="se8 bh"></div>
+						<div class="moren">)</div>
+						
+						<a class="pjiucuo" href="../../../../fzlm/wsjc/" target="_blank">内容纠错</a>
+	
+					
+						<div class="zhengwen">
+							<p align="justify">　　第一部分 &nbsp;全部数据资料</p>
+<p align="justify">　　<a oldsrc="W020160620562206339269.xls" href="./W020160620562206339269.xls">1-1 各地区户数、人口数和性别比.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562206445088.xls" href="./W020160620562206445088.xls">1-2 各地区分性别、户口登记状况的人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562206515392.xls" href="./W020160620562206515392.xls">1-3 各地区分性别的户籍人口状况.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562206572569.xls" href="./W020160620562206572569.xls">1-4 各地区分性别的户口登记地在外乡镇街道的人口状况.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562206638889.xls" href="./W020160620562206638889.xls">1-5 各地区分性别的农业户口、非农业户口人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562206695421.xls" href="./W020160620562206695421.xls">1-6 各地区分性别、民族的人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562207147433.xls" href="./W020160620562207147433.xls">1-7 各地区分年龄、性别的人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562207225085.xls" href="./W020160620562207225085.xls">1-8 各地区分性别、受教育程度的6岁及以上人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562207299766.xls" href="./W020160620562207299766.xls">1-9 各地区分性别的15岁及以上文盲人口.xls</a></p>
+<p align="justify" style="font-size: 16px">　　<a oldsrc="W020160620562207357453.xls" href="./W020160620562207357453.xls">1-10 各地区家庭户规模.xls</a></p>
+<p align="justify" style="font-size: 16px">　　<a oldsrc="W020160620562207422311.xls" href="./W020160620562207422311.xls">1-11 各地区家庭户类别.xls</a></p>
+<p align="justify" style="font-size: 16px">　　<a oldsrc="W020160620562207480102.xls" href="./W020160620562207480102.xls">1-12 各地区分性别、月份的出生人口(2009.11.1-2010.10.31).xls</a></p>
+<p align="justify" style="font-size: 16px">　　<a oldsrc="W020160620562207552189.xls" href="./W020160620562207552189.xls">1-13 各地区分性别、月份的死亡人口(2009.11.1-2010.10.31).xls</a></p>
+<p align="justify" style="font-size: 16px">　　<a oldsrc="W020160620562207628749.xls" href="./W020160620562207628749.xls">1-14 各地区家庭户的住房间数和面积.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562207689401.xls" href="./W020160620562207689401.xls">2-1 全市各民族分年龄、性别的人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562207884630.xls" href="./W020160620562207884630.xls">2-2 全市各民族分性别、受教育程度的6岁及以上人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562207956296.xls" href="./W020160620562207956296.xls">3-1 全市分年龄、性别的人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562208019869.xls" href="./W020160620562208019869.xls">3-2 各地区人口年龄构成和抚养比(一).xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562208076532.xls" href="./W020160620562208076532.xls">3-3 各地区人口年龄构成和抚养比(二).xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562208139960.xls" href="./W020160620562208139960.xls">4-1 全市分年龄、性别、受教育程度的6岁及以上人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562208207900.xls" href="./W020160620562208207900.xls">4-2 全市分年龄、性别的15岁及以上文盲人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562208268770.xls" href="./W020160620562208268770.xls">4-3 全市分年龄、性别、受教育程度的15岁及以上文盲人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562208325067.xls" href="./W020160620562208325067.xls">5-1 全市不同规模的家庭户类别.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562208378476.xls" href="./W020160620562208378476.xls">5-2 各地区分年龄、性别的一人户.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562208456622.xls" href="./W020160620562208456622.xls">5-3 各地区家庭户中民族混合户户数.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562208522505.xls" href="./W020160620562208522505.xls">5-4 各地区有60岁及以上老年人口的家庭户户数.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562208580174.xls" href="./W020160620562208580174.xls">5-5 各地区有65岁及以上老年人口的家庭户户数.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562208795684.xls" href="./W020160620562208795684.xls">6-1 各地区分年龄、性别的死亡人口(2009.11.1-2010.10.31).xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562208884400.xls" href="./W020160620562208884400.xls">6-2 各地区分性别、受教育程度的6岁及以上死亡人口(2009.11.1-2010.10.31).xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562208950514.xls" href="./W020160620562208950514.xls">6-3 各地区分性别、婚姻状况的15岁及以上死亡人口(2009.11.1-2010.10.31).xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562209015251.xls" href="./W020160620562209015251.xls">6-4 全市分年龄、性别的死亡人口状况(2009.11.1-2010.10.31).xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562209389070.xls" href="./W020160620562209389070.xls">6-5 全市各民族的死亡人口(2009.11.1-2010.10.31).xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562209447450.xls" href="./W020160620562209447450.xls">7-1 全市按现住地、户口登记地、性别分的户口登记地在外乡镇街道的人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562209504837.xls" href="./W020160620562209504837.xls">7-2 全市按户口登记地、年龄、性别分的户口登记地在外乡镇街道的人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562209572157.xls" href="./W020160620562209572157.xls">7-3 全市按现住地、性别分的户口登记地在外省的人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562209670381.xls" href="./W020160620562209670381.xls">7-4 全市按现住地、离开户口登记地时间分的户口登记地在外乡镇街道的人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562209737591.xls" href="./W020160620562209737591.xls">7-5 全市按户口登记地、性别、受教育程度分的户口登记地在外乡镇街道的人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620562209793895.xls" href="./W020160620562209793895.xls">7-6 全市按现住地、受教育程度、性别分的户口登记地在本省其他乡镇街道人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571301101390.xls" href="./W020160620571301101390.xls">7-7 全市按现住地、受教育程度、性别分的户口登记地在外省人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571301185844.xls" href="./W020160620571301185844.xls">7-8 全市分年龄、性别、迁移原因的户口登记地在外乡镇街道的人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571301254165.xls" href="./W020160620571301254165.xls">7-9 全市按现住地、性别、迁移原因分的户口登记地在本省其他乡镇街道人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571301326473.xls" href="./W020160620571301326473.xls">7-10 全市按现住地、性别、迁移原因分的户口登记地在外省人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571301392996.xls" href="./W020160620571301392996.xls">8-1 各地区按住房间数分的家庭户户数.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571301456108.xls" href="./W020160620571301456108.xls">8-2 各地区按人均住房建筑面积分的家庭户户数.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571301502416.xls" href="./W020160620571301502416.xls">8-3 各地区按家庭户类别和住房间数分的家庭户户数.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571301574622.xls" href="./W020160620571301574622.xls">8-4 全市按户主的受教育程度分的家庭户住房状况.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571301625057.xls" href="./W020160620571301625057.xls">8-5 全市按户主受教育程度、人均住房建筑面积分的家庭户户数.xls</a></p>
+<p align="justify">　　第二部分 &nbsp;长表数据资料</p>
+<p align="justify">　　<a oldsrc="W020160620571301829367.xls" href="./W020160620571301829367.xls">1-1 各地区户数、人口数和性别比.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571301881893.xls" href="./W020160620571301881893.xls">1-2 各地区分性别的农业户口、非农业户口人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571301941771.xls" href="./W020160620571301941771.xls">1-3 各地区分年龄、性别的人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571302035720.xls" href="./W020160620571302035720.xls">1-4 全市分年龄、性别的人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571302097549.xls" href="./W020160620571302097549.xls">2-1 全市各民族分性别、行业的人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571302192858.xls" href="./W020160620571302192858.xls">2-2 全市各民族分性别、职业的人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571302254498.xls" href="./W020160620571302254498.xls">2-3 全市各民族分性别的未工作人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571302347683.xls" href="./W020160620571302347683.xls">2-4 全市各民族分性别、婚姻状况的15岁及以上人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571302403692.xls" href="./W020160620571302403692.xls">2-5 全市按民族、生育孩次分的育龄妇女人数(2009.11.1-2010.10.31).xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571302473273.xls" href="./W020160620571302473273.xls">2-6 全市各民族15-64岁妇女平均活产子女数和平均存活子女数.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571302520096.xls" href="./W020160620571302520096.xls">3-1 全市分学业完成情况、性别、受教育程度的6岁及以上人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571302581618.xls" href="./W020160620571302581618.xls">3-2 全市分年龄、性别、学业完成情况的6岁及以上各种受教育程度人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571302671089.xls" href="./W020160620571302671089.xls">4-1 各地区分性别的16岁及以上人口的就业状况.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571302744521.xls" href="./W020160620571302744521.xls">4-2 全市分年龄、性别的16岁及以上人口的就业状况.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571302810286.xls" href="./W020160620571302810286.xls">4-3 全市分受教育程度、性别的16岁及以上人口的就业状况.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571302864279.xls" href="./W020160620571302864279.xls">4-4 各地区分性别、行业大类的就业人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571303135990.xls" href="./W020160620571303135990.xls">4-5 全市分年龄、性别、行业大类的就业人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571303232744.xls" href="./W020160620571303232744.xls">4-6 全市分受教育程度、性别、行业中类的就业人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571303460560.xls" href="./W020160620571303460560.xls">4-7 各地区分性别、职业中类的就业人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571303651583.xls" href="./W020160620571303651583.xls">4-8 全市分年龄、性别、职业中类的就业人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571303738429.xls" href="./W020160620571303738429.xls">4-9 各地区分性别、受教育程度的就业人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571304302039.xls" href="./W020160620571304302039.xls">4-10 各地区分性别、周工作时间的正在工作人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571304386216.xls" href="./W020160620571304386216.xls">4-11 全市分年龄、性别、周工作时间的正在工作人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571304442673.xls" href="./W020160620571304442673.xls">4-12 全市分性别、行业中类、周工作时间的正在工作人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571304710620.xls" href="./W020160620571304710620.xls">4-13 全市分性别、职业小类、周工作时间的正在工作人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571304990369.xls" href="./W020160620571304990369.xls">4-14 各地区分性别、未工作原因的失业人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571305066109.xls" href="./W020160620571305066109.xls">4-15 全市分年龄、性别、未工作原因的失业人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571305127012.xls" href="./W020160620571305127012.xls">4-16 全市分受教育程度、性别、未工作原因的失业人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571305170045.xls" href="./W020160620571305170045.xls">4-17 各地区分性别、未工作时间的失业人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571305248978.xls" href="./W020160620571305248978.xls">4-18 全市分年龄、性别、未工作时间的失业人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571305293007.xls" href="./W020160620571305293007.xls">4-19 全市分受教育程度、性别、未工作时间的失业人口.xls</a></p>
+<p align="justify">　　<a href="./W020160817374971759889.xls" OLDSRC="W020160817374971759889.xls">4-20 各地区分性别、未工作原因的非经济活动人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571305352861.xls" href="./W020160620571305352861.xls">4-21 全市分年龄、性别、未工作原因的非经济活动人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620571305404800.xls" href="./W020160620571305404800.xls">4-22 全市分受教育程度、性别、未工作原因的非经济活动人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583858865950.xls" href="./W020160620583858865950.xls">5-1 各地区分性别、婚姻状况的15岁及以上人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583858942494.xls" href="./W020160620583858942494.xls">5-2 全市分性别、职业、婚姻状况的人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583858996047.xls" href="./W020160620583858996047.xls">5-3 全市分年龄、性别、受教育程度、婚姻状况的人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583859111743.xls" href="./W020160620583859111743.xls">5-4 全市分初婚年龄、性别、初婚年份的人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583859200757.xls" href="./W020160620583859200757.xls">5-5 全市分年龄、性别、初婚年龄的人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583859288384.xls" href="./W020160620583859288384.xls">5-6 全市分性别、受教育程度、初婚年龄的人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583859341750.xls" href="./W020160620583859341750.xls">6-1 各地区分性别、孩次的出生人口(2009.11.1-2010.10.31).xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583859413161.xls" href="./W020160620583859413161.xls">6-2 全市按年龄、受教育程度、生育孩次分的育龄妇女人数(2009.11.1-2010.10.31).xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583859513495.xls" href="./W020160620583859513495.xls">6-3 全市育龄妇女分年龄、孩次的生育状况(2009.11.1-2010.10.31).xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583859726947.xls" href="./W020160620583859726947.xls">6-4 各地区育龄妇女年龄别生育率及总和生育率.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583859785501.xls" href="./W020160620583859785501.xls">6-5 各地区按活产子女数分的15-64岁妇女人数.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583859849018.xls" href="./W020160620583859849018.xls">6-6 全市按受教育程度、活产子女数分的15-64岁妇女人数.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583859895050.xls" href="./W020160620583859895050.xls">6-7 全市按职业、活产子女数分的15-64岁妇女人数.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583859947011.xls" href="./W020160620583859947011.xls">6-8 各地区按存活子女数分的15-64岁妇女人数.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583860002558.xls" href="./W020160620583860002558.xls">6-9 全市按受教育程度、存活子女数分的15-64岁妇女人数.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583860058570.xls" href="./W020160620583860058570.xls">6-10 全市按职业、存活子女数分的15-64岁妇女人数.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583860107802.xls" href="./W020160620583860107802.xls">6-11 各地区15-64岁妇女平均活产子女数和平均存活子女数.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583860165522.xls" href="./W020160620583860165522.xls">6-12 全市按年龄分的15-64岁妇女平均活产子女数和平均存活子女数.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583860229683.xls" href="./W020160620583860229683.xls">6-13 全市按受教育程度分的15-64岁妇女平均活产子女数和平均存活子女数.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583860278921.xls" href="./W020160620583860278921.xls">7-1 全市按现住地、户口登记地类型分的户口登记地在外乡镇街道人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583860341532.xls" href="./W020160620583860341532.xls">7-2 全市按现住地、职业和性别分的户口登记地在本省其他乡镇街道人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583860407851.xls" href="./W020160620583860407851.xls">7-3 全市按现住地、职业和性别分的户口登记地在外省人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583860473246.xls" href="./W020160620583860473246.xls">7-4 全市按现住地、户口登记地、孩次分的2009.11.1-2010.10.31有过生育的妇女人数.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583860532143.xls" href="./W020160620583860532143.xls">7-5 全市按现住地、户口登记地类型、受教育程度分的户口登记地在本省其他乡镇街道人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583860607571.xls" href="./W020160620583860607571.xls">7-6 全市按现住地、户口登记地类型、受教育程度分的户口登记地在外省人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583860932439.xls" href="./W020160620583860932439.xls">7-7 全市按现住地和出生地分的人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583861001092.xls" href="./W020160620583861001092.xls">7-8 全市按现住地和五年前常住地分的人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583861073782.xls" href="./W020160620583861073782.xls">8-1 各地区分性别、健康状况的60岁及以上老年人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583861147923.xls" href="./W020160620583861147923.xls">8-2 全市分年龄、性别、健康状况的60岁及以上老年人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583861197163.xls" href="./W020160620583861197163.xls">8-3 全市分性别、婚姻状况、健康状况的60岁及以上老年人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583861241648.xls" href="./W020160620583861241648.xls">8-4 全市分性别、主要生活来源、健康状况的60岁及以上老年人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583861298610.xls" href="./W020160620583861298610.xls">8-5 各地区分性别、主要生活来源的60岁及以上老年人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583861365905.xls" href="./W020160620583861365905.xls">8-6 各地区分性别、主要生活来源的65岁及以上老年人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583861426201.xls" href="./W020160620583861426201.xls">8-7 全市分年龄、性别、主要生活来源的45岁及以上人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583861497434.xls" href="./W020160620583861497434.xls">8-8 全市分性别、婚姻状况、主要生活来源的60岁及以上老年人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583861541040.xls" href="./W020160620583861541040.xls">8-9 全市分性别、婚姻状况、主要生活来源的65岁及以上老年人口.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583861594920.xls" href="./W020160620583861594920.xls">9-1 各地区按住房用途、建筑层数、承重类型分的家庭户户数.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583861660427.xls" href="./W020160620583861660427.xls">9-2 各地区按住房建成年代分的家庭户住房状况.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583861739118.xls" href="./W020160620583861739118.xls">9-3 各地区按住房设施状况分的家庭户户数.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583861797021.xls" href="./W020160620583861797021.xls">9-4 各地区按住房来源分的家庭户户数.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583861852365.xls" href="./W020160620583861852365.xls">9-5 各地区按月租房费用分的家庭户户数.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583861911373.xls" href="./W020160620583861911373.xls">9-6 各地区按住房来源分的同时拥有厨房和厕所的家庭户户数.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583861970593.xls" href="./W020160620583861970593.xls">9-7 全市按户主的受教育程度、住房来源分的家庭户户数.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583862021413.xls" href="./W020160620583862021413.xls">9-8 全市按户主的受教育程度、月租房费用分的家庭户户数.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583862076427.xls" href="./W020160620583862076427.xls">9-9 全市按户主的职业、住房来源分的家庭户户数.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583862128682.xls" href="./W020160620583862128682.xls">9-10 全市按户主的职业、月租房费用分的家庭户户数.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583862445135.xls" href="./W020160620583862445135.xls">9-11 全市按户主的职业分的家庭户住房状况.xls</a></p>
+<p align="justify">　　<a oldsrc="W020160620583862509869.xls" href="./W020160620583862509869.xls">9-12 全市按户主的职业、人均住房建筑面积分的家庭户户数.xls</a></p>
+							<br/>
+								<script type="text/javascript"> 
+									var a= '';
+									if(a!==""){
+										document.write('<p class="list_fujian">附件：</p>');
+									}else{
+										document.write("");
+									}
+								</script>
+								<style>
+								.fjstyle * {font-size:14px; line-height:30px;}
+								.fjstyle a:hover{color:#3dacff;}
+								</style>
+								<li class="fjstyle"></li>
+								<li></li>
+						</div>
+	
+					</div>
+				</div>
+			</div>
+	
+		</div>
+        <!----------------中间主内容结束-------------------------->
+    </div>
+  
+<!--底部开始-->
+<div class="footer">
+			<div class="xl">
+				
+				<select name="jumpMenu1" id="jumpMenu" class="xl1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0"> 
+					<option value="">深圳市网站</option> 
+					
+					<option value="http://www.sz.gov.cn">深圳市政府在线</option> 
+					
+					<option value="http://www.szpb.gov.cn/">发展和改革委员会</option> 
+					
+					<option value="http://www.szjmxxw.gov.cn/">经济贸易和信息化委员会</option> 
+					
+					<option value="http://www.szsti.gov.cn/">科技创新委员会</option> 
+					
+					<option value="http://www.szfb.gov.cn/">财政委员会</option> 
+					
+					<option value="http://www.szpl.gov.cn/">规划和国土资源委员会</option> 
+					
+					<option value="http://www.szscjg.gov.cn">市场和质量监督管理委员会</option> 
+					
+					<option value="http://www.szhec.gov.cn/">人居环境委员会</option> 
+					
+					<option value="http://www.sztb.gov.cn">交通运输委员会</option> 
+					
+					<option value="http://www.szhfpc.gov.cn/">卫生和计划生育委员会</option> 
+					
+					<option value="http://szeb.sz.gov.cn/">教育局</option> 
+					
+					<option value="http://www.szga.gov.cn/">公安局</option> 
+					
+					<option value="http://www.sz-jc.gov.cn/">监察局</option> 
+					
+					<option value="http://www.szmz.sz.gov.cn/">民政局</option> 
+					
+					<option value="http://www.szsf.gov.cn/">司法局</option> 
+					
+					<option value="http://www.szhrss.gov.cn/">人力资源和社会保障局</option> 
+					
+					<option value="http://www.szwtl.gov.cn/">文体旅游局</option> 
+					
+					<option value="http://www.szaudit.gov.cn/">审计局</option> 
+					
+					<option value="http://www.szgzw.gov.cn">国有资产监督管理委员会</option> 
+					
+					<option value="http://www.szjs.gov.cn/">住房和建设局</option> 
+					
+					<option value="http://www.szwrb.gov.cn/">水务局</option> 
+					
+					<option value="http://www.szds.gov.cn/">地方税务局</option> 
+					
+					<option value="http://www.sztj.gov.cn">统计局</option> 
+					
+					<option value="http://www.szum.gov.cn/">城市管理局</option> 
+					
+					<option value="http://www.szmb.gov.cn">气象局（台）副局</option> 
+					
+					<option value="http://www.szka.gov.cn/">口岸办公室</option> 
+					
+					<option value="http://fzj.sz.gov.cn/">法制办公室</option> 
+					
+					<option value="http://www.szfao.gov.cn/">外事办公室</option> 
+					
+					<option value="http://www.tb.sz.gov.cn/">台湾事务办公室</option> 
+					
+					<option value="http://www.szemo.gov.cn/">应急管理办公室</option> 
+					
+					<option value="http://www.jr.sz.gov.cn/">金融发展服务办公室</option> 
+					
+					<option value="http://www.stc.gov.cn/">公安局交通警察局</option> 
+					
+					<option value="http://www.szsi.gov.cn/">社会保险基金管理局</option> 
+					
+					<option value="http://www.szzw.gov.cn/">政务服务管理办公室</option> 
+					
+					<option value="http://www.szqh.gov.cn/">前海深港现代服务业合作区管理局</option> 
+					
+					<option value="http://www.szwb.gov.cn/">建筑工务署</option> 
+					
+					<option value="http://www.szdaj.gov.cn/">档案局</option> 
+					
+					<option value="http://www.szradio.gov.cn/">无线电管理局</option> 
+					
+					<option value="http://www.cgzx.sz.gov.cn">政府采购中心</option> 
+					
+					<option value="http://www.szinvest.gov.cn/">投资推广署</option> 
+					
+					<option value="http://www.szzfgjj.com/">住房公积金管理中心</option> 
+					
+				</select> 
+				
+				
+				<select name="jumpMenu1" id="jumpMenu" class="xl1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0"> 
+					<option value="">各区统计机构网站</option> 
+					
+					<option value="http://www.szft.gov.cn/bmxx/qtjj/ywdt/">福田区统计局</option> 
+					
+					<option value="http://www.szlh.gov.cn/icatalog/98/B217/07/07-01/index.shtml">罗湖区统计局</option> 
+					
+					<option value="http://www.szns.gov.cn/tjj/index/index.html">南山区统计局</option> 
+					
+					<option value="http://www.yantian.gov.cn/icatalog/bm/fzhggj/01/jggk/index.shtml">盐田区统计局</option> 
+					
+					<option value="http://tjj.baoan.gov.cn/">宝安区统计局</option> 
+					
+					<option value="http://www.tjj.lg.gov.cn/szslgtjxxw/index.shtml">龙岗区统计局</option> 
+					
+					<option value="http://www.szgm.gov.cn/fzczj/137031/137102/index.html">光明新区发展和财政局</option> 
+					
+					<option value="http://www.psxq.gov.cn/main/xxgk/gbmxxgk/fzhczj/jjzn/jggk/index.shtml">坪山新区发展和财政局</option> 
+					
+					<option value="http://www.szlhxq.gov.cn/lhxinqu/zfxxgkzl/bmxxgkml/fzhczj73/jgzn85/jggk20/index.html">龙华新区发展和财政局</option> 
+					
+					<option value="http://www.dpxq.gov.cn/tjsj/index.htm">大鹏新区发展和财政局</option> 
+					
+				</select> 
+				
+				
+				<select name="jumpMenu1" id="jumpMenu" class="xl1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0"> 
+					<option value="">其他网站</option> 
+					
+					<option value="http://www.stats.gov.cn">国家统计局</option> 
+					
+					<option value="http://www.gdstats.gov.cn">广东省统计局</option> 
+					
+					<option value="http://www.bjstats.gov.cn">北京市统计局</option> 
+					
+					<option value="http://www.stats-sh.gov.cn/">上海市统计局</option> 
+					
+					<option value="http://www.stats-tj.gov.cn">天津市统计局</option> 
+					
+					<option value="http://www.cqtj.gov.cn/">重庆统计信息网</option> 
+					
+					<option value="http://www.stats.hainan.gov.cn/">海南省统计局</option> 
+					
+					<option value="http://www.ahtjj.gov.cn/">安徽统计信息网</option> 
+					
+					<option value="http://www.jxstj.gov.cn/">江西省统计局</option> 
+					
+					<option value="http://www.stats-hb.gov.cn/">湖北省统计局</option> 
+					
+					<option value="http://www.hntj.gov.cn/">湖南统计信息网</option> 
+					
+					<option value="http://tjj.jl.gov.cn/">吉林统计信息网</option> 
+					
+					<option value="http://www.ln.stats.gov.cn">辽宁统计信息网</option> 
+					
+					<option value="http://www.hlj.stats.gov.cn/">黑龙江省统计局</option> 
+					
+					<option value="http://www.nmgtj.gov.cn/">内蒙古自治区统计局</option> 
+					
+					<option value="http://www.hetj.gov.cn/">河北省统计局</option> 
+					
+					<option value="http://www.ha.stats.gov.cn">河南统计网</option> 
+					
+					<option value="http://www.stats-sd.gov.cn">山东统计信息网</option> 
+					
+					<option value="http://www.stats-sx.gov.cn/">山西统计信息网</option> 
+					
+					<option value="http://www.gz.stats.gov.cn">贵州统计信息网</option> 
+					
+					<option value="http://www.sc.stats.gov.cn">四川省统计局</option> 
+					
+					<option value="http://www.stats.yn.gov.cn">云南省统计局</option> 
+					
+					<option value="http://tjj.xjbt.gov.cn/">新疆生产建设兵团统计局</option> 
+					
+					<option value="http://www.shaanxitj.gov.cn/">陕西省统计局</option> 
+					
+					<option value="http://www.gscn.com.cn/pub/gssj/">甘肃数据</option> 
+					
+					<option value="http://www.nxtj.gov.cn/">宁夏统计局</option> 
+					
+					<option value="http://www.qhtjj.gov.cn/">青海统计信息网</option> 
+					
+					<option value="http://www.zj.stats.gov.cn/">浙江统计信息网</option> 
+					
+					<option value="http://www.jssb.gov.cn/">江苏省统计局</option> 
+					
+					<option value="http://www.stats-fj.gov.cn/">福建省统计局</option> 
+					
+					<option value="http://www.censtatd.gov.hk/">香港特别行政区政府统计处</option> 
+					
+					<option value="http://www.dsec.gov.mo/default.aspx">澳门特别行政区政府统计暨普查局</option> 
+					
+				</select> 
+				
+			</div>
+			<div class="fonter_nav">
+				<a href="../../../../fzlm/wzdh/" class="fonter_nav_a1">网站导航</a>
+				<a href="../../../../fzlm/lxwm/">联系我们</a>
+				<a href="../../../../fzlm/gywm/">版权保护</a>
+				<a href="../../../../fzlm/yssm/">隐私声明</a>
+				<a href="../../../../fzlm/wzbz/" style="border: none;">网站帮助</a>
+			</div>
+			
+			<div class="footer_add">
+				<div class="footer_add_left">
+					<p>
+						<!--办公地址：深圳市福田区上步中路1001号科技大厦12至14楼<br />咨询电话：(0755)82928319 如果您有任何意见或建议，请惠赐E-mail至：zxjy@sztj.sz.gov.cn<br />-->未经许可不得转载、复制 深圳市统计局 主办 备案号：<a href="http://www.miitbeian.gov.cn/"  target="_blank">粤ICP备05017767号</a><br />为保证良好的浏览质量，建议使用IE7.0及以上版本浏览器<br />技术支持：深圳市意盛文化传播有限公司
+					</p>
+				</div>
+				<div class="footer_add_right">
+					<a href="http://bszs.conac.cn/sitename?method=show&id=0B05F387305011B6E053012819AC2148" target="_blank"><img src="../../../../images/2016_tjj_dz.png" /></a>
+					<a href="http://61.144.227.239:9003/webrecord/form_query.jsp" target="_blank"><img src="../../../../images/2016_tjj_wa.png" /></a>
+					<a href="http://www.sznet110.gov.cn/index.jsp" target="_blank"><img src="../../../../images/2016_tjj_sz.png" /></a>
+					<a><script id="_jiucuo_" sitecode='4403000017' src='../../../../images/jiucuo.js'></script></a>
+				</div>
+			</div>
+		</div>
+<!--底部结束-->
+
+</body>
+</html>
+<script type="text/javascript">
+	//保护色
+	$(".bh").click(function() {
+		var a=$(this).css("backgroundColor");
+		$('.content_nr').css('background-color', a);
+	});
+	//	字体大小
+	$('.pmr').click(function() {
+		$('.zhengwen *').css({
+			'font-size': '14px',
+			'line-height': '21px'
+		});
+	});
+	$('.pda').click(function() {
+		$('.zhengwen *').css({
+			'font-size': '16px',
+			'line-height': '28px'
+		});
+	});
+	$('.pzhong').click(function() {
+		$('.zhengwen *').css({
+			'font-size': '14px',
+			'line-height': '26px'
+		});
+	});
+	$('.pxiao').click(function() {
+		$('.zhengwen *').css({
+			'font-size': '12px',
+			'line-height': '24x'
+		});
+	});
+</script>
