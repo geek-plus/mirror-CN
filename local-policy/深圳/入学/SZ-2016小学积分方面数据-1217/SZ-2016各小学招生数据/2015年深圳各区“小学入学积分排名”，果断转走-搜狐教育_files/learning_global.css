@@ -1,0 +1,116 @@
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, meter, nav, object, ol, output, p, pre, progress, q, rp, rt, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, time, tt, u, ul, var, video, xmp {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+table, tbody, td, tfoot, th, thead, tr,{
+ 	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+html, body {height: 100%;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+b, strong {font-weight: bold;}
+img {color: transparent;font-size: 0;-ms-interpolation-mode: bicubic;}
+ol, ul {list-style: none;}
+li {display: list-item;}
+table {	border-collapse: collapse;	border-spacing: 0;}
+th, td, caption {font-weight: normal;vertical-align: top;}
+q {quotes: none;}
+q:before, q:after {content: '';content: none;}
+sub, sup, small {font-size: 75%;}
+sub, sup {line-height: 0;	position: relative;vertical-align: baseline;}
+sub {bottom: -0.25em;}
+sup {top: -0.5em;}
+svg {overflow: hidden;}
+
+/* 全局CSS定义 */
+body{margin:0 auto;background:#FFF;color:#666;font-family:"微软雅黑","宋体";font-size:12px;line-height:14px;}
+em,i{font-style:normal;}
+h1,h2,h3,h4,h5,h6{font-size:12px;font-weight:normal;}
+input,textarea{font-size:12px;padding:0;margin:0}
+/* 链接颜色 */
+a{color:#333;text-decoration:none;}
+a:hover{color:#C00;text-decoration:underline;}
+/* 标题 */
+h2{text-align:right;}
+h2 span{float:left;font-weight:bold;}
+
+.clear,.area,.pic-group,.pic-text{zoom:1}
+.show{display:block;}
+.hidden{display:none;}
+.pic-group,.pic-text,.list12 ul,.list14 ul,.area{width:100%;margin:0 auto;}
+.pic-group:after,.pic-text:after,.area:after,.clear:after{content:".";display:block;visibility:hidden;height:0;clear:both;}
+.pic-group{text-align:center;}
+.pic-group li{float:left;display:inline;width:100%;}
+.pic-group img{display:block;margin:0 auto;}	/*组图内图片属性*/
+.pic-group span{display:block;}
+.pic-text{color:#666;line-height:20px;text-align:left;}
+.pic-text div{float:left;margin:0 10px 0 0;_margin-right:7px;}			/*图文混排*/
+.pic-text p{clear:none}
+/* 文字列表属性 */
+.list14 li,.list12 li{padding:3px 0;color:#333;font-size:12px;line-height:16px;text-align:left;}
+.list14 li{padding:4px 0;font-size:14px;}
+/* 浮动属性 */
+.left,.center,.l,.right,.r,.c{display:inline;float:left;}
+.right,.r{float:right;}
+.fontArial{font-family:'Arial'}
+.blank5,.blank8{height:5px;font-size:1px;}
+.blank8{height:8px;}
+.more{text-align:right;}/* 更多 */
+.area{width:1000px;}/*页面属性 */
+
+/* logo-intro */
+#logo-intro{height:106px}
+#logo-intro .left{width:210px;margin:22px auto 0}
+#logo-intro .right{width:790px}
+#logo-intro .right .l{width:450px;margin:20px auto 0 7px}
+#logo-intro .search{position:relative;width:400px;height:32px;border:1px #FF7D7A solid;border-radius:4px;z-index:200}
+#logo-intro .search .sele{z-index:200;position:relative;float:left;width:65px;height:32px;font-size:14px;background:#F7F7F7;border-right:1px #DBDADA solid;border-radius:4px 0 0 4px;}
+#logo-intro .search .sele .cur-res{cursor:pointer;padding-left:12px;line-height:32px}
+#logo-intro .search .sele ul{display:none;position:absolute;left:-1px;top:32px;width:65px;border:1px #DBDADA solid;border-top:0;background:#fff;}
+#logo-intro .search .sele li{cursor:pointer;color:#8C8C8C;padding-left:14px;height:32px;line-height:32px;border-top:1px #DBDADA solid}
+#logo-intro .search .sele li:hover{color:#49B3C8;background:#F7F7F7}
+#logo-intro .search .sele .arrow{cursor:pointer;position:absolute;top:15px;right:5px;width:8px;height:5px;transition: all 0.2s ease-in-out 0s;overflow:hidden;background:url(http://travel.sohu.com/upload/20140924/images20140912/bg01.gif)}
+#logo-intro .search .sele:hover .arrow{transform:rotate(180deg);-o-transform:rotate(180deg);-moz-transform:rotate(180deg);-webkit-transform:rotate(180deg);transform-origin:50%, 2px;}
+#logo-intro .search .search-txt{border:0;margin:5px 0 0 14px;margin-top:6px !important;display:inline;float:left;width:210px;height:20px;color:#CDCDCD;font:16px/18px "微软雅黑","宋体";outline:none}
+#logo-intro .search .search-btn{float:right;cursor:pointer;width:82px;height:32px;border:0;background:url(http://learning.sohu.com/upload/learning20141111/bg01.gif)}
+#logo-intro .hot-rec{margin:6px auto 0;line-height:26px;font-size:12px;padding-left:3px}
+#logo-intro .hot-rec a{margin-right:12px}
+#logo-intro .hot-rec span{color:#FF7D7A}
+#logo-intro .right .r{margin:20px auto 0}
+
+.tt-dropdown-menu{display:block;border:1px #DBDADA solid;width:240px;border-top:0;position:absolute;top:34px !important;left:65px;background:#fff;}
+.tt-dropdown-menu .tt-suggestion{font-size:14px;padding-left:15px;line-height:32px;border-top:1px #DBDADA solid;cursor:pointer;}
+.tt-dropdown-menu .tt-suggestion:hover{color:#49B3C8;background:#F7F7F7}
+
+/* nav */
+.nab-bg,#nav{background:#49B3C8;height:38px}
+#nav li{float:left;height:38px;width:90px;font-size:16px;text-align:center;line-height:38px;background:url(http://learning.sohu.com/upload/learning20141111/bg02.gif) no-repeat right 11px}
+#nav a{color:#fff}
+#nav .first{cursor:pointer;position:relative;background:#2D9FB3;width:212px;text-align:center;padding:0;z-index:100;}
+#nav .first a{padding-left:26px;display:inline-block;background:url(http://travel.sohu.com/upload/page20140905/images20140905/bg07.gif) no-repeat 0 12px}
+#nav .end{background:none}
+#nav .first .arrow{position:absolute;top:17px;right:30px;width:10px;height:6px;transition: all 0.2s ease-in-out 0s;overflow:hidden;background:url(http://learning.sohu.com/upload/learning20141111/bg05.gif)}
+#nav .first:hover .arrow{transform:rotate(180deg);-o-transform:rotate(180deg);-moz-transform:rotate(180deg);-webkit-transform:rotate(180deg);transform-origin:50%, 2px;}
+
+#nav .layer-box{display:none;position:absolute;left:0;top:38px;border:1px #DEDEDE solid;border-top:0;width:210px;background:#fff;box-shadow:3px 3px 3px #EFEEEE;}
+#nav .layer-box .box{clear:both;padding:11px 0 5px;border-top:1px #EBEBEB solid;text-align:left}
+#nav .layer-box .box a{background:none;padding:0}
+#nav .layer-box .box h4{padding-left:52px;margin:0 auto 6px;color:#49B3C8;font-size:16px;line-height:26px;background:url(http://learning.sohu.com/upload/learning20141111/icon.gif) no-repeat 15px 0}
+#nav .layer-box .box h4 a{color:#49B3C8}
+#nav .layer-box .box p{font:12px/20px "宋体";padding-left:4px}
+#nav .layer-box .box p a{margin-left:12px;color:#666}
+#nav .layer-box .box .red a{color:#FF5B56}
+#nav .layer-box .boxB h4{background-position:15px -30px}
+#nav .layer-box .boxC h4{background-position:15px -60px}
+#nav .layer-box .boxD h4{background-position:15px -90px}
+#nav .layer-box .boxE h4{background-position:15px -120px}
+#nav .layer-box .boxF h4{background-position:15px -150px}
+
+#nav .link{float:right;width:110px;padding:6px 0 0 36px;height:32px;font-size:14px;line-height:26px;background:url(http://learning.sohu.com/upload/learning20141111/bg03.gif)}
+#nav .link img{width:26px;height:26px;float:left;margin-right:10px;border-radius:13px}
+
+/* 标准底 */
+#foot{width:1000px;margin:30px auto;padding:10px 0 0;border-top:1px solid #333;color:#333;line-height:22px;text-align:center}
