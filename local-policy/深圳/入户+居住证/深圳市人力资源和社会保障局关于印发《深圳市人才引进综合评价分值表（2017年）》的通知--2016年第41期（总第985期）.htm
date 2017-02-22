@@ -1,0 +1,2952 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="zh-CN";>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+<link rel="shortcut icon" type="image/x-icon" href="http://www.sz.gov.cn/cn/images/favicon.ico" media="screen" />
+<title>深圳市人力资源和社会保障局关于印发《深圳市人才引进综合评价分值表（2017年）》的通知--2016年第41期（总第985期）</title>
+<!--内页公共样式开始-->
+<link rel="stylesheet" type="text/css" href="http://www.sz.gov.cn/cn/images/neiye20160809.css" />
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/jquery.min20160809.js"></script>
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/zx_conter_animate.js"></script>	
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/jquery.backstretch.js"></script>	
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/rightNav20160809.js"></script>	
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/page.js"></script>
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/slideshow20160809.js"></script>
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/yahoo-dom-event.js"></script>
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/suggest-yui2_20161128.js"></script>
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/jquery.cookie.min.js"></script>
+<script type="text/javascript">
+window.onload = function()
+{
+var ispromptshown = $.cookie('ispromptshown');
+if (ispromptshown == "false") return ;
+var dataUrl ='http://61.144.227.212/was5/web/searchsuggest?AppServerEncoding=gb2312&StringEncoding=gb2312&result=false';
+var inputid = "sr";
+var data = {
+autoFocus: true,
+useShim:false,
+resultFormat: '约%result%条结果'
+}
+new TRSWAS.Suggest(inputid, dataUrl, data);
+
+
+$.ajax({
+        type:"get",
+        url:"http://61.144.227.212/was5/web/tagscloud/hotword.jsp?channelid=211631",
+        cache : false,
+        dataType : "jsonp",
+        jsonp: "callbackparam",
+        jsonpCallback:"jsonpCallback",
+        success:function(data){
+            var datalist = data.result;
+            var sr_html="<span>热门搜索：</span>";
+            var list_html = "";
+            var en_url =""
+            for(var i=0;i<datalist.length;i++){
+               en_url = encodeURI("http://61.144.227.212/was5/web/search?channelid=211631&searchword="+datalist[i].split("#")[0]);
+               if(i<5)
+                  sr_html+="<a href='"+en_url+"' target='_blank'>"+datalist[i].split("#")[0]+"</a>";
+               var num=i+1;
+               list_html+="<tr><td class='td01'><label class='l"+num+"'>"+num+"</label></td><td><a href='"+en_url+"' target='_blank'>"+datalist[i].split("#")[0]+"</a></td></tr>";
+            }
+            $(".guanjz").html(sr_html);
+            $(".mt10").html(list_html);
+            
+        },error: function(XMLHttpRequest, textStatus, errorThrown) {
+
+        }
+     });    
+
+
+};
+
+$(function(){
+
+   setInterval('bgchange()',3000);
+
+
+})
+
+function checkForm(){
+   var searchword = $("#sr").val();
+         if(searchword==null||searchword==""){
+            alert("请输入关键词");
+            return false;
+         }
+         $("#searchform").attr("action","http://61.144.227.212/was5/web/search");
+         document.charset="utf-8";
+         $("#searchform").submit();
+
+
+}
+
+function bgchange(){
+   var date= new Date();
+    var hours=date.getHours();
+    if(parseInt(hours)>=6 && parseInt(hours)<17){
+      
+	    $.backstretch([ 
+          "http://www.sz.gov.cn/cn/ggzy/bjdt/images/P020161108359190620774.jpg"
+        ], {
+            fade: 50,
+            duration: 1000
+        });
+
+   
+
+    }else if(parseInt(hours)>=17 && parseInt(hours)<19) {
+	    $.backstretch([
+          "http://www.sz.gov.cn/cn/ggzy/bjdt/images/P020161111655114902887.jpg"
+        ], {
+            fade: 50,
+            duration: 1000
+        });
+      
+    }else if((parseInt(hours)>=19 && parseInt(hours)<=24) ||(parseInt(hours)>=0 && parseInt(hours)<6)) {
+	    $.backstretch([
+          "http://www.sz.gov.cn/cn/ggzy/bjdt/images/P020161111655171248036.jpg"
+        ], {
+            fade: 50,
+            duration: 1000
+        });
+      
+    }
+}
+
+</script>
+<!--网站行为分析开始-->
+<script language="JavaScript">var _trackDataType = 'web';var _trackData = _trackData || [];var _$count_iframe =true;</script>
+<script type="text/javascript" charset="utf-8" id="phpstat_js_id_10000003" src="//218.17.83.66:8000/phpstat/count/10000003/10000003.js"></script><noscript><img src="//218.17.83.66:8000/phpstat/count/10000003/10000003.php" alt="PHPStat Analytics" /></noscript>
+<!--网站行为分析结束-->
+<!--内页公共样式结束-->	
+
+<style>
+.zx_xxgk_pr .code{height: 30px;line-height: 30px;color: #003d93;font-size: 14px;margin: 0 20px;overflow: hidden;margin-bottom: 20px;}
+.zx_xxgk_pr .code input{color: #8e8e8f;height: 26px;border: 1px solid #e2e2e2;line-height: 26px;width: 100px;margin: 0 20px 0 0;}
+</style>	
+</head>
+<body>
+<!--背景切换开始-->
+<script>
+
+    var date= new Date();
+    var hours=date.getHours();
+    if(parseInt(hours)>=6 && parseInt(hours)<17){
+      
+	    $.backstretch([ 
+          "http://www.sz.gov.cn/cn/ggzy/bjdt/images/P020161108359190620774.jpg"
+        ], {
+            fade: 50,
+            duration: 1000
+        });
+
+   
+
+    }else if(parseInt(hours)>=17 && parseInt(hours)<19) {
+	    $.backstretch([
+          "http://www.sz.gov.cn/cn/ggzy/bjdt/images/P020161111655114902887.jpg"
+        ], {
+            fade: 50,
+            duration: 1000
+        });
+      
+    }else if((parseInt(hours)>=19 && parseInt(hours)<=24) ||(parseInt(hours)>=0 && parseInt(hours)<6)) {
+	    $.backstretch([
+          "http://www.sz.gov.cn/cn/ggzy/bjdt/images/P020161111655171248036.jpg"
+        ], {
+            fade: 50,
+            duration: 1000
+        });
+      
+    }
+
+
+
+
+</script>
+<!--背景切换结束-->
+<div id="top_bg" class="top_bg" >
+<div class="top_bg_con">
+<!--头部开始-->
+<div class="top_menu" style="width:648px">
+   	  <ul  style="padding: 0 12px;">
+       	  <li class="wza_tb" style="margin: 0 5px 0 4px;"><span></span><a href="http://wza.sz.gov.cn:9000/" target="_blank">无障碍浏览</a>|</li>
+       	  <li style="margin: 0 5px 0 0;"><a style="padding: 0 5px 0 0;" href="http://203.91.55.40:9000/b5/www.sz.gov.cn/cn/" target="_blank">繁体版</a>|</li>
+          <li style="margin: 0 5px 0 0;"><a style="padding: 0 5px 0 0;" href="http://english.sz.gov.cn/" target="_blank">English</a>|</li>
+          <li style="margin: 0 5px 0 0;"><a style="padding: 0 5px 0 0;" href="http://opendata.sz.gov.cn/" target="_blank">数据开放</a>|</li>
+          <li style="margin: 0 5px 0 0;"><a style="padding: 0 5px 0 0;" href="http://www.sz.gov.cn/cn/ydmh/" target="_blank">微门户</a>|</li>
+          <li style="margin: 0 5px 0 0;"><a style="padding: 0 5px 0 0;" href="http://mail.sz.gov.cn/" target="_blank">政务邮箱</a>|</li>
+          <li style="margin: 0 5px 0 0;"><a style="padding: 0 5px 0 0;" href="http://www.sz.gov.cn/cn/fzgn/wzdh/" target="_blank">站群导航</a>|</li>
+          <li class="wza_tb" style="margin: 0;"><span style="float:right;background:url(http://www.sz.gov.cn/cn/images/zx_zwjqr_20161118.png) left bottom no-repeat;"></span><a style=" padding: 0;
+" href="http://irobot.zteict.com/irobot/szzfzx.htm?access_key=szzfzx" target="_blank">政务机器人</a></li>
+      </ul>
+    </div>
+
+
+<div class="top_con">
+	<div class="top_logo"><a href="http://www.sz.gov.cn/cn/" target="_blank"><img src="http://www.sz.gov.cn/cn/ggzy/images/P020160927398698393029.png" /></a></div>
+	<div class="search">
+            <form id="searchform" name="searchform" method="post"  accept-charset="utf-8"  target="_blank" onsubmit="return checkForm()">
+                  <input name="channelid" id="channelid" type="hidden" value="211631" />
+                  <input type="hidden" name="perpage" value="" />
+                  <input type="text" id="sr" name="searchword" class="sr" placeholder="输入关键字" autocomplete="off" onkeydown="KeyDown();" />
+                  <input type="submit" class="btn" value="搜一下" />
+            </form>
+            <div class="tc" id="tc" style="display:none" >
+                <h2>热门搜索排行</h2>
+                <table class="mt10">
+                    
+                </table>
+            </div>
+            <div class="guanjz"></div>
+        </div>
+       
+</div>
+<!--头部结束-->
+<!--导航开始-->
+<div class="zx_menu">
+	<div class="zx_menu_bg"></div>
+   	  <ul>
+      		<li id="sy"><a href="http://www.sz.gov.cn/cn/" ><span>首  页</span></a></li>
+        	<li id="xxgk" class="hover"><a href="http://www.sz.gov.cn/cn/?dw=xxgk" ><span class="m1">信息公开</span></a></li>
+        	<li id="bs"><a href="http://www.sz.gov.cn/cn/?dw=zxbs" ><span class="m2">在线办事</span></a></li>
+        	<li id="fw"><a href="http://www.sz.gov.cn/cn/?dw=bmfw" ><span class="m3">便民服务</span></a></li>
+        	<li id="hdjl"><a href="http://www.sz.gov.cn/cn/?dw=hdjl" ><span class="m4">互动交流</span></a></li>
+        	<li id="zjsz" style=" border:none;width:200px"><a href="http://www.sz.gov.cn/cn/?dw=zjsz" ><span class="m5">走进深圳</span></a></li>
+        </ul>
+    </div>
+<!--导航结束-->
+    <div class="zx_xxgk_ml"> 
+   <div class="zx_rm_tit">
+    <span>市政府部门信息公开目录</span>
+    <p><em>您现在的位置</em><a href="../../../" title="首页" class="CurrChnlCls">首页</a>&nbsp;&gt;&nbsp;<a href="../../" title="2016年政府公报" class="CurrChnlCls">2016年政府公报</a>&nbsp;&gt;&nbsp;<a href="../" title="2016年第41期（总第985期）" class="CurrChnlCls">2016年第41期（总第985期）</a></p>
+   </div> 
+   <!--视图文档开始-->
+ 
+    <div class="zx_xxgk_cont">
+ 			<div class="xx_con">
+                    	<p><em>索 引  号：</em></p>
+                        <p><em>分       类：</em>部门文件</p>
+                        <p><em>发布机构：</em>深圳市人力资源和社会保障局</p>
+                        <p><em>发布日期：</em>2016-12-27</p>
+                        <p class="mingc"><em>名       称：</em>深圳市人力资源和社会保障局关于印发《深圳市人才引进综合评价分值表（2017年）》的通知</p>
+                        <p><em>文       号：</em>深人社规〔2016〕23号</p>     
+                        <p><em>主 题 词：</em></p>
+                    </div>
+        	<div class="tit">
+            	<h1>深圳市人力资源和社会保障局关于印发《深圳市人才引进综合评价分值表（2017年）》的通知</h1>
+            	<h6>
+                	<span>信息来源：深圳市人力资源和社会保障局</span>
+            		<span>信息提供日期：2016-12-27 </span>
+                	<span class="font">【字体：<a href="javascript:void(0);" class="zt0">大</a><a href="javascript:void(0);" class="zt1">中</a><a href="javascript:void(0);" class="zt2">小</a> 】</span>
+                    
+                 </h6>
+            </div>
+        <div class="news_cont_d_wrap">
+            		<p align="justify">各有关单位：</p>
+<p align="justify">　　为做好2017年人才引进工作，根据《深圳市人民政府关于印发〈深圳市户籍迁入若干规定〉的通知》（深府〔2016〕59号）、《深圳市人力资源和社会保障局关于印发〈深圳市人才引进实施办法〉的通知》（深人社规〔2016〕22号），我局制定了《深圳市人才引进综合评价分值表（2017年）》，现予印发，请遵照执行。</p>
+<p align="justify">　　《深圳市人才引进综合评价分值表（2017年）》自2017年1月1日起实施，《深圳市人力资源和社会保障局关于印发〈2015年深圳市人才引进综合评价指标及分值表〉的通知》（深人社规〔2014〕15号）同时废止。</p>
+<p align="right">深圳市人力资源和社会保障局</p>
+<p align="right">2016年12月20日</p>
+<p align="center"><strong>深圳市人才引进综合评价分值表（2017年）</strong></p>
+<p align="justify">
+<table width="661" align="center" bordercolor="#000000" border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="70" valign="middle">
+            <p align="justify"><span>一级指标</span>&nbsp;</p>
+            </td>
+            <td width="99" valign="middle">
+            <p align="justify"><span>二级指标</span>&nbsp;</p>
+            </td>
+            <td width="113" valign="middle">
+            <p align="justify"><span>三级指标</span>&nbsp;</p>
+            </td>
+            <td width="151" valign="middle">
+            <p align="justify"><span>指标分值</span>&nbsp;</p>
+            </td>
+            <td width="254" valign="middle">
+            <p align="justify"><span>实施说明</span>&nbsp;</p>
+            </td>
+            <td width="195" valign="middle">
+            <p align="justify"><span>备注</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="70" valign="middle" rowspan="6">
+            <p align="justify"><span>个人素质</span>&nbsp;</p>
+            </td>
+            <td width="99" valign="middle" rowspan="4">
+            <p align="justify"><span>文化程度及技术技能水平。</span>&nbsp;</p>
+            </td>
+            <td width="113" valign="middle">
+            <p align="justify"><span>1．大专以上学历并具有中级以上全国统考专业技术人员职业（执业）资格。</span>&nbsp;</p>
+            <p align="justify"><span>2．专项职业能力一级（紧缺类）。</span>&nbsp;</p>
+            </td>
+            <td width="151" valign="middle">
+            <p align="justify"><span>100分。</span>&nbsp;</p>
+            </td>
+            <td width="254" valign="middle" rowspan="6">
+            <p align="justify"><span>1．由申请人提供学历和技术技能水平等证书，经验证后得分。</span>&nbsp;</p>
+            <p align="justify"><span>2．本市高级技工学校或技师学院全日制毕业不超过4年并具有高级技能以上职业资格的，另加30分。</span>&nbsp;</p>
+            <p align="justify"><span>3．非广东省评定颁发的专业技术资格（不含经全国统考取得），须经我市（区）人力资源部门审核后方可积分。</span>&nbsp;</p>
+            <p align="justify"><span>4．非在我市参加考试的技能职业资格证书（含全国、全省统考类），必须通过我市人力资源保障部门组织的相应等级综合水平测试。</span>&nbsp;</p>
+            <p align="justify"><span>5．以技能职业资格证书和专项职业能力证书积分的，需在取得证书（在我市参加考试取得的证书以发证时间为准，非在我市参加考试的证书以通过综合水平测试时间为准）后在我市依法参加社会保险一年以上方可积分。</span>&nbsp;</p>
+            <p align="justify"><span>6．本项指标最高积分不超过100分，按就高不就低原则计分，不累积。</span>&nbsp;</p>
+            <p align="justify"><span>7．“以上”包括本数。</span>&nbsp;</p>
+            </td>
+            <td width="195" valign="middle" rowspan="6">
+            <p align="justify"><span>1．全日制本科学历指普通高等教育本科学历。全日制大专学历指普通高等教育大专学历、深圳市高级技工学校或技师学院全日制毕业并具有高级技能以上职业资格。</span>&nbsp;</p>
+            <p align="justify"><span>2．专业技术资格分为三级，分别为：高、中、初级，其中初级包括助理级和员级。</span>&nbsp;</p>
+            <p align="justify"><span>3．技能职业资格指国家职业资格证书，分为五级，分别为：高级技师、技师、高级技能、中级技能、初级技能。技能职业资格（紧缺类）见附件1《深圳市</span><span>技能人才引进紧缺职业目录（2017年）》。</span>&nbsp;</p>
+            <p align="justify"><span>4．专项职业能力证书是指通过深圳市人力资源保障部门组织的新职业新工种专项能力考核所取得的证书，分为一、二、三、四、五级。专项职业能力（紧缺类）见附件1《深圳市技能人才引进紧缺职业目录（2017年）》。</span>&nbsp;</p>
+            <p align="justify"><span>5．全国统考专业技术人员职业（执业）资格的积分和学历要求参照同级专业技</span><span>术资格执行，具体目录和对应等级</span><span>见附件2《全国统考专业技术人员职</span><span>业</span><span>（执业）资格目录》。</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="113" valign="middle">
+            <p align="justify"><span>1．非全日制的本科学历并具有初级专业技术资格。</span>&nbsp;</p>
+            <p align="justify"><span>2．技师（紧缺类）。</span>&nbsp;</p>
+            <p align="justify"><span>3．专项职业能力二级（紧缺类）。</span>&nbsp;</p>
+            </td>
+            <td width="151" valign="middle">
+            <p align="justify"><span>90分。</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="113" valign="middle">
+            <p align="justify"><span>1．非全日制的本科学历。</span>&nbsp;</p>
+            <p align="justify"><span>2．大专学历并具有初级专业技术资格或高级技能职业资格（紧缺类）。</span>&nbsp;</p>
+            </td>
+            <td width="151" valign="middle">
+            <p align="justify"><span>80分。</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="113" valign="middle">
+            <p align="justify"><span>1．全日制大专学历。</span>&nbsp;</p>
+            <p align="justify"><span>2．</span><span>高级技能（紧缺类）。</span>&nbsp;</p>
+            <p align="justify"><span>3．专项职业能力三级（紧缺类）。</span>&nbsp;</p>
+            </td>
+            <td width="151" valign="middle">
+            <p align="justify"><span>70分。</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="99" valign="middle" rowspan="2">
+            <p align="justify"><span>&nbsp;</span>&nbsp;</p>
+            </td>
+            <td width="113" valign="middle">
+            <p align="justify"><span>非全日制的大专学历。</span>&nbsp;</p>
+            </td>
+            <td width="151" valign="middle">
+            <p align="justify"><span>60分。</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="113" valign="middle">
+            <p align="justify"><span>１．中级技能（紧缺类）。</span>&nbsp;</p>
+            <p align="justify"><span>２．专项职业能力四级（紧缺类）。</span>&nbsp;</p>
+            </td>
+            <td width="151" valign="middle">
+            <p align="justify"><span>40分。</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="70" valign="middle" rowspan="3">
+            <p align="justify"><span>个人素质</span>&nbsp;</p>
+            </td>
+            <td width="99" valign="middle">
+            <p align="justify"><span>技能竞赛。</span>&nbsp;</p>
+            </td>
+            <td width="113" valign="middle">
+            <p align="justify"><span>在广东省、深圳市、区人力资源保障部门举办或与有关行业联合举办的职业技能竞赛中获奖。</span>&nbsp;</p>
+            </td>
+            <td width="151" valign="middle">
+            <p align="justify"><span>省级一等奖50分。</span>&nbsp;</p>
+            <p align="justify"><span>省级二等奖或市级一类一等奖40分。</span>&nbsp;</p>
+            <p align="justify"><span>省级三等奖、市级一类二等奖、市级二类一等奖30分。</span>&nbsp;</p>
+            <p align="justify"><span>市级一类三等奖、市级二类二等奖20分。</span>&nbsp;</p>
+            <p align="justify"><span>市级二类三等奖10分。</span>&nbsp;</p>
+            </td>
+            <td width="254" valign="middle">
+            <p align="justify"><span>由本人提供荣誉证书，经验证后得分。近5年内有效，不累积。近5年指2013年—2017年。</span>&nbsp;</p>
+            </td>
+            <td width="195" valign="middle">
+            <p align="justify"><span>2016年之前取得的奖项等次中的市级相当于现市级一类、区级相当于现市级二类。</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="99" valign="middle" rowspan="2">
+            <p align="justify"><span>发明创造。</span>&nbsp;</p>
+            </td>
+            <td width="113" valign="middle">
+            <p align="justify"><span>发明专利。</span>&nbsp;</p>
+            </td>
+            <td width="151" valign="middle">
+            <p align="justify"><span>每获得1项积50分。多人共有专利的，发明人所得分数按50/（人数＋1）计算，如为第一专利人的，加计1份平均分，即得分再“乘以2”。可累积。</span>&nbsp;</p>
+            </td>
+            <td width="254" valign="top" rowspan="2">
+            <p align="justify"><span>1．专利积分以发明人为准。由本人提供在有效期内的国家专利证书，经验证后得分。最高不超过50分。</span>&nbsp;</p>
+            <p align="justify"><span>2．专利的授权公告日必须在2016年12月31日之前。</span>&nbsp;</p>
+            <p align="justify"><span>3．实用新型专利存在发明人变更情况不能积分。发明专利在授权公告日后存在发明人变更情况不能积分。</span>&nbsp;</p>
+            </td>
+            <td width="195" valign="middle" rowspan="2">
+            <p align="justify"><span>&nbsp;</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="113" valign="middle">
+            <p align="justify"><span>实用新型专利。</span>&nbsp;</p>
+            </td>
+            <td width="151" valign="middle">
+            <p align="justify"><span>获得1项积10分。多人共有专利的，发明人所得分数按10/（人数＋1）计算，如为第一专利人的，加计1份平均分，即得分再“乘以2”。不可累积。</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="70" valign="middle" rowspan="7">
+            <p align="justify"><span>纳税情况（最近3个年度内在我市累计缴纳）</span>&nbsp;</p>
+            </td>
+            <td width="99" valign="middle" rowspan="6">
+            <p align="justify"><span>个人所得税，仅限以下项目：</span>&nbsp;</p>
+            <p align="justify"><span>1．工资、薪金所得（含全年一次性奖金）。</span>&nbsp;</p>
+            <p align="justify"><span>2．劳务报酬所得。</span>&nbsp;</p>
+            </td>
+            <td width="113" valign="middle">
+            <p align="justify"><span>24万元以上。</span>&nbsp;</p>
+            </td>
+            <td width="151" valign="middle">
+            <p align="justify"><span>100分。</span>&nbsp;</p>
+            </td>
+            <td width="254" valign="middle" rowspan="6">
+            <p align="justify"><span>1．由本人提供纳税证明及与申请事由相适应身份资格的相关证明。（上限不含本数，下限含本数）</span>&nbsp;</p>
+            <p align="justify"><span>2．只能任选其中一类进行积分，不叠加计分。</span>&nbsp;</p>
+            </td>
+            <td width="195" valign="top" rowspan="6">
+            <p align="justify"><span>1．以个人所得税积分的，须在最近3个年度内每年均有完税记录（以申报日期/入库日期为准），但最近3个年度内累计纳税达到24万以上的除外。</span>&nbsp;</p>
+            <p align="justify"><span>2．以企业法定代表人、投资人、自然人股东、出资人（合伙人）、个体工商户经营者身份积分的，须在最近3个年度内及申请时均具备与申请积分事由相适应的身份资格。同时具备多家企业法定代表人、投资人、</span>&nbsp;</p>
+            <p align="justify"><span>自然人股东、出资人（合伙人）或个体工商户经营者身份资格的，只能以一家企业的身份资格积分，不叠加计分。</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="113" valign="top">
+            <p align="justify"><span>20.2万—24万元。</span>&nbsp;</p>
+            </td>
+            <td width="151" valign="top">
+            <p align="justify"><span>90分。</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="113" valign="top">
+            <p align="justify"><span>15.7万—20.2万元。</span>&nbsp;</p>
+            </td>
+            <td width="151" valign="middle">
+            <p align="justify"><span>80分。</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="113" valign="top">
+            <p align="justify"><span>11.2万—15.7万元。</span>&nbsp;</p>
+            </td>
+            <td width="151" valign="middle">
+            <p align="justify"><span>70分。</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="113" valign="top">
+            <p align="justify"><span>9.4万—11.2万元。</span>&nbsp;</p>
+            </td>
+            <td width="151" valign="middle">
+            <p align="justify"><span>60分。</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="113" valign="middle">
+            <p align="justify"><span>7.6万—9.4万元。</span>&nbsp;</p>
+            </td>
+            <td width="151" valign="middle">
+            <p align="justify"><span>50分。</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="99" valign="middle">
+            <p align="justify"><span>本市依法登记注册企业的法定代表人，其所在企业纳税。</span>&nbsp;</p>
+            </td>
+            <td width="113" valign="middle">
+            <p align="justify"><span>150万元以上。</span>&nbsp;</p>
+            </td>
+            <td width="151" valign="middle">
+            <p align="justify"><span>150万元积50分，每增加30万元积10分，以30万元整倍数计分，最高100分。</span>&nbsp;</p>
+            </td>
+            <td width="254" valign="top">
+            <p align="justify"><span>&nbsp;</span>&nbsp;</p>
+            </td>
+            <td width="195" valign="top">
+            <p align="justify"><span>&nbsp;</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="70" valign="middle" rowspan="2">
+            <p align="justify"><span>纳税情况（最近3个年度内在我市累计缴纳）</span>&nbsp;</p>
+            </td>
+            <td width="99" valign="top">
+            <p align="justify"><span>本市依法登记注册个人独资企业的投资人、有限责任公司的自然人股东、合伙企业的出资（合伙）人，以其投资份额占该企业实收资本的比例而分摊企业已缴纳税额。</span>&nbsp;</p>
+            </td>
+            <td width="113" valign="middle">
+            <p align="justify"><span>30万元以上。</span>&nbsp;</p>
+            </td>
+            <td width="151" valign="middle">
+            <p align="justify"><span>30万元积50分，每增加6万元积10分，以6万元的整倍数计分，最高100分。</span>&nbsp;</p>
+            </td>
+            <td width="254" valign="middle" rowspan="2">
+            <p align="justify"><span>1．由本人提供纳税证明及与申请事由相适应身份资格的相关证明。（上限不含本数，下限含本数）</span>&nbsp;</p>
+            <p align="justify"><span>2．只能任选其中一类进行积分，不叠加计分。</span>&nbsp;</p>
+            </td>
+            <td width="195" valign="top" rowspan="2">
+            <p align="justify"><span>3．企业和个人缴纳的各项税款必须是依法申报并已经完税的税款。由税务、司法部门追缴入库的不予计算。</span>&nbsp;</p>
+            <p align="justify"><span>4．以个人所得税积分的，纳税额计算以“税款所属时期”为准。以企业纳税积分的，纳税额计算以“税款缴纳时间”为准。</span>&nbsp;</p>
+            <p align="justify"><span>5．最近3个年度指2014—2016年。</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="99" valign="middle">
+            <p align="justify"><span>在本市依法登记注册个体工商户的经营者纳税。</span>&nbsp;</p>
+            </td>
+            <td width="113" valign="middle">
+            <p align="justify"><span>15万元以上。</span>&nbsp;</p>
+            </td>
+            <td width="151" valign="middle">
+            <p align="justify"><span>15万元积50分，每增加3万元积10分，以3万元的整倍数计分，最高100分。</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="70" valign="middle" rowspan="2">
+            <p align="justify"><span>参保情况</span>&nbsp;</p>
+            </td>
+            <td width="99" valign="middle" rowspan="2">
+            <p align="justify"><span>深圳市参保情况。</span>&nbsp;</p>
+            </td>
+            <td width="113" valign="middle">
+            <p align="justify"><span>缴纳深圳市社会养老保险年限。</span>&nbsp;</p>
+            </td>
+            <td width="151" valign="middle">
+            <p align="justify"><span>每满一年积3分。</span>&nbsp;</p>
+            </td>
+            <td width="254" valign="top" rowspan="2">
+            <p align="justify"><span>1．由市人力资源保障部门直接从社会保险系统读取其正常缴纳社保数据后得分。补缴社会保险的年限不予计算。</span>&nbsp;</p>
+            <p align="justify"><span>2．少儿医疗保险缴费年限不予计算。</span>&nbsp;</p>
+            </td>
+            <td width="195" valign="middle" rowspan="2">
+            <p align="justify"><span>参保情况总分最高不超过30分。</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="113" valign="middle">
+            <p align="justify"><span>缴纳深圳市其他社会保险险种年限。</span>&nbsp;</p>
+            </td>
+            <td width="151" valign="middle">
+            <p align="justify"><span>每险种每满1年积1分。</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="70" valign="middle" rowspan="3">
+            <p align="justify"><span>年龄情况</span>&nbsp;</p>
+            </td>
+            <td width="99" valign="middle" rowspan="3">
+            <p align="justify"><span>实际年龄情况。</span>&nbsp;</p>
+            </td>
+            <td width="113" valign="middle">
+            <p align="justify"><span>18—35周岁。</span>&nbsp;</p>
+            </td>
+            <td width="151" valign="middle">
+            <p align="justify"><span>5分。</span>&nbsp;</p>
+            </td>
+            <td width="254" valign="middle" rowspan="3">
+            <p align="justify"><span>以申请时实际年龄为准，上限不含本数，下限含本数。</span>&nbsp;</p>
+            </td>
+            <td width="195" valign="top" rowspan="3">
+            <p align="justify"><span>&nbsp;</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="113" valign="middle">
+            <p align="justify"><span>35—40周岁。</span>&nbsp;</p>
+            </td>
+            <td width="151" valign="middle">
+            <p align="justify"><span>无加减分。</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="113" valign="middle">
+            <p align="justify"><span>40—45周岁。</span>&nbsp;</p>
+            </td>
+            <td width="151" valign="middle">
+            <p align="justify"><span>从40周岁起减分，每增长1岁减2分。</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="70" valign="middle">
+            <p align="justify"><span>奖励加分</span>&nbsp;</p>
+            </td>
+            <td width="99" valign="middle">
+            <p align="justify"><span>申办类型。</span>&nbsp;</p>
+            </td>
+            <td width="113" valign="middle">
+            <p align="justify"><span>单位申办，最近在本单位连续缴纳工伤保险费2年以上。</span>&nbsp;</p>
+            </td>
+            <td width="151" valign="middle">
+            <p align="justify"><span>10分。</span>&nbsp;</p>
+            </td>
+            <td width="254" valign="middle">
+            <p align="justify"><span>由市人力资源保障部门直接从社会保险系统读取正常缴纳社保数据后得分，补缴年限不予计算。</span>&nbsp;</p>
+            </td>
+            <td width="195" valign="top">
+            <p align="justify"><span>&nbsp;</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="70" valign="middle">
+            <p align="justify"><span>减分</span>&nbsp;</p>
+            </td>
+            <td width="99" valign="middle">
+            <p align="justify"><span>不良诚信记录。</span>&nbsp;</p>
+            </td>
+            <td width="113" valign="middle">
+            <p align="justify"><span>个人存在不良诚信记录。</span>&nbsp;</p>
+            </td>
+            <td width="151" valign="middle">
+            <p align="justify"><span>经查询深圳市人才引进系统，存在不良诚信记录的，每条扣40分。</span>&nbsp;</p>
+            </td>
+            <td width="254" valign="middle">
+            <p align="justify"><span>由人力资源部门在人才引进系统中查询。</span>&nbsp;</p>
+            </td>
+            <td width="195" valign="top"></td>
+        </tr>
+    </tbody>
+</table>
+　　附件：1．深圳市技能人才引进紧缺职业目录（2017年）</p>
+<p align="justify">　　2．全国统考专业技术人员职业（执业）资格目录</p>
+<p align="justify">　　附件1</p>
+<p align="center"><strong>深圳市技能人才引进紧缺职业目录（2017年）</strong></p>
+<p align="justify">
+<table width="447" align="center" bordercolor="#000000" border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>序号</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>工种代码</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>工种名称</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>等级要求</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>1</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>03-048</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>制冷设备维修工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>中级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>2</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>03-126</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>服装设计定制工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>3</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>03-804</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>眼镜定配工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>4</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>03-805</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>中央空调系统操作员</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>5</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>09-015</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>钳工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>中级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>6</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>09-018</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>车工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>中级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>7</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>09-019</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>铣工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>中级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>8</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>09-024</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>电切削工（电火花机操作工）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>9</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>09-024</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>电切削工（线切割机操作工）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>10</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>09-030</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>电工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>中级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>11</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>09-033</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>电焊工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>中级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>12</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>09-037</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>无损检测员</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>13</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>09-041</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>加工中心操作工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>14</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>09-801</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>数控铣床操作工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>15</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>09-802</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>数控车床工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>16</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>09-803</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>数控机床装调维修工（电气）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>中级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>17</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>11-004</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>燃料集控值班员（电力）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>18</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>11-006</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>卸储煤设备检修工（电力）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>19</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>11-007</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>输煤机械检修工（电力）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>20</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>11-008</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>燃料化验员（电力）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>21</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>11-011</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>电厂水处理值班员（电力）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>22</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>11-016</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>锅炉运行值班员（电力）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>23</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>11-017</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>锅炉本体检修工（电力）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>24</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>11-018</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>锅炉辅机检修工（电力）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>25</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>11-025</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>汽轮机运行值班员（电力）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>26</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>11-026</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>汽轮机本体检修工（电力）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>27</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>11-029</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>汽轮机辅机检修工（电力）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>28</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>11-032</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>电气值班员（电力）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>29</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>11-034</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>集控值班员（电力）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>30</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>11-035</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>电机检修工（电力）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>31</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>11-036</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>热工仪表检修工（电力）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>32</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>11-037</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>热工自动装置检修工（电力）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>33</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>11-038</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>热工程控保护工（电力）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>34</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>11-055</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>变电检修工（电力）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>35</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>11-057</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>电气试验工（电力）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>36</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>11-059</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>继电保护工（电力）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</p>
+<p align="justify">
+<table width="447" align="center" bordercolor="#000000" border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>序号</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>工种代码</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>工种名称</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>等级要求</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>37</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>13-015</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>测量放线工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>38</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>13-036</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>电梯安装维修工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>中级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>39</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>13-054</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>净水工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>40</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>13-055</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>水质检验工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>41</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>13-107</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>燃气具安装维修工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>42</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>13-108</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>管工（燃气管网工）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>43</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>13-213</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>精细木工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>44</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>13-214</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>家具手工木工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>45</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>17-381</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>服装裁剪工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>46</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>17-382</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>服装缝纫工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>47</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>18-379</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>贵金属首饰手工制作工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>48</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>18-400</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>塑料注塑工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>49</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>18-807</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>钟（表）成品装配工（手表装配工）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>50</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>20-001</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>汽车驾驶员（A牌）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>51</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>20-017</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>汽车维修工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>中级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>52</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>20-021</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>汽车维修电工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>中级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>53</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>20-022</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>汽车维修漆工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>54</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>20-024</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>汽车维修钣金工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>55</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>21-051</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>光通信机务员</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>56</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>21-057</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>用户通信终端维修员</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>57</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>29-007</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>电脑照排工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>58</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>30-029</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>化学检验工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>59</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>30-242</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>食品检验工（糖果糕点检验）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>60</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>30-243</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>食品检验工（乳及乳制品检验）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>61</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>30-245</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>食品检验工（啤酒检验）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>62</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>33-089</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>微生物检定工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>63</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>33-199</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>药物制剂工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>64</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>34-006</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>中药调剂员</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>65</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>36-007</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>电子仪器仪表检定修理工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>66</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>36-018</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>家用电子产品维修工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>67</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>36-064</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>程控交换机调试工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>68</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>36-322</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>电子元器件检验员</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>69</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>36-805</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>激光机装调工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>70</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>37-002</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>船体冷加工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>71</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>37-010</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>船舶电工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>72</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>37-051</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>船舶焊工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>73</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>37-052</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>船舶铆工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>74</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>37-053</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>船舶起重工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>75</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>40-036</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>输气工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</p>
+<p align="justify">
+<table width="447" align="center" bordercolor="#000000" border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>序号</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>工种代码</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>工种名称</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>等级要求</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>76</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>46-006</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>中式烹调师</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>77</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>46-008</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>中式面点师</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>78</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>46-101</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>出租汽车驾驶员</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>79</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>46-204</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>可编程序控制系统设计师</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>80</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>46-211</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>智能楼宇管理师（助理智能楼宇管理师）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>中级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>81</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>46-224</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>数控程序员</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>82</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>46-227</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>口腔修复工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>83</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>46-242</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>安全防范系统安装维护员</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>84</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>42-805</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>电机检修工（核电）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>85</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>42-806</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>变电检修工（核电）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>86</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>42-807</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>电气试验工（核电）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>87</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>42-808</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>继电保护工（核电）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>88</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>42-809</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>热工仪表检修工（核电）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>89</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>42-810</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>热工自动装置检修工（核电）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>90</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>42-811</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>热工程控保护工（核电）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>91</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>42-812</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>汽轮机本体检修工（核电）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>92</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>42-813</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>汽轮机调速系统检修工（核电）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>93</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>42-815</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>柴油机检修工（核电）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>高级以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>94</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>90-034</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>三维CAD设计</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>专项能力三级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>95</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>90-037</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>计算机直接制版</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>专项能力三级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>96</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>90-049</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>运动控制系统设计与管理</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>专项能力三级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>97</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>90-051</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>过程控制系统设计与管理</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>专项能力三级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>98</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>90-052</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>气动与液压系统管理与设计</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>专项能力三级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>99</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>90-054</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>工业以太网系统设计与管理</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>专项能力三级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>100</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>90-055</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>工业控制网络集成设计与管理</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>专项能力三级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>101</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>90-061</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>嵌入式系统设计与开发</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>专项能力三级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>102</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>90-053</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>工业机器人设计与管理</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>专项能力三、二级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>103</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>03-127</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>眼镜验光员</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>技师以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>104</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>13-084</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>绿化工</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>技师以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>105</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>22-801</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>美工师</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>技师以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>106</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>36-327</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>计算机网络管理员（路由与交换）</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>技师以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>107</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>46-010</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>美发师</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>技师以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>108</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>46-012</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>美容师</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>技师以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>109</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>46-013</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>按摩师</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>技师以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>110</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>46-100</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>保安员</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>技师以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>111</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>46-235</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>形象设计师</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>技师以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>112</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>46-544</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>宝玉石检验员</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>技师以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>113</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>51-000</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>物流师</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>技师以上</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="47" valign="middle">
+            <p align="justify"><span>114</span>&nbsp;</p>
+            </td>
+            <td width="86" valign="middle">
+            <p align="justify"><span>90-203</span>&nbsp;</p>
+            </td>
+            <td width="336" valign="middle">
+            <p align="justify"><span>供应链管理</span>&nbsp;</p>
+            </td>
+            <td width="127" valign="middle">
+            <p align="justify"><span>专项能力二级</span>&nbsp;</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+　　附件2</p>
+<p align="center"><strong>全国统考专业技术人员职业（执业）资格目录</strong></p>
+<p align="justify">
+<table width="441" align="center" bordercolor="#000000" border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="29" valign="middle">
+            <p align="justify"><span>序号</span>&nbsp;</p>
+            </td>
+            <td width="149" valign="middle">
+            <p align="justify"><span>名称</span>&nbsp;</p>
+            </td>
+            <td width="60" valign="top">
+            <p align="justify"><span>对应等级</span>&nbsp;</p>
+            </td>
+            <td width="29" valign="middle">
+            <p align="justify"><span>序号</span>&nbsp;</p>
+            </td>
+            <td width="205" valign="middle">
+            <p align="justify"><span>名称</span>&nbsp;</p>
+            </td>
+            <td width="112" valign="middle">
+            <p align="justify"><span>对应等级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="29" valign="middle">
+            <p align="justify"><span>1</span>&nbsp;</p>
+            </td>
+            <td width="149" valign="middle">
+            <p align="justify"><span>监理工程师</span>&nbsp;</p>
+            </td>
+            <td width="60" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+            <td width="29" valign="middle">
+            <p align="justify"><span>16</span>&nbsp;</p>
+            </td>
+            <td width="205" valign="middle">
+            <p align="justify"><span>注册设备监理师</span>&nbsp;</p>
+            </td>
+            <td width="112" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="29" valign="middle">
+            <p align="justify"><span>2</span>&nbsp;</p>
+            </td>
+            <td width="149" valign="middle">
+            <p align="justify"><span>房地产估价师</span>&nbsp;</p>
+            </td>
+            <td width="60" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+            <td width="29" valign="middle">
+            <p align="justify"><span>17</span>&nbsp;</p>
+            </td>
+            <td width="205" valign="middle">
+            <p align="justify"><span>一、二级建造师</span>&nbsp;</p>
+            </td>
+            <td width="112" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="29" valign="middle">
+            <p align="justify"><span>3</span>&nbsp;</p>
+            </td>
+            <td width="149" valign="middle">
+            <p align="justify"><span>注册资产评估师</span>&nbsp;</p>
+            </td>
+            <td width="60" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+            <td width="29" valign="middle">
+            <p align="justify"><span>18</span>&nbsp;</p>
+            </td>
+            <td width="205" valign="middle">
+            <p align="justify"><span>注册环保工程师</span>&nbsp;</p>
+            </td>
+            <td width="112" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="29" valign="middle">
+            <p align="justify"><span>4</span>&nbsp;</p>
+            </td>
+            <td width="149" valign="middle">
+            <p align="justify"><span>执业药师</span>&nbsp;</p>
+            </td>
+            <td width="60" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+            <td width="29" valign="middle">
+            <p align="justify"><span>19</span>&nbsp;</p>
+            </td>
+            <td width="205" valign="middle">
+            <p align="justify"><span>注册土木工程师（水利水电工程）</span>&nbsp;</p>
+            </td>
+            <td width="112" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="29" valign="middle">
+            <p align="justify"><span>5</span>&nbsp;</p>
+            </td>
+            <td width="149" valign="middle">
+            <p align="justify"><span>注册建筑师</span>&nbsp;</p>
+            </td>
+            <td width="60" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+            <td width="29" valign="middle">
+            <p align="justify"><span>20</span>&nbsp;</p>
+            </td>
+            <td width="205" valign="middle">
+            <p align="justify"><span>地震安全性评价工程师</span>&nbsp;</p>
+            </td>
+            <td width="112" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="29" valign="middle">
+            <p align="justify"><span>6</span>&nbsp;</p>
+            </td>
+            <td width="149" valign="middle">
+            <p align="justify"><span>造价工程师</span>&nbsp;</p>
+            </td>
+            <td width="60" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+            <td width="29" valign="middle">
+            <p align="justify"><span>21</span>&nbsp;</p>
+            </td>
+            <td width="205" valign="middle">
+            <p align="justify"><span>勘察设计注册石油天然气工程师</span>&nbsp;</p>
+            </td>
+            <td width="112" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="29" valign="middle">
+            <p align="justify"><span>7</span>&nbsp;</p>
+            </td>
+            <td width="149" valign="middle">
+            <p align="justify"><span>珠宝玉石质量检验师</span>&nbsp;</p>
+            </td>
+            <td width="60" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+            <td width="29" valign="middle">
+            <p align="justify"><span>22</span>&nbsp;</p>
+            </td>
+            <td width="205" valign="middle">
+            <p align="justify"><span>勘察设计注册冶金工程师</span>&nbsp;</p>
+            </td>
+            <td width="112" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="29" valign="middle">
+            <p align="justify"><span>8</span>&nbsp;</p>
+            </td>
+            <td width="149" valign="middle">
+            <p align="justify"><span>注册税务师</span>&nbsp;</p>
+            </td>
+            <td width="60" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+            <td width="29" valign="middle">
+            <p align="justify"><span>23</span>&nbsp;</p>
+            </td>
+            <td width="205" valign="middle">
+            <p align="justify"><span>勘察设计注册采矿／矿物工程师</span>&nbsp;</p>
+            </td>
+            <td width="112" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="29" valign="middle">
+            <p align="justify"><span>9</span>&nbsp;</p>
+            </td>
+            <td width="149" valign="middle">
+            <p align="justify"><span>拍卖师</span>&nbsp;</p>
+            </td>
+            <td width="60" valign="top">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+            <td width="29" valign="middle">
+            <p align="justify"><span>24</span>&nbsp;</p>
+            </td>
+            <td width="205" valign="middle">
+            <p align="justify"><span>勘察设计注册机械工程师</span>&nbsp;</p>
+            </td>
+            <td width="112" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="29" valign="middle">
+            <p align="justify"><span>10</span>&nbsp;</p>
+            </td>
+            <td width="149" valign="middle">
+            <p align="justify"><span>企业法律顾问</span>&nbsp;</p>
+            </td>
+            <td width="60" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+            <td width="29" valign="middle">
+            <p align="justify"><span>25</span>&nbsp;</p>
+            </td>
+            <td width="205" valign="middle">
+            <p align="justify"><span>注册验船师</span>&nbsp;</p>
+            </td>
+            <td width="112" valign="middle">
+            <p align="justify"><span>A、B级对应中级；C、D级对应初级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="29" valign="middle">
+            <p align="justify"><span>11</span>&nbsp;</p>
+            </td>
+            <td width="149" valign="middle">
+            <p align="justify"><span>假肢与矫形器制作师</span>&nbsp;</p>
+            </td>
+            <td width="60" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+            <td width="29" valign="middle">
+            <p align="justify"><span>26</span>&nbsp;</p>
+            </td>
+            <td width="205" valign="middle">
+            <p align="justify"><span>注册测绘师</span>&nbsp;</p>
+            </td>
+            <td width="112" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="29" valign="middle">
+            <p align="justify"><span>12</span>&nbsp;</p>
+            </td>
+            <td width="149" valign="middle">
+            <p align="justify"><span>注册结构工程师</span>&nbsp;</p>
+            </td>
+            <td width="60" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+            <td width="29" valign="middle">
+            <p align="justify"><span>27</span>&nbsp;</p>
+            </td>
+            <td width="205" valign="middle">
+            <p align="justify"><span>勘察设计注册土木工程师（道路工程）</span>&nbsp;</p>
+            </td>
+            <td width="112" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="29" valign="middle">
+            <p align="justify"><span>13</span>&nbsp;</p>
+            </td>
+            <td width="149" valign="middle">
+            <p align="justify"><span>矿产储量评估师</span>&nbsp;</p>
+            </td>
+            <td width="60" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+            <td width="29" valign="middle">
+            <p align="justify"><span>28</span>&nbsp;</p>
+            </td>
+            <td width="205" valign="middle">
+            <p align="justify"><span>外销员（助理国际商务师</span><span>）、国际商务师</span>&nbsp;</p>
+            </td>
+            <td width="112" valign="middle">
+            <p align="justify"><span>分别对应初、中级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="29" valign="middle">
+            <p align="justify"><span>14</span>&nbsp;</p>
+            </td>
+            <td width="149" valign="middle">
+            <p align="justify"><span>矿业权评估师</span>&nbsp;</p>
+            </td>
+            <td width="60" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+            <td width="29" valign="middle">
+            <p align="justify"><span>29</span>&nbsp;</p>
+            </td>
+            <td width="205" valign="middle">
+            <p align="justify"><span>质量专业技术人员</span>&nbsp;</p>
+            </td>
+            <td width="112" valign="middle">
+            <p align="justify"><span>初级对应初级、中级对应中级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="29" valign="middle">
+            <p align="justify"><span>15</span>&nbsp;</p>
+            </td>
+            <td width="149" valign="middle">
+            <p align="justify"><span>注册城市规划师</span>&nbsp;</p>
+            </td>
+            <td width="60" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+            <td width="29" valign="middle">
+            <p align="justify"><span>30</span>&nbsp;</p>
+            </td>
+            <td width="205" valign="middle">
+            <p align="justify"><span>出版专业技术人员</span>&nbsp;</p>
+            </td>
+            <td width="112" valign="middle">
+            <p align="justify"><span>初级对应初级、中级对应中级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="29" valign="middle">
+            <p align="justify"><span>31</span>&nbsp;</p>
+            </td>
+            <td width="149" valign="middle">
+            <p align="justify"><span>价格鉴证师</span>&nbsp;</p>
+            </td>
+            <td width="60" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+            <td width="29" valign="middle">
+            <p align="justify"><span>44</span>&nbsp;</p>
+            </td>
+            <td width="205" valign="middle">
+            <p align="justify"><span>土地登记代理人</span>&nbsp;</p>
+            </td>
+            <td width="112" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="29" valign="middle">
+            <p align="justify"><span>32</span>&nbsp;</p>
+            </td>
+            <td width="149" valign="middle">
+            <p align="justify"><span>棉花质量检验师</span>&nbsp;</p>
+            </td>
+            <td width="60" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+            <td width="29" valign="middle">
+            <p align="justify"><span>45</span>&nbsp;</p>
+            </td>
+            <td width="205" valign="middle">
+            <p align="justify"><span>环境影响评价工程师</span>&nbsp;</p>
+            </td>
+            <td width="112" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="29" valign="middle">
+            <p align="justify"><span>33</span>&nbsp;</p>
+            </td>
+            <td width="149" valign="middle">
+            <p align="justify"><span>注册咨询工程师（投资）</span>&nbsp;</p>
+            </td>
+            <td width="60" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+            <td width="29" valign="middle">
+            <p align="justify"><span>46</span>&nbsp;</p>
+            </td>
+            <td width="205" valign="middle">
+            <p align="justify"><span>投资建设项目管理师</span>&nbsp;</p>
+            </td>
+            <td width="112" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="29" valign="middle">
+            <p align="justify"><span>34</span>&nbsp;</p>
+            </td>
+            <td width="149" valign="middle">
+            <p align="justify"><span>房地产经纪人</span>&nbsp;</p>
+            </td>
+            <td width="60" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+            <td width="29" valign="middle">
+            <p align="justify"><span>47</span>&nbsp;</p>
+            </td>
+            <td width="205" valign="middle">
+            <p align="justify"><span>管理咨询专业技术人员</span>&nbsp;</p>
+            </td>
+            <td width="112" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="29" valign="middle">
+            <p align="justify"><span>35</span>&nbsp;</p>
+            </td>
+            <td width="149" valign="middle">
+            <p align="justify"><span>注册土木工程师（岩土）</span>&nbsp;</p>
+            </td>
+            <td width="60" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+            <td width="29" valign="middle">
+            <p align="justify"><span>48</span>&nbsp;</p>
+            </td>
+            <td width="205" valign="middle">
+            <p align="justify"><span>物业管理师</span>&nbsp;</p>
+            </td>
+            <td width="112" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="29" valign="middle">
+            <p align="justify"><span>36</span>&nbsp;</p>
+            </td>
+            <td width="149" valign="middle">
+            <p align="justify"><span>注册安全工程师</span>&nbsp;</p>
+            </td>
+            <td width="60" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+            <td width="29" valign="middle">
+            <p align="justify"><span>49</span>&nbsp;</p>
+            </td>
+            <td width="205" valign="middle">
+            <p align="justify"><span>通信专业技术人员</span>&nbsp;</p>
+            </td>
+            <td width="112" valign="middle">
+            <p align="justify"><span>初级对应初级、中级对应中级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="29" valign="middle">
+            <p align="justify"><span>37</span>&nbsp;</p>
+            </td>
+            <td width="149" valign="middle">
+            <p align="justify"><span>注册核安全工程师</span>&nbsp;</p>
+            </td>
+            <td width="60" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+            <td width="29" valign="middle">
+            <p align="justify"><span>50</span>&nbsp;</p>
+            </td>
+            <td width="205" valign="middle">
+            <p align="justify"><span>注册计量师</span>&nbsp;</p>
+            </td>
+            <td width="112" valign="middle">
+            <p align="justify"><span>一级对应中级；二级对应初级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="29" valign="middle">
+            <p align="justify"><span>38</span>&nbsp;</p>
+            </td>
+            <td width="149" valign="middle">
+            <p align="justify"><span>注册公用设备工程师</span>&nbsp;</p>
+            </td>
+            <td width="60" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+            <td width="29" valign="middle">
+            <p align="justify"><span>51</span>&nbsp;</p>
+            </td>
+            <td width="205" valign="middle">
+            <p align="justify"><span>机动车检测维修士、机动车检测维修工程师</span>&nbsp;</p>
+            </td>
+            <td width="112" valign="middle">
+            <p align="justify"><span>分别对应初、中级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="29" valign="middle">
+            <p align="justify"><span>39</span>&nbsp;</p>
+            </td>
+            <td width="149" valign="middle">
+            <p align="justify"><span>注册电气工程师</span>&nbsp;</p>
+            </td>
+            <td width="60" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+            <td width="29" valign="middle">
+            <p align="justify"><span>52</span>&nbsp;</p>
+            </td>
+            <td width="205" valign="middle">
+            <p align="justify"><span>助理社会工作师、社会工作师</span>&nbsp;</p>
+            </td>
+            <td width="112" valign="middle">
+            <p align="justify"><span>分别对应初、中级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="29" valign="middle">
+            <p align="justify"><span>40</span>&nbsp;</p>
+            </td>
+            <td width="149" valign="middle">
+            <p align="justify"><span>注册化工工程师</span>&nbsp;</p>
+            </td>
+            <td width="60" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+            <td width="29" valign="middle">
+            <p align="justify"><span>53</span>&nbsp;</p>
+            </td>
+            <td width="205" valign="middle">
+            <p align="justify"><span>招标采购专业技术人员</span>&nbsp;</p>
+            </td>
+            <td width="112" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="29" valign="middle">
+            <p align="justify"><span>41</span>&nbsp;</p>
+            </td>
+            <td width="149" valign="middle">
+            <p align="justify"><span>注册土木工程师（港口与航道工程）</span>&nbsp;</p>
+            </td>
+            <td width="60" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+            <td width="29" valign="middle">
+            <p align="justify"><span>54</span>&nbsp;</p>
+            </td>
+            <td width="205" valign="middle">
+            <p align="justify"><span>助理广告师、广告师</span>&nbsp;</p>
+            </td>
+            <td width="112" valign="middle">
+            <p align="justify"><span>分别对应初、中级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="29" valign="middle">
+            <p align="justify"><span>42</span>&nbsp;</p>
+            </td>
+            <td width="149" valign="middle">
+            <p align="justify"><span>注册会计师</span>&nbsp;</p>
+            </td>
+            <td width="60" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+            <td width="29" valign="middle">
+            <p align="justify"><span>55</span>&nbsp;</p>
+            </td>
+            <td width="205" valign="middle">
+            <p align="justify"><span>法律职业资格</span>&nbsp;</p>
+            </td>
+            <td width="112" valign="middle">
+            <p align="justify"><span>中级</span>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="29" valign="middle">
+            <p align="justify"><span>43</span>&nbsp;</p>
+            </td>
+            <td width="149" valign="middle">
+            <p align="justify"><span>助理工业设计师，工业设计师，高级工业设计师</span>&nbsp;</p>
+            </td>
+            <td width="60" valign="top">
+            <p align="justify"><span>分别对应初、中、高级</span>&nbsp;</p>
+            </td>
+            <td width="29" valign="middle">
+            <p align="justify"><span>56</span>&nbsp;</p>
+            </td>
+            <td width="205" valign="middle">
+            <p align="justify"><span>注册消防工程师</span>&nbsp;</p>
+            </td>
+            <td width="112" valign="middle">
+            <p align="justify"><span>高级对应高级；一级对应中级；二级对应初级</span>&nbsp;</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+　　备注：助理国际商务师2002年后改名为外销员。</p>
+          </div>
+        </div>
+        <div class="fenx_con">
+        		<div class="fjdown">
+                    <script>
+                     var linkdesc="";
+                     if(linkdesc!=""){
+                       var linkurl="";
+                       var ldesc = linkdesc.split(";");
+                       var lurl = linkurl.split(";");
+                       document.writeln("<h3>附件下载</h3>");
+                       for(var p=0;p<ldesc.length;p++){
+                            document.writeln("<p><a href=\"" + lurl[p] + "\">" + ldesc[p] + "</a></p>");
+                       }
+                     }
+
+
+                     var xgbd="";
+                     if(xgbd.replace(/(^s*)|(s*$)/g, "").length>0){
+                       document.writeln("<h3>相关报道</h3>");
+                       document.writeln("");                 
+                     }
+
+                    var xgtj="";
+                     if(xgtj.replace(/(^s*)|(s*$)/g, "").length>0){
+                       document.writeln("<h3>相关图解</h3>");
+                       document.writeln("");  
+                     }
+                   </script>
+                </div>
+                <!--分享纠错-->
+<div class="fenx_left"><div class="bshare-custom icon-medium"><div class="bsPromo bsPromo2"></div><a title="分享到" href="http://www.bShare.cn/" id="bshare-shareto" class="bshare-more">分享到</a><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a></div><script type="text/javascript" charset="gb2312" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script><script type="text/javascript" charset="gb2312" src="http://www.sz.gov.cn/cn/images/bshareC0.js"></script></div>
+                    <div class="daying"><a href="http://61.144.227.17/ErrorCorrection.aspx" target="_blank">【内容纠错】</a><a href="javascript:self.print();" >【打印本页】</a><a href="javascript:window.close();" >【关闭窗口】</a></div>
+<!--分享纠错-->
+                    <div class="fenx_link"><p><a href="./t20161227_5773433.htm" target="_blank">上一篇:深圳市人力资源和社会保障局关于印发深圳市人才...</a></p><p class="next"><a href="./t20161227_5773409.htm" target="_blank">下一篇:深圳市人力资源和社会保障局关于印发深圳市接收...</a></p></div>
+                </div>
+
+<!--视图文档结束-->
+<!--普通文档类开始-->
+
+<!--普通文档类结束-->
+  </div> 
+</div></div>
+<!--底部开始-->
+<div class="footer">
+	<div class="footer_bg"></div>
+	<div class="footer_con">
+    	<div class="con_left"><span><a href="http://bszs.conac.cn/sitename?method=show&id=17AD264FEB6274CDE053012819ACD901"><img src="http://www.sz.gov.cn/cn/ggzy/images/P020160927403532608069.png" /></a></span><span><a href="http://61.144.227.239:9002/"><img src="http://www.sz.gov.cn/cn/ggzy/images/P020160927404295897233.png" /></a></span><span><a href="http://61.144.227.239:9003/webrecord/form_query.jsp"><img src="http://www.sz.gov.cn/cn/ggzy/images/P020160927404469138387.png" /></a></span><span><a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=027102001080700295"><img src="http://www.sz.gov.cn/cn/ggzy/images/P020160927404640479610.png" /></a></span></div>
+        <div class="con_con">
+        	<div class="link"><a href="http://www.sz.gov.cn/cn/fzgn/gywm/" target="_blank">关于我们</a> - <a href="http://www.sz.gov.cn/cn/fzgn/bqbh/" target="_blank">版权保护</a> - <a href="http://www.sz.gov.cn/cn/fzgn/yssm/" target="_blank">隐私声明</a> - <a href="http://www.sz.gov.cn/cn/fzgn/sybz/" target="_blank">网站概况</a> - <a href="http://www.sz.gov.cn/cn/fzgn/wzdh/" target="_blank">站群导航</a></div>
+       	  <p>主办：深圳市人民政府办公厅 技术支持单位：深圳市电子政务资源中心<br />
+咨询投诉电话：12345 网站维护电话：88121419 备案序号：<a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备05017767号</a></p>
+        
+        </div>
+        <div class="con_right"><script id="_jiucuo_" sitecode="4403000016" src="http://pucha.kaipuyun.cn/exposure/jiucuo.js"></script></div>
+    </div>
+</div>
+<!--底部结束-->
+<!--右侧栏开始-->
+<div class="right-navBox">
+    <div class="right-nav-touch"></div>
+    <div class="hand"><span>触碰右侧展开</span></div>
+    <div class="right-nav" >
+        <ul>
+            <li><a class="a1" href="http://www.sz.gov.cn/cn/bmfw/ydyy/wx/" target="_blank">微信公众号</a></li>
+            <li><a class="a2" href="http://www.sz.gov.cn/cn/bmfw/ydyy/wb/" target="_blank">微 博</a></li>
+            <li><a class="a3" href="http://www.sz.gov.cn/cn/qt/yjdy/" target="_blank">邮件订阅</a></li>
+            <li><a class="a4" href="http://www.sz.gov.cn/cn/hdjl/zxts/wyzx/" target="_blank">咨询</a></li>
+            <li><a class="a7" href="http://www.sz.gov.cn/cn/hdjl/zxts/wyts/" target="_blank">投诉</a></li>
+            <li><a class="a5" href="http://www.sz.gov.cn/cn/qt/gxhdz/" target="_blank">个性化定制</a></li>
+            <li><a class="a6" href="http://www.sz.gov.cn/cn/bmfw/ydyy/app/"   target="_blank">移动应用</a></li>
+        </ul>
+    </div>
+</div>
+<!--右侧栏结束-->
+<div class="rightNav"><a href="#"><img src="/cn/images/zxtop20160913_03.jpg" /></a></div>
+</body>
+</html>

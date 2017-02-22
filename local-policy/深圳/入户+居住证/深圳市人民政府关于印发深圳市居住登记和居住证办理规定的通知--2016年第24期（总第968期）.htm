@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="zh-CN";>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+<link rel="shortcut icon" type="image/x-icon" href="http://www.sz.gov.cn/cn/images/favicon.ico" media="screen" />
+<title>深圳市人民政府关于印发深圳市居住登记和居住证办理规定的通知--2016年第24期（总第968期）</title>
+<!--内页公共样式开始-->
+<link rel="stylesheet" type="text/css" href="http://www.sz.gov.cn/cn/images/neiye20160809.css" />
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/jquery.min20160809.js"></script>
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/zx_conter_animate.js"></script>	
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/jquery.backstretch.js"></script>	
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/rightNav20160809.js"></script>	
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/page.js"></script>
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/slideshow20160809.js"></script>
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/yahoo-dom-event.js"></script>
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/suggest-yui2_20161128.js"></script>
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/jquery.cookie.min.js"></script>
+<script type="text/javascript">
+window.onload = function()
+{
+var ispromptshown = $.cookie('ispromptshown');
+if (ispromptshown == "false") return ;
+var dataUrl ='http://61.144.227.212/was5/web/searchsuggest?AppServerEncoding=gb2312&StringEncoding=gb2312&result=false';
+var inputid = "sr";
+var data = {
+autoFocus: true,
+useShim:false,
+resultFormat: '约%result%条结果'
+}
+new TRSWAS.Suggest(inputid, dataUrl, data);
+
+
+$.ajax({
+        type:"get",
+        url:"http://61.144.227.212/was5/web/tagscloud/hotword.jsp?channelid=211631",
+        cache : false,
+        dataType : "jsonp",
+        jsonp: "callbackparam",
+        jsonpCallback:"jsonpCallback",
+        success:function(data){
+            var datalist = data.result;
+            var sr_html="<span>热门搜索：</span>";
+            var list_html = "";
+            var en_url =""
+            for(var i=0;i<datalist.length;i++){
+               en_url = encodeURI("http://61.144.227.212/was5/web/search?channelid=211631&searchword="+datalist[i].split("#")[0]);
+               if(i<5)
+                  sr_html+="<a href='"+en_url+"' target='_blank'>"+datalist[i].split("#")[0]+"</a>";
+               var num=i+1;
+               list_html+="<tr><td class='td01'><label class='l"+num+"'>"+num+"</label></td><td><a href='"+en_url+"' target='_blank'>"+datalist[i].split("#")[0]+"</a></td></tr>";
+            }
+            $(".guanjz").html(sr_html);
+            $(".mt10").html(list_html);
+            
+        },error: function(XMLHttpRequest, textStatus, errorThrown) {
+
+        }
+     });    
+
+
+};
+
+$(function(){
+
+   setInterval('bgchange()',3000);
+
+
+})
+
+function checkForm(){
+   var searchword = $("#sr").val();
+         if(searchword==null||searchword==""){
+            alert("请输入关键词");
+            return false;
+         }
+         $("#searchform").attr("action","http://61.144.227.212/was5/web/search");
+         document.charset="utf-8";
+         $("#searchform").submit();
+
+
+}
+
+function bgchange(){
+   var date= new Date();
+    var hours=date.getHours();
+    if(parseInt(hours)>=6 && parseInt(hours)<17){
+      
+	    $.backstretch([ 
+          "http://www.sz.gov.cn/cn/ggzy/bjdt/images/P020161108359190620774.jpg"
+        ], {
+            fade: 50,
+            duration: 1000
+        });
+
+   
+
+    }else if(parseInt(hours)>=17 && parseInt(hours)<19) {
+	    $.backstretch([
+          "http://www.sz.gov.cn/cn/ggzy/bjdt/images/P020161111655114902887.jpg"
+        ], {
+            fade: 50,
+            duration: 1000
+        });
+      
+    }else if((parseInt(hours)>=19 && parseInt(hours)<=24) ||(parseInt(hours)>=0 && parseInt(hours)<6)) {
+	    $.backstretch([
+          "http://www.sz.gov.cn/cn/ggzy/bjdt/images/P020161111655171248036.jpg"
+        ], {
+            fade: 50,
+            duration: 1000
+        });
+      
+    }
+}
+
+</script>
+<!--网站行为分析开始-->
+<script language="JavaScript">var _trackDataType = 'web';var _trackData = _trackData || [];var _$count_iframe =true;</script>
+<script type="text/javascript" charset="utf-8" id="phpstat_js_id_10000003" src="//218.17.83.66:8000/phpstat/count/10000003/10000003.js"></script><noscript><img src="//218.17.83.66:8000/phpstat/count/10000003/10000003.php" alt="PHPStat Analytics" /></noscript>
+<!--网站行为分析结束-->
+<!--内页公共样式结束-->	
+
+<style>
+.zx_xxgk_pr .code{height: 30px;line-height: 30px;color: #003d93;font-size: 14px;margin: 0 20px;overflow: hidden;margin-bottom: 20px;}
+.zx_xxgk_pr .code input{color: #8e8e8f;height: 26px;border: 1px solid #e2e2e2;line-height: 26px;width: 100px;margin: 0 20px 0 0;}
+</style>	
+</head>
+<body>
+<!--背景切换开始-->
+<script>
+
+    var date= new Date();
+    var hours=date.getHours();
+    if(parseInt(hours)>=6 && parseInt(hours)<17){
+      
+	    $.backstretch([ 
+          "http://www.sz.gov.cn/cn/ggzy/bjdt/images/P020161108359190620774.jpg"
+        ], {
+            fade: 50,
+            duration: 1000
+        });
+
+   
+
+    }else if(parseInt(hours)>=17 && parseInt(hours)<19) {
+	    $.backstretch([
+          "http://www.sz.gov.cn/cn/ggzy/bjdt/images/P020161111655114902887.jpg"
+        ], {
+            fade: 50,
+            duration: 1000
+        });
+      
+    }else if((parseInt(hours)>=19 && parseInt(hours)<=24) ||(parseInt(hours)>=0 && parseInt(hours)<6)) {
+	    $.backstretch([
+          "http://www.sz.gov.cn/cn/ggzy/bjdt/images/P020161111655171248036.jpg"
+        ], {
+            fade: 50,
+            duration: 1000
+        });
+      
+    }
+
+
+
+
+</script>
+<!--背景切换结束-->
+<div id="top_bg" class="top_bg" >
+<div class="top_bg_con">
+<!--头部开始-->
+<div class="top_menu" style="width:648px">
+   	  <ul  style="padding: 0 12px;">
+       	  <li class="wza_tb" style="margin: 0 5px 0 4px;"><span></span><a href="http://wza.sz.gov.cn:9000/" target="_blank">无障碍浏览</a>|</li>
+       	  <li style="margin: 0 5px 0 0;"><a style="padding: 0 5px 0 0;" href="http://203.91.55.40:9000/b5/www.sz.gov.cn/cn/" target="_blank">繁体版</a>|</li>
+          <li style="margin: 0 5px 0 0;"><a style="padding: 0 5px 0 0;" href="http://english.sz.gov.cn/" target="_blank">English</a>|</li>
+          <li style="margin: 0 5px 0 0;"><a style="padding: 0 5px 0 0;" href="http://opendata.sz.gov.cn/" target="_blank">数据开放</a>|</li>
+          <li style="margin: 0 5px 0 0;"><a style="padding: 0 5px 0 0;" href="http://www.sz.gov.cn/cn/ydmh/" target="_blank">微门户</a>|</li>
+          <li style="margin: 0 5px 0 0;"><a style="padding: 0 5px 0 0;" href="http://mail.sz.gov.cn/" target="_blank">政务邮箱</a>|</li>
+          <li style="margin: 0 5px 0 0;"><a style="padding: 0 5px 0 0;" href="http://www.sz.gov.cn/cn/fzgn/wzdh/" target="_blank">站群导航</a>|</li>
+          <li class="wza_tb" style="margin: 0;"><span style="float:right;background:url(http://www.sz.gov.cn/cn/images/zx_zwjqr_20161118.png) left bottom no-repeat;"></span><a style=" padding: 0;
+" href="http://irobot.zteict.com/irobot/szzfzx.htm?access_key=szzfzx" target="_blank">政务机器人</a></li>
+      </ul>
+    </div>
+
+
+<div class="top_con">
+	<div class="top_logo"><a href="http://www.sz.gov.cn/cn/" target="_blank"><img src="http://www.sz.gov.cn/cn/ggzy/images/P020160927398698393029.png" /></a></div>
+	<div class="search">
+            <form id="searchform" name="searchform" method="post"  accept-charset="utf-8"  target="_blank" onsubmit="return checkForm()">
+                  <input name="channelid" id="channelid" type="hidden" value="211631" />
+                  <input type="hidden" name="perpage" value="" />
+                  <input type="text" id="sr" name="searchword" class="sr" placeholder="输入关键字" autocomplete="off" onkeydown="KeyDown();" />
+                  <input type="submit" class="btn" value="搜一下" />
+            </form>
+            <div class="tc" id="tc" style="display:none" >
+                <h2>热门搜索排行</h2>
+                <table class="mt10">
+                    
+                </table>
+            </div>
+            <div class="guanjz"></div>
+        </div>
+       
+</div>
+<!--头部结束-->
+<!--导航开始-->
+<div class="zx_menu">
+	<div class="zx_menu_bg"></div>
+   	  <ul>
+      		<li id="sy"><a href="http://www.sz.gov.cn/cn/" ><span>首  页</span></a></li>
+        	<li id="xxgk" class="hover"><a href="http://www.sz.gov.cn/cn/?dw=xxgk" ><span class="m1">信息公开</span></a></li>
+        	<li id="bs"><a href="http://www.sz.gov.cn/cn/?dw=zxbs" ><span class="m2">在线办事</span></a></li>
+        	<li id="fw"><a href="http://www.sz.gov.cn/cn/?dw=bmfw" ><span class="m3">便民服务</span></a></li>
+        	<li id="hdjl"><a href="http://www.sz.gov.cn/cn/?dw=hdjl" ><span class="m4">互动交流</span></a></li>
+        	<li id="zjsz" style=" border:none;width:200px"><a href="http://www.sz.gov.cn/cn/?dw=zjsz" ><span class="m5">走进深圳</span></a></li>
+        </ul>
+    </div>
+<!--导航结束-->
+    <div class="zx_xxgk_ml"> 
+   <div class="zx_rm_tit">
+    <span>市政府部门信息公开目录</span>
+    <p><em>您现在的位置</em><a href="../../../" title="首页" class="CurrChnlCls">首页</a>&nbsp;&gt;&nbsp;<a href="../../" title="2016年政府公报" class="CurrChnlCls">2016年政府公报</a>&nbsp;&gt;&nbsp;<a href="../" title="2016年第24期（总第968期）" class="CurrChnlCls">2016年第24期（总第968期）</a></p>
+   </div> 
+   <!--视图文档开始-->
+ 
+    <div class="zx_xxgk_cont">
+ 			<div class="xx_con">
+                    	<p><em>索 引  号：</em></p>
+                        <p><em>分       类：</em>市委市政府文件</p>
+                        <p><em>发布机构：</em>深圳市人民政府</p>
+                        <p><em>发布日期：</em>2016-08-23</p>
+                        <p class="mingc"><em>名       称：</em>深圳市人民政府关于印发深圳市居住登记和居住证办理规定的通知</p>
+                        <p><em>文       号：</em>深府〔2016〕60号</p>     
+                        <p><em>主 题 词：</em></p>
+                    </div>
+        	<div class="tit">
+            	<h1>深圳市人民政府关于印发深圳市居住登记和居住证办理规定的通知</h1>
+            	<h6>
+                	<span>信息来源：深圳市人民政府</span>
+            		<span>信息提供日期：2016-08-23 </span>
+                	<span class="font">【字体：<a href="javascript:void(0);" class="zt0">大</a><a href="javascript:void(0);" class="zt1">中</a><a href="javascript:void(0);" class="zt2">小</a> 】</span>
+                    
+                 </h6>
+            </div>
+        <div class="news_cont_d_wrap">
+            		<p>各区人民政府，市政府直属各单位：</p>
+<p align="justify">　　现将《深圳市居住登记和居住证办理规定》印发给你们，请遵照执行。执行过程中遇到的问题，请径向市公安局反映。</p>
+<p align="right">深圳市人民政府</p>
+<p align="right">2016年8月8日</p>
+<p align="center"><strong>深圳市居住登记和居住证办理规定</strong></p>
+<p align="center"><strong>第一章 总 则</strong></p>
+<p>　　<strong>第一条</strong> 为规范非深圳市户籍人员（以下简称非深户籍人员）居住登记和居住证的办理，根据《深圳经济特区居住证条例》（以下简称《条例》）及《深圳市人民政府关于进一步加强和完善人口服务管理的若干意见》（深府〔2016〕58号），制定本规定。</p>
+<p align="justify">　　<strong>第二条</strong> 非深户籍人员居住登记申报和居住证的申请、受理、审核、发放、签注等相关工作，应当遵守《条例》和本规定。</p>
+<p align="justify">　　<strong>第三条</strong> 公安机关统一负责居住登记申报和居住证办理工作，负责居住登记申报和居住证办理工作的业务指导、协调和检查。</p>
+<p align="justify">　　公安派出所负责本辖区居住登记申报和居住证办理的日常工作。</p>
+<p align="justify">　　<strong>第四条</strong> 公安机关应当会同各区人民政府（含新区管理机构，下同）组织做好各区的居住登记和居住证受理点的统筹规划及日常管理等工作。</p>
+<p align="justify">　　各区人民政府应当为居住登记和居住证办理工作提供财政保障。</p>
+<p align="justify">　　<strong>第五条</strong> 公安派出所应当设置居住证受理点，负责居住证申请受理、审核、签注以及发放等相关工作，对辖区各居住证受理点进行业务指导与督促检查。</p>
+<p align="justify">　　受公安机关委托，出租屋管理机构（社区网格管理机构）、街道办事处应当以社区为单位设置居住登记受理点，负责辖区内居住登记的受理等具体工作。</p>
+<p align="justify">　　受公安机关委托，各街道应当在其办事处设置居住证受理点，非深户籍人员居住数量较多的社区可以设置居住证受理点，负责居住证申请、签注的受理以及居住证发放等相关工作。</p>
+<p align="justify">　　市公安机关应当在本部门门户网站上发布居住登记和居住证受理点的相关信息。</p>
+<p align="center"><strong>第二章 居住登记</strong></p>
+<p align="justify">　　<strong>第六条</strong> 申报义务人通过网络申报居住登记，应当先行申请居住登记账号。</p>
+<p align="justify">　　<strong>第七条</strong> 申报义务人为个人的，可以通过网络或者到居住登记受理点申请居住登记账号。</p>
+<p align="justify">　　申报义务人通过网络申请居住登记账号，应当如实填写个人身份信息和拟申报房屋信息。通过系统校验的，居住登记账号申请成功；未通过系统校验的，申报义务人应当到居住登记受理点申请居住登记账号。</p>
+<p align="justify">　　申报义务人到居住登记受理点申请居住登记账号时，应当出示本人身份证明和拟申报房屋相关材料。</p>
+<p align="justify">　　<strong>第八条</strong> 申报义务人为单位的，应当到居住登记受理点申请居住登记账号。申请时，承办人员应当出示单位及拟申报房屋相关材料、单位的授权委托书和承办人员的身份证明材料。</p>
+<p align="justify">　　<strong>第九条</strong> 居住登记账号申请成功后，申报义务人可以使用居住登记账号登陆居住登记申报系统，按规定申报居住登记信息或者管理居住登记账号相关信息。</p>
+<p align="justify">　　符合《条例》第十三条规定情形，申报义务人为个人的，可以通过网络直接注册居住登记账号申报居住登记信息。</p>
+<p align="justify">　　<strong>第十条</strong> 申报义务人到居住登记受理点申报居住登记的，应当填写申报表格，经签名确认后，由受理点出具受理回执。</p>
+<p align="justify">　　申报义务人第一次申报时，应当按规定出示下列材料：</p>
+<p align="justify">　　（一）申报义务人为个人的，应当出示本人身份证明及拟申报房屋相关材料；</p>
+<p align="justify">　　（二）申报义务人为单位的，承办人员应当出示单位及拟申报房屋相关材料、单位的授权委托书和承办人员的身份证明材料。</p>
+<p align="justify">　　第一款规定的申报表格式样由市公安机关制定。申报义务人可以通过网络下载或者到居住登记受理点领取。</p>
+<p align="justify">　　<strong>第十一条</strong> 符合《条例》第十一条规定情形的，申报义务人应当通过网络申报居住登记。</p>
+<p align="justify">　　属于即时申报情形的，申报义务人无需申报非深户籍人员的婚姻状况、文化程度、职业和服务处所、现居住地址、同住非深户籍人员之间的身份关系等信息。</p>
+<p align="justify">　　即时申报情形的居住登记管理工作由公安机关负责，具体办法由市公安机关另行规定。</p>
+<p align="center"><strong>第三章 居住证办理及签注</strong></p>
+<p align="justify">　　<strong>第十二条</strong> 申领人通过网络办理居住证相关业务的，应当先行申请居住证账号。</p>
+<p align="justify">　　申领人可以通过网络或者到居住证受理点申请居住证账号。居住证账号开通后，申领人可以通过网络申请办证或者查询办证结果。</p>
+<p align="justify">　　申领人开通账号后，可以到居住证受理点提交本人身份证明材料、手机号码进行账号认证。账号经认证后，可以通过网络办理居住证签注、换领、补领、再次申领等业务。</p>
+<p align="justify">　　持证人已在居住证受理点提交过本人身份证明材料、手机号码的，可以直接通过网络进行账号认证。</p>
+<p align="justify">　<strong>　第十三条</strong> 通过网络申办居住证的，申领人应当使用居住证账号登陆网上办证系统，按照系统要求填报个人信息，向居住地居住证受理点提出申请。申请材料完备并提交成功的，系统出具受理回执。</p>
+<p align="justify">　　通过网络申办居住证的申领人领取证件时，应当凭本人身份证明材料到其申请时选定的居住证受理点领取。居住证受理点应当核验申领人身份，打印居住证申请表，交申领人核对或者补充相关信息并签名确认后发放证件。</p>
+<p align="justify">　　<strong>第十四条</strong> 到居住证受理点申办居住证的，申领人应当携带本人身份证明材料和近期数码照片图像号，到居住地所在的居住证受理点申请。</p>
+<p align="justify">　　接到申领人申请后，受理点应当对申领人是否符合办证条件进行初步核对。符合办证条件的，打印居住证申请表，交申领人核对、补充相关信息并签名确认后，出具受理回执。</p>
+<p align="justify">　　通过居住证受理点申办居住证的，申领人可以凭受理回执到申办受理点领取证件，也可以通过邮寄方式领取证件，邮寄费用由申领人承担。</p>
+<p align="justify">　　<strong>第十五条</strong> 按照《条例》的规定，已在我市办理居住登记且符合下列条件之一的引进人才，可以直接申领居住证：</p>
+<p align="justify">　　（一）经市人力资源和社会保障部门人才资格认定的高层次专业人才、海外高层次人才、具有较高专业技能以及我市产业发展需求的人才；</p>
+<p align="justify">　　（二）取得深圳市出国留学人员资格证明的留学回国人员；</p>
+<p align="justify">　　（三）具有全日制大专及以上学历的人员。</p>
+<p align="justify">　　<strong>第十六条</strong> 公安机关收到办证申请后，应当及时将需要核实的相关信息发送至相关部门，相关部门应当按照各自职责，依照《条例》和本规定分别核实申领人的相关信息：</p>
+<p align="justify">　　（一）居住登记信息由公安机关或者受委托机构核实；</p>
+<p align="justify">　　（二）社会保险记录和人才认定信息由人力资源和社会保障部门核实；</p>
+<p align="justify">　　（三）正在我市接受全日制中高等学历（职业）教育信息由教育、人力资源和社会保障、文体旅游等主管部门核实。</p>
+<p align="justify">　　相关部门应当自收到待核实信息之日起3个工作日内完成核实工作，并向公安机关反馈核实结果。</p>
+<p align="justify">　　<strong>第十七条</strong> 对符合居住证申领条件的，公安机关应当自受理之日起15个工作日内发放居住证；对不符合条件的，应当自受理之日起7个工作日内告知申领人。</p>
+<p align="justify">　　不符合条件的申领人要求书面答复的，应当向受理其办证申请的居住证受理点提出申请，公安机关应当在3个工作日内出具书面答复。</p>
+<p align="justify">　　<strong>第十八条</strong> 持证人到居住证受理点申请签注的，应当携带本人身份证明材料。受理点经初步核对，符合条件的，受理申请并出具受理回执；不符合条件的，即时告知理由。</p>
+<p align="justify">　　持证人通过网络申请签注的，应当通过居住证账号登陆网上办证系统，填报有关信息，申请材料完备并提交成功的，系统出具受理回执。</p>
+<p align="justify">　　<strong>第十九条</strong> 公安机关收到签注申请后，应当及时将需要核实的相关信息发送到相关部门，相关部门应当自收到待核实信息之日起3个工作日内完成核实工作，并向公安机关反馈核实结果。</p>
+<p align="justify">　　符合条件的，公安机关应当即时签注；不符合条件的，受理点应当即时向申请人说明理由。申请人要求书面答复的，应当向受理其签注申请的受理点提出申请，公安机关应当在3个工作日内出具书面答复。</p>
+<p align="justify">　　<strong>第二十条</strong> 持证人在居住证使用功能中止2年内申请补办签注的，自签注之日起居住证使用功能恢复。需要再次签注的，持证人应当在补办签注之日起每满1年前60日内再次申办签注。</p>
+<p align="justify">　　补领、换领的居住证签注时限与原证相同。</p>
+<p align="justify">　　被注销后再次申领的居住证需要签注的，持证人应当自再次申领的居住证签发之日起每满1年前60日内申办签注。</p>
+<p align="justify">　　<strong>第二十一条</strong> 按照本规定申领的居住证需要补领、换领的，申领人可以携带本人身份证明材料到居住证受理点办理，也可以使用居住证账号通过网络办理。</p>
+<p align="justify">　　居住证被注销后需要再次申领的，申领人应当按照居住证申领流程办理。</p>
+<p align="justify">　　符合条件的，公安机关应当及时通知申领人缴纳居住证工本费，并在申领人缴纳工本费之日起10个工作日内发放居住证。</p>
+<p align="justify">　　补领、换领、再次申领居住证的，申领人可以凭本人身份证明材料到居住证受理点领取，也可以通过邮寄方式领取。邮寄费用由申领人承担。</p>
+<p align="justify">　　居住证使用功能中止2年内，持证人需要补领、换领居住证的，应当先办理签注。</p>
+<p align="justify">　　<strong>第二十二条</strong> 用人单位、学校代办居住证及签注的，应当到所在地居住证受理点申请居住证代办账号。</p>
+<p align="justify">　　申请居住证代办账号，应当提交用人单位、学校的营业执照或者组织机构代码证等相关材料、单位的授权委托书和承办人员的身份证明材料。材料齐全的，受理点应当及时开通居住证代办账号；材料不齐全的，应当一次性告知其需要补齐的材料。</p>
+<p align="justify">　　<strong>第二十三条</strong> 用人单位、学校代办居住证的，应当使用代办账号登陆网上办证系统，通过身份证读卡器读取申领人身份信息，并提交系统初核。经系统初核符合办证条件的，由用人单位、学校组织申领人核对、补充本人身份信息及照片等，打印申请表经申领人签名确认后提交系统，系统受理成功后出具代办受理回执。</p>
+<p align="justify">　　用人单位、学校凭代办受理回执和经申领人签名确认的居住证申请表，到受理点领取代办的居住证。</p>
+<p align="justify">　　<strong>第二十四条</strong> 用人单位和学校代办签注的，应当使用居住证代办账号登陆网上办证系统，按系统要求填报持证人有关信息，申请材料完备并提交成功的，系统出具代办受理回执。</p>
+<p align="justify">　　<strong>第二十五条</strong> 公安机关收到代办居住证申请后，应当及时将待核实信息发送给相关部门进行核实，相关部门应当自收到待核实信息之日起3个工作日内完成核实工作，并向公安机关反馈核实结果。符合条件的，公安机关即时予以签注；不符合条件的，应当及时向代办人说明理由，由代办人将审核结果告知申请人。申请人要求书面答复的，公安机关应当出具书面答复。</p>
+<p align="center"><strong>第四章 附 则</strong></p>
+<p align="justify">　　<strong>第二十六条</strong> 《条例》规定的“在特区参加社会保险”，是指在我市参加社会养老保险、社会医疗保险、工伤保险、失业保险、生育保险等社会保险。</p>
+<p align="justify">　　《条例》规定的“正在特区接受全日制中高等学历（职业）教育”，是指正在我市普通高中、中专、技校、职高、高等院校接受全日制教育。</p>
+<p align="justify">　　<strong>第二十七条</strong> 申报义务人可以通过网络或者到居住登记受理点查询其提供居所内非深户籍人员居住登记相关信息，非深户籍人员可以通过网络或者持本人身份证明材料到居住登记受理点查询本人居住登记相关信息。</p>
+<p align="justify">　　居住证持证人可以通过网络或者到居住证受理点查询本人的居住证相关信息。</p>
+<p align="justify">　　<strong>第二十八条</strong> 《条例》实施后12个月内，非深户籍人员申办居住证，自受理之日前1年内，申领人在我市流动人口和出租屋综合管理系统登记的居住信息累计满12个月的，视为在特区办理居住登记记录的居住时间连续满12个月。</p>
+<p align="justify">　　《条例》实施后12个月内，持有深圳市居住证、深圳市临时居住证的非深户籍人员换领新证的，自受理之日前1年内，申领人持有有效深圳市居住证、深圳市临时居住证时间累计满12个月的，视为在特区办理居住登记记录的居住时间连续满12个月。</p>
+<p align="justify">　　<strong>第二十九条</strong> 本规定自2016年11月1日起施行。《深圳市暂住人口证件和居住管理办法（试行）》（深府〔2005〕125号）同时废止。《深圳市居住登记和居住证办理规定》（深府办〔2015〕18号）在本规定施行前继续有效，自本规定施行之日起废止。</p>
+          </div>
+        </div>
+        <div class="fenx_con">
+        		<div class="fjdown">
+                    <script>
+                     var linkdesc="";
+                     if(linkdesc!=""){
+                       var linkurl="";
+                       var ldesc = linkdesc.split(";");
+                       var lurl = linkurl.split(";");
+                       document.writeln("<h3>附件下载</h3>");
+                       for(var p=0;p<ldesc.length;p++){
+                            document.writeln("<p><a href=\"" + lurl[p] + "\">" + ldesc[p] + "</a></p>");
+                       }
+                     }
+
+
+                     var xgbd="";
+                     if(xgbd.replace(/(^s*)|(s*$)/g, "").length>0){
+                       document.writeln("<h3>相关报道</h3>");
+                       document.writeln("");                 
+                     }
+
+                    var xgtj="";
+                     if(xgtj.replace(/(^s*)|(s*$)/g, "").length>0){
+                       document.writeln("<h3>相关图解</h3>");
+                       document.writeln("");  
+                     }
+                   </script>
+                </div>
+                <!--分享纠错-->
+<div class="fenx_left"><div class="bshare-custom icon-medium"><div class="bsPromo bsPromo2"></div><a title="分享到" href="http://www.bShare.cn/" id="bshare-shareto" class="bshare-more">分享到</a><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a></div><script type="text/javascript" charset="gb2312" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script><script type="text/javascript" charset="gb2312" src="http://www.sz.gov.cn/cn/images/bshareC0.js"></script></div>
+                    <div class="daying"><a href="http://61.144.227.17/ErrorCorrection.aspx" target="_blank">【内容纠错】</a><a href="javascript:self.print();" >【打印本页】</a><a href="javascript:window.close();" >【关闭窗口】</a></div>
+<!--分享纠错-->
+                    <div class="fenx_link"><p><a href="./t20160823_4316503.htm" target="_blank">上一篇:深圳市人民政府关于印发深圳市户籍迁入若干规定...</a></p><p class="next"><a href="./t20160823_4316499.htm" target="_blank">下一篇:深圳市人民政府关于印发深圳市非法集资案件举报...</a></p></div>
+                </div>
+
+<!--视图文档结束-->
+<!--普通文档类开始-->
+
+<!--普通文档类结束-->
+  </div> 
+</div></div>
+<!--底部开始-->
+<div class="footer">
+	<div class="footer_bg"></div>
+	<div class="footer_con">
+    	<div class="con_left"><span><a href="http://bszs.conac.cn/sitename?method=show&id=17AD264FEB6274CDE053012819ACD901"><img src="http://www.sz.gov.cn/cn/ggzy/images/P020160927403532608069.png" /></a></span><span><a href="http://61.144.227.239:9002/"><img src="http://www.sz.gov.cn/cn/ggzy/images/P020160927404295897233.png" /></a></span><span><a href="http://61.144.227.239:9003/webrecord/form_query.jsp"><img src="http://www.sz.gov.cn/cn/ggzy/images/P020160927404469138387.png" /></a></span><span><a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=027102001080700295"><img src="http://www.sz.gov.cn/cn/ggzy/images/P020160927404640479610.png" /></a></span></div>
+        <div class="con_con">
+        	<div class="link"><a href="http://www.sz.gov.cn/cn/fzgn/gywm/" target="_blank">关于我们</a> - <a href="http://www.sz.gov.cn/cn/fzgn/bqbh/" target="_blank">版权保护</a> - <a href="http://www.sz.gov.cn/cn/fzgn/yssm/" target="_blank">隐私声明</a> - <a href="http://www.sz.gov.cn/cn/fzgn/sybz/" target="_blank">网站概况</a> - <a href="http://www.sz.gov.cn/cn/fzgn/wzdh/" target="_blank">站群导航</a></div>
+       	  <p>主办：深圳市人民政府办公厅 技术支持单位：深圳市电子政务资源中心<br />
+咨询投诉电话：12345 网站维护电话：88121419 备案序号：<a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备05017767号</a></p>
+        
+        </div>
+        <div class="con_right"><script id="_jiucuo_" sitecode="4403000016" src="http://pucha.kaipuyun.cn/exposure/jiucuo.js"></script></div>
+    </div>
+</div>
+<!--底部结束-->
+<!--右侧栏开始-->
+<div class="right-navBox">
+    <div class="right-nav-touch"></div>
+    <div class="hand"><span>触碰右侧展开</span></div>
+    <div class="right-nav" >
+        <ul>
+            <li><a class="a1" href="http://www.sz.gov.cn/cn/bmfw/ydyy/wx/" target="_blank">微信公众号</a></li>
+            <li><a class="a2" href="http://www.sz.gov.cn/cn/bmfw/ydyy/wb/" target="_blank">微 博</a></li>
+            <li><a class="a3" href="http://www.sz.gov.cn/cn/qt/yjdy/" target="_blank">邮件订阅</a></li>
+            <li><a class="a4" href="http://www.sz.gov.cn/cn/hdjl/zxts/wyzx/" target="_blank">咨询</a></li>
+            <li><a class="a7" href="http://www.sz.gov.cn/cn/hdjl/zxts/wyts/" target="_blank">投诉</a></li>
+            <li><a class="a5" href="http://www.sz.gov.cn/cn/qt/gxhdz/" target="_blank">个性化定制</a></li>
+            <li><a class="a6" href="http://www.sz.gov.cn/cn/bmfw/ydyy/app/"   target="_blank">移动应用</a></li>
+        </ul>
+    </div>
+</div>
+<!--右侧栏结束-->
+<div class="rightNav"><a href="#"><img src="/cn/images/zxtop20160913_03.jpg" /></a></div>
+</body>
+</html>

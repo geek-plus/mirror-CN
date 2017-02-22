@@ -1,0 +1,388 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="zh-CN";>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+<link rel="shortcut icon" type="image/x-icon" href="http://www.sz.gov.cn/cn/images/favicon.ico" media="screen" />
+<title>深圳市人民政府关于印发深圳市户籍迁入若干规定的通知--2016年第24期（总第968期）</title>
+<!--内页公共样式开始-->
+<link rel="stylesheet" type="text/css" href="http://www.sz.gov.cn/cn/images/neiye20160809.css" />
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/jquery.min20160809.js"></script>
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/zx_conter_animate.js"></script>	
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/jquery.backstretch.js"></script>	
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/rightNav20160809.js"></script>	
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/page.js"></script>
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/slideshow20160809.js"></script>
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/yahoo-dom-event.js"></script>
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/suggest-yui2_20161128.js"></script>
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/jquery.cookie.min.js"></script>
+<script type="text/javascript">
+window.onload = function()
+{
+var ispromptshown = $.cookie('ispromptshown');
+if (ispromptshown == "false") return ;
+var dataUrl ='http://61.144.227.212/was5/web/searchsuggest?AppServerEncoding=gb2312&StringEncoding=gb2312&result=false';
+var inputid = "sr";
+var data = {
+autoFocus: true,
+useShim:false,
+resultFormat: '约%result%条结果'
+}
+new TRSWAS.Suggest(inputid, dataUrl, data);
+
+
+$.ajax({
+        type:"get",
+        url:"http://61.144.227.212/was5/web/tagscloud/hotword.jsp?channelid=211631",
+        cache : false,
+        dataType : "jsonp",
+        jsonp: "callbackparam",
+        jsonpCallback:"jsonpCallback",
+        success:function(data){
+            var datalist = data.result;
+            var sr_html="<span>热门搜索：</span>";
+            var list_html = "";
+            var en_url =""
+            for(var i=0;i<datalist.length;i++){
+               en_url = encodeURI("http://61.144.227.212/was5/web/search?channelid=211631&searchword="+datalist[i].split("#")[0]);
+               if(i<5)
+                  sr_html+="<a href='"+en_url+"' target='_blank'>"+datalist[i].split("#")[0]+"</a>";
+               var num=i+1;
+               list_html+="<tr><td class='td01'><label class='l"+num+"'>"+num+"</label></td><td><a href='"+en_url+"' target='_blank'>"+datalist[i].split("#")[0]+"</a></td></tr>";
+            }
+            $(".guanjz").html(sr_html);
+            $(".mt10").html(list_html);
+            
+        },error: function(XMLHttpRequest, textStatus, errorThrown) {
+
+        }
+     });    
+
+
+};
+
+$(function(){
+
+   setInterval('bgchange()',3000);
+
+
+})
+
+function checkForm(){
+   var searchword = $("#sr").val();
+         if(searchword==null||searchword==""){
+            alert("请输入关键词");
+            return false;
+         }
+         $("#searchform").attr("action","http://61.144.227.212/was5/web/search");
+         document.charset="utf-8";
+         $("#searchform").submit();
+
+
+}
+
+function bgchange(){
+   var date= new Date();
+    var hours=date.getHours();
+    if(parseInt(hours)>=6 && parseInt(hours)<17){
+      
+	    $.backstretch([ 
+          "http://www.sz.gov.cn/cn/ggzy/bjdt/images/P020161108359190620774.jpg"
+        ], {
+            fade: 50,
+            duration: 1000
+        });
+
+   
+
+    }else if(parseInt(hours)>=17 && parseInt(hours)<19) {
+	    $.backstretch([
+          "http://www.sz.gov.cn/cn/ggzy/bjdt/images/P020161111655114902887.jpg"
+        ], {
+            fade: 50,
+            duration: 1000
+        });
+      
+    }else if((parseInt(hours)>=19 && parseInt(hours)<=24) ||(parseInt(hours)>=0 && parseInt(hours)<6)) {
+	    $.backstretch([
+          "http://www.sz.gov.cn/cn/ggzy/bjdt/images/P020161111655171248036.jpg"
+        ], {
+            fade: 50,
+            duration: 1000
+        });
+      
+    }
+}
+
+</script>
+<!--网站行为分析开始-->
+<script language="JavaScript">var _trackDataType = 'web';var _trackData = _trackData || [];var _$count_iframe =true;</script>
+<script type="text/javascript" charset="utf-8" id="phpstat_js_id_10000003" src="//218.17.83.66:8000/phpstat/count/10000003/10000003.js"></script><noscript><img src="//218.17.83.66:8000/phpstat/count/10000003/10000003.php" alt="PHPStat Analytics" /></noscript>
+<!--网站行为分析结束-->
+<!--内页公共样式结束-->	
+
+<style>
+.zx_xxgk_pr .code{height: 30px;line-height: 30px;color: #003d93;font-size: 14px;margin: 0 20px;overflow: hidden;margin-bottom: 20px;}
+.zx_xxgk_pr .code input{color: #8e8e8f;height: 26px;border: 1px solid #e2e2e2;line-height: 26px;width: 100px;margin: 0 20px 0 0;}
+</style>	
+</head>
+<body>
+<!--背景切换开始-->
+<script>
+
+    var date= new Date();
+    var hours=date.getHours();
+    if(parseInt(hours)>=6 && parseInt(hours)<17){
+      
+	    $.backstretch([ 
+          "http://www.sz.gov.cn/cn/ggzy/bjdt/images/P020161108359190620774.jpg"
+        ], {
+            fade: 50,
+            duration: 1000
+        });
+
+   
+
+    }else if(parseInt(hours)>=17 && parseInt(hours)<19) {
+	    $.backstretch([
+          "http://www.sz.gov.cn/cn/ggzy/bjdt/images/P020161111655114902887.jpg"
+        ], {
+            fade: 50,
+            duration: 1000
+        });
+      
+    }else if((parseInt(hours)>=19 && parseInt(hours)<=24) ||(parseInt(hours)>=0 && parseInt(hours)<6)) {
+	    $.backstretch([
+          "http://www.sz.gov.cn/cn/ggzy/bjdt/images/P020161111655171248036.jpg"
+        ], {
+            fade: 50,
+            duration: 1000
+        });
+      
+    }
+
+
+
+
+</script>
+<!--背景切换结束-->
+<div id="top_bg" class="top_bg" >
+<div class="top_bg_con">
+<!--头部开始-->
+<div class="top_menu" style="width:648px">
+   	  <ul  style="padding: 0 12px;">
+       	  <li class="wza_tb" style="margin: 0 5px 0 4px;"><span></span><a href="http://wza.sz.gov.cn:9000/" target="_blank">无障碍浏览</a>|</li>
+       	  <li style="margin: 0 5px 0 0;"><a style="padding: 0 5px 0 0;" href="http://203.91.55.40:9000/b5/www.sz.gov.cn/cn/" target="_blank">繁体版</a>|</li>
+          <li style="margin: 0 5px 0 0;"><a style="padding: 0 5px 0 0;" href="http://english.sz.gov.cn/" target="_blank">English</a>|</li>
+          <li style="margin: 0 5px 0 0;"><a style="padding: 0 5px 0 0;" href="http://opendata.sz.gov.cn/" target="_blank">数据开放</a>|</li>
+          <li style="margin: 0 5px 0 0;"><a style="padding: 0 5px 0 0;" href="http://www.sz.gov.cn/cn/ydmh/" target="_blank">微门户</a>|</li>
+          <li style="margin: 0 5px 0 0;"><a style="padding: 0 5px 0 0;" href="http://mail.sz.gov.cn/" target="_blank">政务邮箱</a>|</li>
+          <li style="margin: 0 5px 0 0;"><a style="padding: 0 5px 0 0;" href="http://www.sz.gov.cn/cn/fzgn/wzdh/" target="_blank">站群导航</a>|</li>
+          <li class="wza_tb" style="margin: 0;"><span style="float:right;background:url(http://www.sz.gov.cn/cn/images/zx_zwjqr_20161118.png) left bottom no-repeat;"></span><a style=" padding: 0;
+" href="http://irobot.zteict.com/irobot/szzfzx.htm?access_key=szzfzx" target="_blank">政务机器人</a></li>
+      </ul>
+    </div>
+
+
+<div class="top_con">
+	<div class="top_logo"><a href="http://www.sz.gov.cn/cn/" target="_blank"><img src="http://www.sz.gov.cn/cn/ggzy/images/P020160927398698393029.png" /></a></div>
+	<div class="search">
+            <form id="searchform" name="searchform" method="post"  accept-charset="utf-8"  target="_blank" onsubmit="return checkForm()">
+                  <input name="channelid" id="channelid" type="hidden" value="211631" />
+                  <input type="hidden" name="perpage" value="" />
+                  <input type="text" id="sr" name="searchword" class="sr" placeholder="输入关键字" autocomplete="off" onkeydown="KeyDown();" />
+                  <input type="submit" class="btn" value="搜一下" />
+            </form>
+            <div class="tc" id="tc" style="display:none" >
+                <h2>热门搜索排行</h2>
+                <table class="mt10">
+                    
+                </table>
+            </div>
+            <div class="guanjz"></div>
+        </div>
+       
+</div>
+<!--头部结束-->
+<!--导航开始-->
+<div class="zx_menu">
+	<div class="zx_menu_bg"></div>
+   	  <ul>
+      		<li id="sy"><a href="http://www.sz.gov.cn/cn/" ><span>首  页</span></a></li>
+        	<li id="xxgk" class="hover"><a href="http://www.sz.gov.cn/cn/?dw=xxgk" ><span class="m1">信息公开</span></a></li>
+        	<li id="bs"><a href="http://www.sz.gov.cn/cn/?dw=zxbs" ><span class="m2">在线办事</span></a></li>
+        	<li id="fw"><a href="http://www.sz.gov.cn/cn/?dw=bmfw" ><span class="m3">便民服务</span></a></li>
+        	<li id="hdjl"><a href="http://www.sz.gov.cn/cn/?dw=hdjl" ><span class="m4">互动交流</span></a></li>
+        	<li id="zjsz" style=" border:none;width:200px"><a href="http://www.sz.gov.cn/cn/?dw=zjsz" ><span class="m5">走进深圳</span></a></li>
+        </ul>
+    </div>
+<!--导航结束-->
+    <div class="zx_xxgk_ml"> 
+   <div class="zx_rm_tit">
+    <span>市政府部门信息公开目录</span>
+    <p><em>您现在的位置</em><a href="../../../" title="首页" class="CurrChnlCls">首页</a>&nbsp;&gt;&nbsp;<a href="../../" title="2016年政府公报" class="CurrChnlCls">2016年政府公报</a>&nbsp;&gt;&nbsp;<a href="../" title="2016年第24期（总第968期）" class="CurrChnlCls">2016年第24期（总第968期）</a></p>
+   </div> 
+   <!--视图文档开始-->
+ 
+    <div class="zx_xxgk_cont">
+ 			<div class="xx_con">
+                    	<p><em>索 引  号：</em></p>
+                        <p><em>分       类：</em>市委市政府文件</p>
+                        <p><em>发布机构：</em>深圳市人民政府</p>
+                        <p><em>发布日期：</em>2016-08-23</p>
+                        <p class="mingc"><em>名       称：</em>深圳市人民政府关于印发深圳市户籍迁入若干规定的通知</p>
+                        <p><em>文       号：</em>深府〔2016〕59号</p>     
+                        <p><em>主 题 词：</em></p>
+                    </div>
+        	<div class="tit">
+            	<h1>深圳市人民政府关于印发深圳市户籍迁入若干规定的通知</h1>
+            	<h6>
+                	<span>信息来源：深圳市人民政府</span>
+            		<span>信息提供日期：2016-08-23 </span>
+                	<span class="font">【字体：<a href="javascript:void(0);" class="zt0">大</a><a href="javascript:void(0);" class="zt1">中</a><a href="javascript:void(0);" class="zt2">小</a> 】</span>
+                    
+                 </h6>
+            </div>
+        <div class="news_cont_d_wrap">
+            		<p align="justify">各区人民政府，市政府直属各单位：</p>
+<p align="justify">　　现将《深圳市户籍迁入若干规定》印发给你们，请遵照执行。执行过程中遇到的问题，请径向市发展改革委反映。</p>
+<p align="right">深圳市人民政府</p>
+<p align="right">2016年8月8日</p>
+<p align="center"><strong>深圳市户籍迁入若干规定</strong></p>
+<p align="justify">　<strong>　第一条</strong> 为控制人口总量，优化人口结构，提高人口整体素质，促进人口与经济、社会、资源、环境协调发展，根据《国务院关于进一步推进户籍制度改革的意见》（国发〔2014〕25号）、《广东省人民政府关于进一步推进户籍制度改革的实施意见》（粤府〔2015〕63号）、《深圳市人民政府关于进一步加强和完善人口服务管理的若干意见》（深府〔2016〕58号），制定本规定。</p>
+<p align="justify">　　<strong>第二条</strong> 本规定所称户籍迁入是指非深圳市户籍人员将户籍从其他地区迁入深圳市。</p>
+<p align="justify">　　<strong>第三条</strong> 市政府根据全市经济社会发展情况，对户籍迁入进行宏观调控。</p>
+<p align="justify">　　<strong>第四条</strong> 户籍迁入以总量控制、分类管理、存量置换为原则，实行年度计划安排、准入条件和审批入户相结合的管理方式。</p>
+<p align="justify">　　<strong>第五条</strong> 户籍迁入计划根据人口管理政策和产业政策按年度制定，重点满足全市经济社会发展对各类人才的需求。全市年入户总量应当控制在迁入年度计划之内。</p>
+<p align="justify">　　<strong>第六条</strong> 户籍迁入划分为人才引进迁户、纳税迁户、政策性迁户和居住社保迁户四个类别。</p>
+<p align="justify">　　本规定所称人才引进迁户，是指从深圳市外或市内非户籍人口中根据年龄、学历、技术技能水平等条件引进人才，按规定办理入户。</p>
+<p align="justify">　　本规定所称纳税迁户，是指对在深圳市缴纳一定税额、符合入户条件的企业法定代表人、自然人股东、合伙企业出资（合伙）人、个人独资企业主、个体工商户业主及纳税达到一定数额的个人，按规定办理入户。</p>
+<p align="justify">　　本规定所称政策性迁户，是指按照国家、广东省、深圳市有关规定，对符合特定政策的人员，按规定办理入户，包括夫妻投靠、老人投靠、未成年子女随迁、军转干部安置、军人家属随迁、军休及复员干部和退役士兵安置、招生和驻深机构人员入户等。</p>
+<p align="justify">　　本规定所称居住社保迁户，是指对参加深圳市社会养老保险并在深圳市拥有合法住宅用途房产（或合法租赁住房）达到一定年限的人员，按规定办理入户。</p>
+<p align="justify">　　<strong>第七条</strong> 市发展改革部门负责统筹协调户籍迁入管理的各项工作，牵头研究提出非户籍人口入户的政策措施，制定全市年度户籍迁入计划并组织实施，对计划执行情况进行监督检查。</p>
+<p align="justify">　　市人力资源部门负责制定人才引进实施办法，按计划办理人才引进、军转干部安置等入户审核工作。</p>
+<p align="justify">　　市民政部门负责按计划办理军休、复员干部和退役士兵安置等入户审核工作。</p>
+<p align="justify">　　市经贸部门负责按计划办理外地政府驻深机构在编人员入户审核工作。</p>
+<p align="justify">　　市公安部门负责按计划办理纳税入户、居住社保入户及夫妻投靠、子女随迁、老人投靠入户等审核工作，衔接办理其他各类人员的迁户手续。</p>
+<p align="justify">　　<strong>第八条</strong> 符合下列条件之一的人员，经核准可办理人才引进迁户：</p>
+<p align="justify">　　（一）经深圳市认定的高层次人才，且符合该类人才认定标准对应年龄条件的人员。</p>
+<p align="justify">　　（二）在国（境）外学习并获得学士以上学位的留学人员，或在国（境）外高等院校、科研机构工作（学习）1年以上、取得一定成果的访问学者和博士后等进修人员。本项所述人员年龄应在45周岁以下。</p>
+<p align="justify">　　（三）具有普通高等教育本科以上学历，且年龄在45周岁以下的人员；具有普通高等教育专科以上学历，且年龄在35周岁以下的人员。</p>
+<p align="justify">　　（四）具有高级专业技术资格，且年龄在50周岁以下的人员；具有中级专业技术资格，且年龄在45周岁以下的人员。本项所述人员需同时具有中专以上学历。</p>
+<p align="justify">　　（五）具有高级技师职业资格，且年龄在45周岁以下的人员；具有技师职业资格，且年龄在40周岁以下的人员；具有高级职业资格，且在深圳市参加社会保险满3年以上、年龄在35周岁以下的人员。本项所述人员的职业资格证书需同时符合深圳市紧缺工种（职业）目录。</p>
+<p align="justify">　　（六）在世界技能大赛和国家级一、二类职业技能竞赛中获奖人员，或获得“中华技能大奖”“全国技能能手”“广东省技术能手”“深圳市技术能手”称号人员，或受深圳市委、市政府表彰的人员。本项所述人员年龄需在45周岁以下。</p>
+<p align="justify">　　符合本条规定条件的人员，由市（区）人力资源部门按有关规定审核后办理相关手续，具体实施办法和办理程序由市人力资源保障部门另行制定。市（区）人力资源部门应当按规定做好学历、技术资格、职业资格等核验或实测实操考核工作。</p>
+<p align="justify">　　不符合本条规定条件，属于深圳市经济社会发展急需的其他人才，经市发展改革部门下达专项计划后，可由人力资源部门在计划安排额度内审批引进。</p>
+<p align="justify">　　<strong>第九条</strong> 符合下列条件之一的人员，经核准可办理纳税迁户：</p>
+<p align="justify">　　（一）在深圳市依法登记注册的法人企业法定代表（负责）人，该企业在最近连续3个纳税年度内缴纳的税额累计在300万元以上。</p>
+<p align="justify">　　（二）在深圳市依法登记注册的个人独资企业、有限责任公司自然人股东、合伙企业出资（合伙）人，在最近连续3个纳税年度内，以其投资份额占该企业实收资本的比例而分摊企业已缴纳的税额累计在60万元以上。</p>
+<p align="justify">　　（三）在深圳市就业的个人，最近连续3个纳税年度内依法缴纳的个人所得税（限工资薪金所得和劳务报酬所得项目）累计在24万元以上。</p>
+<p align="justify">　　（四）在深圳市依法登记注册的个体工商户，在最近连续3个纳税年度内缴纳的税额累计在30万元以上。</p>
+<p align="justify">　　符合本条规定条件的人员，迁户时年龄应当在50周岁以下。纳税额超过以上规定纳税额1倍以上的，其迁户年龄可放宽至55周岁以下。前款第（一）项的企业法定代表（负责）人，前款第（二）项的个人独资企业主、自然人股东、合伙企业出资（合伙）人，前款第（四）项的个体工商户经营者，应在最近连续3个纳税年度以内在同一企业，且一直具备与申请事由相适应的身份资格。</p>
+<p align="justify">　　纳税迁户人员办理入户手续时，应当向有关部门提交税务部门开具的完税凭证和纳税证明。企业或个人缴纳的各项税款必须是依法申报并已经完税的自缴税款（不包含代扣代缴、代收代缴及由税务、司法部门追缴入库的税款）。</p>
+<p align="justify">　　<strong>第十条</strong> 符合下列条件之一的人员，在年度计划安排额度内，经审批可办理政策性迁户：</p>
+<p align="justify">　　（一）父母一方为深圳市户籍的，其未成年子女可以申请投靠入户。</p>
+<p align="justify">　　（二）夫妻一方为深圳市户籍的，其配偶按下列要求申请投靠入户：</p>
+<p align="justify">　　1．在深有就业，且同时符合本规定第八条条件的，直接办理人才引进迁户；</p>
+<p align="justify">　　2．在深无就业，或者虽有就业但不符合本规定第八条条件的，分居时间满2年后可以申请入户。经深圳市认定的高层次人才及具有高级专业技术资格、高级技师或硕士以上研究生学历条件人员的配偶，可不受分居时间限制并予优先解决。</p>
+<p align="justify">　　（三）迁入深圳市户籍连续满8年且仍拥有深圳市户籍的，其共同生活的父母可以申请投靠入户。父母婚姻在存续期间的，须同时提出入户申请，离异或丧偶后未再婚者除外。</p>
+<p align="justify">　　（四）符合国家、广东省、深圳市规定的军转干部及其随迁随调家属、军休及复员干部和退役士兵、驻深部队随军家属，可以申请入户。</p>
+<p align="justify">　　（五）深圳市高等院校在国家统招计划内生源新生可以申请入户。</p>
+<p align="justify">　　（六）地级市以上人民政府驻深机构在编工作人员可以在指标额度内申请入户，其中省级（含副省级）政府驻深机构指标总额度为20名，地级市政府驻深机构指标总额度为10名。</p>
+<p align="justify">　　（七）国家、广东省、深圳市规定的其他情形。</p>
+<p align="justify">　　本条第一款第（一）项所述人员迁户时，其年龄应当在18周岁以下，但在高中（含中职、中技）或大学在读学生的，其迁户年龄可以放宽至20周岁以下。本条第一款第（三）项人员迁户时，其年龄应当同时达到男性60周岁以上，女性55周岁以上。本条第一款第（六）项人员迁户时，其年龄应当在55周岁以下。</p>
+<p align="justify">　　本条第一款第（五）、（六）项所述人员入户后，其户籍须落在所属学校或单位的集体户，不可进行市内迁移，不可申请夫妻投靠、老人投靠迁户，完成在深学业或工作后须将户口及时迁出深圳。第（六）项所述人员入户后，其未成年子女可申请子女投靠迁户，其户口迁出时须将其尚未成年的随迁子女一并迁出。</p>
+<p align="justify">　　<strong>第十一条</strong> 持有深圳市居住证，且在深具备合法稳定就业和合法稳定住所（含租赁）条件的人员，在年度计划安排额度内，经审批可办理居住社保迁户。居住社保迁户以积分制办法实施，积分主要指标为参加深圳社会养老保险年限和拥有深圳合法产权住房年限（或合法租赁住房），具体办法，由市发展改革部门会同市公安等部门另行制定。</p>
+<p align="justify">　　符合本条规定人员迁户时，男性应当在55周岁以下，女性应当在50周岁以下。</p>
+<p align="justify">　　<strong>第十二条</strong> 有关人员迁户时，除应当符合本规定外，还应当符合《深圳经济特区人口与计划生育条例》的有关规定，且无参加国家禁止的组织或活动的记录。</p>
+<p align="justify">　　<strong>第十三条</strong> 各类迁户人员应当按以下规定办理相关手续，领取深圳市户籍迁入指标后，再到公安部门办理复核入户手续：</p>
+<p align="justify">　　（一）符合人才引进迁户条件的人员，根据各自情况按规定向市、区（新区）人力资源（组织）部门申请办理相关手续。</p>
+<p align="justify">　　（二）符合纳税迁户条件且同时符合人才引进迁户条件的人员，应向市、区（新区）人力资源（组织）部门申请办理相关手续；其他符合纳税迁户条件的人员，向市公安部门申请办理相关手续。</p>
+<p align="justify">　　（三）符合政策性迁户条件的人员，按迁户类别分别向公安、人力资源、民政、经贸部门申请办理相关手续。</p>
+<p align="justify">　　（四）符合居住社保迁户条件的人员，向市公安部门申请办理相关手续。</p>
+<p align="justify">　　<strong>第十四条</strong> 符合本规定条件的人员迁户时，其户口性质仍登记为农业户口的，须同时申请办理深圳市“农转非”手续。</p>
+<p align="justify">　　<strong>第十五条</strong> 符合本规定第八条、第九条人员的未成年子女（年龄应在18周岁以下），可由有关部门同步审核办理子女随迁入户手续。</p>
+<p align="justify">　　<strong>第十六条</strong> 按本规定迁入但尚未达到法定退休年龄的就业人员，应当参加深圳市职工社会养老保险。</p>
+<p align="justify">　　符合在本市按月领取社会养老保险金条件的，按《深圳经济特区社会养老保险条例》及相关规定，计发社会养老保险待遇。</p>
+<p align="justify">　　<strong>第十七条</strong> 申请人提供的入户申请材料应真实有效。经有关部门查实，存在隐瞒、欺骗或提供虚假材料的，2年内不予受理入户申请；已经入户的，予以注销，退回原籍；涉嫌犯罪的，移送司法机关依法处理。</p>
+<p align="justify">　　<strong>第十八条</strong> 有关部门应当在职责范围内，依据本规定，坚持简化程序、优化服务，制定具体的实施办法。</p>
+<p align="justify">　　<strong>第十九条</strong> 本规定所称“以下”不包含本数，“以上”包含本数。</p>
+<p align="justify">　　<strong>第二十条</strong> 本规定自2016年9月1日起施行。《深圳市户籍迁入若干规定（试行）》（深府〔2005〕125号）同时废止。</p>
+          </div>
+        </div>
+        <div class="fenx_con">
+        		<div class="fjdown">
+                    <script>
+                     var linkdesc="";
+                     if(linkdesc!=""){
+                       var linkurl="";
+                       var ldesc = linkdesc.split(";");
+                       var lurl = linkurl.split(";");
+                       document.writeln("<h3>附件下载</h3>");
+                       for(var p=0;p<ldesc.length;p++){
+                            document.writeln("<p><a href=\"" + lurl[p] + "\">" + ldesc[p] + "</a></p>");
+                       }
+                     }
+
+
+                     var xgbd="";
+                     if(xgbd.replace(/(^s*)|(s*$)/g, "").length>0){
+                       document.writeln("<h3>相关报道</h3>");
+                       document.writeln("");                 
+                     }
+
+                    var xgtj="";
+                     if(xgtj.replace(/(^s*)|(s*$)/g, "").length>0){
+                       document.writeln("<h3>相关图解</h3>");
+                       document.writeln("");  
+                     }
+                   </script>
+                </div>
+                <!--分享纠错-->
+<div class="fenx_left"><div class="bshare-custom icon-medium"><div class="bsPromo bsPromo2"></div><a title="分享到" href="http://www.bShare.cn/" id="bshare-shareto" class="bshare-more">分享到</a><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a></div><script type="text/javascript" charset="gb2312" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script><script type="text/javascript" charset="gb2312" src="http://www.sz.gov.cn/cn/images/bshareC0.js"></script></div>
+                    <div class="daying"><a href="http://61.144.227.17/ErrorCorrection.aspx" target="_blank">【内容纠错】</a><a href="javascript:self.print();" >【打印本页】</a><a href="javascript:window.close();" >【关闭窗口】</a></div>
+<!--分享纠错-->
+                    <div class="fenx_link"><p><a href="./t20160823_4316510.htm" target="_blank">上一篇:深圳市人民政府关于进一步加强和完善人口服务管...</a></p><p class="next"><a href="./t20160823_4316502.htm" target="_blank">下一篇:深圳市人民政府关于印发深圳市居住登记和居住证...</a></p></div>
+                </div>
+
+<!--视图文档结束-->
+<!--普通文档类开始-->
+
+<!--普通文档类结束-->
+  </div> 
+</div></div>
+<!--底部开始-->
+<div class="footer">
+	<div class="footer_bg"></div>
+	<div class="footer_con">
+    	<div class="con_left"><span><a href="http://bszs.conac.cn/sitename?method=show&id=17AD264FEB6274CDE053012819ACD901"><img src="http://www.sz.gov.cn/cn/ggzy/images/P020160927403532608069.png" /></a></span><span><a href="http://61.144.227.239:9002/"><img src="http://www.sz.gov.cn/cn/ggzy/images/P020160927404295897233.png" /></a></span><span><a href="http://61.144.227.239:9003/webrecord/form_query.jsp"><img src="http://www.sz.gov.cn/cn/ggzy/images/P020160927404469138387.png" /></a></span><span><a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=027102001080700295"><img src="http://www.sz.gov.cn/cn/ggzy/images/P020160927404640479610.png" /></a></span></div>
+        <div class="con_con">
+        	<div class="link"><a href="http://www.sz.gov.cn/cn/fzgn/gywm/" target="_blank">关于我们</a> - <a href="http://www.sz.gov.cn/cn/fzgn/bqbh/" target="_blank">版权保护</a> - <a href="http://www.sz.gov.cn/cn/fzgn/yssm/" target="_blank">隐私声明</a> - <a href="http://www.sz.gov.cn/cn/fzgn/sybz/" target="_blank">网站概况</a> - <a href="http://www.sz.gov.cn/cn/fzgn/wzdh/" target="_blank">站群导航</a></div>
+       	  <p>主办：深圳市人民政府办公厅 技术支持单位：深圳市电子政务资源中心<br />
+咨询投诉电话：12345 网站维护电话：88121419 备案序号：<a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备05017767号</a></p>
+        
+        </div>
+        <div class="con_right"><script id="_jiucuo_" sitecode="4403000016" src="http://pucha.kaipuyun.cn/exposure/jiucuo.js"></script></div>
+    </div>
+</div>
+<!--底部结束-->
+<!--右侧栏开始-->
+<div class="right-navBox">
+    <div class="right-nav-touch"></div>
+    <div class="hand"><span>触碰右侧展开</span></div>
+    <div class="right-nav" >
+        <ul>
+            <li><a class="a1" href="http://www.sz.gov.cn/cn/bmfw/ydyy/wx/" target="_blank">微信公众号</a></li>
+            <li><a class="a2" href="http://www.sz.gov.cn/cn/bmfw/ydyy/wb/" target="_blank">微 博</a></li>
+            <li><a class="a3" href="http://www.sz.gov.cn/cn/qt/yjdy/" target="_blank">邮件订阅</a></li>
+            <li><a class="a4" href="http://www.sz.gov.cn/cn/hdjl/zxts/wyzx/" target="_blank">咨询</a></li>
+            <li><a class="a7" href="http://www.sz.gov.cn/cn/hdjl/zxts/wyts/" target="_blank">投诉</a></li>
+            <li><a class="a5" href="http://www.sz.gov.cn/cn/qt/gxhdz/" target="_blank">个性化定制</a></li>
+            <li><a class="a6" href="http://www.sz.gov.cn/cn/bmfw/ydyy/app/"   target="_blank">移动应用</a></li>
+        </ul>
+    </div>
+</div>
+<!--右侧栏结束-->
+<div class="rightNav"><a href="#"><img src="/cn/images/zxtop20160913_03.jpg" /></a></div>
+</body>
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="zh-CN";>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+<link rel="shortcut icon" type="image/x-icon" href="http://www.sz.gov.cn/cn/images/favicon.ico" media="screen" />
+<title>深圳市人民政府令（第290号）深圳市城市更新办法--2016年第38期（总第982期）</title>
+<!--内页公共样式开始-->
+<link rel="stylesheet" type="text/css" href="http://www.sz.gov.cn/cn/images/neiye20160809.css" />
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/jquery.min20160809.js"></script>
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/zx_conter_animate.js"></script>	
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/jquery.backstretch.js"></script>	
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/rightNav20160809.js"></script>	
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/page.js"></script>
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/slideshow20160809.js"></script>
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/yahoo-dom-event.js"></script>
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/suggest-yui2_20161128.js"></script>
+<script type="text/javascript" src="http://www.sz.gov.cn/cn/images/jquery.cookie.min.js"></script>
+<script type="text/javascript">
+window.onload = function()
+{
+var ispromptshown = $.cookie('ispromptshown');
+if (ispromptshown == "false") return ;
+var dataUrl ='http://61.144.227.212/was5/web/searchsuggest?AppServerEncoding=gb2312&StringEncoding=gb2312&result=false';
+var inputid = "sr";
+var data = {
+autoFocus: true,
+useShim:false,
+resultFormat: '约%result%条结果'
+}
+new TRSWAS.Suggest(inputid, dataUrl, data);
+
+
+$.ajax({
+        type:"get",
+        url:"http://61.144.227.212/was5/web/tagscloud/hotword.jsp?channelid=211631",
+        cache : false,
+        dataType : "jsonp",
+        jsonp: "callbackparam",
+        jsonpCallback:"jsonpCallback",
+        success:function(data){
+            var datalist = data.result;
+            var sr_html="<span>热门搜索：</span>";
+            var list_html = "";
+            var en_url =""
+            for(var i=0;i<datalist.length;i++){
+               en_url = encodeURI("http://61.144.227.212/was5/web/search?channelid=211631&searchword="+datalist[i].split("#")[0]);
+               if(i<5)
+                  sr_html+="<a href='"+en_url+"' target='_blank'>"+datalist[i].split("#")[0]+"</a>";
+               var num=i+1;
+               list_html+="<tr><td class='td01'><label class='l"+num+"'>"+num+"</label></td><td><a href='"+en_url+"' target='_blank'>"+datalist[i].split("#")[0]+"</a></td></tr>";
+            }
+            $(".guanjz").html(sr_html);
+            $(".mt10").html(list_html);
+            
+        },error: function(XMLHttpRequest, textStatus, errorThrown) {
+
+        }
+     });    
+
+
+};
+
+$(function(){
+
+   setInterval('bgchange()',3000);
+
+
+})
+
+function checkForm(){
+   var searchword = $("#sr").val();
+         if(searchword==null||searchword==""){
+            alert("请输入关键词");
+            return false;
+         }
+         $("#searchform").attr("action","http://61.144.227.212/was5/web/search");
+         document.charset="utf-8";
+         $("#searchform").submit();
+
+
+}
+
+function bgchange(){
+   var date= new Date();
+    var hours=date.getHours();
+    if(parseInt(hours)>=6 && parseInt(hours)<17){
+      
+	    $.backstretch([ 
+          "http://www.sz.gov.cn/cn/ggzy/bjdt/images/P020161108359190620774.jpg"
+        ], {
+            fade: 50,
+            duration: 1000
+        });
+
+   
+
+    }else if(parseInt(hours)>=17 && parseInt(hours)<19) {
+	    $.backstretch([
+          "http://www.sz.gov.cn/cn/ggzy/bjdt/images/P020161111655114902887.jpg"
+        ], {
+            fade: 50,
+            duration: 1000
+        });
+      
+    }else if((parseInt(hours)>=19 && parseInt(hours)<=24) ||(parseInt(hours)>=0 && parseInt(hours)<6)) {
+	    $.backstretch([
+          "http://www.sz.gov.cn/cn/ggzy/bjdt/images/P020161111655171248036.jpg"
+        ], {
+            fade: 50,
+            duration: 1000
+        });
+      
+    }
+}
+
+</script>
+<!--网站行为分析开始-->
+<script language="JavaScript">var _trackDataType = 'web';var _trackData = _trackData || [];var _$count_iframe =true;</script>
+<script type="text/javascript" charset="utf-8" id="phpstat_js_id_10000003" src="//218.17.83.66:8000/phpstat/count/10000003/10000003.js"></script><noscript><img src="//218.17.83.66:8000/phpstat/count/10000003/10000003.php" alt="PHPStat Analytics" /></noscript>
+<!--网站行为分析结束-->
+<!--内页公共样式结束-->	
+
+<style>
+.zx_xxgk_pr .code{height: 30px;line-height: 30px;color: #003d93;font-size: 14px;margin: 0 20px;overflow: hidden;margin-bottom: 20px;}
+.zx_xxgk_pr .code input{color: #8e8e8f;height: 26px;border: 1px solid #e2e2e2;line-height: 26px;width: 100px;margin: 0 20px 0 0;}
+</style>	
+</head>
+<body>
+<!--背景切换开始-->
+<script>
+
+    var date= new Date();
+    var hours=date.getHours();
+    if(parseInt(hours)>=6 && parseInt(hours)<17){
+      
+	    $.backstretch([ 
+          "http://www.sz.gov.cn/cn/ggzy/bjdt/images/P020161108359190620774.jpg"
+        ], {
+            fade: 50,
+            duration: 1000
+        });
+
+   
+
+    }else if(parseInt(hours)>=17 && parseInt(hours)<19) {
+	    $.backstretch([
+          "http://www.sz.gov.cn/cn/ggzy/bjdt/images/P020161111655114902887.jpg"
+        ], {
+            fade: 50,
+            duration: 1000
+        });
+      
+    }else if((parseInt(hours)>=19 && parseInt(hours)<=24) ||(parseInt(hours)>=0 && parseInt(hours)<6)) {
+	    $.backstretch([
+          "http://www.sz.gov.cn/cn/ggzy/bjdt/images/P020161111655171248036.jpg"
+        ], {
+            fade: 50,
+            duration: 1000
+        });
+      
+    }
+
+
+
+
+</script>
+<!--背景切换结束-->
+<div id="top_bg" class="top_bg" >
+<div class="top_bg_con">
+<!--头部开始-->
+<div class="top_menu" style="width:648px">
+   	  <ul  style="padding: 0 12px;">
+       	  <li class="wza_tb" style="margin: 0 5px 0 4px;"><span></span><a href="http://wza.sz.gov.cn:9000/" target="_blank">无障碍浏览</a>|</li>
+       	  <li style="margin: 0 5px 0 0;"><a style="padding: 0 5px 0 0;" href="http://203.91.55.40:9000/b5/www.sz.gov.cn/cn/" target="_blank">繁体版</a>|</li>
+          <li style="margin: 0 5px 0 0;"><a style="padding: 0 5px 0 0;" href="http://english.sz.gov.cn/" target="_blank">English</a>|</li>
+          <li style="margin: 0 5px 0 0;"><a style="padding: 0 5px 0 0;" href="http://opendata.sz.gov.cn/" target="_blank">数据开放</a>|</li>
+          <li style="margin: 0 5px 0 0;"><a style="padding: 0 5px 0 0;" href="http://www.sz.gov.cn/cn/ydmh/" target="_blank">微门户</a>|</li>
+          <li style="margin: 0 5px 0 0;"><a style="padding: 0 5px 0 0;" href="http://mail.sz.gov.cn/" target="_blank">政务邮箱</a>|</li>
+          <li style="margin: 0 5px 0 0;"><a style="padding: 0 5px 0 0;" href="http://www.sz.gov.cn/cn/fzgn/wzdh/" target="_blank">站群导航</a>|</li>
+          <li class="wza_tb" style="margin: 0;"><span style="float:right;background:url(http://www.sz.gov.cn/cn/images/zx_zwjqr_20161118.png) left bottom no-repeat;"></span><a style=" padding: 0;
+" href="http://irobot.zteict.com/irobot/szzfzx.htm?access_key=szzfzx" target="_blank">政务机器人</a></li>
+      </ul>
+    </div>
+
+
+<div class="top_con">
+	<div class="top_logo"><a href="http://www.sz.gov.cn/cn/" target="_blank"><img src="http://www.sz.gov.cn/cn/ggzy/images/P020160927398698393029.png" /></a></div>
+	<div class="search">
+            <form id="searchform" name="searchform" method="post"  accept-charset="utf-8"  target="_blank" onsubmit="return checkForm()">
+                  <input name="channelid" id="channelid" type="hidden" value="211631" />
+                  <input type="hidden" name="perpage" value="" />
+                  <input type="text" id="sr" name="searchword" class="sr" placeholder="输入关键字" autocomplete="off" onkeydown="KeyDown();" />
+                  <input type="submit" class="btn" value="搜一下" />
+            </form>
+            <div class="tc" id="tc" style="display:none" >
+                <h2>热门搜索排行</h2>
+                <table class="mt10">
+                    
+                </table>
+            </div>
+            <div class="guanjz"></div>
+        </div>
+       
+</div>
+<!--头部结束-->
+<!--导航开始-->
+<div class="zx_menu">
+	<div class="zx_menu_bg"></div>
+   	  <ul>
+      		<li id="sy"><a href="http://www.sz.gov.cn/cn/" ><span>首  页</span></a></li>
+        	<li id="xxgk" class="hover"><a href="http://www.sz.gov.cn/cn/?dw=xxgk" ><span class="m1">信息公开</span></a></li>
+        	<li id="bs"><a href="http://www.sz.gov.cn/cn/?dw=zxbs" ><span class="m2">在线办事</span></a></li>
+        	<li id="fw"><a href="http://www.sz.gov.cn/cn/?dw=bmfw" ><span class="m3">便民服务</span></a></li>
+        	<li id="hdjl"><a href="http://www.sz.gov.cn/cn/?dw=hdjl" ><span class="m4">互动交流</span></a></li>
+        	<li id="zjsz" style=" border:none;width:200px"><a href="http://www.sz.gov.cn/cn/?dw=zjsz" ><span class="m5">走进深圳</span></a></li>
+        </ul>
+    </div>
+<!--导航结束-->
+    <div class="zx_xxgk_ml"> 
+   <div class="zx_rm_tit">
+    <span>市政府部门信息公开目录</span>
+    <p><em>您现在的位置</em><a href="../../../" title="首页" class="CurrChnlCls">首页</a>&nbsp;&gt;&nbsp;<a href="../../" title="2016年政府公报" class="CurrChnlCls">2016年政府公报</a>&nbsp;&gt;&nbsp;<a href="../" title="2016年第38期（总第982期）" class="CurrChnlCls">2016年第38期（总第982期）</a></p>
+   </div> 
+   <!--视图文档开始-->
+ 
+    <div class="zx_xxgk_cont">
+ 			<div class="xx_con">
+                    	<p><em>索 引  号：</em></p>
+                        <p><em>分       类：</em>法规规章</p>
+                        <p><em>发布机构：</em>深圳市人民政府</p>
+                        <p><em>发布日期：</em>2016-12-06</p>
+                        <p class="mingc"><em>名       称：</em>深圳市人民政府令（第290号）深圳市城市更新办法</p>
+                        <p><em>文       号：</em>第290号</p>     
+                        <p><em>主 题 词：</em></p>
+                    </div>
+        	<div class="tit">
+            	<h1>深圳市人民政府令（第290号）深圳市城市更新办法</h1>
+            	<h6>
+                	<span>信息来源：深圳市人民政府</span>
+            		<span>信息提供日期：2016-12-06 </span>
+                	<span class="font">【字体：<a href="javascript:void(0);" class="zt0">大</a><a href="javascript:void(0);" class="zt1">中</a><a href="javascript:void(0);" class="zt2">小</a> 】</span>
+                    
+                 </h6>
+            </div>
+        <div class="news_cont_d_wrap">
+            		<p align="justify">　　《深圳市人民政府关于修改〈深圳市城市更新办法〉的决定》已经市政府六届五十三次常务会议审议通过，现予发布，自发布之日起施行。</p>
+<p align="right">市长 许勤</p>
+<p align="right">2016年11月12日</p>
+<p align="center"><strong>深圳市城市更新办法</strong></p>
+<p align="center"><strong>第一章 总 则</strong></p>
+<p align="justify">　<strong>　第一条</strong> 为规范本市城市更新活动，进一步完善城市功能，优化产业结构，改善人居环境，推进土地、能源、资源的节约集约利用，促进经济和社会可持续发展，根据有关法律、法规的规定，结合本市实际，制定本办法。</p>
+<p align="justify">　　<strong>第二条</strong> 本办法适用于本市行政区域范围内的城市更新活动。</p>
+<p align="justify">　　本办法所称城市更新，是指由符合本办法规定的主体对特定城市建成区（包括旧工业区、旧商业区、旧住宅区、城中村及旧屋村等）内具有以下情形之一的区域，根据城市规划和本办法规定程序进行综合整治、功能改变或者拆除重建的活动：</p>
+<p align="justify">　　（一）城市的基础设施、公共服务设施亟需完善；</p>
+<p align="justify">　　（二）环境恶劣或者存在重大安全隐患；</p>
+<p align="justify">　　（三）现有土地用途、建筑物使用功能或者资源、能源利用明显不符合社会经济发展要求，影响城市规划实施；</p>
+<p align="justify">　　（四）依法或者经市政府批准应当进行城市更新的其他情形。</p>
+<p align="justify">　　<strong>第三条</strong> 城市更新应当遵循政府引导、市场运作、规划统筹、节约集约、保障权益、公众参与的原则，保障和促进科学发展。</p>
+<p align="justify">　　<strong>第四条</strong> 城市更新应当符合国民经济和社会发展总体规划，服从城市总体规划和土地利用总体规划。城市更新实行城市更新单元规划和年度计划管理制度。</p>
+<p align="justify">　　城市更新单元规划是管理城市更新活动的基本依据。</p>
+<p align="justify">　　城市更新年度计划应当纳入近期建设规划年度实施计划及土地利用年度计划。</p>
+<p align="justify">　　<strong>第五条</strong> 城市更新可以依照有关法律法规及本办法的规定分别由市、区政府、土地使用权人或者其他符合规定的主体实施。</p>
+<p align="justify">　　<strong>第六条</strong> 市、区政府应当保障开展组织实施城市更新的工作经费，对城市更新项目提供适当的资金扶持。</p>
+<p align="justify">　　城市更新涉及的基础设施和公共服务设施建设，应当从土地出让金中安排相应的项目资金。城市更新涉及政府投资项目的，根据政府投资项目管理的相关规定实施。</p>
+<p align="justify">　　<strong>第七条</strong> 市规划国土主管部门负责组织、协调全市城市更新工作，依法拟订城市更新相关的规划土地管理政策，统筹城市更新的规划、计划管理，制定城市更新相关技术规范，组织制定城市更新单元规划，负责城市更新过程中的土地使用权出让、收回和收购工作。</p>
+<p align="justify">　　<strong>第八条</strong> 各区政府（含新区管理机构，下同）组织辖区内城市更新用地的整理，组织辖区内综合整治类更新项目和市政府确定由其实施的拆除重建类更新项目的实施，对功能改变类和其他拆除重建类更新项目的实施进行协调。</p>
+<p align="justify">　　市发展改革部门负责拟定城市更新相关的产业指导政策，统筹安排涉及政府投资的城市更新年度资金。市财政部门负责按照计划安排核拨城市更新项目资金。</p>
+<p align="justify">　　各相关主管部门依法在各自职能范围内为城市更新活动提供服务并实施管理。</p>
+<p align="center"><strong>第二章 城市更新规划与计划</strong></p>
+<p align="justify">　　<strong>第九条</strong> 全市城市更新专项规划根据城市总体规划制定，与近期建设规划相衔接，明确全市城市更新的重点区域及其更新方向、目标、时序、总体规模和更新策略。</p>
+<p align="justify">　　<strong>第十条</strong> 法定图则应当对其规划范围内的城市更新作以下规定：</p>
+<p align="justify">　　（一）城市更新单元的范围；</p>
+<p align="justify">　　（二）城市更新单元范围内应当配置的基础设施和公共服务设施的类型和规模；</p>
+<p align="justify">　　（三）城市更新单元的规划指引。</p>
+<p align="justify">　　<strong>第十一条</strong> 对于城市建成区中具有本办法第二条所规定情形，需要进行城市更新的区域，应当在保证基础设施和公共服务设施相对完整的前提下，按照有关技术规范，综合考虑道路、河流等自然要素及产权边界等因素，划定相对成片的区域作为城市更新单元，制定城市更新单元规划。</p>
+<p align="justify">　　一个城市更新单元可以包括一个或者多个城市更新项目。</p>
+<p align="justify">　　<strong>第十二条</strong> 城市更新单元规划应当按照有关技术规范制定，依法进行公示、征求意见。</p>
+<p align="justify">　　城市更新单元规划应当包括以下内容：</p>
+<p align="justify">　　（一）城市更新单元内基础设施、公共服务设施和其他用地的功能、产业方向及其布局；</p>
+<p align="justify">　　（二）城市更新单元内更新项目的具体范围、更新目标、更新方式和规划控制指标；</p>
+<p align="justify">　　（三）城市更新单元内城市设计指引；</p>
+<p align="justify">　　（四）其他应当由城市更新单元规划予以明确的内容。</p>
+<p align="justify">　　城市更新单元规划涉及产业升级的，应当征求相关产业主管部门意见。</p>
+<p align="justify">　　<strong>第十三条</strong> 城市更新单元规划应当根据法定图则所确定的各项控制要求制定，由市规划国土主管部门批准后实施。</p>
+<p align="justify">　　未制定法定图则地区应当在现状调查研究的基础上，根据分区规划确定的各项要求拟订城市更新单元规划，报市政府批准后实施。城市更新单元规划的相关内容应当纳入法定图则的制定。</p>
+<p align="justify">　　城市更新单元规划对法定图则的强制性内容作出调整的，由市规划国土主管部门报市政府批准后实施。相应的内容应当纳入法定图则并予以公布。</p>
+<p align="justify">　　<strong>第十四条</strong> 城市更新年度计划对包括城市更新单元规划的制定计划、已具备实施条件的拆除重建类和综合整治类城市更新项目、相关资金来源等内容。其中，综合整治类城市更新项目可以单独制定年度计划。</p>
+<p align="justify">　<strong>　第十五条</strong> 各区政府可以组织其相关职能部门对辖区内各类需要进行城市更新的项目进行筛选，提出辖区内的城市更新单元规划的制定计划和已具备实施条件的拆除重建类、综合整治类项目，向市规划国土主管部门申报纳入城市更新年度计划。</p>
+<p align="justify">　　市政府各相关主管部门、有关企事业单位，也可以提出城市更新单元规划的制定计划和已具备实施条件的拆除重建类、综合整治类项目，在征求项目所在区政府意见后，向市规划国土主管部门申报纳入城市更新年度计划。</p>
+<p align="justify">　　<strong>第十六条</strong> 未纳入城市更新单元的城市建成区具有本办法第二条所规定情形，具备制定城市更新单元规划相关条件的，各区政府和市政府各相关主管部门可以依据全市城市更新专项规划等相关规划，拟订城市更新单元范围并提出纳入城市更新年度计划的建议，提交市规划国土主管部门。</p>
+<p align="justify">　　<strong>第十七条</strong> 市规划国土主管部门对各区政府、市政府各相关主管部门及有关企事业单位的申报进行统筹、协调后，拟订城市更新年度计划，按照规定程序公示后纳入近期建设规划年度实施计划及土地利用计划草案，报市政府审批。</p>
+<p align="justify">　　需单独制定综合整治类更新项目年度计划的，市规划国土主管部门可以单独制定并报市政府审批。</p>
+<p align="justify">　　城市更新年度计划可以按照上述报批程序进行调整。</p>
+<p align="justify">　　<strong>第十八条</strong> 区政府申报的辖区内城市更新单元规划制定计划纳入城市更新年度计划的，由区政府组织原申报单位拟订城市更新单元规划草案，按照规定程序报批。</p>
+<p align="justify">　　市政府各相关主管部门、有关企事业单位申报的城市更新单元规划制定计划纳入城市更新年度计划的，由市规划国土主管部门组织申报单位拟订城市更新单元规划草案，按照规定程序报批。</p>
+<p align="center"><strong>第三章 综合整治类城市更新</strong></p>
+<p align="justify">　　<strong>第十九条</strong> 综合整治类更新项目主要包括改善消防设施、改善基础设施和公共服务设施、改善沿街立面、环境整治和既有建筑节能改造等内容，但不改变建筑主体结构和使用功能。</p>
+<p align="justify">　　综合整治类更新项目一般不加建附属设施，因消除安全隐患、改善基础设施和公共服务设施需要加建附属设施的，应当满足城市规划、环境保护、建筑设计、建筑节能及消防安全等规范的要求。</p>
+<p align="justify">　　<strong>第二十条</strong> 综合整治类城市更新的相关技术规范由有关主管部门组织拟订，报市政府批准后执行。</p>
+<p align="justify">　　<strong>第二十一条</strong> 综合整治类更新项目由所在区政府制定实施方案并组织实施。</p>
+<p align="justify">　　根据法律、法规及有关规定或者相关标准与规范，实施综合整治需报有关部门批准或者备案的，应当进行报批或者备案。</p>
+<p align="justify">　　<strong>第二十二条</strong> 综合整治类更新项目的费用由所在区政府、权利人或者其他相关人共同承担，费用承担比例由各方协商确定。涉及改善基础设施、公共服务设施和市容环境的费用，费用承担比例按照市、区两级财政负担事权划分的有关规定执行。</p>
+<p align="center"><strong>第四章 功能改变类城市更新</strong></p>
+<p align="justify">　　<strong>第二十三条</strong> 功能改变类更新项目改变部分或者全部建筑物使用功能，但不改变土地使用权的权利主体和使用期限，保留建筑物的原主体结构。</p>
+<p align="justify">　　功能改变类更新项目可以根据消除安全隐患、改善基础设施和公共服务设施的需要加建附属设施，并应当满足城市规划、环境保护、建筑设计、建筑节能及消防安全等规范的要求。</p>
+<p align="justify">　　<strong>第二十四条</strong> 功能改变类更新项目应当符合产业布局规划，优先满足增加公共空间和产业转型升级的需要。</p>
+<p align="justify">　　<strong>第二十五条</strong> 实施功能改变类更新项目的土地使用权人应当按照有关法律法规规定的建筑物改变使用功能的程序，向市规划国土主管部门及相关主管部门申请办理规划许可变更和相关手续。</p>
+<p align="justify">　　市规划国土主管部门在受理规划许可变更申请后，应当在深圳特区报、深圳商报就申请事宜进行公示，公示时间不少于7日，公示费用由申请人承担。</p>
+<p align="justify">　　建筑物由业主区分所有，部分业主申请将住宅改为经营性用房的，申请人应当依法征得利害关系人的同意，并在申请办理规划许可变更手续时提交书面证明文件。</p>
+<p align="justify">　　建筑物由业主区分所有，部分业主申请其他形式的功能改变的，参照前款规定处理。</p>
+<p align="justify">　　<strong>第二十六条</strong> 市规划国土主管部门批准功能改变的，应当与土地使用权人签订土地使用权出让合同补充协议或者补签土地使用权出让合同；土地使用权人应当按照相关规定缴纳地价。</p>
+<p align="justify">　　功能改变后的土地使用权使用期限按照原用途的使用期限扣除已实际使用时间的剩余期限确定。原土地使用期限不足原土地用途法定最高期限的，可以在申请人补缴地价后按照规定予以补足。</p>
+<p align="center"><strong>第五章 拆除重建类城市更新</strong></p>
+<p align="justify">　　<strong>第二十七条</strong> 拆除重建类更新项目应当严格按照城市更新单元规划、城市更新年度计划的规定实施。</p>
+<p align="justify">　　<strong>第二十八条</strong> 根据城市更新单元规划的规定，城市更新单元内土地使用权期限届满之前，因单独建设基础设施、公共服务设施等公共利益需要或者为实施城市规划进行旧城区改建需要调整使用土地或者具备其他法定收回条件的，由市规划国土主管部门依法收回土地使用权并予以补偿。</p>
+<p align="justify">　　<strong>第二十九条</strong> 除依法应当收回的外，市政府可以根据城市更新的需要组织进行土地使用权收购，城市更新单元内的土地使用权人也可以向市规划国土主管部门申请土地使用权收购。</p>
+<p align="justify">　　土地使用权收购的程序、条件、价格按照土地储备和土地收购的有关规定执行。</p>
+<p align="justify">　　<strong>第三十条</strong> 除鼓励权利人自行改造外，对由政府统一组织实施城市更新的，可以在拆迁阶段通过招标的方式引入企业单位承担拆迁工作，拆迁费用和合理利润可以作为收（征）地（拆迁）补偿成本从土地出让收入中支付；也可以在确定开发建设条件且已制定城市更新单元规划的前提下，由政府在土地使用权招标、拍卖、挂牌出让中确定由中标人或者竞得人一并实施城市更新，建筑物、构筑物及其他附着物的拆除清理由中标人或者竞得人负责。</p>
+<p align="justify">　　<strong>第三十一条</strong> 拆除重建类城市更新项目范围内的土地使用权人与地上建筑物、构筑物或者附着物所有权人相同且为单一权利主体的，可以由权利人依据本办法实施拆除重建。</p>
+<p align="justify">　　<strong>第三十二条</strong> 拆除重建类城市更新项目范围内的土地使用权人与地上建筑物、构筑物或者附着物所有权人不同或者存在多个权利主体的，可以在多个权利主体通过协议方式明确权利义务后由单一主体实施城市更新，也可以由多个权利主体签订协议并依照《中华人民共和国公司法》的规定以权利人拥有的房地产作价入股成立公司实施更新，并办理相关规划、用地、建设等手续。</p>
+<p align="justify">　　<strong>第三十三条</strong> 同一宗地内建筑物由业主区分所有，经专有部分占建筑物总面积三分之二以上的业主且占总人数三分之二以上的业主同意拆除重建的，全体业主是一个权利主体。</p>
+<p align="justify">　　城中村、旧屋村拆除重建的，应当经原农村集体经济组织继受单位股东大会按照有关规定表决同意。</p>
+<p align="justify">　　本办法所称城中村是指我市城市化过程中依照有关规定由原农村集体经济组织的村民及继受单位保留使用的非农建设用地的地域范围内的建成区域。</p>
+<p align="justify">　　<strong>第三十四条</strong> 权利人拆除重建类更新项目的实施主体在取得城市更新项目规划许可文件后，应当与市规划国土主管部门签订土地使用权出让合同补充协议或者补签土地使用权出让合同，土地使用权期限重新计算，并按照规定补缴地价。</p>
+<p align="justify">　　<strong>第三十五条</strong> 实施拆除重建的权利人应当依法解决拆除重建项目范围内的经济关系，自行拆除、清理地上建筑物、构筑物及附着物等，并按照城市更新单元规划和土地使用权出让合同的要求移交基础设施、公共服务设施等用地，政府均不作补偿。</p>
+<p align="center"><strong>第六章 其他规定</strong></p>
+<p align="justify">　　<strong>第三十六条</strong> 被依法鉴定为危房、需要拆除重建的单栋建筑，依据城市危房管理的有关规定执行，不需要纳入城市更新年度计划，不专门制定城市更新单元规划。</p>
+<p align="justify">　　<strong>第三十七条</strong> 城市更新项目范围内的违法用地、违法建筑应当依照有关法律、法规及广东省、本市有关规定接受处理后，方可作为权属确定的更新对象。</p>
+<p align="justify">　　城市更新项目范围内未办理房地产权登记、又不属违法用地或者违法建筑的建筑物、构筑物或者附着物，应当根据本市有关房地产权登记历史遗留问题处理的相关规定完善手续后，方可作为权属确定的更新对象。</p>
+<p align="justify">　　<strong>第三十八条</strong> 城市更新单元范围内的边角地、夹心地、插花地等零星未出让国有土地应当优先用于基础设施和公共服务设施的建设。</p>
+<p align="justify">　　未被规划用于基础设施和公共服务设施建设的，可以根据城市更新单元规划一并纳入更新改造，由市规划国土主管部门办理相关手续，出让给其相邻地块的城市更新实施主体。出让的零星土地总面积不超过该项目总用地面积的10%且不得超过3000平方米。</p>
+<p align="justify">　　<strong>第三十九条</strong> 城市更新项目应当遵守保护历史文化遗存的法律、法规，依法保护城市更新范围内的历史文化遗存。</p>
+<p align="justify">　　实施城市更新不得破坏城市防洪系统、城市人民防空设施等各类城市安全保障系统，或者使其功能部分、全部丧失。</p>
+<p align="justify">　　<strong>第四十条</strong> 根据保障性住房建设及产业用房建设的有关要求，可以在拆除重建类项目中配建一定比例的政策性用房，具体办法由相关主管部门另行制定，报市政府批准后实施。</p>
+<p align="justify">　　<strong>第四十一条</strong> 城市更新涉及产业用地的，除应当遵守本办法的规定之外，还应当符合深圳市产业导向目录、城市更新或者相关产业升级政策。</p>
+<p align="justify">　　<strong>第四十二条</strong> 市规划国土主管部门根据城市更新单元规划的规定，在土地使用权出让合同中与更新项目实施主体约定配套建设保障性住房、产业用房、基础设施和公共服务设施的内容。</p>
+<p align="justify">　　<strong>第四十三条</strong> 规模较大的城市更新项目可以分期实施。</p>
+<p align="justify">　　城市更新项目分期实施的时序、规模等规划控制指标由城市更新单元规划和规划许可文件规定。</p>
+<p align="justify">　　分期实施的城市更新项目应当优先安排基础设施、公共服务设施和用于安置回迁业主的建筑。</p>
+<p align="justify">　　<strong>第四十四条</strong> 城市更新项目地价计收的具体规定，由市政府另行制定。</p>
+<p align="justify">　　<strong>第四十五条</strong> 实施城市更新过程中，应当通过发展绿色建筑，营造宜居环境，改善能源结构，推广中水和雨水利用，加强建筑废弃物再利用等多种途径，有效推进节能减排工作。</p>
+<p align="center"><strong>第七章 附 则</strong></p>
+<p align="justify">　　<strong>第四十六条</strong> 相关管理部门及其工作人员在城市更新管理中有违法违纪行为的，依法追究行政责任；涉嫌犯罪的，依法移送司法机关处理。</p>
+<p align="justify">　　对城市更新实施主体违反城市规划和土地管理等方面法律、法规的行为，应当依法追究法律责任。</p>
+<p align="justify">　　<strong>第四十七条</strong> 为了推进强区放权，加快城市更新实施，市政府可以根据工作实际，调整职责分工，创新工作机制，并向社会公布。</p>
+<p align="justify">　　<strong>第四十八条</strong> 本办法自2009年12月1日起施行。本办法施行前本市相关规定与本办法不一致的，以本办法为准。</p>
+          </div>
+        </div>
+        <div class="fenx_con">
+        		<div class="fjdown">
+                    <script>
+                     var linkdesc="";
+                     if(linkdesc!=""){
+                       var linkurl="";
+                       var ldesc = linkdesc.split(";");
+                       var lurl = linkurl.split(";");
+                       document.writeln("<h3>附件下载</h3>");
+                       for(var p=0;p<ldesc.length;p++){
+                            document.writeln("<p><a href=\"" + lurl[p] + "\">" + ldesc[p] + "</a></p>");
+                       }
+                     }
+
+
+                     var xgbd="";
+                     if(xgbd.replace(/(^s*)|(s*$)/g, "").length>0){
+                       document.writeln("<h3>相关报道</h3>");
+                       document.writeln("");                 
+                     }
+
+                    var xgtj="";
+                     if(xgtj.replace(/(^s*)|(s*$)/g, "").length>0){
+                       document.writeln("<h3>相关图解</h3>");
+                       document.writeln("");  
+                     }
+                   </script>
+                </div>
+                <!--分享纠错-->
+<div class="fenx_left"><div class="bshare-custom icon-medium"><div class="bsPromo bsPromo2"></div><a title="分享到" href="http://www.bShare.cn/" id="bshare-shareto" class="bshare-more">分享到</a><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a></div><script type="text/javascript" charset="gb2312" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script><script type="text/javascript" charset="gb2312" src="http://www.sz.gov.cn/cn/images/bshareC0.js"></script></div>
+                    <div class="daying"><a href="http://61.144.227.17/ErrorCorrection.aspx" target="_blank">【内容纠错】</a><a href="javascript:self.print();" >【打印本页】</a><a href="javascript:window.close();" >【关闭窗口】</a></div>
+<!--分享纠错-->
+                    <div class="fenx_link"><p><a href="./t20161206_5612413.htm" target="_blank">上一篇:深圳市人民政府令（第290号）深圳市人民政府关于...</a></p><p class="next"><a href="./t20161206_5612238.htm" target="_blank">下一篇:深圳市人民政府关于进一步完善义务教育经费保障...</a></p></div>
+                </div>
+
+<!--视图文档结束-->
+<!--普通文档类开始-->
+
+<!--普通文档类结束-->
+  </div> 
+</div></div>
+<!--底部开始-->
+<div class="footer">
+	<div class="footer_bg"></div>
+	<div class="footer_con">
+    	<div class="con_left"><span><a href="http://bszs.conac.cn/sitename?method=show&id=17AD264FEB6274CDE053012819ACD901"><img src="http://www.sz.gov.cn/cn/ggzy/images/P020160927403532608069.png" /></a></span><span><a href="http://61.144.227.239:9002/"><img src="http://www.sz.gov.cn/cn/ggzy/images/P020160927404295897233.png" /></a></span><span><a href="http://61.144.227.239:9003/webrecord/form_query.jsp"><img src="http://www.sz.gov.cn/cn/ggzy/images/P020160927404469138387.png" /></a></span><span><a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=027102001080700295"><img src="http://www.sz.gov.cn/cn/ggzy/images/P020160927404640479610.png" /></a></span></div>
+        <div class="con_con">
+        	<div class="link"><a href="http://www.sz.gov.cn/cn/fzgn/gywm/" target="_blank">关于我们</a> - <a href="http://www.sz.gov.cn/cn/fzgn/bqbh/" target="_blank">版权保护</a> - <a href="http://www.sz.gov.cn/cn/fzgn/yssm/" target="_blank">隐私声明</a> - <a href="http://www.sz.gov.cn/cn/fzgn/sybz/" target="_blank">网站概况</a> - <a href="http://www.sz.gov.cn/cn/fzgn/wzdh/" target="_blank">站群导航</a></div>
+       	  <p>主办：深圳市人民政府办公厅 技术支持单位：深圳市电子政务资源中心<br />
+咨询投诉电话：12345 网站维护电话：88121419 备案序号：<a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备05017767号</a></p>
+        
+        </div>
+        <div class="con_right"><script id="_jiucuo_" sitecode="4403000016" src="http://pucha.kaipuyun.cn/exposure/jiucuo.js"></script></div>
+    </div>
+</div>
+<!--底部结束-->
+<!--右侧栏开始-->
+<div class="right-navBox">
+    <div class="right-nav-touch"></div>
+    <div class="hand"><span>触碰右侧展开</span></div>
+    <div class="right-nav" >
+        <ul>
+            <li><a class="a1" href="http://www.sz.gov.cn/cn/bmfw/ydyy/wx/" target="_blank">微信公众号</a></li>
+            <li><a class="a2" href="http://www.sz.gov.cn/cn/bmfw/ydyy/wb/" target="_blank">微 博</a></li>
+            <li><a class="a3" href="http://www.sz.gov.cn/cn/qt/yjdy/" target="_blank">邮件订阅</a></li>
+            <li><a class="a4" href="http://www.sz.gov.cn/cn/hdjl/zxts/wyzx/" target="_blank">咨询</a></li>
+            <li><a class="a7" href="http://www.sz.gov.cn/cn/hdjl/zxts/wyts/" target="_blank">投诉</a></li>
+            <li><a class="a5" href="http://www.sz.gov.cn/cn/qt/gxhdz/" target="_blank">个性化定制</a></li>
+            <li><a class="a6" href="http://www.sz.gov.cn/cn/bmfw/ydyy/app/"   target="_blank">移动应用</a></li>
+        </ul>
+    </div>
+</div>
+<!--右侧栏结束-->
+<div class="rightNav"><a href="#"><img src="/cn/images/zxtop20160913_03.jpg" /></a></div>
+</body>
+</html>
