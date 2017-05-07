@@ -76,8 +76,7 @@
 
 <br>
 **[CONTACT]**   
-Telegram: @MDrights  
-公共政策监察频道：https://telegram.me/monitor_gov , Bot: @CSObot
+psychi:matrix.org
 
 <hr>
 #### This page is powered by GitHub Pages. The content of this repo is released under the GNU GPL 2.0 or later. 
